@@ -1,0 +1,1844 @@
+{
+  "semester": "1151",
+  "count": 52,
+  "source": "sample (虛構資料，僅供開發測試)",
+  "note": "所有課程皆為虛構，is_sample=true；網頁顯示時須標示『範例資料』。",
+  "courses": [
+    {
+      "id": "10001",
+      "code": "GS2101",
+      "name": "電影與人生",
+      "teacher": [
+        "周明哲"
+      ],
+      "dept": "通識教育中心",
+      "credits": 2,
+      "times": [
+        [
+          1,
+          "7"
+        ],
+        [
+          1,
+          "8"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": "人文與思想領域",
+      "is_language": false,
+      "language": null,
+      "classroom": "工程五館-E5-203",
+      "capacity": 30,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10001&outline=10001&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Film and Life",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10002",
+      "code": "GS2102",
+      "name": "哲學思辨導論",
+      "teacher": [
+        "陳立文"
+      ],
+      "dept": "通識教育中心",
+      "credits": 2,
+      "times": [
+        [
+          2,
+          "3"
+        ],
+        [
+          2,
+          "4"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": "人文與思想領域",
+      "is_language": false,
+      "language": null,
+      "classroom": "志希館-I-015",
+      "capacity": 40,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10002&outline=10002&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Introduction to Philosophy",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10003",
+      "code": "GS2103",
+      "name": "台灣當代文學選讀",
+      "teacher": [
+        "林美慧"
+      ],
+      "dept": "通識教育中心",
+      "credits": 2,
+      "times": [
+        [
+          3,
+          "2"
+        ],
+        [
+          3,
+          "3"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": "人文與思想領域",
+      "is_language": false,
+      "language": null,
+      "classroom": "科學一館-S1-305",
+      "capacity": 40,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10003&outline=10003&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Modern Taiwan Literature",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10004",
+      "code": "GS2201",
+      "name": "社會學的想像",
+      "teacher": [
+        "黃志偉"
+      ],
+      "dept": "通識教育中心",
+      "credits": 3,
+      "times": [
+        [
+          1,
+          "2"
+        ],
+        [
+          1,
+          "3"
+        ],
+        [
+          1,
+          "4"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": "公民與社會領域",
+      "is_language": false,
+      "language": null,
+      "classroom": "工程五館-E5-203",
+      "capacity": 80,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10004&outline=10004&semester=1151",
+      "syllabus_text": null,
+      "name_en": "The Sociological Imagination",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10005",
+      "code": "GS2202",
+      "name": "法律與生活",
+      "teacher": [
+        "吳承翰"
+      ],
+      "dept": "通識教育中心",
+      "credits": 2,
+      "times": [
+        [
+          4,
+          "6"
+        ],
+        [
+          4,
+          "7"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": "公民與社會領域",
+      "is_language": false,
+      "language": null,
+      "classroom": "工程五館-E5-203",
+      "capacity": 70,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10005&outline=10005&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Law and Life",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10006",
+      "code": "GS2203",
+      "name": "經濟學通論",
+      "teacher": [
+        "張雅雯"
+      ],
+      "dept": "通識教育中心",
+      "credits": 3,
+      "times": [
+        [
+          2,
+          "6"
+        ],
+        [
+          2,
+          "7"
+        ],
+        [
+          2,
+          "8"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": "公民與社會領域",
+      "is_language": false,
+      "language": null,
+      "classroom": "管理一館-M1-220",
+      "capacity": 30,
+      "notes": "本課程為熱門通識，採亂數分發。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10006&outline=10006&semester=1151",
+      "syllabus_text": null,
+      "name_en": "General Economics",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10007",
+      "code": "GS2301",
+      "name": "天文與宇宙",
+      "teacher": [
+        "李國華"
+      ],
+      "dept": "通識教育中心",
+      "credits": 2,
+      "times": [
+        [
+          3,
+          "7"
+        ],
+        [
+          3,
+          "8"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": "自然與科學領域",
+      "is_language": false,
+      "language": null,
+      "classroom": "文學院-C1-101",
+      "capacity": 30,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10007&outline=10007&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Astronomy and the Universe",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10008",
+      "code": "GS2302",
+      "name": "生活中的物理",
+      "teacher": [
+        "鄭宇翔"
+      ],
+      "dept": "通識教育中心",
+      "credits": 2,
+      "times": [
+        [
+          5,
+          "3"
+        ],
+        [
+          5,
+          "4"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": "自然與科學領域",
+      "is_language": false,
+      "language": null,
+      "classroom": "科學一館-S1-305",
+      "capacity": 40,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10008&outline=10008&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Physics in Everyday Life",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10009",
+      "code": "GS2303",
+      "name": "資料科學導論",
+      "teacher": [
+        "許文彥"
+      ],
+      "dept": "通識教育中心",
+      "credits": 3,
+      "times": [
+        [
+          4,
+          "2"
+        ],
+        [
+          4,
+          "3"
+        ],
+        [
+          4,
+          "4"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": "自然與科學領域",
+      "is_language": false,
+      "language": null,
+      "classroom": "文學院-C1-101",
+      "capacity": 70,
+      "notes": "本課程為熱門通識，採亂數分發。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10009&outline=10009&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Introduction to Data Science",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10010",
+      "code": "GS2401",
+      "name": "環境永續與綠能",
+      "teacher": [
+        "蔡宜潔"
+      ],
+      "dept": "通識教育中心",
+      "credits": 2,
+      "times": [
+        [
+          1,
+          "6"
+        ],
+        [
+          1,
+          "Z"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": "生命與永續領域",
+      "is_language": false,
+      "language": null,
+      "classroom": "科學一館-S1-305",
+      "capacity": 80,
+      "notes": "需具備基礎化學概念為佳。[不開放初選]",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10010&outline=10010&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Sustainability and Green Energy",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10011",
+      "code": "GS2402",
+      "name": "健康心理學",
+      "teacher": [
+        "何佩珊"
+      ],
+      "dept": "通識教育中心",
+      "credits": 2,
+      "times": [
+        [
+          3,
+          "5"
+        ],
+        [
+          3,
+          "6"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": "生命與永續領域",
+      "is_language": false,
+      "language": null,
+      "classroom": "管理一館-M1-220",
+      "capacity": 40,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10011&outline=10011&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Health Psychology",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10012",
+      "code": "GS2403",
+      "name": "飲食與文化",
+      "teacher": [
+        "羅世明"
+      ],
+      "dept": "通識教育中心",
+      "credits": 2,
+      "times": [
+        [
+          5,
+          "7"
+        ],
+        [
+          5,
+          "8"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": "生命與永續領域",
+      "is_language": false,
+      "language": null,
+      "classroom": "鴻經館-H-301",
+      "capacity": 70,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10012&outline=10012&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Food and Culture",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10013",
+      "code": "LN1001",
+      "name": "日文(一)",
+      "teacher": [
+        "王中成"
+      ],
+      "dept": "語言中心",
+      "credits": 3,
+      "times": [
+        [
+          1,
+          "2"
+        ],
+        [
+          1,
+          "3"
+        ],
+        [
+          1,
+          "4"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": true,
+      "language": "日語",
+      "classroom": "志希館-I-015",
+      "capacity": 30,
+      "notes": "零起點初級課程。大學部課程。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10013&outline=10013&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Japanese (I)",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10014",
+      "code": "LN1002",
+      "name": "日文(三)",
+      "teacher": [
+        "江任洸"
+      ],
+      "dept": "語言中心",
+      "credits": 3,
+      "times": [
+        [
+          2,
+          "5"
+        ],
+        [
+          2,
+          "6"
+        ],
+        [
+          2,
+          "7"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": true,
+      "language": "日語",
+      "classroom": "依仁堂-R-110",
+      "capacity": 80,
+      "notes": "須先修日文(二)或同等能力。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10014&outline=10014&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Japanese (III)",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10015",
+      "code": "LN1003",
+      "name": "法文(一)",
+      "teacher": [
+        "張雅如"
+      ],
+      "dept": "語言中心",
+      "credits": 3,
+      "times": [
+        [
+          3,
+          "6"
+        ],
+        [
+          3,
+          "7"
+        ],
+        [
+          3,
+          "8"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": true,
+      "language": "法語",
+      "classroom": "管理一館-M1-220",
+      "capacity": 50,
+      "notes": "零起點。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10015&outline=10015&semester=1151",
+      "syllabus_text": null,
+      "name_en": "French (I)",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10016",
+      "code": "LN1004",
+      "name": "西班牙文(一)",
+      "teacher": [
+        "何塞"
+      ],
+      "dept": "語言中心",
+      "credits": 3,
+      "times": [
+        [
+          4,
+          "7"
+        ],
+        [
+          4,
+          "8"
+        ],
+        [
+          4,
+          "9"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": true,
+      "language": "西班牙語",
+      "classroom": "志希館-I-015",
+      "capacity": 40,
+      "notes": "零起點。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10016&outline=10016&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Spanish (I)",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10017",
+      "code": "LN1005",
+      "name": "英語會話",
+      "teacher": [
+        "Emily Watson"
+      ],
+      "dept": "語言中心",
+      "credits": 2,
+      "times": [
+        [
+          5,
+          "2"
+        ],
+        [
+          5,
+          "3"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": true,
+      "language": "英語",
+      "classroom": "科學一館-S1-305",
+      "capacity": 50,
+      "notes": "限大一新生。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10017&outline=10017&semester=1151",
+      "syllabus_text": null,
+      "name_en": "English Conversation",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10018",
+      "code": "LN1006",
+      "name": "德文(一)",
+      "teacher": [
+        "林世偉"
+      ],
+      "dept": "語言中心",
+      "credits": 3,
+      "times": [
+        [
+          1,
+          "5"
+        ],
+        [
+          1,
+          "6"
+        ],
+        [
+          1,
+          "7"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": true,
+      "language": "德語",
+      "classroom": "工程五館-E5-203",
+      "capacity": 30,
+      "notes": "零起點。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10018&outline=10018&semester=1151",
+      "syllabus_text": null,
+      "name_en": "German (I)",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10019",
+      "code": "CS3001",
+      "name": "資料結構",
+      "teacher": [
+        "許文彥"
+      ],
+      "dept": "資訊工程學系",
+      "credits": 3,
+      "times": [
+        [
+          2,
+          "3"
+        ],
+        [
+          2,
+          "4"
+        ],
+        [
+          4,
+          "3"
+        ]
+      ],
+      "category": "必修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "管理一館-M1-220",
+      "capacity": 30,
+      "notes": "限資工系二年級以上。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10019&outline=10019&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Data Structures",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10020",
+      "code": "CS3002",
+      "name": "演算法",
+      "teacher": [
+        "陳建宏"
+      ],
+      "dept": "資訊工程學系",
+      "credits": 3,
+      "times": [
+        [
+          1,
+          "6"
+        ],
+        [
+          1,
+          "7"
+        ],
+        [
+          3,
+          "6"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "教研大樓-TR-A001",
+      "capacity": 50,
+      "notes": "須先修資料結構。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10020&outline=10020&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Algorithms",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10021",
+      "code": "CS4010",
+      "name": "機器學習",
+      "teacher": [
+        "李宗翰"
+      ],
+      "dept": "資訊工程學系",
+      "credits": 3,
+      "times": [
+        [
+          5,
+          "6"
+        ],
+        [
+          5,
+          "7"
+        ],
+        [
+          5,
+          "8"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "志希館-I-015",
+      "capacity": 30,
+      "notes": "須具備線性代數與 Python 程式基礎。[限人數 60]",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10021&outline=10021&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Machine Learning",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10022",
+      "code": "CS4020",
+      "name": "深度學習與應用",
+      "teacher": [
+        "周怡君"
+      ],
+      "dept": "資訊工程學系",
+      "credits": 3,
+      "times": [
+        [
+          2,
+          "7"
+        ],
+        [
+          2,
+          "8"
+        ],
+        [
+          2,
+          "9"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "鴻經館-H-301",
+      "capacity": 70,
+      "notes": "須先修機器學習或經授課教師同意。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10022&outline=10022&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Deep Learning",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10023",
+      "code": "EE3001",
+      "name": "電子學",
+      "teacher": [
+        "黃國樑"
+      ],
+      "dept": "電機工程學系",
+      "credits": 3,
+      "times": [
+        [
+          1,
+          "2"
+        ],
+        [
+          1,
+          "3"
+        ],
+        [
+          3,
+          "2"
+        ]
+      ],
+      "category": "必修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "工程五館-E5-203",
+      "capacity": 60,
+      "notes": "限電機系。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10023&outline=10023&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Electronics",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10024",
+      "code": "MA2001",
+      "name": "微積分(一)",
+      "teacher": [
+        "吳美玲"
+      ],
+      "dept": "數學系",
+      "credits": 4,
+      "times": [
+        [
+          2,
+          "2"
+        ],
+        [
+          2,
+          "3"
+        ],
+        [
+          4,
+          "2"
+        ],
+        [
+          4,
+          "3"
+        ]
+      ],
+      "category": "必修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "工程五館-E5-203",
+      "capacity": 70,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10024&outline=10024&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Calculus (I)",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10025",
+      "code": "MA2002",
+      "name": "線性代數",
+      "teacher": [
+        "陳世昌"
+      ],
+      "dept": "數學系",
+      "credits": 3,
+      "times": [
+        [
+          3,
+          "3"
+        ],
+        [
+          3,
+          "4"
+        ],
+        [
+          5,
+          "3"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "志希館-I-015",
+      "capacity": 80,
+      "notes": "須先修微積分(一)。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10025&outline=10025&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Linear Algebra",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10026",
+      "code": "BA2001",
+      "name": "管理學",
+      "teacher": [
+        "張雅雯"
+      ],
+      "dept": "企業管理學系",
+      "credits": 3,
+      "times": [
+        [
+          1,
+          "6"
+        ],
+        [
+          1,
+          "7"
+        ],
+        [
+          1,
+          "8"
+        ]
+      ],
+      "category": "必修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "教研大樓-TR-A001",
+      "capacity": 70,
+      "notes": "限企管系一年級。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10026&outline=10026&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Principles of Management",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10027",
+      "code": "BA3005",
+      "name": "行銷管理",
+      "teacher": [
+        "林書豪"
+      ],
+      "dept": "企業管理學系",
+      "credits": 3,
+      "times": [
+        [
+          4,
+          "6"
+        ],
+        [
+          4,
+          "7"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "科學一館-S1-305",
+      "capacity": 80,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10027&outline=10027&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Marketing Management",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10028",
+      "code": "IM3001",
+      "name": "資料庫管理",
+      "teacher": [
+        "鄭雅文"
+      ],
+      "dept": "資訊管理學系",
+      "credits": 3,
+      "times": [
+        [
+          2,
+          "2"
+        ],
+        [
+          2,
+          "3"
+        ],
+        [
+          2,
+          "4"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "工程五館-E5-203",
+      "capacity": 30,
+      "notes": "須先修程式設計。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10028&outline=10028&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Database Management",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10029",
+      "code": "PH2001",
+      "name": "普通物理學",
+      "teacher": [
+        "鄭宇翔"
+      ],
+      "dept": "物理學系",
+      "credits": 3,
+      "times": [
+        [
+          3,
+          "2"
+        ],
+        [
+          3,
+          "3"
+        ],
+        [
+          5,
+          "2"
+        ]
+      ],
+      "category": "必修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "科學一館-S1-305",
+      "capacity": 50,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10029&outline=10029&semester=1151",
+      "syllabus_text": null,
+      "name_en": "General Physics",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10030",
+      "code": "CH2001",
+      "name": "普通化學",
+      "teacher": [
+        "蔡宜潔"
+      ],
+      "dept": "化學學系",
+      "credits": 3,
+      "times": [
+        [
+          1,
+          "3"
+        ],
+        [
+          1,
+          "4"
+        ],
+        [
+          3,
+          "3"
+        ]
+      ],
+      "category": "必修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "工程五館-E5-203",
+      "capacity": 40,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10030&outline=10030&semester=1151",
+      "syllabus_text": null,
+      "name_en": "General Chemistry",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10031",
+      "code": "CE3001",
+      "name": "結構學",
+      "teacher": [
+        "王建民"
+      ],
+      "dept": "土木工程學系",
+      "credits": 3,
+      "times": [
+        [
+          2,
+          "6"
+        ],
+        [
+          2,
+          "7"
+        ],
+        [
+          4,
+          "6"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "工程五館-E5-203",
+      "capacity": 60,
+      "notes": "須先修材料力學。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10031&outline=10031&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Structural Analysis",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10032",
+      "code": "CL2001",
+      "name": "文學概論",
+      "teacher": [
+        "林美慧"
+      ],
+      "dept": "中國文學系",
+      "credits": 3,
+      "times": [
+        [
+          5,
+          "5"
+        ],
+        [
+          5,
+          "6"
+        ],
+        [
+          5,
+          "7"
+        ]
+      ],
+      "category": "必修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "志希館-I-015",
+      "capacity": 60,
+      "notes": "限中文系。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10032&outline=10032&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Introduction to Literature",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10033",
+      "code": "EC2001",
+      "name": "經濟學原理",
+      "teacher": [
+        "張雅雯"
+      ],
+      "dept": "經濟學系",
+      "credits": 3,
+      "times": [
+        [
+          1,
+          "5"
+        ],
+        [
+          1,
+          "6"
+        ],
+        [
+          3,
+          "5"
+        ]
+      ],
+      "category": "必修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "教研大樓-TR-A001",
+      "capacity": 40,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10033&outline=10033&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Principles of Economics",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10034",
+      "code": "AI5001",
+      "name": "人工智慧導論",
+      "teacher": [
+        "李宗翰"
+      ],
+      "dept": "人工智慧國際碩士學位學程",
+      "credits": 3,
+      "times": [
+        [
+          4,
+          "7"
+        ],
+        [
+          4,
+          "8"
+        ],
+        [
+          4,
+          "9"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "教研大樓-TR-A001",
+      "capacity": 50,
+      "notes": "開放大學部高年級修習，須經教師同意。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10034&outline=10034&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Introduction to AI",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10035",
+      "code": "SP1001",
+      "name": "大一體育-羽球",
+      "teacher": [
+        "沈淑貞"
+      ],
+      "dept": "體育室",
+      "credits": 0,
+      "times": [
+        [
+          2,
+          "Z"
+        ]
+      ],
+      "category": "必修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "科學一館-S1-305",
+      "capacity": 80,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10035&outline=10035&semester=1151",
+      "syllabus_text": null,
+      "name_en": "PE: Badminton",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10036",
+      "code": "SP1002",
+      "name": "大一體育-桌球",
+      "teacher": [
+        "陳志強"
+      ],
+      "dept": "體育室",
+      "credits": 0,
+      "times": [
+        [
+          4,
+          "Z"
+        ]
+      ],
+      "category": "必修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "志希館-I-015",
+      "capacity": 80,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10036&outline=10036&semester=1151",
+      "syllabus_text": null,
+      "name_en": "PE: Table Tennis",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10037",
+      "code": "GS2104",
+      "name": "音樂鑑賞",
+      "teacher": [
+        "曾韻心"
+      ],
+      "dept": "通識教育中心",
+      "credits": 2,
+      "times": [
+        [
+          2,
+          "A"
+        ],
+        [
+          2,
+          "B"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": "人文與思想領域",
+      "is_language": false,
+      "language": null,
+      "classroom": "工程五館-E5-203",
+      "capacity": 70,
+      "notes": "夜間時段。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10037&outline=10037&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Music Appreciation",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10038",
+      "code": "GS2204",
+      "name": "國際關係導論",
+      "teacher": [
+        "吳承翰"
+      ],
+      "dept": "通識教育中心",
+      "credits": 2,
+      "times": [
+        [
+          4,
+          "3"
+        ],
+        [
+          4,
+          "4"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": "公民與社會領域",
+      "is_language": false,
+      "language": null,
+      "classroom": "依仁堂-R-110",
+      "capacity": 70,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10038&outline=10038&semester=1151",
+      "syllabus_text": null,
+      "name_en": "International Relations",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10039",
+      "code": "GS2304",
+      "name": "生命科學概論",
+      "teacher": [
+        "何佩珊"
+      ],
+      "dept": "通識教育中心",
+      "credits": 2,
+      "times": [
+        [
+          1,
+          "5"
+        ],
+        [
+          1,
+          "6"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": "自然與科學領域",
+      "is_language": false,
+      "language": null,
+      "classroom": "科學一館-S1-305",
+      "capacity": 40,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10039&outline=10039&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Introduction to Life Science",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10040",
+      "code": "GS2404",
+      "name": "程式設計與生活",
+      "teacher": [
+        "許文彥"
+      ],
+      "dept": "通識教育中心",
+      "credits": 2,
+      "times": [
+        [
+          5,
+          "5"
+        ],
+        [
+          5,
+          "6"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": "生命與永續領域",
+      "is_language": false,
+      "language": null,
+      "classroom": "鴻經館-H-301",
+      "capacity": 60,
+      "notes": "零基礎可修。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10040&outline=10040&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Programming for Life",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10041",
+      "code": "LN1007",
+      "name": "英文寫作",
+      "teacher": [
+        "John Miller"
+      ],
+      "dept": "語言中心",
+      "credits": 2,
+      "times": [
+        [
+          3,
+          "5"
+        ],
+        [
+          3,
+          "6"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": true,
+      "language": "英語",
+      "classroom": "志希館-I-015",
+      "capacity": 80,
+      "notes": "限通過英文能力檢定者。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10041&outline=10041&semester=1151",
+      "syllabus_text": null,
+      "name_en": "English Writing",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10042",
+      "code": "LN1008",
+      "name": "韓文(一)",
+      "teacher": [
+        "金敏珠"
+      ],
+      "dept": "語言中心",
+      "credits": 3,
+      "times": [
+        [
+          2,
+          "2"
+        ],
+        [
+          2,
+          "3"
+        ],
+        [
+          2,
+          "4"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": true,
+      "language": "韓語",
+      "classroom": "科學一館-S1-305",
+      "capacity": 80,
+      "notes": "零起點。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10042&outline=10042&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Korean (I)",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10043",
+      "code": "CS3003",
+      "name": "作業系統",
+      "teacher": [
+        "陳建宏"
+      ],
+      "dept": "資訊工程學系",
+      "credits": 3,
+      "times": [
+        [
+          3,
+          "7"
+        ],
+        [
+          3,
+          "8"
+        ],
+        [
+          5,
+          "7"
+        ]
+      ],
+      "category": "必修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "教研大樓-TR-A001",
+      "capacity": 30,
+      "notes": "限資工系。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10043&outline=10043&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Operating Systems",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10044",
+      "code": "CS3004",
+      "name": "計算機網路",
+      "teacher": [
+        "周怡君"
+      ],
+      "dept": "資訊工程學系",
+      "credits": 3,
+      "times": [
+        [
+          1,
+          "3"
+        ],
+        [
+          1,
+          "4"
+        ],
+        [
+          3,
+          "4"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "科學一館-S1-305",
+      "capacity": 30,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10044&outline=10044&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Computer Networks",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10045",
+      "code": "MA3001",
+      "name": "機率論",
+      "teacher": [
+        "吳美玲"
+      ],
+      "dept": "數學系",
+      "credits": 3,
+      "times": [
+        [
+          4,
+          "2"
+        ],
+        [
+          4,
+          "3"
+        ],
+        [
+          4,
+          "4"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "教研大樓-TR-A001",
+      "capacity": 60,
+      "notes": "須先修微積分(二)。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10045&outline=10045&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Probability Theory",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10046",
+      "code": "BA3006",
+      "name": "組織行為",
+      "teacher": [
+        "林書豪"
+      ],
+      "dept": "企業管理學系",
+      "credits": 3,
+      "times": [
+        [
+          5,
+          "2"
+        ],
+        [
+          5,
+          "3"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "志希館-I-015",
+      "capacity": 30,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10046&outline=10046&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Organizational Behavior",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10047",
+      "code": "IM3002",
+      "name": "系統分析與設計",
+      "teacher": [
+        "鄭雅文"
+      ],
+      "dept": "資訊管理學系",
+      "credits": 3,
+      "times": [
+        [
+          3,
+          "6"
+        ],
+        [
+          3,
+          "7"
+        ],
+        [
+          3,
+          "8"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "科學一館-S1-305",
+      "capacity": 70,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10047&outline=10047&semester=1151",
+      "syllabus_text": null,
+      "name_en": "System Analysis and Design",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10048",
+      "code": "EE4001",
+      "name": "訊號與系統",
+      "teacher": [
+        "黃國樑"
+      ],
+      "dept": "電機工程學系",
+      "credits": 3,
+      "times": [
+        [
+          2,
+          "5"
+        ],
+        [
+          2,
+          "6"
+        ],
+        [
+          4,
+          "5"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "教研大樓-TR-A001",
+      "capacity": 40,
+      "notes": "須先修工程數學。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10048&outline=10048&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Signals and Systems",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10049",
+      "code": "CL3001",
+      "name": "唐詩選",
+      "teacher": [
+        "林美慧"
+      ],
+      "dept": "中國文學系",
+      "credits": 3,
+      "times": [
+        [
+          1,
+          "8"
+        ],
+        [
+          1,
+          "9"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "鴻經館-H-301",
+      "capacity": 60,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10049&outline=10049&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Selected Tang Poetry",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10050",
+      "code": "EC3001",
+      "name": "貨幣銀行學",
+      "teacher": [
+        "張雅雯"
+      ],
+      "dept": "經濟學系",
+      "credits": 3,
+      "times": [
+        [
+          4,
+          "6"
+        ],
+        [
+          4,
+          "7"
+        ],
+        [
+          4,
+          "8"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "鴻經館-H-301",
+      "capacity": 40,
+      "notes": "須先修經濟學原理。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10050&outline=10050&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Money and Banking",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10051",
+      "code": "CE3002",
+      "name": "測量學",
+      "teacher": [
+        "王建民"
+      ],
+      "dept": "土木工程學系",
+      "credits": 2,
+      "times": [
+        [
+          5,
+          "3"
+        ],
+        [
+          5,
+          "4"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "志希館-I-015",
+      "capacity": 40,
+      "notes": "",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10051&outline=10051&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Surveying",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    },
+    {
+      "id": "10052",
+      "code": "AI5002",
+      "name": "自然語言處理",
+      "teacher": [
+        "李宗翰"
+      ],
+      "dept": "人工智慧國際碩士學位學程",
+      "credits": 3,
+      "times": [
+        [
+          3,
+          "2"
+        ],
+        [
+          3,
+          "3"
+        ],
+        [
+          3,
+          "4"
+        ]
+      ],
+      "category": "選修",
+      "ge_domain": null,
+      "is_language": false,
+      "language": null,
+      "classroom": "科學一館-S1-305",
+      "capacity": 80,
+      "notes": "須先修機器學習。",
+      "syllabus_url": "https://cis.ncu.edu.tw/Course/main/query/byKeywords?serialNo=10052&outline=10052&semester=1151",
+      "syllabus_text": null,
+      "name_en": "Natural Language Processing",
+      "admit_cnt": null,
+      "wait_cnt": null,
+      "is_sample": true
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>中大 AI 選課助理（原型）</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>中大 AI 選課助理 <span class="tag">原型</span></h1>
+      <p class="subtitle">AI 負責「理解」，演算法負責「排課」</p>
+    </div>
+  </header>
+
+  {% if is_sample %}
+  <div class="banner banner-sample wrap">
+    ⚠ 目前顯示的是<strong>範例資料（虛構課程）</strong>，僅供介面測試，並非真實開課資訊。
+  </div>
+  {% endif %}
+
+  <main class="wrap">
+    <!-- 步驟 1 -->
+    <section class="card step" id="step1">
+      <h2><span class="num">1</span> 我的資料</h2>
+      <div class="grid2">
+        <label>系所
+          <input id="u-dept" list="dept-list" placeholder="例：資訊工程學系">
+          <datalist id="dept-list"></datalist>
+        </label>
+        <label>年級
+          <select id="u-grade">
+            <option value="">未指定</option>
+            <option value="1">一年級</option>
+            <option value="2">二年級</option>
+            <option value="3">三年級</option>
+            <option value="4">四年級</option>
+            <option value="5">研究所以上</option>
+          </select>
+        </label>
+      </div>
+      <label>已修課程（每行一門，或用逗號分隔）
+        <textarea id="u-completed" rows="2" placeholder="微積分(一)&#10;計算機概論"></textarea>
+      </label>
+
+      <h3>要固定的課（必上的課）</h3>
+      <div class="row">
+        <input id="fixed-search" placeholder="搜尋課名 / 課號 / 教師…">
+        <button id="fixed-search-btn" class="btn">搜尋</button>
+      </div>
+      <ul id="fixed-search-results" class="result-list"></ul>
+      <div id="fixed-chips" class="chips"></div>
+    </section>
+
+    <!-- 步驟 2 -->
+    <section class="card step" id="step2">
+      <h2><span class="num">2</span> 我的偏好</h2>
+      <label>用白話描述你的需求
+        <textarea id="pref-text" rows="2"
+          placeholder="例：不要早八、週五想空著、想學資料分析相關、修 6 到 9 學分"></textarea>
+      </label>
+      <button id="parse-btn" class="btn">解析偏好</button>
+
+      <div id="pref-parsed" class="parsed hidden">
+        <p class="hint">以下是解析結果，你可以直接修改後再產生課表：</p>
+        <div class="grid2">
+          <label>最少學分 <input id="p-min" type="number" min="0" step="1"></label>
+          <label>最多學分 <input id="p-max" type="number" min="0" step="1"></label>
+        </div>
+        <div class="field">
+          <span class="field-label">想整天空著</span>
+          <div id="p-freedays" class="checks"></div>
+        </div>
+        <label>避開時段
+          <div id="p-avoid" class="chips small"></div>
+          <label class="inline"><input type="checkbox" id="p-early8"> 避開早八（第1節）</label>
+        </label>
+        <label>想學的主題（逗號分隔，會用於語意推薦）
+          <input id="p-topics" placeholder="資料分析, 人工智慧">
+        </label>
+        <div class="grid2">
+          <label>想要的通識領域（逗號分隔）<input id="p-gedomains"></label>
+          <label>想要的授課語言（逗號分隔）<input id="p-langs" placeholder="日語, 英語"></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- 步驟 3 -->
+    <section class="card step" id="step3">
+      <h2><span class="num">3</span> 推薦結果</h2>
+      <button id="gen-btn" class="btn btn-primary">產生課表</button>
+      <p id="gen-status" class="hint"></p>
+
+      <div id="scheme-tabs" class="tabs"></div>
+      <div id="schedule-grid"></div>
+      <div id="schedule-courses"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      本工具非學校官方系統，選課前請以
+      <a href="https://cis.ncu.edu.tw/" target="_blank" rel="noopener">課程查詢系統</a>
+      與選課系統為準。
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

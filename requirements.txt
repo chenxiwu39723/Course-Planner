@@ -1,0 +1,22 @@
+# HTTP 與解析（階段 0–1）
+requests>=2.31
+lxml>=5.0
+beautifulsoup4>=4.12
+
+# 資料模型（階段 1）
+pydantic>=2.0
+
+# 測試（階段 2）
+pytest>=8.0
+
+# 網頁（階段 5）
+Flask>=3.0
+
+# 語意搜尋（階段 4；本機模型，避免 API 費用）
+# 註：體積較大，若只跑非 AI 流程可暫不安裝
+sentence-transformers>=2.2
+numpy>=1.24
+
+# LLM 客戶端（階段 3–4；Azure OpenAI）
+openai>=1.0
+python-dotenv>=1.0
