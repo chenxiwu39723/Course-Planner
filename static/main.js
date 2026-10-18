@@ -111,12 +111,13 @@ async function searchFixed() {
   const ge = $("#f-gedomain").value;
   if (!q && !cat && !ge) {
     $("#fixed-search-status").textContent = "請輸入關鍵字，或選擇類別／通識領域。";
+    $("#fixed-search-status").classList.remove("status-error");
     return;
   }
   const btn = $("#fixed-search-btn");
   const status = $("#fixed-search-status");
   const ul = $("#fixed-search-results");
-  btn.disabled = true; status.textContent = "搜尋中…";
+  btn.disabled = true; status.textContent = "搜尋中…"; status.classList.remove("status-error");
   const limit = 30;
   const params = new URLSearchParams({ limit: String(limit) });
   if (q) params.set("q", q);
@@ -127,6 +128,7 @@ async function searchFixed() {
     j = await api(`/api/courses?${params.toString()}`);
   } catch (e) {
     status.textContent = "搜尋失敗：" + e.message;
+    status.classList.add("status-error");
     btn.disabled = false;
     return;
   }
@@ -167,9 +169,9 @@ async function parsePrefs() {
   const text = $("#pref-text").value.trim();
   const btn = $("#parse-btn");
   const status = $("#parse-status");
-  if (!text) { status.textContent = "請先輸入白話需求。"; return; }
+  if (!text) { status.textContent = "請先輸入白話需求。"; status.classList.remove("status-error"); return; }
   saveState();
-  btn.disabled = true; status.textContent = "解析中…";
+  btn.disabled = true; status.textContent = "解析中…"; status.classList.remove("status-error");
   try {
     const j = await api("/api/parse_preferences", {
       method: "POST", headers: { "Content-Type": "application/json" },
@@ -179,6 +181,7 @@ async function parsePrefs() {
     status.textContent = "已解析，可在下方確認或修改。";
   } catch (e) {
     status.textContent = "解析失敗：" + e.message;
+    status.classList.add("status-error");
   } finally {
     btn.disabled = false;
   }
@@ -235,6 +238,13 @@ async function generate() {
   const status = $("#gen-status");
   btn.disabled = true;
   status.textContent = "計算中…";
+  status.classList.remove("status-error");
+  // 顯示計算中 skeleton，並清掉上一次的結果，避免看起來像卡住
+  $("#schedule-empty").classList.add("hidden");
+  $("#scheme-tabs").innerHTML = "";
+  $("#schedule-courses").innerHTML = "";
+  $("#schedule-grid").innerHTML =
+    '<div class="loading"><span class="spinner" aria-hidden="true"></span>排課計算中…</div>';
   const body = {
     fixed_ids: Object.keys(FIXED),
     user: {
@@ -266,8 +276,14 @@ async function generate() {
       : "";
     status.textContent = `產生 ${SCHEDULES.length} 組（搜尋 ${s.nodes} 節點、${s.elapsed}s${s.hit_limit ? "，已達上限回傳最佳結果" : ""}）${capNote}`;
     ACTIVE = 0; renderTabs(); renderScheme();
+    // 手機單欄時，產生後自動捲到結果區（桌機結果已在右側 sticky 欄可見）
+    if (window.matchMedia("(max-width: 899px)").matches) {
+      $("#step3").scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   } catch (e) {
     status.textContent = "發生錯誤：" + e.message;
+    status.classList.add("status-error");
+    $("#schedule-grid").innerHTML = "";
   } finally {
     btn.disabled = false;
   }
