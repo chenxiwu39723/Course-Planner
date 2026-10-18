@@ -5,7 +5,7 @@ import pytest
 from planner import timeslots as ts
 from planner.models import Course
 from planner.solver import (
-    Preferences, compute_free_slots, candidate_courses, solve,
+    Preferences, compute_free_slots, candidate_courses, solve, ge_domain_matches,
 )
 from planner.data_loader import load_courses
 
@@ -15,6 +15,18 @@ def ge(cid, times, domain, credits=3.0, cap=50):
     return Course(id=cid, code=cid, name=cid, teacher=[], dept="通識教育中心",
                   credits=credits, times=times, category="選修",
                   ge_domain=domain, capacity=cap)
+
+
+def test_ge_domain_matches_single_and_multi():
+    # 單一領域（範例資料）
+    assert ge_domain_matches("人文與思想領域", ["人文與思想領域"])
+    # 多領域以「、」串接（真實資料）：命中其中之一即可
+    assert ge_domain_matches("文化與社會、第二外語", ["第二外語"])
+    assert ge_domain_matches("基礎英文、應用英文、學術語文", ["學術語文"])
+    # 未命中 / 空值
+    assert not ge_domain_matches("文化與社會、第二外語", ["自然科學領域"])
+    assert not ge_domain_matches(None, ["第二外語"])
+    assert not ge_domain_matches("第二外語", None)
 
 
 def lang(cid, times, language, credits=3.0):

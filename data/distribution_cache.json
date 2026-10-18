@@ -1,0 +1,4718 @@
+{
+  "source": "live",
+  "semester": "1151",
+  "count": 186,
+  "conditions": {
+    "00001": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班；2. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "00002": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班；2. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "00003": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班；2. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "00004": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班；2. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "00005": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班；2. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "00006": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班；2. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "00007": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班；2. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "00008": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限申請校學士",
+          "學院:限理學院、工學院"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學院:限理學院、工學院；2. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學院",
+          "description": "限理學院、工學院",
+          "raw": "學院:限理學院、工學院"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "00009": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班；2. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "00011": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。指定課程:必須擋修LN0025；2. 學制:限學士班。指定課程:必須擋修CI0102；3. 身份:限申請校學士。指定課程:必須擋修LN0025；3. 身份:限申請校學士。指定課程:必須擋修CI0102",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。指定課程:必須擋修LN0025",
+          "raw": "學制:限學士班。指定課程:必須擋修LN0025"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班。指定課程:必須擋修CI0102",
+          "raw": "學制:限學士班。指定課程:必須擋修CI0102"
+        },
+        {
+          "priority": 3,
+          "category": "身份",
+          "description": "限申請校學士。指定課程:必須擋修LN0025",
+          "raw": "身份:限申請校學士。指定課程:必須擋修LN0025"
+        },
+        {
+          "priority": 3,
+          "category": "身份",
+          "description": "限申請校學士。指定課程:必須擋修CI0102",
+          "raw": "身份:限申請校學士。指定課程:必須擋修CI0102"
+        }
+      ]
+    },
+    "00012": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。指定課程:必須擋修LN0025；2. 身份:限申請校學士。指定課程:必須擋修LN0025",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。指定課程:必須擋修LN0025",
+          "raw": "學制:限學士班。指定課程:必須擋修LN0025"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士。指定課程:必須擋修LN0025",
+          "raw": "身份:限申請校學士。指定課程:必須擋修LN0025"
+        }
+      ]
+    },
+    "00013": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。指定課程:必須擋修LN0025；2. 身份:限申請校學士。指定課程:必須擋修LN0025",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。指定課程:必須擋修LN0025",
+          "raw": "學制:限學士班。指定課程:必須擋修LN0025"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士。指定課程:必須擋修LN0025",
+          "raw": "身份:限申請校學士。指定課程:必須擋修LN0025"
+        }
+      ]
+    },
+    "00014": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限申請校學士",
+          "學院:限理學院、工學院。指定課程:必須擋修LN0025"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學院:限理學院、工學院。指定課程:必須擋修LN0025；2. 身份:限申請校學士。指定課程:必須擋修LN0025",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學院",
+          "description": "限理學院、工學院。指定課程:必須擋修LN0025",
+          "raw": "學院:限理學院、工學院。指定課程:必須擋修LN0025"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士。指定課程:必須擋修LN0025",
+          "raw": "身份:限申請校學士。指定課程:必須擋修LN0025"
+        }
+      ]
+    },
+    "00015": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。指定課程:必須擋修LN0025；2. 身份:限申請校學士。指定課程:必須擋修LN0025",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。指定課程:必須擋修LN0025",
+          "raw": "學制:限學士班。指定課程:必須擋修LN0025"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士。指定課程:必須擋修LN0025",
+          "raw": "身份:限申請校學士。指定課程:必須擋修LN0025"
+        }
+      ]
+    },
+    "00016": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。指定課程:必須擋修LN0026；1. 學制:限學士班。指定課程:必須擋修CI0103；2. 身份:限申請校學士。指定課程:必須擋修LN0026；2. 身份:限申請校學士。指定課程:必須擋修CI0103",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。指定課程:必須擋修LN0026",
+          "raw": "學制:限學士班。指定課程:必須擋修LN0026"
+        },
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。指定課程:必須擋修CI0103",
+          "raw": "學制:限學士班。指定課程:必須擋修CI0103"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士。指定課程:必須擋修LN0026",
+          "raw": "身份:限申請校學士。指定課程:必須擋修LN0026"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士。指定課程:必須擋修CI0103",
+          "raw": "身份:限申請校學士。指定課程:必須擋修CI0103"
+        }
+      ]
+    },
+    "00017": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。指定課程:必須擋修CI0103；1. 學制:限學士班。指定課程:必須擋修LN0026；2. 身份:限申請校學士。指定課程:必須擋修LN0026；2. 身份:限申請校學士。指定課程:必須擋修CI0103",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。指定課程:必須擋修CI0103",
+          "raw": "學制:限學士班。指定課程:必須擋修CI0103"
+        },
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。指定課程:必須擋修LN0026",
+          "raw": "學制:限學士班。指定課程:必須擋修LN0026"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士。指定課程:必須擋修LN0026",
+          "raw": "身份:限申請校學士。指定課程:必須擋修LN0026"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士。指定課程:必須擋修CI0103",
+          "raw": "身份:限申請校學士。指定課程:必須擋修CI0103"
+        }
+      ]
+    },
+    "00018": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。指定課程:必須擋修CI0103；1. 學制:限學士班。指定課程:必須擋修LN0026；2. 身份:限申請校學士。指定課程:必須擋修LN0026；2. 身份:限申請校學士。指定課程:必須擋修CI0103",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。指定課程:必須擋修CI0103",
+          "raw": "學制:限學士班。指定課程:必須擋修CI0103"
+        },
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。指定課程:必須擋修LN0026",
+          "raw": "學制:限學士班。指定課程:必須擋修LN0026"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士。指定課程:必須擋修LN0026",
+          "raw": "身份:限申請校學士。指定課程:必須擋修LN0026"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士。指定課程:必須擋修CI0103",
+          "raw": "身份:限申請校學士。指定課程:必須擋修CI0103"
+        }
+      ]
+    },
+    "00019": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。指定課程:必須擋修LN0027；2. 身份:限申請校學士。指定課程:必須擋修LN0027",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。指定課程:必須擋修LN0027",
+          "raw": "學制:限學士班。指定課程:必須擋修LN0027"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士。指定課程:必須擋修LN0027",
+          "raw": "身份:限申請校學士。指定課程:必須擋修LN0027"
+        }
+      ]
+    },
+    "00020": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "",
+      "rows": []
+    },
+    "00021": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限申請校學士",
+          "指定課程:必須擋修CI0103",
+          "指定課程:必須擋修ME3097",
+          "指定課程:必須擋修LN0028"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 指定課程:必須擋修CI0103；1. 指定課程:必須擋修ME3097；1. 指定課程:必須擋修LN0028；2. 身份:限申請校學士。指定課程:必須擋修CI0103；2. 身份:限申請校學士。指定課程:必須擋修ME3097；2. 身份:限申請校學士。指定課程:必須擋修LN0028",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "指定課程",
+          "description": "必須擋修CI0103",
+          "raw": "指定課程:必須擋修CI0103"
+        },
+        {
+          "priority": 1,
+          "category": "指定課程",
+          "description": "必須擋修ME3097",
+          "raw": "指定課程:必須擋修ME3097"
+        },
+        {
+          "priority": 1,
+          "category": "指定課程",
+          "description": "必須擋修LN0028",
+          "raw": "指定課程:必須擋修LN0028"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士。指定課程:必須擋修CI0103",
+          "raw": "身份:限申請校學士。指定課程:必須擋修CI0103"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士。指定課程:必須擋修ME3097",
+          "raw": "身份:限申請校學士。指定課程:必須擋修ME3097"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士。指定課程:必須擋修LN0028",
+          "raw": "身份:限申請校學士。指定課程:必須擋修LN0028"
+        }
+      ]
+    },
+    "00022": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "00023": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "00024": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。指定課程:必須擋修LN0043",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。指定課程:必須擋修LN0043",
+          "raw": "學制:限學士班。指定課程:必須擋修LN0043"
+        }
+      ]
+    },
+    "00025": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "00026": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班；2. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "00027": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "00028": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "00029": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "指定課程:必須擋修LN0059"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 指定課程:必須擋修LN0059",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "指定課程",
+          "description": "必須擋修LN0059",
+          "raw": "指定課程:必須擋修LN0059"
+        }
+      ]
+    },
+    "00030": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班；2. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "00031": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班；2. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "00032": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。指定課程:必須擋修LN0065",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。指定課程:必須擋修LN0065",
+          "raw": "學制:限學士班。指定課程:必須擋修LN0065"
+        }
+      ]
+    },
+    "00033": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "00034": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "00035": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。指定課程:必須擋修LN0083、擋修LN0084",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。指定課程:必須擋修LN0083、擋修LN0084",
+          "raw": "學制:限學士班。指定課程:必須擋修LN0083、擋修LN0084"
+        }
+      ]
+    },
+    "00036": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "身份:限外籍生",
+          "身份:限僑生/交換生"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 身份:限外籍生；2. 身份:限僑生/交換生",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "身份",
+          "description": "限外籍生",
+          "raw": "身份:限外籍生"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限僑生/交換生",
+          "raw": "身份:限僑生/交換生"
+        }
+      ]
+    },
+    "00037": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。身份:限外籍生；2. 學制:限學士班。身份:限僑生/交換生",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。身份:限外籍生",
+          "raw": "學制:限學士班。身份:限外籍生"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班。身份:限僑生/交換生",
+          "raw": "學制:限學士班。身份:限僑生/交換生"
+        }
+      ]
+    },
+    "00038": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "身份:限外籍生",
+          "身份:限僑生/交換生"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 身份:限外籍生；2. 身份:限僑生/交換生",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "身份",
+          "description": "限外籍生",
+          "raw": "身份:限外籍生"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限僑生/交換生",
+          "raw": "身份:限僑生/交換生"
+        }
+      ]
+    },
+    "00039": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "身份:限外籍生",
+          "身份:限僑生/交換生"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 身份:限外籍生；2. 身份:限僑生/交換生",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "身份",
+          "description": "限外籍生",
+          "raw": "身份:限外籍生"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限僑生/交換生",
+          "raw": "身份:限僑生/交換生"
+        }
+      ]
+    },
+    "00040": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "身份:限外籍生",
+          "身份:限僑生/交換生"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 身份:限外籍生；2. 身份:限僑生/交換生",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "身份",
+          "description": "限外籍生",
+          "raw": "身份:限外籍生"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限僑生/交換生",
+          "raw": "身份:限僑生/交換生"
+        }
+      ]
+    },
+    "00041": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "身份:限外籍生",
+          "身份:限交換生"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 身份:限外籍生；2. 身份:限交換生",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "身份",
+          "description": "限外籍生",
+          "raw": "身份:限外籍生"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限交換生",
+          "raw": "身份:限交換生"
+        }
+      ]
+    },
+    "00042": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "身份:限外籍生",
+          "身份:限交換生"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 身份:限外籍生；2. 身份:限交換生",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "身份",
+          "description": "限外籍生",
+          "raw": "身份:限外籍生"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限交換生",
+          "raw": "身份:限交換生"
+        }
+      ]
+    },
+    "00043": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "身份:限外籍生",
+          "身份:限交換生"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 身份:限外籍生；1. 身份:限交換生",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "身份",
+          "description": "限外籍生",
+          "raw": "身份:限外籍生"
+        },
+        {
+          "priority": 1,
+          "category": "身份",
+          "description": "限交換生",
+          "raw": "身份:限交換生"
+        }
+      ]
+    },
+    "00044": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "身份:限外籍生",
+          "身份:限交換生"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 身份:限外籍生；2. 身份:限交換生",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "身份",
+          "description": "限外籍生",
+          "raw": "身份:限外籍生"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限交換生",
+          "raw": "身份:限交換生"
+        }
+      ]
+    },
+    "00045": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "身份:限外籍生",
+          "身份:限交換生"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 身份:限外籍生；2. 身份:限交換生",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "身份",
+          "description": "限外籍生",
+          "raw": "身份:限外籍生"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限交換生",
+          "raw": "身份:限交換生"
+        }
+      ]
+    },
+    "00046": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "身份:限外籍生",
+          "身份:限交換生"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 身份:限外籍生；2. 身份:限交換生",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "身份",
+          "description": "限外籍生",
+          "raw": "身份:限外籍生"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限交換生",
+          "raw": "身份:限交換生"
+        }
+      ]
+    },
+    "00047": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "土木工程學系",
+          "化學工程與材料工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限土木工程學系、化學工程與材料工程學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限土木工程學系、化學工程與材料工程學系。年級:限一年級",
+          "raw": "系所:限土木工程學系、化學工程與材料工程學系。年級:限一年級"
+        }
+      ]
+    },
+    "00048": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "機械工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限機械工程學系、工學院學士班。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限機械工程學系、工學院學士班。年級:限一年級",
+          "raw": "系所:限機械工程學系、工學院學士班。年級:限一年級"
+        }
+      ]
+    },
+    "00049": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "電機工程學系",
+          "通訊工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限電機工程學系、通訊工程學系、資訊電機學院學士班、生醫科學與工程學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限電機工程學系、通訊工程學系、資訊電機學院學士班、生醫科學與工程學系。年級:限一年級",
+          "raw": "系所:限電機工程學系、通訊工程學系、資訊電機學院學士班、生醫科學與工程學系。年級:限一年級"
+        }
+      ]
+    },
+    "00050": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "土木工程學系",
+          "化學工程與材料工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限土木工程學系、化學工程與材料工程學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限土木工程學系、化學工程與材料工程學系。年級:限一年級",
+          "raw": "系所:限土木工程學系、化學工程與材料工程學系。年級:限一年級"
+        }
+      ]
+    },
+    "00051": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "土木工程學系",
+          "化學工程與材料工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限土木工程學系、化學工程與材料工程學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限土木工程學系、化學工程與材料工程學系。年級:限一年級",
+          "raw": "系所:限土木工程學系、化學工程與材料工程學系。年級:限一年級"
+        }
+      ]
+    },
+    "00052": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "機械工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限機械工程學系、工學院學士班。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限機械工程學系、工學院學士班。年級:限一年級",
+          "raw": "系所:限機械工程學系、工學院學士班。年級:限一年級"
+        }
+      ]
+    },
+    "00053": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "機械工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限機械工程學系、工學院學士班。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限機械工程學系、工學院學士班。年級:限一年級",
+          "raw": "系所:限機械工程學系、工學院學士班。年級:限一年級"
+        }
+      ]
+    },
+    "00054": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "電機工程學系",
+          "通訊工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限電機工程學系、通訊工程學系、資訊電機學院學士班、生醫科學與工程學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限電機工程學系、通訊工程學系、資訊電機學院學士班、生醫科學與工程學系。年級:限一年級",
+          "raw": "系所:限電機工程學系、通訊工程學系、資訊電機學院學士班、生醫科學與工程學系。年級:限一年級"
+        }
+      ]
+    },
+    "00055": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "電機工程學系",
+          "通訊工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限電機工程學系、通訊工程學系、資訊電機學院學士班、生醫科學與工程學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限電機工程學系、通訊工程學系、資訊電機學院學士班、生醫科學與工程學系。年級:限一年級",
+          "raw": "系所:限電機工程學系、通訊工程學系、資訊電機學院學士班、生醫科學與工程學系。年級:限一年級"
+        }
+      ]
+    },
+    "00056": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "資訊工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限資訊工程學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限資訊工程學系。年級:限一年級",
+          "raw": "系所:限資訊工程學系。年級:限一年級"
+        }
+      ]
+    },
+    "00057": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "土木工程學系",
+          "化學工程與材料工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限土木工程學系、化學工程與材料工程學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限土木工程學系、化學工程與材料工程學系。年級:限一年級",
+          "raw": "系所:限土木工程學系、化學工程與材料工程學系。年級:限一年級"
+        }
+      ]
+    },
+    "00058": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "機械工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限機械工程學系、工學院學士班。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限機械工程學系、工學院學士班。年級:限一年級",
+          "raw": "系所:限機械工程學系、工學院學士班。年級:限一年級"
+        }
+      ]
+    },
+    "00059": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "電機工程學系",
+          "通訊工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限電機工程學系、通訊工程學系、資訊電機學院學士班、生醫科學與工程學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限電機工程學系、通訊工程學系、資訊電機學院學士班、生醫科學與工程學系。年級:限一年級",
+          "raw": "系所:限電機工程學系、通訊工程學系、資訊電機學院學士班、生醫科學與工程學系。年級:限一年級"
+        }
+      ]
+    },
+    "00060": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "電機工程學系",
+          "通訊工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限電機工程學系、通訊工程學系、資訊電機學院學士班、生醫科學與工程學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限電機工程學系、通訊工程學系、資訊電機學院學士班、生醫科學與工程學系。年級:限一年級",
+          "raw": "系所:限電機工程學系、通訊工程學系、資訊電機學院學士班、生醫科學與工程學系。年級:限一年級"
+        }
+      ]
+    },
+    "00061": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "資訊工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限資訊工程學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限資訊工程學系。年級:限一年級",
+          "raw": "系所:限資訊工程學系。年級:限一年級"
+        }
+      ]
+    },
+    "00062": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [
+          "資訊工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。系所:限資訊工程學系",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。系所:限資訊工程學系",
+          "raw": "學制:限學士班。系所:限資訊工程學系"
+        }
+      ]
+    },
+    "00063": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "大氣科學學系",
+          "地球科學學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限大氣科學學系、地球科學學系、地球科學學院學士班、太空科學與工程學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限大氣科學學系、地球科學學系、地球科學學院學士班、太空科學與工程學系。年級:限一年級",
+          "raw": "系所:限大氣科學學系、地球科學學系、地球科學學院學士班、太空科學與工程學系。年級:限一年級"
+        }
+      ]
+    },
+    "00064": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "數學系",
+          "物理學系",
+          "化學學系",
+          "光電科學與工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限數學系、物理學系、化學學系、光電科學與工程學系、理學院學士班、生命科學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限數學系、物理學系、化學學系、光電科學與工程學系、理學院學士班、生命科學系。年級:限一年級",
+          "raw": "系所:限數學系、物理學系、化學學系、光電科學與工程學系、理學院學士班、生命科學系。年級:限一年級"
+        }
+      ]
+    },
+    "00065": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "數學系",
+          "物理學系",
+          "化學學系",
+          "光電科學與工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限數學系、物理學系、化學學系、光電科學與工程學系、理學院學士班、生命科學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限數學系、物理學系、化學學系、光電科學與工程學系、理學院學士班、生命科學系。年級:限一年級",
+          "raw": "系所:限數學系、物理學系、化學學系、光電科學與工程學系、理學院學士班、生命科學系。年級:限一年級"
+        }
+      ]
+    },
+    "00066": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "大氣科學學系",
+          "地球科學學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限大氣科學學系、地球科學學系、地球科學學院學士班、太空科學與工程學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限大氣科學學系、地球科學學系、地球科學學院學士班、太空科學與工程學系。年級:限一年級",
+          "raw": "系所:限大氣科學學系、地球科學學系、地球科學學院學士班、太空科學與工程學系。年級:限一年級"
+        }
+      ]
+    },
+    "00067": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "數學系",
+          "物理學系",
+          "化學學系",
+          "光電科學與工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限數學系、物理學系、化學學系、光電科學與工程學系、理學院學士班、生命科學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限數學系、物理學系、化學學系、光電科學與工程學系、理學院學士班、生命科學系。年級:限一年級",
+          "raw": "系所:限數學系、物理學系、化學學系、光電科學與工程學系、理學院學士班、生命科學系。年級:限一年級"
+        }
+      ]
+    },
+    "00068": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "數學系",
+          "物理學系",
+          "化學學系",
+          "光電科學與工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限數學系、物理學系、化學學系、光電科學與工程學系、理學院學士班、生命科學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限數學系、物理學系、化學學系、光電科學與工程學系、理學院學士班、生命科學系。年級:限一年級",
+          "raw": "系所:限數學系、物理學系、化學學系、光電科學與工程學系、理學院學士班、生命科學系。年級:限一年級"
+        }
+      ]
+    },
+    "00069": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "大氣科學學系",
+          "地球科學學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限大氣科學學系、地球科學學系、地球科學學院學士班、太空科學與工程學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限大氣科學學系、地球科學學系、地球科學學院學士班、太空科學與工程學系。年級:限一年級",
+          "raw": "系所:限大氣科學學系、地球科學學系、地球科學學院學士班、太空科學與工程學系。年級:限一年級"
+        }
+      ]
+    },
+    "00070": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "數學系",
+          "物理學系",
+          "化學學系",
+          "光電科學與工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限數學系、物理學系、化學學系、光電科學與工程學系、理學院學士班。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限數學系、物理學系、化學學系、光電科學與工程學系、理學院學士班。年級:限一年級",
+          "raw": "系所:限數學系、物理學系、化學學系、光電科學與工程學系、理學院學士班。年級:限一年級"
+        }
+      ]
+    },
+    "00071": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "數學系",
+          "物理學系",
+          "化學學系",
+          "光電科學與工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限數學系、物理學系、化學學系、光電科學與工程學系、理學院學士班、生命科學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限數學系、物理學系、化學學系、光電科學與工程學系、理學院學士班、生命科學系。年級:限一年級",
+          "raw": "系所:限數學系、物理學系、化學學系、光電科學與工程學系、理學院學士班、生命科學系。年級:限一年級"
+        }
+      ]
+    },
+    "00072": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "資訊管理學系",
+          "財務金融學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限資訊管理學系、財務金融學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限資訊管理學系、財務金融學系。年級:限一年級",
+          "raw": "系所:限資訊管理學系、財務金融學系。年級:限一年級"
+        }
+      ]
+    },
+    "00073": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "企業管理學系",
+          "經濟學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限企業管理學系、經濟學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限企業管理學系、經濟學系。年級:限一年級",
+          "raw": "系所:限企業管理學系、經濟學系。年級:限一年級"
+        }
+      ]
+    },
+    "00074": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "資訊管理學系",
+          "財務金融學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限資訊管理學系、財務金融學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限資訊管理學系、財務金融學系。年級:限一年級",
+          "raw": "系所:限資訊管理學系、財務金融學系。年級:限一年級"
+        }
+      ]
+    },
+    "00075": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "企業管理學系",
+          "經濟學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限企業管理學系、經濟學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限企業管理學系、經濟學系。年級:限一年級",
+          "raw": "系所:限企業管理學系、經濟學系。年級:限一年級"
+        }
+      ]
+    },
+    "00076": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "企業管理學系",
+          "經濟學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限企業管理學系、經濟學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限企業管理學系、經濟學系。年級:限一年級",
+          "raw": "系所:限企業管理學系、經濟學系。年級:限一年級"
+        }
+      ]
+    },
+    "00077": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "資訊管理學系",
+          "財務金融學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限資訊管理學系、財務金融學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限資訊管理學系、財務金融學系。年級:限一年級",
+          "raw": "系所:限資訊管理學系、財務金融學系。年級:限一年級"
+        }
+      ]
+    },
+    "00078": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "資訊管理學系",
+          "財務金融學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限資訊管理學系、財務金融學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限資訊管理學系、財務金融學系。年級:限一年級",
+          "raw": "系所:限資訊管理學系、財務金融學系。年級:限一年級"
+        }
+      ]
+    },
+    "00079": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "企業管理學系",
+          "經濟學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限企業管理學系、經濟學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限企業管理學系、經濟學系。年級:限一年級",
+          "raw": "系所:限企業管理學系、經濟學系。年級:限一年級"
+        }
+      ]
+    },
+    "00080": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "中國文學系",
+          "法國語文學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限中國文學系、法國語文學系、文學院學士班、客家語文暨社會科學學系、法律與政府學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限中國文學系、法國語文學系、文學院學士班、客家語文暨社會科學學系、法律與政府學系。年級:限一年級",
+          "raw": "系所:限中國文學系、法國語文學系、文學院學士班、客家語文暨社會科學學系、法律與政府學系。年級:限一年級"
+        }
+      ]
+    },
+    "00081": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "中國文學系",
+          "法國語文學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限中國文學系、法國語文學系、文學院學士班、客家語文暨社會科學學系、法律與政府學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限中國文學系、法國語文學系、文學院學士班、客家語文暨社會科學學系、法律與政府學系。年級:限一年級",
+          "raw": "系所:限中國文學系、法國語文學系、文學院學士班、客家語文暨社會科學學系、法律與政府學系。年級:限一年級"
+        }
+      ]
+    },
+    "00082": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "中國文學系",
+          "法國語文學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限中國文學系、法國語文學系、文學院學士班、客家語文暨社會科學學系、法律與政府學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限中國文學系、法國語文學系、文學院學士班、客家語文暨社會科學學系、法律與政府學系。年級:限一年級",
+          "raw": "系所:限中國文學系、法國語文學系、文學院學士班、客家語文暨社會科學學系、法律與政府學系。年級:限一年級"
+        }
+      ]
+    },
+    "00083": {
+      "condition": {
+        "min_grade": 1,
+        "allowed_depts": [
+          "中國文學系",
+          "法國語文學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。系所:限中國文學系、法國語文學系、文學院學士班、客家語文暨社會科學學系、法律與政府學系。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。系所:限中國文學系、法國語文學系、文學院學士班、客家語文暨社會科學學系、法律與政府學系。年級:限一年級",
+          "raw": "學制:限學士班。系所:限中國文學系、法國語文學系、文學院學士班、客家語文暨社會科學學系、法律與政府學系。年級:限一年級"
+        }
+      ]
+    },
+    "00084": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "00085": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "",
+      "rows": []
+    },
+    "00086": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "00087": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "00088": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "00089": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "00091": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。學院:限理學院；2. 學制:限學士班。學院:限工學院；3. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。學院:限理學院",
+          "raw": "學制:限學士班。學院:限理學院"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班。學院:限工學院",
+          "raw": "學制:限學士班。學院:限工學院"
+        },
+        {
+          "priority": 3,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "00092": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。學院:限地球科學學院；2. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。學院:限地球科學學院",
+          "raw": "學制:限學士班。學院:限地球科學學院"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "00095": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "00096": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "00098": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "00100": {
+      "condition": {
+        "min_grade": 4,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。年級:限四年級；2. 學制:限學士班。年級:限三年級；3. 學制:限學士班。年級:限二年級；4. 學制:限學士班。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。年級:限四年級",
+          "raw": "學制:限學士班。年級:限四年級"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班。年級:限三年級",
+          "raw": "學制:限學士班。年級:限三年級"
+        },
+        {
+          "priority": 3,
+          "category": "學制",
+          "description": "限學士班。年級:限二年級",
+          "raw": "學制:限學士班。年級:限二年級"
+        },
+        {
+          "priority": 4,
+          "category": "學制",
+          "description": "限學士班。年級:限一年級",
+          "raw": "學制:限學士班。年級:限一年級"
+        }
+      ]
+    },
+    "00101": {
+      "condition": {
+        "min_grade": 4,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。年級:限四年級；2. 學制:限學士班。年級:限三年級；3. 學制:限學士班。年級:限二年級；4. 學制:限學士班。年級:限一年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。年級:限四年級",
+          "raw": "學制:限學士班。年級:限四年級"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班。年級:限三年級",
+          "raw": "學制:限學士班。年級:限三年級"
+        },
+        {
+          "priority": 3,
+          "category": "學制",
+          "description": "限學士班。年級:限二年級",
+          "raw": "學制:限學士班。年級:限二年級"
+        },
+        {
+          "priority": 4,
+          "category": "學制",
+          "description": "限學士班。年級:限一年級",
+          "raw": "學制:限學士班。年級:限一年級"
+        }
+      ]
+    },
+    "00102": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "00103": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "00104": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "00106": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "00107": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "00108": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限碩士班",
+          "系所:限遙測科技碩士學位學程、環境科技博士學位學程(台灣聯合大學系統)、光電科學與工程學系光電產業碩士專班、跨領域神經科學博士學位學程(台灣聯合大學系統)。指定課程:必須禁修LN4901"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限碩士班、博士班。指定課程:必須禁修LN4901；2. 系所:限遙測科技碩士學位學程、環境科技博士學位學程(台灣聯合大學系統)、光電科學與工程學系光電產業碩士專班、跨領域神經科學博士學位學程(台灣聯合大學系統)。指定課程:必須禁修LN4901",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限碩士班、博士班。指定課程:必須禁修LN4901",
+          "raw": "學制:限碩士班、博士班。指定課程:必須禁修LN4901"
+        },
+        {
+          "priority": 2,
+          "category": "系所",
+          "description": "限遙測科技碩士學位學程、環境科技博士學位學程(台灣聯合大學系統)、光電科學與工程學系光電產業碩士專班、跨領域神經科學博士學位學程(台灣聯合大學系統)。指定課程:必須禁修LN4901",
+          "raw": "系所:限遙測科技碩士學位學程、環境科技博士學位學程(台灣聯合大學系統)、光電科學與工程學系光電產業碩士專班、跨領域神經科學博士學位學程(台灣聯合大學系統)。指定課程:必須禁修LN4901"
+        }
+      ]
+    },
+    "00109": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "",
+      "rows": []
+    },
+    "00110": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "",
+      "rows": []
+    },
+    "07001": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "07003": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者。指定課程:必須禁修HI0014；2. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者。指定課程:必須禁修HI0014",
+          "raw": "學制:限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者。指定課程:必須禁修HI0014"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "07004": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者；2. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者",
+          "raw": "學制:限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "07005": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者；2. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者",
+          "raw": "學制:限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "07006": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者；2. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者",
+          "raw": "學制:限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "07007": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "07008": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。學院:限非生醫理工學院。身份:限尚未取得與此課程同領域之核心必修通識課程學分者；2. 學制:限學士班。學院:限非生醫理工學院",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。學院:限非生醫理工學院。身份:限尚未取得與此課程同領域之核心必修通識課程學分者",
+          "raw": "學制:限學士班。學院:限非生醫理工學院。身份:限尚未取得與此課程同領域之核心必修通識課程學分者"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班。學院:限非生醫理工學院",
+          "raw": "學制:限學士班。學院:限非生醫理工學院"
+        }
+      ]
+    },
+    "07009": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。學院:限非地球科學學院。指定課程:必須禁修AP1010、禁修GP1010；2. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。學院:限非地球科學學院。指定課程:必須禁修AP1010、禁修GP1010",
+          "raw": "學制:限學士班。學院:限非地球科學學院。指定課程:必須禁修AP1010、禁修GP1010"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "07010": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、生醫理工學院",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、生醫理工學院",
+          "raw": "學制:限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、生醫理工學院"
+        }
+      ]
+    },
+    "07011": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者",
+          "raw": "學制:限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者"
+        }
+      ]
+    },
+    "07012": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。學院:限非地球科學學院。指定課程:必須禁修CC0205；2. 學制:限學士班。學院:限非地球科學學院。指定課程:必須禁修CC0205",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。學院:限非地球科學學院。指定課程:必須禁修CC0205",
+          "raw": "學制:限學士班。學院:限非地球科學學院。指定課程:必須禁修CC0205"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班。學院:限非地球科學學院。指定課程:必須禁修CC0205",
+          "raw": "學制:限學士班。學院:限非地球科學學院。指定課程:必須禁修CC0205"
+        }
+      ]
+    },
+    "07013": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者；2. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者",
+          "raw": "學制:限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "07014": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者；2. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者",
+          "raw": "學制:限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "07015": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者。指定課程:必須禁修CC0216；2. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者。指定課程:必須禁修CC0216",
+          "raw": "學制:限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者。指定課程:必須禁修CC0216"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "07016": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。學院:限文學院、工學院、管理學院、資訊電機學院、地球科學學院、客家學院",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。學院:限文學院、工學院、管理學院、資訊電機學院、地球科學學院、客家學院",
+          "raw": "學制:限學士班。學院:限文學院、工學院、管理學院、資訊電機學院、地球科學學院、客家學院"
+        }
+      ]
+    },
+    "07017": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班；2. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "07018": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者；2. 學制:限學士班；3. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者",
+          "raw": "學制:限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 3,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "07019": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者；2. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者",
+          "raw": "學制:限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "07020": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者；2. 學制:限學士班；3. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者",
+          "raw": "學制:限學士班。身份:限尚未取得與此課程同領域之核心必修通識課程學分者"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 3,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "07021": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "2. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "07022": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "07023": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09001": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09002": {
+      "condition": {
+        "min_grade": 2,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。年級:限二年級、三年級、四年級、五年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。年級:限二年級、三年級、四年級、五年級",
+          "raw": "學制:限學士班。年級:限二年級、三年級、四年級、五年級"
+        }
+      ]
+    },
+    "09003": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09004": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09005": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09006": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。系所:限學分學程-跨領域榮譽；2. 學制:限學士班；3. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。系所:限學分學程-跨領域榮譽",
+          "raw": "學制:限學士班。系所:限學分學程-跨領域榮譽"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 3,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "09007": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09008": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、生醫理工學院；2. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、生醫理工學院",
+          "raw": "學制:限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、生醫理工學院"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09009": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09010": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09011": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班；2. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "09012": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09013": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班；2. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "09014": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士",
+          "系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)；2. 學制:限學士班。學院:限文學院、管理學院、地球科學學院、客家學院、生醫理工學院；3. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)",
+          "raw": "系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班。學院:限文學院、管理學院、地球科學學院、客家學院、生醫理工學院",
+          "raw": "學制:限學士班。學院:限文學院、管理學院、地球科學學院、客家學院、生醫理工學院"
+        },
+        {
+          "priority": 3,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "09015": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09016": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班；2. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "09017": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09018": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09019": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09020": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09022": {
+      "condition": {
+        "min_grade": 2,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。系所:限學分學程-跨領域社會參與。年級:限二年級",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。系所:限學分學程-跨領域社會參與。年級:限二年級",
+          "raw": "學制:限學士班。系所:限學分學程-跨領域社會參與。年級:限二年級"
+        }
+      ]
+    },
+    "09023": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09024": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09025": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09026": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09027": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09028": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09029": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09030": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09031": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、生醫理工學院；2. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、生醫理工學院",
+          "raw": "學制:限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、生醫理工學院"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09032": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、客家學院、生醫理工學院；2. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、客家學院、生醫理工學院",
+          "raw": "學制:限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、客家學院、生醫理工學院"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09033": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、客家學院、生醫理工學院；2. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、客家學院、生醫理工學院",
+          "raw": "學制:限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、客家學院、生醫理工學院"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09034": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "2. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09035": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09036": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、生醫理工學院；2. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、生醫理工學院",
+          "raw": "學制:限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、生醫理工學院"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09037": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班；2. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "09038": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、生醫理工學院；2. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、生醫理工學院",
+          "raw": "學制:限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、生醫理工學院"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09039": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)；2. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)",
+          "raw": "學制:限學士班。系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09040": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士",
+          "系所:限學分學程-創意、學分學程-創意與創業"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限學分學程-創意、學分學程-創意與創業；2. 學制:限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、生醫理工學院；3. 學制:限學士班；4. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限學分學程-創意、學分學程-創意與創業",
+          "raw": "系所:限學分學程-創意、學分學程-創意與創業"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、生醫理工學院",
+          "raw": "學制:限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、生醫理工學院"
+        },
+        {
+          "priority": 3,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 4,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "09041": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士",
+          "系所:限學分學程-創意、學分學程-創意與創業"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限學分學程-創意、學分學程-創意與創業；2. 學制:限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、生醫理工學院；3. 學制:限學士班；4. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限學分學程-創意、學分學程-創意與創業",
+          "raw": "系所:限學分學程-創意、學分學程-創意與創業"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、生醫理工學院",
+          "raw": "學制:限學士班。學院:限理學院、工學院、資訊電機學院、地球科學學院、生醫理工學院"
+        },
+        {
+          "priority": 3,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 4,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "09042": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。學院:限文學院、理學院、工學院、管理學院；2. 學制:限學士班。學院:限非地球科學學院",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。學院:限文學院、理學院、工學院、管理學院",
+          "raw": "學制:限學士班。學院:限文學院、理學院、工學院、管理學院"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班。學院:限非地球科學學院",
+          "raw": "學制:限學士班。學院:限非地球科學學院"
+        }
+      ]
+    },
+    "09043": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09044": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09045": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09046": {
+      "condition": {
+        "min_grade": 3,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。年級:限三年級、四年級；2. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。年級:限三年級、四年級",
+          "raw": "學制:限學士班。年級:限三年級、四年級"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09047": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09048": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [
+          "企業管理學系",
+          "財務金融學系",
+          "經濟學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。系所:限學分學程-人工智慧跨域應用(文)；2. 學制:限學士班。學院:限管理學院。系所:限企業管理學系、財務金融學系、經濟學系；2. 學制:限學士班。學院:限文學院、客家學院；3. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。系所:限學分學程-人工智慧跨域應用(文)",
+          "raw": "學制:限學士班。系所:限學分學程-人工智慧跨域應用(文)"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班。學院:限管理學院。系所:限企業管理學系、財務金融學系、經濟學系",
+          "raw": "學制:限學士班。學院:限管理學院。系所:限企業管理學系、財務金融學系、經濟學系"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班。學院:限文學院、客家學院",
+          "raw": "學制:限學士班。學院:限文學院、客家學院"
+        },
+        {
+          "priority": 3,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "09049": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [
+          "企業管理學系",
+          "財務金融學系",
+          "經濟學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。系所:限學分學程-人工智慧跨域應用(文)；2. 系所:限企業管理學系、財務金融學系、經濟學系；2. 學制:限學士班。學院:限文學院、客家學院；3. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。系所:限學分學程-人工智慧跨域應用(文)",
+          "raw": "學制:限學士班。系所:限學分學程-人工智慧跨域應用(文)"
+        },
+        {
+          "priority": 2,
+          "category": "系所",
+          "description": "限企業管理學系、財務金融學系、經濟學系",
+          "raw": "系所:限企業管理學系、財務金融學系、經濟學系"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班。學院:限文學院、客家學院",
+          "raw": "學制:限學士班。學院:限文學院、客家學院"
+        },
+        {
+          "priority": 3,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "09050": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。系所:限學分學程-跨領域榮譽；2. 學制:限學士班；3. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。系所:限學分學程-跨領域榮譽",
+          "raw": "學制:限學士班。系所:限學分學程-跨領域榮譽"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 3,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "09051": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)；2. 學制:限學士班；3. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)",
+          "raw": "學制:限學士班。系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 3,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "09052": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)；2. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)",
+          "raw": "學制:限學士班。系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09053": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)；2. 學制:限學士班；3. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)",
+          "raw": "學制:限學士班。系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 3,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "09054": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [
+          "非資訊管理學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士",
+          "系所:限微學程-智慧永續生活、微學程-智慧數據分析與應用"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限微學程-智慧永續生活、微學程-智慧數據分析與應用；1. 學制:限學士班。學院:限文學院、管理學院、客家學院。系所:限非資訊管理學系；2. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限微學程-智慧永續生活、微學程-智慧數據分析與應用",
+          "raw": "系所:限微學程-智慧永續生活、微學程-智慧數據分析與應用"
+        },
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。學院:限文學院、管理學院、客家學院。系所:限非資訊管理學系",
+          "raw": "學制:限學士班。學院:限文學院、管理學院、客家學院。系所:限非資訊管理學系"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "09055": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)；2. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)",
+          "raw": "學制:限學士班。系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "09056": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "",
+      "rows": []
+    },
+    "09057": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)；2. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)",
+          "raw": "學制:限學士班。系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09058": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "系所:限學分學程-科技與社會"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限學分學程-科技與社會；2. 學制:限學士班。學院:限文學院、管理學院、客家學院；3. 學制:限學士班",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限學分學程-科技與社會",
+          "raw": "系所:限學分學程-科技與社會"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班。學院:限文學院、管理學院、客家學院",
+          "raw": "學制:限學士班。學院:限文學院、管理學院、客家學院"
+        },
+        {
+          "priority": 3,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        }
+      ]
+    },
+    "09059": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [
+          "非資訊管理學系",
+          "非資訊工程學系"
+        ],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士",
+          "系所:限微學程-智慧永續生活、微學程-智慧數據分析與應用"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 系所:限微學程-智慧永續生活、微學程-智慧數據分析與應用；1. 學制:限學士班。學院:限文學院、管理學院、客家學院。系所:限非資訊管理學系、非資訊工程學系；2. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限微學程-智慧永續生活、微學程-智慧數據分析與應用",
+          "raw": "系所:限微學程-智慧永續生活、微學程-智慧數據分析與應用"
+        },
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。學院:限文學院、管理學院、客家學院。系所:限非資訊管理學系、非資訊工程學系",
+          "raw": "學制:限學士班。學院:限文學院、管理學院、客家學院。系所:限非資訊管理學系、非資訊工程學系"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "09060": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士",
+          "系所:限微學程-智慧永續生活、微學程-智慧數據分析與應用"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)；1. 系所:限微學程-智慧永續生活、微學程-智慧數據分析與應用；2. 學制:限學士班；3. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)",
+          "raw": "學制:限學士班。系所:限學分學程-人工智慧跨域應用(理)、學分學程-人工智慧跨域應用(文)"
+        },
+        {
+          "priority": 1,
+          "category": "系所",
+          "description": "限微學程-智慧永續生活、微學程-智慧數據分析與應用",
+          "raw": "系所:限微學程-智慧永續生活、微學程-智慧數據分析與應用"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 3,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "09061": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班。學院:限文學院、管理學院、客家學院；2. 學制:限學士班；3. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班。學院:限文學院、管理學院、客家學院",
+          "raw": "學制:限學士班。學院:限文學院、管理學院、客家學院"
+        },
+        {
+          "priority": 2,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 3,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    },
+    "09062": {
+      "condition": {
+        "min_grade": null,
+        "allowed_depts": [],
+        "prerequisites": [],
+        "other_conditions": [
+          "限學士班",
+          "限申請校學士"
+        ],
+        "unparsed": "",
+        "confidence": "high"
+      },
+      "raw": "1. 學制:限學士班；2. 身份:限申請校學士",
+      "rows": [
+        {
+          "priority": 1,
+          "category": "學制",
+          "description": "限學士班",
+          "raw": "學制:限學士班"
+        },
+        {
+          "priority": 2,
+          "category": "身份",
+          "description": "限申請校學士",
+          "raw": "身份:限申請校學士"
+        }
+      ]
+    }
+  }
+}

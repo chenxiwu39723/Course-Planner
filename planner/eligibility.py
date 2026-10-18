@@ -30,6 +30,7 @@ UNKNOWN = "無法判斷"
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 CACHE_PATH = PROJECT_ROOT / "data" / "eligibility_cache.json"
+DISTRIBUTION_CACHE_PATH = PROJECT_ROOT / "data" / "distribution_cache.json"
 
 _CN_NUM = {"一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6, "七": 7, "大一": 1}
 
@@ -99,11 +100,13 @@ def keyword_parse(notes: str) -> EligibilityCondition:
     if m and m.group(1) in _CN_NUM:
         cond.min_grade = _CN_NUM[m.group(1)]
 
-    # 限定系所：如「限資工系」「限通訊工程學系」「限本系」
-    for dm in re.finditer(r"限([一-龥]{2,10}?(?:系|學系|系所|所))", text):
-        name = dm.group(1)
-        if name not in cond.allowed_depts:
-            cond.allowed_depts.append(name)
+    # 限定系所：如「限資工系」「限通訊工程學系」；並處理「、」並列多系所
+    _DEPT = r"[一-龥]{2,12}?(?:系|學系|系所|所)"
+    for dm in re.finditer(rf"限({_DEPT}(?:、{_DEPT})*)", text):
+        for name in dm.group(1).split("、"):
+            name = name.strip()
+            if name and name not in cond.allowed_depts:
+                cond.allowed_depts.append(name)
 
     # 先修：如「須先修微積分」「先修資料結構」「須修畢XXX」
     _PRE_STOP = {"課程", "課", "科目", "者", "完畢", "畢業", "及格"}
@@ -277,10 +280,60 @@ def load_cache(path: Path = CACHE_PATH) -> dict[str, EligibilityCondition]:
     return out
 
 
+def _dedup(*lists: list[str]) -> list[str]:
+    """合併多個字串清單並去重（保留先出現者）。"""
+    out: list[str] = []
+    for lst in lists:
+        for x in lst:
+            if x not in out:
+                out.append(x)
+    return out
+
+
+def merge_conditions(notes_cond: EligibilityCondition,
+                     dist_cond: EligibilityCondition) -> EligibilityCondition:
+    """合併備註條件與分發條件（結構化）。分發條件較可靠，年級以其為優先。"""
+    if dist_cond.is_empty():
+        return notes_cond
+    return EligibilityCondition(
+        min_grade=dist_cond.min_grade if dist_cond.min_grade is not None else notes_cond.min_grade,
+        allowed_depts=_dedup(dist_cond.allowed_depts, notes_cond.allowed_depts),
+        prerequisites=_dedup(dist_cond.prerequisites, notes_cond.prerequisites),
+        other_conditions=_dedup(dist_cond.other_conditions, notes_cond.other_conditions),
+        unparsed=notes_cond.unparsed,
+        confidence="high",            # 來自結構化分發條件
+    )
+
+
+def load_distribution(path: Path = DISTRIBUTION_CACHE_PATH
+                      ) -> dict[str, EligibilityCondition]:
+    """載入分發條件快取（課號 → 結構化條件）。檔案不存在回空 dict。"""
+    if not path.exists():
+        return {}
+    raw = json.loads(path.read_text(encoding="utf-8"))
+    items = raw.get("conditions", {}) if isinstance(raw, dict) else {}
+    out: dict[str, EligibilityCondition] = {}
+    for cid, entry in items.items():
+        cond_raw = entry.get("condition") if isinstance(entry, dict) else None
+        c = _coerce_condition(cond_raw) if cond_raw is not None else None
+        if c is not None:
+            out[cid] = c
+    return out
+
+
 def evaluate(course_id: str, raw_notes: str, user: UserProfile,
-             cache: dict[str, EligibilityCondition]) -> EligibilityResult:
-    """網頁使用：用快取的條件（不即時呼叫 AI）比對使用者，回傳判定結果。"""
+             cache: dict[str, EligibilityCondition],
+             distribution: dict[str, EligibilityCondition] | None = None
+             ) -> EligibilityResult:
+    """網頁使用：用快取的條件（不即時呼叫 AI）比對使用者，回傳判定結果。
+
+    distribution 給定且含此課號時，與備註條件合併（結構化分發條件優先）。
+    """
     cond = cache.get(course_id)
     if cond is None:
         cond = keyword_parse(raw_notes)  # 快取缺漏時的即時非 AI 退路
+    if distribution:
+        dist = distribution.get(course_id)
+        if dist is not None:
+            cond = merge_conditions(cond, dist)
     return match(cond, user, raw_notes)
