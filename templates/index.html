@@ -20,7 +20,10 @@
   </div>
   {% endif %}
 
-  <main class="wrap">
+  <div id="meta-status" class="wrap status-bar" aria-live="polite"></div>
+
+  <main class="wrap layout">
+   <div class="col-input">
     <!-- 步驟 1 -->
     <section class="card step" id="step1">
       <h2><span class="num">1</span> 我的資料</h2>
@@ -49,6 +52,11 @@
         <input id="fixed-search" placeholder="搜尋課名 / 課號 / 教師…">
         <button id="fixed-search-btn" class="btn">搜尋</button>
       </div>
+      <div class="row filters">
+        <select id="f-category"><option value="">全部類別</option></select>
+        <select id="f-gedomain"><option value="">全部通識領域</option></select>
+      </div>
+      <p id="fixed-search-status" class="hint" aria-live="polite"></p>
       <ul id="fixed-search-results" class="result-list"></ul>
       <div id="fixed-chips" class="chips"></div>
     </section>
@@ -61,6 +69,7 @@
           placeholder="例：不要早八、週五想空著、想學資料分析相關、修 6 到 9 學分"></textarea>
       </label>
       <button id="parse-btn" class="btn">解析偏好</button>
+      <span id="parse-status" class="hint" aria-live="polite"></span>
 
       <div id="pref-parsed" class="parsed hidden">
         <p class="hint">以下是解析結果，你可以直接修改後再產生課表：</p>
@@ -85,17 +94,21 @@
         </div>
       </div>
     </section>
+   </div><!-- /col-input -->
 
+   <div class="col-output">
     <!-- 步驟 3 -->
     <section class="card step" id="step3">
       <h2><span class="num">3</span> 推薦結果</h2>
       <button id="gen-btn" class="btn btn-primary">產生課表</button>
-      <p id="gen-status" class="hint"></p>
+      <p id="gen-status" class="hint" aria-live="polite"></p>
 
       <div id="scheme-tabs" class="tabs"></div>
       <div id="schedule-grid"></div>
       <div id="schedule-courses"></div>
+      <p id="schedule-empty" class="empty-state">填好上方資料後，按「產生課表」即可看到建議的週課表與推薦理由。</p>
     </section>
+   </div><!-- /col-output -->
   </main>
 
   <footer class="site-footer">
