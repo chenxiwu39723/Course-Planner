@@ -1,4 +1,4 @@
-# 中大 AI 選課助理（NCU ）— 原型
+# 中大 AI 選課助理（NCU Course Planner）— 原型
 
 > 參加「Microsoft × NCU AI Innovation Demo Day」的可測試原型。
 > 核心理念：**AI 負責「理解」，演算法負責「排課」。**
@@ -63,6 +63,10 @@ cp .env.example .env     # 再依需要填入；完全不填也能用 sample + m
 
 > 資料來源由環境變數 `DATA_SOURCE` 決定，**預設 `live`**（讀 `data/courses.json`）；
 > 若該檔不存在會自動退回 `sample`（虛構範例資料），因此沒有資料也能啟動、不會當掉。
+>
+> 本 repo 已內含 **115 學年度第 1 學期**的真實課程（`data/courses.json`）與限修／分發條件快取，
+> 因此 clone 後即可直接 `python app.py` 使用真實資料。唯語意索引（`data/embeddings.npy`）未納入版控，
+> 首次需執行 `python scripts/build_index.py --source live` 才有語意推薦（未建立時自動退回關鍵字比對）。
 
 ### 免金鑰快速體驗（建議先這樣跑）
 
