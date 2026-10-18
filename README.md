@@ -108,9 +108,11 @@ python scripts/build_index.py --source live
 python app.py
 ```
 
-### 設定 Azure OpenAI（可選，提升解讀品質）
+### 設定語言模型（可選，提升解讀品質）
 
-在 `.env` 填入後，把 `LLM_PROVIDER` 設為 `azure_openai`：
+可用 Azure OpenAI 或 Anthropic Claude，擇一在 `.env` 設定；不設則維持 `mock`。
+
+**Azure OpenAI**（與 Demo Day 的 Microsoft 主題相符）：
 
 ```
 LLM_PROVIDER=azure_openai
@@ -119,7 +121,16 @@ AZURE_OPENAI_API_KEY=<your-key>
 AZURE_OPENAI_DEPLOYMENT=<deployment-name>
 ```
 
+**Anthropic Claude**（需 `pip install anthropic`）：
+
+```
+LLM_PROVIDER=anthropic
+ANTHROPIC_API_KEY=<your-key>
+ANTHROPIC_MODEL=claude-opus-5-5   # 批次解讀限修條件（2000+ 次）建議改用 claude-haiku-5-5 省成本
+```
+
 金鑰只存在後端 `.env`（已列入 `.gitignore`），前端 JavaScript 不含任何金鑰。
+兩者皆走同一層封裝（`planner/llm_client.py`），只輸出 JSON、經 schema 驗證，失敗一律退回關鍵字規則。
 
 ---
 
