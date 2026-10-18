@@ -1,0 +1,15 @@
+{
+  "provider": "mock",
+  "n_total_rows": 50,
+  "n_labeled": 0,
+  "exact_match_rows": 0,
+  "exact_match_rate": 0.0,
+  "field_accuracy": {
+    "min_grade": 0.0,
+    "allowed_depts": 0.0,
+    "prerequisites": 0.0,
+    "other_conditions": 0.0
+  },
+  "overall_field_accuracy": 0.0,
+  "details": []
+}

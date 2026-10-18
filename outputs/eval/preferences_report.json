@@ -1,0 +1,864 @@
+{
+  "n_cases": 20,
+  "provider": "mock",
+  "exact_match_rows": 9,
+  "exact_match_rate": 0.45,
+  "field_accuracy": {
+    "avoid_periods": 1.0,
+    "free_days": 1.0,
+    "min_credits": 0.95,
+    "max_credits": 0.95,
+    "topics": 0.5,
+    "ge_domains": 0.85,
+    "languages": 1.0
+  },
+  "overall_field_accuracy": 0.8928571428571429,
+  "details": [
+    {
+      "id": "p01",
+      "text": "不要早八",
+      "expected": {
+        "avoid_periods": [
+          [
+            1,
+            "1"
+          ],
+          [
+            2,
+            "1"
+          ],
+          [
+            3,
+            "1"
+          ],
+          [
+            4,
+            "1"
+          ],
+          [
+            5,
+            "1"
+          ]
+        ],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [],
+        "ge_domains": [],
+        "languages": []
+      },
+      "predicted": {
+        "avoid_periods": [
+          [
+            1,
+            "1"
+          ],
+          [
+            2,
+            "1"
+          ],
+          [
+            3,
+            "1"
+          ],
+          [
+            4,
+            "1"
+          ],
+          [
+            5,
+            "1"
+          ]
+        ],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [],
+        "ge_domains": [],
+        "languages": []
+      },
+      "wrong_fields": []
+    },
+    {
+      "id": "p02",
+      "text": "週五想空著",
+      "expected": {
+        "avoid_periods": [],
+        "free_days": [
+          5
+        ],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [],
+        "ge_domains": [],
+        "languages": []
+      },
+      "predicted": {
+        "avoid_periods": [],
+        "free_days": [
+          5
+        ],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [],
+        "ge_domains": [],
+        "languages": []
+      },
+      "wrong_fields": []
+    },
+    {
+      "id": "p03",
+      "text": "我想修 16 到 20 學分",
+      "expected": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": 16,
+        "max_credits": 20,
+        "topics": [],
+        "ge_domains": [],
+        "languages": []
+      },
+      "predicted": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": 16.0,
+        "max_credits": 20.0,
+        "topics": [
+          "16"
+        ],
+        "ge_domains": [],
+        "languages": []
+      },
+      "wrong_fields": [
+        "topics"
+      ]
+    },
+    {
+      "id": "p04",
+      "text": "想學資料分析相關的課",
+      "expected": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [
+          "資料分析"
+        ],
+        "ge_domains": [],
+        "languages": []
+      },
+      "predicted": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [
+          "資料分析相關的課"
+        ],
+        "ge_domains": [],
+        "languages": []
+      },
+      "wrong_fields": [
+        "topics"
+      ]
+    },
+    {
+      "id": "p05",
+      "text": "想上日文課",
+      "expected": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [],
+        "ge_domains": [],
+        "languages": [
+          "日語"
+        ]
+      },
+      "predicted": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [],
+        "ge_domains": [],
+        "languages": [
+          "日語"
+        ]
+      },
+      "wrong_fields": []
+    },
+    {
+      "id": "p06",
+      "text": "禮拜一想整天空著",
+      "expected": {
+        "avoid_periods": [],
+        "free_days": [
+          1
+        ],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [],
+        "ge_domains": [],
+        "languages": []
+      },
+      "predicted": {
+        "avoid_periods": [],
+        "free_days": [
+          1
+        ],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [],
+        "ge_domains": [],
+        "languages": []
+      },
+      "wrong_fields": []
+    },
+    {
+      "id": "p07",
+      "text": "至少修 15 學分",
+      "expected": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": 15,
+        "max_credits": null,
+        "topics": [],
+        "ge_domains": [],
+        "languages": []
+      },
+      "predicted": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": 15.0,
+        "topics": [],
+        "ge_domains": [],
+        "languages": []
+      },
+      "wrong_fields": [
+        "min_credits",
+        "max_credits"
+      ]
+    },
+    {
+      "id": "p08",
+      "text": "最多 18 學分就好",
+      "expected": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": 18,
+        "topics": [],
+        "ge_domains": [],
+        "languages": []
+      },
+      "predicted": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": 18.0,
+        "topics": [],
+        "ge_domains": [],
+        "languages": []
+      },
+      "wrong_fields": []
+    },
+    {
+      "id": "p09",
+      "text": "想學程式設計，而且不要早八",
+      "expected": {
+        "avoid_periods": [
+          [
+            1,
+            "1"
+          ],
+          [
+            2,
+            "1"
+          ],
+          [
+            3,
+            "1"
+          ],
+          [
+            4,
+            "1"
+          ],
+          [
+            5,
+            "1"
+          ]
+        ],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [
+          "程式設計"
+        ],
+        "ge_domains": [],
+        "languages": []
+      },
+      "predicted": {
+        "avoid_periods": [
+          [
+            1,
+            "1"
+          ],
+          [
+            2,
+            "1"
+          ],
+          [
+            3,
+            "1"
+          ],
+          [
+            4,
+            "1"
+          ],
+          [
+            5,
+            "1"
+          ]
+        ],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [
+          "程式設計"
+        ],
+        "ge_domains": [],
+        "languages": []
+      },
+      "wrong_fields": []
+    },
+    {
+      "id": "p10",
+      "text": "對人工智慧有興趣",
+      "expected": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [
+          "人工智慧"
+        ],
+        "ge_domains": [],
+        "languages": []
+      },
+      "predicted": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [
+          "人工智慧有興趣"
+        ],
+        "ge_domains": [],
+        "languages": []
+      },
+      "wrong_fields": [
+        "topics"
+      ]
+    },
+    {
+      "id": "p11",
+      "text": "想修英語授課的課",
+      "expected": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [],
+        "ge_domains": [],
+        "languages": [
+          "英語"
+        ]
+      },
+      "predicted": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [
+          "英語授課的課"
+        ],
+        "ge_domains": [],
+        "languages": [
+          "英語"
+        ]
+      },
+      "wrong_fields": [
+        "topics"
+      ]
+    },
+    {
+      "id": "p12",
+      "text": "週四不要排課，想碰點機器學習",
+      "expected": {
+        "avoid_periods": [],
+        "free_days": [
+          4
+        ],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [
+          "機器學習"
+        ],
+        "ge_domains": [],
+        "languages": []
+      },
+      "predicted": {
+        "avoid_periods": [],
+        "free_days": [
+          4
+        ],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [],
+        "ge_domains": [],
+        "languages": []
+      },
+      "wrong_fields": [
+        "topics"
+      ]
+    },
+    {
+      "id": "p13",
+      "text": "晚上不要有課",
+      "expected": {
+        "avoid_periods": [
+          [
+            1,
+            "A"
+          ],
+          [
+            2,
+            "A"
+          ],
+          [
+            3,
+            "A"
+          ],
+          [
+            4,
+            "A"
+          ],
+          [
+            5,
+            "A"
+          ],
+          [
+            1,
+            "B"
+          ],
+          [
+            2,
+            "B"
+          ],
+          [
+            3,
+            "B"
+          ],
+          [
+            4,
+            "B"
+          ],
+          [
+            5,
+            "B"
+          ],
+          [
+            1,
+            "C"
+          ],
+          [
+            2,
+            "C"
+          ],
+          [
+            3,
+            "C"
+          ],
+          [
+            4,
+            "C"
+          ],
+          [
+            5,
+            "C"
+          ],
+          [
+            1,
+            "D"
+          ],
+          [
+            2,
+            "D"
+          ],
+          [
+            3,
+            "D"
+          ],
+          [
+            4,
+            "D"
+          ],
+          [
+            5,
+            "D"
+          ]
+        ],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [],
+        "ge_domains": [],
+        "languages": []
+      },
+      "predicted": {
+        "avoid_periods": [
+          [
+            1,
+            "A"
+          ],
+          [
+            1,
+            "B"
+          ],
+          [
+            1,
+            "C"
+          ],
+          [
+            1,
+            "D"
+          ],
+          [
+            2,
+            "A"
+          ],
+          [
+            2,
+            "B"
+          ],
+          [
+            2,
+            "C"
+          ],
+          [
+            2,
+            "D"
+          ],
+          [
+            3,
+            "A"
+          ],
+          [
+            3,
+            "B"
+          ],
+          [
+            3,
+            "C"
+          ],
+          [
+            3,
+            "D"
+          ],
+          [
+            4,
+            "A"
+          ],
+          [
+            4,
+            "B"
+          ],
+          [
+            4,
+            "C"
+          ],
+          [
+            4,
+            "D"
+          ],
+          [
+            5,
+            "A"
+          ],
+          [
+            5,
+            "B"
+          ],
+          [
+            5,
+            "C"
+          ],
+          [
+            5,
+            "D"
+          ]
+        ],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [],
+        "ge_domains": [],
+        "languages": []
+      },
+      "wrong_fields": []
+    },
+    {
+      "id": "p14",
+      "text": "想修人文與思想領域的通識",
+      "expected": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [],
+        "ge_domains": [
+          "人文與思想領域"
+        ],
+        "languages": []
+      },
+      "predicted": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [
+          "人文與思想領域的通識"
+        ],
+        "ge_domains": [],
+        "languages": []
+      },
+      "wrong_fields": [
+        "topics",
+        "ge_domains"
+      ]
+    },
+    {
+      "id": "p15",
+      "text": "想修法文或德文",
+      "expected": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [],
+        "ge_domains": [],
+        "languages": [
+          "法語",
+          "德語"
+        ]
+      },
+      "predicted": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [
+          "法文或德文"
+        ],
+        "ge_domains": [],
+        "languages": [
+          "法語",
+          "德語"
+        ]
+      },
+      "wrong_fields": [
+        "topics"
+      ]
+    },
+    {
+      "id": "p16",
+      "text": "週二和週四都想空著",
+      "expected": {
+        "avoid_periods": [],
+        "free_days": [
+          2,
+          4
+        ],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [],
+        "ge_domains": [],
+        "languages": []
+      },
+      "predicted": {
+        "avoid_periods": [],
+        "free_days": [
+          2,
+          4
+        ],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [],
+        "ge_domains": [],
+        "languages": []
+      },
+      "wrong_fields": []
+    },
+    {
+      "id": "p17",
+      "text": "想修自然與科學領域、4 到 6 學分的通識",
+      "expected": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": 4,
+        "max_credits": 6,
+        "topics": [],
+        "ge_domains": [
+          "自然與科學領域"
+        ],
+        "languages": []
+      },
+      "predicted": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": 4.0,
+        "max_credits": 6.0,
+        "topics": [
+          "自然與科學"
+        ],
+        "ge_domains": [],
+        "languages": []
+      },
+      "wrong_fields": [
+        "topics",
+        "ge_domains"
+      ]
+    },
+    {
+      "id": "p18",
+      "text": "想學經濟相關主題",
+      "expected": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [
+          "經濟"
+        ],
+        "ge_domains": [],
+        "languages": []
+      },
+      "predicted": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [
+          "經濟相關主題"
+        ],
+        "ge_domains": [],
+        "languages": []
+      },
+      "wrong_fields": [
+        "topics"
+      ]
+    },
+    {
+      "id": "p19",
+      "text": "不要中午的課",
+      "expected": {
+        "avoid_periods": [
+          [
+            1,
+            "Z"
+          ],
+          [
+            2,
+            "Z"
+          ],
+          [
+            3,
+            "Z"
+          ],
+          [
+            4,
+            "Z"
+          ],
+          [
+            5,
+            "Z"
+          ]
+        ],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [],
+        "ge_domains": [],
+        "languages": []
+      },
+      "predicted": {
+        "avoid_periods": [
+          [
+            1,
+            "Z"
+          ],
+          [
+            2,
+            "Z"
+          ],
+          [
+            3,
+            "Z"
+          ],
+          [
+            4,
+            "Z"
+          ],
+          [
+            5,
+            "Z"
+          ]
+        ],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [],
+        "ge_domains": [],
+        "languages": []
+      },
+      "wrong_fields": []
+    },
+    {
+      "id": "p20",
+      "text": "想修公民與社會領域的通識，順便學韓文",
+      "expected": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [],
+        "ge_domains": [
+          "公民與社會領域"
+        ],
+        "languages": [
+          "韓語"
+        ]
+      },
+      "predicted": {
+        "avoid_periods": [],
+        "free_days": [],
+        "min_credits": null,
+        "max_credits": null,
+        "topics": [
+          "公民與社會領域的通識"
+        ],
+        "ge_domains": [],
+        "languages": [
+          "韓語"
+        ]
+      },
+      "wrong_fields": [
+        "topics",
+        "ge_domains"
+      ]
+    }
+  ]
+}
