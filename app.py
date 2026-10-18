@@ -20,11 +20,16 @@ from pathlib import Path
 
 from flask import Flask, jsonify, render_template, request
 
-from planner.data_loader import load_courses
+from planner.data_loader import load_courses, load_live_meta
 from planner.models import Course
 from planner import timeslots as ts
-from planner.solver import solve, compute_free_slots, candidate_courses, Preferences
-from planner.eligibility import load_cache, evaluate, keyword_parse, UserProfile
+from planner.solver import (
+    solve, compute_free_slots, candidate_courses, preference_score, Preferences,
+)
+from planner.eligibility import (
+    load_cache, load_distribution, evaluate, keyword_parse, merge_conditions,
+    UserProfile,
+)
 from planner.preferences import PreferenceSpec, parse_preferences, _coerce_spec
 from planner.search import SemanticSearch, generate_reasons
 from planner.llm_client import get_client
@@ -33,8 +38,10 @@ app = Flask(__name__)
 
 # -------- 啟動時載入一次（原型；資料不大） --------
 COURSES, DATA_SOURCE = load_courses()
+DATA_META = load_live_meta() if DATA_SOURCE == "live" else {}
 COURSE_BY_ID: dict[str, Course] = {c.id: c for c in COURSES}
 ELIG_CACHE = load_cache()
+DIST_CACHE = load_distribution()          # 結構化分發條件（比備註可靠，若有則合併）
 SEARCH = SemanticSearch()
 CLIENT = get_client()
 IS_SAMPLE = DATA_SOURCE == "sample"
@@ -74,12 +81,16 @@ def meta():
         "data_source": DATA_SOURCE,
         "is_sample": IS_SAMPLE,
         "course_count": len(COURSES),
+        "semester": DATA_META.get("semester"),
+        "semester_label": DATA_META.get("semester_label"),
+        "data_updated": DATA_META.get("updated"),
         "semantic_available": SEARCH.available,
         "llm_provider": CLIENT.provider,
         "weekdays": ts.WEEKDAY_NAMES,
         "period_order": ts.PERIOD_ORDER,
         "period_times": ts.PERIOD_TIMES,
         "default_days": ts.DEFAULT_DAYS,
+        "categories": sorted({c.category for c in COURSES if c.category}),
         "ge_domains": sorted({c.ge_domain for c in COURSES if c.ge_domain}),
         "languages": sorted({c.language for c in COURSES if c.language}),
         "depts": sorted({c.dept for c in COURSES if c.dept and c.dept != "（未分類）"}),
@@ -122,6 +133,9 @@ def api_course(cid: str):
     if c is None:
         return bad("找不到此課程", 404)
     cond = ELIG_CACHE.get(cid) or (keyword_parse(c.notes) if c.notes else None)
+    dist = DIST_CACHE.get(cid)
+    if dist is not None:
+        cond = merge_conditions(cond, dist) if cond is not None else dist
     return ok({
         "course": course_brief(c),
         "syllabus_url": c.syllabus_url,
@@ -192,25 +206,54 @@ def api_schedules():
         max_sched = 3
 
     score_fn = SEARCH.build_score_fn(spec.topics)
+    # 使用者未設學分上限時，限制最多加入的通識/語言課門數，避免把整週空堂塞滿
+    # （分數隨課數遞增，否則會排出 30–40 學分的誇張課表）。
+    default_added_cap = 6
+    max_added = None if spec.max_credits is not None else default_added_cap
     schedules, stats = solve(COURSES, fixed_ids, prefs, score_fn=score_fn,
-                             max_schedules=max_sched)
+                             max_schedules=max_sched, max_added=max_added)
 
     smap = SEARCH.score_map(" ".join(spec.topics)) if spec.topics else {}
     free = compute_free_slots(COURSES, fixed_ids, prefs)
 
+    # 供「同時段其他可選」用：所有可填入的通識/語言候選課與其排序分數
+    fixed_courses = [COURSE_BY_ID[i] for i in fixed_ids if i in COURSE_BY_ID]
+    cands_all = candidate_courses(COURSES, fixed_courses, free, prefs)
+
+    def alt_score(c: Course) -> float:
+        return preference_score(c, prefs) + smap.get(c.id, 0.0)
+
+    def alternatives_for(course: Course, sched_ids: set[str],
+                         occ_added: set) -> list[dict]:
+        """同時段可替換的其他候選課：移除此課後仍放得下、不與其他課衝堂、符合篩選。"""
+        allowed = free - (occ_added - set(course.times))   # 空堂扣掉「其他推薦課」佔用
+        alts = [d for d in cands_all
+                if d.id not in sched_ids and set(d.times).issubset(allowed)]
+        alts.sort(key=lambda d: (-alt_score(d), d.id))
+        out_alts = []
+        for d in alts[:6]:
+            elig = evaluate(d.id, d.notes, user, ELIG_CACHE, DIST_CACHE)
+            out_alts.append({**course_brief(d), "eligibility_status": elig.status})
+        return out_alts
+
     out = []
     for s in schedules:
         reasons = generate_reasons(s.added, spec.topics, CLIENT, score_map=smap)
+        sched_ids = {c.id for c in s.courses}
+        occ_added = set().union(*[set(a.times) for a in s.added]) if s.added else set()
         courses_out = []
         for c in s.courses:
             is_fixed = any(fc.id == c.id for fc in s.fixed)
-            elig = evaluate(c.id, c.notes, user, ELIG_CACHE)
-            courses_out.append({
+            elig = evaluate(c.id, c.notes, user, ELIG_CACHE, DIST_CACHE)
+            entry = {
                 **course_brief(c),
                 "role": "fixed" if is_fixed else "added",
                 "reason": reasons.get(c.id) if not is_fixed else None,
                 "eligibility": elig.to_dict(),
-            })
+            }
+            if not is_fixed:
+                entry["alternatives"] = alternatives_for(c, sched_ids, occ_added)
+            courses_out.append(entry)
         out.append({
             "total_credits": s.total_credits,
             "score": round(s.score, 3),
@@ -221,7 +264,7 @@ def api_schedules():
         "schedules": out,
         "free_slots": sorted([[d, p] for d, p in free]),
         "stats": {"nodes": stats.nodes, "elapsed": round(stats.elapsed, 3),
-                  "hit_limit": stats.hit_limit},
+                  "hit_limit": stats.hit_limit, "added_cap": max_added},
         "preferences_used": spec.to_dict(),
     })
 

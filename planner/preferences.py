@@ -55,6 +55,9 @@ class PreferenceSpec:
             free_days=list(self.free_days),
             ge_domains=self.ge_domains or None,
             languages=self.languages or None,
+            # 真實資料含週末開課（週六/日），排課範圍納入全週；
+            # 不想上週末者可用 free_days（如「週六想空著」）排除。
+            days=[1, 2, 3, 4, 5, 6, 0],
         )
         for k, v in overrides.items():
             setattr(p, k, v)
@@ -148,6 +151,12 @@ def keyword_parse(text: str) -> PreferenceSpec:
         m = re.search(r"(?:總共|共|想修|修|要)\s*(\d+)\s*學分", text)
         if m and spec.min_credits is None and spec.max_credits is None:
             spec.max_credits = float(m.group(1))
+        # 最後退路：出現「N 學分」但前面沒有範圍/動詞者，視為學分上限，
+        # 以免完全沒有上限時 solver 把整週塞滿（如「通識 4 學分」）。
+        if spec.min_credits is None and spec.max_credits is None:
+            m = re.search(r"(\d+)\s*學分", text)
+            if m:
+                spec.max_credits = float(m.group(1))
 
     # 語言
     for alias, std in _LANG_ALIAS.items():

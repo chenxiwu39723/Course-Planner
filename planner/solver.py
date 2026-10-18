@@ -108,7 +108,7 @@ def candidate_courses(
             continue
         if set(c.times) & fixed_slots:                    # 不與固定課衝堂（雙重保險）
             continue
-        if prefs.ge_domains and (c.ge_domain not in prefs.ge_domains):
+        if prefs.ge_domains and not ge_domain_matches(c.ge_domain, prefs.ge_domains):
             continue
         if prefs.languages and (c.language not in prefs.languages):
             continue
@@ -116,11 +116,26 @@ def candidate_courses(
     return out
 
 
+# ---------------------------------------------------------------- 通識領域比對
+def ge_domain_matches(course_domain: str | None, wanted: list[str] | None) -> bool:
+    """課程的通識領域是否命中使用者想要的領域之一。
+
+    真實資料的 ge_domain 可能是多領域以「、」串接（如「文化與社會、第二外語」），
+    因此以拆分後的集合相交判定；範例資料的單一領域值為其特例，向下相容。
+    """
+    if not wanted:
+        return False
+    if not course_domain:
+        return False
+    parts = {p.strip() for p in course_domain.split("、") if p.strip()}
+    return bool(parts & set(wanted))
+
+
 # ---------------------------------------------------------------- 分數
 def preference_score(course: Course, prefs: Preferences) -> float:
     """偏好符合度分數（確定性）。語意相關度由 solve 的 score_fn 另外加。"""
     s = 0.0
-    if prefs.ge_domains and course.ge_domain in prefs.ge_domains:
+    if ge_domain_matches(course.ge_domain, prefs.ge_domains):
         s += 2.0
     if prefs.languages and course.language in prefs.languages:
         s += 2.0
@@ -145,6 +160,7 @@ def solve(
     *,
     score_fn: ScoreFn | None = None,
     max_schedules: int = 3,
+    max_added: int | None = None,
     time_limit: float = 2.0,
     node_limit: int = 10_000,
 ) -> tuple[list[Schedule], SolveStats]:
@@ -152,6 +168,8 @@ def solve(
 
     硬性條件：不衝堂、總學分落在 [min_credits, max_credits]、避開指定節次/空堂日、
     必含固定課（fixed_ids）。
+    max_added：最多額外加入幾門通識/語言課（None=不限）。因為分數隨課數單調遞增，
+    使用者若未設學分上限，需靠此參數避免把整週空堂塞滿（排出 40 學分的誇張課表）。
     搜尋設上限（time_limit 秒 或 node_limit 節點），超過時回傳目前最佳結果。
     回傳 (schedules, stats)。
     """
@@ -214,6 +232,8 @@ def solve(
 
         if total >= prefs.max_credits:
             return  # 再加必超過上限
+        if max_added is not None and len(selected) >= max_added:
+            return  # 已達最多加入門數
 
         for i in range(start_i, len(cands)):
             if stats.hit_limit or over_limit():
@@ -251,7 +271,7 @@ def solve(
 def _default_reason(course: Course, prefs: Preferences) -> str:
     """階段 2 的占位推薦理由（階段 4 由語言模型依課程資料強化）。"""
     bits = []
-    if prefs.ge_domains and course.ge_domain in prefs.ge_domains:
+    if ge_domain_matches(course.ge_domain, prefs.ge_domains):
         bits.append(f"符合通識領域「{course.ge_domain}」")
     if prefs.languages and course.language in prefs.languages:
         bits.append(f"符合語言偏好「{course.language}」")
