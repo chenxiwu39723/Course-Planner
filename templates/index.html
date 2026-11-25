@@ -47,6 +47,27 @@
         <textarea id="u-completed" rows="2" placeholder="微積分(一)&#10;計算機概論"></textarea>
       </label>
 
+      <div class="graduation-panel">
+        <h3>畢業門檻與修課進度</h3>
+        <label>適用系所／組別／入學年度
+          <select id="grad-program">
+            <option value="">不啟用畢業缺額檢查</option>
+          </select>
+        </label>
+        <div id="grad-controls" class="hidden">
+          <div class="row">
+            <button id="grad-demo" class="btn" type="button">載入77學分案例</button>
+            <button id="grad-check" class="btn" type="button">重新檢查</button>
+          </div>
+          <label>匯入自己的主系修課紀錄（JSON）
+            <input id="grad-file" type="file" accept="application/json,.json">
+          </label>
+          <p class="hint">案例已將統計學列為完成。師培不計入；在修課尚未算完成。個人紀錄只存此分頁，檢查時暫傳伺服器運算，不保存、不送入AI。</p>
+        </div>
+        <p id="grad-status" class="hint" aria-live="polite"></p>
+        <div id="grad-report" aria-live="polite"></div>
+      </div>
+
       <h3>要固定的課（必上的課）</h3>
       <div class="row">
         <input id="fixed-search" placeholder="搜尋課名 / 課號 / 教師…">

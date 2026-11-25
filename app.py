@@ -21,7 +21,8 @@ from pathlib import Path
 from flask import Flask, jsonify, render_template, request
 
 from planner.data_loader import load_courses, load_live_meta
-from planner.models import Course
+from planner.models import Course, course_code_key
+from planner.graduation import programs, load_demo, build_context
 from planner import timeslots as ts
 from planner.solver import (
     solve, compute_free_slots, candidate_courses, preference_score, Preferences,
@@ -68,6 +69,58 @@ def course_brief(c: Course) -> dict:
     }
 
 
+def planning_context(data, prefs):
+    """選用畢業規則；不保存紀錄，也不把修課紀錄送入語言模型。"""
+    context = build_context(data['graduation']) if data.get('graduation') is not None else None
+    user = data.get('user') or {}
+    if not isinstance(user, dict):
+        raise ValueError('user 必須是物件')
+    if user.get('dept') is not None and not isinstance(user['dept'], str):
+        raise ValueError('dept 必須是字串')
+    completed = user.get('completed_courses') or []
+    if not isinstance(completed, list) or any(not isinstance(c, str) for c in completed):
+        raise ValueError('completed_courses 必須是字串陣列')
+    if context:
+        if user.get('dept') and '數學' not in user['dept']:
+            raise ValueError('畢業規則與系所不一致；請選數學系或關閉畢業規則')
+        prefs.extra_course_codes = context.extra_candidate_codes(COURSES)
+        prefs.excluded_course_codes |= context.blocked_codes
+        prefs.max_courses_per_prefix = {'PE': 1}  # 每張建議課表最多一門體育，避免學分低而塞滿
+        for course in COURSES:
+            bits = context.contribution(course)['requirements']
+            if '通識（領域及採認待查）' in bits:
+                prefs.course_groups[course_code_key(course.code)] = 'general_education'
+            elif '指定核心專題' in bits:
+                prefs.course_groups[course_code_key(course.code)] = 'core_project'
+        prefs.max_credits_per_group = {
+            'general_education': context.report['common_required']['general_education']['remaining'],
+            'core_project': context.report['core_electives']['core_project']['credits']['remaining'],
+        }
+    completed_set = {c.strip() for c in completed}
+    for c in COURSES:
+        if c.name in completed_set or course_code_key(c.code) in completed_set:
+            prefs.excluded_course_codes.add(course_code_key(c.code))
+    return context
+
+
+def validate_fixed_ids(ids, context=None):
+    if (not isinstance(ids, list) or len(ids) > 200
+            or any(not isinstance(i, str) for i in ids)):
+        raise ValueError('fixed_ids 必須是最多200筆流水號的字串陣列')
+    if any(i not in COURSE_BY_ID for i in ids):
+        raise ValueError('固定課已不在目前課程資料，請重新搜尋加入')
+    if context:
+        passed = {c['course_id'] for c in context.student['courses'] if c['status']=='passed'}
+        if any(course_code_key(COURSE_BY_ID[i].code) in passed for i in ids):
+            raise ValueError('固定課含已完成課程，請先移除；重修須先更新修課紀錄')
+    fixed = [COURSE_BY_ID[i] for i in dict.fromkeys(ids)]
+    codes = [course_code_key(c.code) for c in fixed]
+    if len(codes) != len(set(codes)):
+        raise ValueError('固定課包含同一課號多個班次，請只選一班')
+    if ts.any_conflict(fixed):
+        raise ValueError('固定課彼此衝堂，請先調整固定課')
+
+
 # ============================================================ 頁面
 @app.get("/")
 def index():
@@ -94,7 +147,28 @@ def meta():
         "ge_domains": sorted({c.ge_domain for c in COURSES if c.ge_domain}),
         "languages": sorted({c.language for c in COURSES if c.language}),
         "depts": sorted({c.dept for c in COURSES if c.dept and c.dept != "（未分類）"}),
+        "graduation_programs": programs(),
     })
+
+
+@app.get('/api/graduation/demo/<program_id>')
+def graduation_demo(program_id):
+    try:
+        return ok({'student': load_demo(program_id)})
+    except ValueError as exc:
+        return bad(str(exc), 404)
+
+
+@app.post('/api/graduation/check')
+def graduation_check():
+    data = request.get_json(silent=True)
+    if not isinstance(data, dict):
+        return bad('請提供program_id與student的JSON物件')
+    try:
+        context = build_context(data)
+    except ValueError as exc:
+        return bad(str(exc))
+    return ok({'report': context.describe(COURSES, DATA_META.get('semester'), IS_SAMPLE)})
 
 
 # ============================================================ 課程搜尋
@@ -148,11 +222,18 @@ def api_course(cid: str):
 @app.post("/api/free_slots")
 def api_free_slots():
     data = request.get_json(silent=True) or {}
+    if not isinstance(data, dict):
+        return bad('請提供JSON物件')
     fixed_ids = data.get("fixed_ids")
     if not isinstance(fixed_ids, list):
         return bad("fixed_ids 必須是陣列")
     spec = _coerce_spec(data.get("preferences") or {}) or PreferenceSpec()
     prefs = spec.to_solver_prefs()
+    try:
+        context = planning_context(data, prefs)
+        validate_fixed_ids(fixed_ids, context)
+    except ValueError as exc:
+        return bad(str(exc))
 
     fixed = [COURSE_BY_ID[i] for i in fixed_ids if i in COURSE_BY_ID]
     free = compute_free_slots(COURSES, [c.id for c in fixed], prefs)
@@ -180,6 +261,8 @@ def api_parse_preferences():
 @app.post("/api/schedules")
 def api_schedules():
     data = request.get_json(silent=True) or {}
+    if not isinstance(data, dict):
+        return bad('請提供JSON物件')
     fixed_ids = data.get("fixed_ids")
     if not isinstance(fixed_ids, list):
         return bad("fixed_ids 必須是陣列")
@@ -187,6 +270,9 @@ def api_schedules():
     user_raw = data.get("user") or {}
     if not isinstance(user_raw, dict):
         return bad("user 必須是物件")
+    completed = user_raw.get('completed_courses') or []
+    if not isinstance(completed, list) or any(not isinstance(c, str) for c in completed):
+        return bad('completed_courses 必須是字串陣列')
     grade = user_raw.get("grade")
     try:
         grade = int(grade) if grade not in (None, "") else None
@@ -195,23 +281,36 @@ def api_schedules():
     user = UserProfile(
         dept=(user_raw.get("dept") or None),
         grade=grade,
-        completed_courses=[s for s in (user_raw.get("completed_courses") or []) if s],
+        completed_courses=[s for s in completed if s],
     )
 
     spec = _coerce_spec(data.get("preferences") or {}) or PreferenceSpec()
     prefs = spec.to_solver_prefs()
+    try:
+        context = planning_context(data, prefs)
+        validate_fixed_ids(fixed_ids, context)
+    except ValueError as exc:
+        return bad(str(exc))
+    if context:
+        user.completed_courses = sorted(set(user.completed_courses + context.passed_names_and_codes))
     try:
         max_sched = min(int(data.get("max_schedules", 3)), 5)
     except (ValueError, TypeError):
         max_sched = 3
 
     score_fn = SEARCH.build_score_fn(spec.topics)
+    if context:
+        semantic_score = score_fn
+        score_fn = lambda c: semantic_score(c) + context.contribution(c)['priority']
     # 使用者未設學分上限時，限制最多加入的通識/語言課門數，避免把整週空堂塞滿
     # （分數隨課數遞增，否則會排出 30–40 學分的誇張課表）。
     default_added_cap = 6
     max_added = None if spec.max_credits is not None else default_added_cap
     schedules, stats = solve(COURSES, fixed_ids, prefs, score_fn=score_fn,
-                             max_schedules=max_sched, max_added=max_added)
+                             max_schedules=max_sched, max_added=max_added,
+                             max_zero_credit_added=0 if any(
+                                 course_code_key(COURSE_BY_ID[i].code).startswith('PE')
+                                 for i in fixed_ids) else 1)
 
     smap = SEARCH.score_map(" ".join(spec.topics)) if spec.topics else {}
     free = compute_free_slots(COURSES, fixed_ids, prefs)
@@ -233,7 +332,8 @@ def api_schedules():
         out_alts = []
         for d in alts[:6]:
             elig = evaluate(d.id, d.notes, user, ELIG_CACHE, DIST_CACHE)
-            out_alts.append({**course_brief(d), "eligibility_status": elig.status})
+            out_alts.append({**course_brief(d), "eligibility_status": elig.status,
+                             "graduation": context.contribution(d) if context else None})
         return out_alts
 
     out = []
@@ -250,6 +350,7 @@ def api_schedules():
                 "role": "fixed" if is_fixed else "added",
                 "reason": reasons.get(c.id) if not is_fixed else None,
                 "eligibility": elig.to_dict(),
+                "graduation": context.contribution(c) if context else None,
             }
             if not is_fixed:
                 entry["alternatives"] = alternatives_for(c, sched_ids, occ_added)
@@ -266,6 +367,7 @@ def api_schedules():
         "stats": {"nodes": stats.nodes, "elapsed": round(stats.elapsed, 3),
                   "hit_limit": stats.hit_limit, "added_cap": max_added},
         "preferences_used": spec.to_dict(),
+        "graduation_report": context.describe(COURSES, DATA_META.get('semester'), IS_SAMPLE) if context else None,
     })
 
 

@@ -14,6 +14,17 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field, asdict
 from typing import Any
+import re
+
+
+def course_code_key(code: str) -> str:
+    """課號主碼：MA3111*、MA3111-A、MA3111A 均對到 MA3111。
+
+    流水號仍由 Course.id 識別；主碼用於修畢比對及避免重複選班。
+    """
+    text = str(code).strip().upper()
+    match = re.match(r"^([A-Z]{2}\d{4})(?:[-*A-Z0-9]|$)", text)
+    return match.group(1) if match else text
 
 # (day:int, period:str)
 TimeSlot = tuple[int, str]

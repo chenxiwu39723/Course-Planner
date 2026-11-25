@@ -15,7 +15,7 @@ import time
 from dataclasses import dataclass, field
 from typing import Callable, Iterable
 
-from .models import Course, TimeSlot
+from .models import Course, TimeSlot, course_code_key
 from . import timeslots as ts
 
 
@@ -32,6 +32,11 @@ class Preferences:
     languages: list[str] | None = None                          # 篩選：只收這些授課語言
     include_ge: bool = True                                      # 候選是否含通識課
     include_language: bool = True                                # 候選是否含語言課
+    extra_course_codes: set[str] = field(default_factory=set)       # 畢業缺額候選主碼
+    excluded_course_codes: set[str] = field(default_factory=set)    # 已完成／在修主碼
+    max_courses_per_prefix: dict[str, int] = field(default_factory=dict)
+    course_groups: dict[str, str] = field(default_factory=dict)
+    max_credits_per_group: dict[str, float] = field(default_factory=dict)
     days: list[int] = field(default_factory=lambda: list(ts.DEFAULT_DAYS))
     periods: list[str] = field(default_factory=lambda: list(ts.DEFAULT_PERIODS))
 
@@ -91,15 +96,18 @@ def candidate_courses(
     prefs = prefs or Preferences()
     fixed_list = list(fixed)
     fixed_ids = {c.id for c in fixed_list}
+    fixed_codes = {course_code_key(c.code) for c in fixed_list}
     fixed_slots = ts.occupied_slots(fixed_list)
 
     out: list[Course] = []
     for c in all_courses:
-        if c.id in fixed_ids:
+        key = course_code_key(c.code)
+        if c.id in fixed_ids or key in fixed_codes or key in prefs.excluded_course_codes:
             continue
         is_ge = c.ge_domain is not None
         # 判定是否屬於要納入的候選類型
-        type_ok = (prefs.include_ge and is_ge) or (prefs.include_language and c.is_language)
+        type_ok = ((prefs.include_ge and is_ge) or (prefs.include_language and c.is_language)
+                   or key in prefs.extra_course_codes)
         if not type_ok:
             continue
         if not c.times:                                   # 無時間資訊者不納入排課
@@ -161,6 +169,7 @@ def solve(
     score_fn: ScoreFn | None = None,
     max_schedules: int = 3,
     max_added: int | None = None,
+    max_zero_credit_added: int = 1,
     time_limit: float = 2.0,
     node_limit: int = 10_000,
 ) -> tuple[list[Schedule], SolveStats]:
@@ -178,7 +187,12 @@ def solve(
     index = _lookup(all_courses)
     all_list = list(index.values())
 
-    fixed = [index[i] for i in fixed_ids if i in index]
+    fixed = [index[i] for i in dict.fromkeys(fixed_ids) if i in index]
+    fixed_codes = [course_code_key(c.code) for c in fixed]
+    if len(set(fixed_codes)) != len(fixed_codes):
+        raise ValueError("固定課包含同一課號的多個班次，請只選一班")
+    if ts.any_conflict(fixed):
+        raise ValueError("固定課彼此衝堂，請先調整固定課")
     fixed_credits = sum(c.credits for c in fixed)
 
     free = compute_free_slots(all_list, [c.id for c in fixed], prefs)
@@ -220,7 +234,7 @@ def solve(
         return False
 
     def dfs(start_i: int, selected: list[Course], credits: float,
-            used: set[TimeSlot]) -> None:
+            used: set[TimeSlot], used_codes: set[str]) -> None:
         if stats.hit_limit or over_limit():
             return
         stats.nodes += 1
@@ -242,15 +256,30 @@ def solve(
             if fixed_credits + credits + suffix_credits[i] < prefs.min_credits:
                 break
             c = cands[i]
+            if c.credits == 0 and sum(x.credits == 0 for x in selected) >= max_zero_credit_added:
+                continue  # 零學分體育也有課業負擔，不能靠學分上限避免塞滿
+            code = course_code_key(c.code)
+            if code in used_codes:
+                continue  # 不同流水號也不能選同一課號的兩個班
+            if any(code.startswith(prefix) and sum(
+                    course_code_key(x.code).startswith(prefix) for x in fixed + selected
+                    ) >= cap for prefix, cap in prefs.max_courses_per_prefix.items()):
+                continue
+            group = prefs.course_groups.get(code)
+            if group in prefs.max_credits_per_group and c.credits + sum(
+                    x.credits for x in fixed + selected
+                    if prefs.course_groups.get(course_code_key(x.code)) == group
+                    ) > prefs.max_credits_per_group[group]:
+                continue  # 不以通識超修或同一分類的多門課灌高推薦分數
             if credits + c.credits > prefs.max_credits:
                 continue
             if cand_slots[c.id] & used:                 # 與已選衝堂
                 continue
             selected.append(c)
-            dfs(i + 1, selected, credits + c.credits, used | cand_slots[c.id])
+            dfs(i + 1, selected, credits + c.credits, used | cand_slots[c.id], used_codes | {code})
             selected.pop()
 
-    dfs(0, [], 0.0, set())
+    dfs(0, [], 0.0, set(), set())
     stats.elapsed = time.monotonic() - start
 
     # 排序（分數高→低；同分以課號組合穩定排序）取前 K，去重
