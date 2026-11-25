@@ -58,10 +58,15 @@ async function init() {
   }
   META = m;
   renderMetaStatus(m);
-  // 系所自動完成
-  const dl = $("#dept-list");
-  (m.depts || []).forEach(d => {
-    const o = document.createElement("option"); o.value = d; dl.appendChild(o);
+  // 系所下拉：學士班 / 研究所分組（後端已排除行政單位與學院本身）
+  const groups = m.dept_groups || {};
+  [["undergrad", "學士班"], ["graduate", "研究所／學位學程"]].forEach(([key, label]) => {
+    if (!(groups[key] || []).length) return;
+    const og = document.createElement("optgroup"); og.label = label;
+    groups[key].forEach(d => {
+      const o = document.createElement("option"); o.value = d; o.textContent = d; og.appendChild(o);
+    });
+    $("#u-dept").appendChild(og);
   });
   // 類別 / 通識領域篩選
   fillSelect("#f-category", m.categories);
@@ -129,6 +134,12 @@ function bindEvents() {
     $(s).addEventListener("change", saveState));
 }
 
+// 畢業規則對應的系所（取自 /api/meta 的 graduation_programs）
+function programDept(programId) {
+  const p = (META.graduation_programs || []).find(x => x.id === programId);
+  return p ? p.department : "";
+}
+
 function graduationPayload() {
   const program = $("#grad-program").value;
   if (!program) return null;
@@ -144,7 +155,7 @@ async function loadGraduationDemo() {
     const j = await api(`/api/graduation/demo/${encodeURIComponent(program)}`);
     if ($("#grad-program").value !== program) return;
     GRAD_STUDENT = j.student;
-    $("#u-dept").value = "數學系";
+    $("#u-dept").value = programDept(program);
     $("#u-grade").value = "3";
     saveState();
     await checkGraduation();
@@ -165,7 +176,7 @@ async function importGraduationRecord() {
     });
     if ($("#grad-program").value !== program) return;
     GRAD_STUDENT = student;
-    $("#u-dept").value = "數學系";
+    $("#u-dept").value = programDept(program);
     saveState(); renderGraduationReport(j.report);
   } catch (e) { $("#grad-status").textContent = `匯入失敗：${e.message}`; }
 }

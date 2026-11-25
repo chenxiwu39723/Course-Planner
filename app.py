@@ -23,6 +23,7 @@ from flask import Flask, jsonify, render_template, request
 from planner.data_loader import load_courses, load_live_meta
 from planner.models import Course, course_code_key
 from planner.graduation import programs, load_demo, build_context
+from planner.depts import student_depts
 from planner import timeslots as ts
 from planner.solver import (
     solve, compute_free_slots, candidate_courses, preference_score, Preferences,
@@ -46,6 +47,8 @@ DIST_CACHE = load_distribution()          # 結構化分發條件（比備註可
 SEARCH = SemanticSearch()
 CLIENT = get_client()
 IS_SAMPLE = DATA_SOURCE == "sample"
+STUDENT_DEPTS = student_depts(COURSES)    # 學生系所（已排除行政單位、學院本身）
+PROGRAM_DEPT = {p["id"]: p["department"] for p in programs()}
 
 
 # ============================================================ 共用
@@ -81,8 +84,9 @@ def planning_context(data, prefs):
     if not isinstance(completed, list) or any(not isinstance(c, str) for c in completed):
         raise ValueError('completed_courses 必須是字串陣列')
     if context:
-        if user.get('dept') and '數學' not in user['dept']:
-            raise ValueError('畢業規則與系所不一致；請選數學系或關閉畢業規則')
+        program_dept = PROGRAM_DEPT.get(data['graduation'].get('program_id'))
+        if user.get('dept') and user['dept'] != program_dept:
+            raise ValueError(f'畢業規則與系所不一致；請選{program_dept}或關閉畢業規則')
         prefs.extra_course_codes = context.extra_candidate_codes(COURSES)
         prefs.excluded_course_codes |= context.blocked_codes
         prefs.max_courses_per_prefix = {'PE': 1}  # 每張建議課表最多一門體育，避免學分低而塞滿
@@ -146,7 +150,7 @@ def meta():
         "categories": sorted({c.category for c in COURSES if c.category}),
         "ge_domains": sorted({c.ge_domain for c in COURSES if c.ge_domain}),
         "languages": sorted({c.language for c in COURSES if c.language}),
-        "depts": sorted({c.dept for c in COURSES if c.dept and c.dept != "（未分類）"}),
+        "dept_groups": STUDENT_DEPTS,
         "graduation_programs": programs(),
     })
 
