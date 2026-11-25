@@ -108,9 +108,15 @@ python scripts/build_index.py --source live
 python app.py
 ```
 
+> 網站預設只聽 `127.0.0.1`、關閉除錯模式。要讓同網段裝置連線（例如 Demo 用手機開）設 `HOST=0.0.0.0`；
+> 開發時要自動重載設 `FLASK_DEBUG=1`（僅在本機 HOST 時生效，避免 Werkzeug 除錯器暴露在區網）。
+
 ### 設定語言模型（可選，提升解讀品質）
 
 可用 Azure OpenAI 或 Anthropic Claude，擇一在 `.env` 設定；不設則維持 `mock`。
+
+> 複製 `.env.example` 為 `.env` 後，`app.py` 與 `scripts/` 啟動時會自動讀取（需安裝 `python-dotenv`，已列於 requirements.txt）。
+> 終端機已設定的環境變數優先於 `.env`；pytest 一律不讀 `.env`。
 
 **Azure OpenAI**（與 Demo Day 的 Microsoft 主題相符）：
 
@@ -161,7 +167,7 @@ ANTHROPIC_MODEL=claude-opus-5-5   # 批次解讀限修條件（2000+ 次）建�
 ## 測試
 
 ```bash
-python -m pytest -q      # 目前 145 passed, 1 skipped（實際審核 PDF 測試需設 AUDIT_PDF）
+python -m pytest -q      # 目前 164 passed, 1 skipped（實際審核 PDF 測試需設 AUDIT_PDF）
 ```
 
 涵蓋：節次解析、衝堂判斷、空堂計算、solver 不產生衝堂課表、限修條件解析與三狀態比對、

@@ -231,9 +231,9 @@ def api_free_slots():
     fixed_ids = data.get("fixed_ids")
     if not isinstance(fixed_ids, list):
         return bad("fixed_ids 必須是陣列")
-    spec = _coerce_spec(data.get("preferences") or {}) or PreferenceSpec()
-    prefs = spec.to_solver_prefs()
     try:
+        spec = _coerce_spec(data.get("preferences") or {}, strict=True)
+        prefs = spec.to_solver_prefs()
         context = planning_context(data, prefs)
         validate_fixed_ids(fixed_ids, context)
     except ValueError as exc:
@@ -254,6 +254,8 @@ def api_free_slots():
 @app.post("/api/parse_preferences")
 def api_parse_preferences():
     data = request.get_json(silent=True) or {}
+    if not isinstance(data, dict):
+        return bad('請提供JSON物件')
     text = data.get("text")
     if not isinstance(text, str):
         return bad("text 必須是字串")
@@ -288,19 +290,18 @@ def api_schedules():
         completed_courses=[s for s in completed if s],
     )
 
-    spec = _coerce_spec(data.get("preferences") or {}) or PreferenceSpec()
-    prefs = spec.to_solver_prefs()
+    max_sched = data.get("max_schedules", 3)
+    if type(max_sched) is not int or not 1 <= max_sched <= 5:
+        return bad("max_schedules 必須是 1～5 的整數")
     try:
+        spec = _coerce_spec(data.get("preferences") or {}, strict=True)
+        prefs = spec.to_solver_prefs()
         context = planning_context(data, prefs)
         validate_fixed_ids(fixed_ids, context)
     except ValueError as exc:
         return bad(str(exc))
     if context:
         user.completed_courses = sorted(set(user.completed_courses + context.passed_names_and_codes))
-    try:
-        max_sched = min(int(data.get("max_schedules", 3)), 5)
-    except (ValueError, TypeError):
-        max_sched = 3
 
     score_fn = SEARCH.build_score_fn(spec.topics)
     if context:
@@ -377,6 +378,13 @@ def api_schedules():
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5001))
+    # 預設只聽本機、關閉除錯器：Werkzeug 除錯器可遠端執行程式碼，不可對區網開放。
+    # 需要讓同網段裝置連線（如 Demo 用手機開）時設 HOST=0.0.0.0；開發時要自動重載設 FLASK_DEBUG=1。
+    host = os.environ.get("HOST", "127.0.0.1")
+    debug = os.environ.get("FLASK_DEBUG") == "1"
+    if debug and host not in ("127.0.0.1", "localhost"):
+        print("！FLASK_DEBUG=1 只能搭配本機 HOST，已關閉除錯模式")
+        debug = False
     print(f"資料來源：{DATA_SOURCE}（{len(COURSES)} 門）｜語意索引：{SEARCH.available}"
           f"｜LLM：{CLIENT.provider}")
-    app.run(host="0.0.0.0", port=port, debug=True)
+    app.run(host=host, port=port, debug=debug)

@@ -58,6 +58,26 @@ def test_coerce_spec_filters_bad_slots():
     assert spec.languages == ["日語"]            # 別名正規化
 
 
+def test_coerce_spec_lenient_keeps_valid_fields():
+    # LLM 輸出：單一欄位錯誤只捨棄該欄位，不再整份丟掉
+    spec = _coerce_spec({"min_credits": "abc", "max_credits": float("nan"),
+                         "free_days": [5], "topics": ["資料分析"]})
+    assert spec.free_days == [5] and spec.topics == ["資料分析"]
+    assert spec.min_credits is None and spec.max_credits is None
+    spec = _coerce_spec({"min_credits": 20, "max_credits": 10})
+    assert spec.min_credits is None and spec.max_credits is None
+
+
+def test_coerce_spec_strict_raises():
+    import pytest
+    with pytest.raises(ValueError, match="min_credits"):
+        _coerce_spec({"min_credits": "abc", "free_days": [5]}, strict=True)
+    with pytest.raises(ValueError, match="preferences"):
+        _coerce_spec([1], strict=True)
+    ok = _coerce_spec({"min_credits": 12, "max_credits": "20", "free_days": ["5"]}, strict=True)
+    assert (ok.min_credits, ok.max_credits, ok.free_days) == (12.0, 20.0, [5])
+
+
 def test_parse_preferences_mock_uses_keyword():
     spec = parse_preferences("不要早八、週五想空著", LLMClient(provider="mock"))
     assert spec.free_days == [5]

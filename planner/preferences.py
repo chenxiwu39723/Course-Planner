@@ -12,6 +12,7 @@
 """
 from __future__ import annotations
 
+import math
 import re
 from dataclasses import dataclass, field, asdict
 from typing import Any
@@ -65,48 +66,94 @@ class PreferenceSpec:
 
 
 # ------------------------------------------------------------- schema 驗證
-def _coerce_spec(raw: dict[str, Any]) -> PreferenceSpec | None:
+MAX_CREDITS_LIMIT = 60.0    # 學分合理上限（擋 NaN、inf、負數與誇張值）
+
+
+def _coerce_spec(raw: dict[str, Any], strict: bool = False) -> PreferenceSpec | None:
+    """把 dict 轉成 PreferenceSpec。
+
+    - 預設（LLM 輸出）：逐欄位容錯，只捨棄不合法的欄位或項目，不會整份丟掉。
+    - strict=True（使用者送來的條件）：任何不合法處都 raise ValueError，
+      讓 API 回 400 告知使用者，而不是默默忽略。
+    """
     if not isinstance(raw, dict):
+        if strict:
+            raise ValueError("preferences 必須是物件")
         return None
-    try:
-        def num(v):
-            if v in (None, "", "null"):
-                return None
-            return float(v)
+    errors: list[str] = []
 
-        def int_list(v):
-            out = []
-            for x in (v or []):
-                try:
-                    out.append(int(x))
-                except (ValueError, TypeError):
-                    continue
-            return out
+    def num(key):
+        v = raw.get(key)
+        if v in (None, "", "null"):
+            return None
+        try:
+            x = float(v)
+        except (ValueError, TypeError):
+            x = None
+        if isinstance(v, bool) or x is None or not math.isfinite(x) or not 0 <= x <= MAX_CREDITS_LIMIT:
+            errors.append(f"{key} 必須是 0～{MAX_CREDITS_LIMIT:g} 的數字")
+            return None
+        return x
 
-        def str_list(v):
-            if v is None:
-                return []
-            if isinstance(v, str):
-                v = [v]
-            return [str(x).strip() for x in v if str(x).strip()]
+    def as_list(key):
+        v = raw.get(key)
+        if v is None:
+            return []
+        if isinstance(v, str):
+            return [v]
+        if isinstance(v, (list, tuple)):
+            return list(v)
+        errors.append(f"{key} 必須是陣列")
+        return []
 
-        avoid = []
-        for item in (raw.get("avoid_periods") or []):
-            if isinstance(item, (list, tuple)) and len(item) == 2:
-                d, p = item
-                if str(p) in ts.PERIOD_TIMES and str(d).isdigit() and 0 <= int(d) <= 6:
-                    avoid.append([int(d), str(p)])
-        return PreferenceSpec(
-            avoid_periods=avoid,
-            free_days=[d for d in int_list(raw.get("free_days")) if 0 <= d <= 6],
-            min_credits=num(raw.get("min_credits")),
-            max_credits=num(raw.get("max_credits")),
-            topics=str_list(raw.get("topics")),
-            ge_domains=str_list(raw.get("ge_domains")),
-            languages=[_LANG_ALIAS.get(x, x) for x in str_list(raw.get("languages"))],
-        )
-    except (ValueError, TypeError):
-        return None
+    def str_list(key):
+        return [str(x).strip() for x in as_list(key)
+                if isinstance(x, (str, int, float)) and str(x).strip()]
+
+    def day(x):
+        if isinstance(x, bool):
+            return None
+        try:
+            d = int(x)
+        except (ValueError, TypeError):
+            return None
+        return d if 0 <= d <= 6 and str(x).strip() == str(d) else None
+
+    avoid = []
+    for item in as_list("avoid_periods"):
+        if isinstance(item, (list, tuple)) and len(item) == 2:
+            d, p = day(item[0]), str(item[1])
+            if d is not None and p in ts.PERIOD_TIMES:
+                if [d, p] not in avoid:
+                    avoid.append([d, p])
+                continue
+        errors.append(f"avoid_periods 含無效時段：{item!r}")
+
+    free_days = []
+    for x in as_list("free_days"):
+        d = day(x)
+        if d is None:
+            errors.append(f"free_days 含無效星期：{x!r}")
+        elif d not in free_days:
+            free_days.append(d)
+
+    min_c, max_c = num("min_credits"), num("max_credits")
+    if min_c is not None and max_c is not None and min_c > max_c:
+        errors.append("min_credits 不可大於 max_credits")
+        min_c = max_c = None
+    topics, ge_domains, languages = str_list("topics"), str_list("ge_domains"), str_list("languages")
+
+    if strict and errors:
+        raise ValueError("偏好條件有誤：" + "；".join(errors))
+    return PreferenceSpec(
+        avoid_periods=avoid,
+        free_days=free_days,
+        min_credits=min_c,
+        max_credits=max_c,
+        topics=topics,
+        ge_domains=ge_domains,
+        languages=[_LANG_ALIAS.get(x, x) for x in languages],
+    )
 
 
 # ------------------------------------------------------------- 非 AI 關鍵字解析
