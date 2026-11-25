@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0",
+  "rules_id": "NCU-MA-CDS-113-MAJOR",
+  "applicability": {
+    "university": "國立中央大學",
+    "department": "數學系(計算與資料科學組)",
+    "admission_academic_year_roc": 113,
+    "program": "計算與資料科學組",
+    "scope": "10000 主系"
+  },
+  "sources": [
+    {
+      "file": "使用者畢業審核紀錄表",
+      "date": "2026-11-16",
+      "scope": "主系第1–5頁；排除第6頁教育學程",
+      "evidence_type": "individual_audit"
+    },
+    {
+      "file": "AI_course_selection_113_stats_completed.md",
+      "evidence_type": "user_planning_context",
+      "scope": "核心選項、規劃假設；不是完整官方科目表"
+    }
+  ],
+  "verification_status": "依個人審核及案例重建；尚缺113完整官方應修科目表",
+  "required_total_credits": 128,
+  "common_required": {
+    "foreign_language_credits": 6,
+    "chinese_credits": 5,
+    "general_education_credits": 14,
+    "general_education_excess_excluded": true,
+    "advanced_english_excluded": true,
+    "general_education_area_distribution": "待查，不從實修0學分推論無領域要求"
+  },
+  "department_required": {
+    "required_credits": 47,
+    "fixed_courses": [
+      {
+        "course_id": "MA1001",
+        "name": "微積分",
+        "credits": 4
+      },
+      {
+        "course_id": "MA1002",
+        "name": "微積分",
+        "credits": 4
+      },
+      {
+        "course_id": "MA1013",
+        "name": "計算機概論I",
+        "credits": 3
+      },
+      {
+        "course_id": "MA1015",
+        "name": "基礎數學",
+        "credits": 3
+      },
+      {
+        "course_id": "MA1018",
+        "name": "科學計算導論",
+        "credits": 3
+      },
+      {
+        "course_id": "MA2007",
+        "name": "線性代數Ⅰ",
+        "credits": 3
+      },
+      {
+        "course_id": "MA2008",
+        "name": "線性代數Ⅱ",
+        "credits": 3
+      },
+      {
+        "course_id": "MA2011",
+        "name": "統計學",
+        "credits": 3
+      },
+      {
+        "course_id": "MA2021",
+        "name": "機率論",
+        "credits": 3
+      },
+      {
+        "course_id": "MA2030",
+        "name": "數值線性代數",
+        "credits": 3
+      },
+      {
+        "course_id": "MA2044",
+        "name": "數值微分方程",
+        "credits": 3
+      },
+      {
+        "course_id": "MA2049",
+        "name": "分析導論I",
+        "credits": 3
+      },
+      {
+        "course_id": "MA2050",
+        "name": "分析導論Ⅱ",
+        "credits": 3
+      },
+      {
+        "course_id": "MA2063",
+        "name": "最佳化方法與應用",
+        "credits": 3
+      },
+      {
+        "course_id": "MA3067",
+        "name": "數學建模",
+        "credits": 3
+      }
+    ]
+  },
+  "core_electives": {
+    "required_credits": 9,
+    "choice_groups": [
+      {
+        "id": "core_intro",
+        "source_rule_code": "13101",
+        "required_course_count": 2,
+        "required_credits": 6,
+        "known_course_ids": [
+          "MA3111",
+          "MA3131"
+        ],
+        "option_catalog_complete": false,
+        "note": "案例稱三選二，未提供第三門課號，不自行補造"
+      },
+      {
+        "id": "core_project",
+        "source_rule_code": "13102",
+        "required_course_count": 1,
+        "required_credits": 3,
+        "known_course_ids": [
+          "MA3103",
+          "MA3113",
+          "MA3123",
+          "MA3133"
+        ],
+        "option_catalog_complete": true,
+        "source": "使用者案例；113官方完整科目表待核對"
+      }
+    ]
+  },
+  "natural_science": {
+    "required_credits": 6,
+    "required_complete_series_count": 1,
+    "series": [
+      {
+        "id": "physics_b",
+        "source_rule_code": "13201",
+        "name": "普通物理B上下",
+        "known_course_ids": [
+          "PH1033",
+          "PH1034"
+        ],
+        "option_catalog_complete": true
+      },
+      {
+        "id": "chemistry",
+        "source_rule_code": "13202",
+        "name": "普通化學I/II",
+        "known_course_ids": [],
+        "option_catalog_complete": false
+      },
+      {
+        "id": "biology",
+        "source_rule_code": "13203",
+        "name": "普通生物學I/II",
+        "known_course_ids": [],
+        "option_catalog_complete": false
+      }
+    ],
+    "allow_mixing": false
+  },
+  "department_electives": {
+    "required_credits": 21,
+    "core_overlap_policy": "待查；不可將9與21直接相加",
+    "eligibility_policy": "以正式採認或個案PDF已認列為準，不依MA前綴自動認列"
+  },
+  "noncredit_requirements": {
+    "freshman_pe_courses": 2,
+    "other_pe_courses": 3,
+    "service_learning_courses": 2,
+    "conduct_terms": 8,
+    "learning_passport_required_hours": null,
+    "english_proficiency_required": true
+  },
+  "excluded_programs": [
+    "雙主修",
+    "輔系",
+    "中等教師教育學程"
+  ],
+  "unresolved": [
+    "113完整官方核心課程及通識領域規定",
+    "核心9學分與系所選修21學分的重疊採認",
+    "日文、法文及跨系選修是否可採計總學分",
+    "學生學習護照實際時數門檻",
+    "開課學期、先修、衝堂與學分上限"
+  ]
+}
