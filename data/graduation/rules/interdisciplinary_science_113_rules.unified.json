@@ -1,0 +1,334 @@
+{
+  "unified_schema_version": "1.0",
+  "program_id": "interdisciplinary_science_113",
+  "academic_year_roc": 113,
+  "university": "國立中央大學",
+  "college": "理學院",
+  "department": "理學院學士班",
+  "track": null,
+  "required_total_credits": 128,
+  "raw_schema_version": "1.2-bachelor-provisional",
+  "source_file_in_original_zip": "ncu_bachelor_113/interdisciplinary_science_113_rules.json",
+  "source_pdf_evidence": {
+    "file": "理學院學士班.pdf",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "verification_status": "官方113年度PDF整理；尚未經畢業審核引擎實測，特殊課程認列需核對",
+  "review_flags": [],
+  "course_candidates_not_for_automatic_credit_counting": [
+    {
+      "code": "MA1001",
+      "name": "",
+      "credits": 4,
+      "source_path": "$.class_required_courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1002",
+      "name": "",
+      "credits": 4,
+      "source_path": "$.class_required_courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "JS1001",
+      "name": "",
+      "credits": 1,
+      "source_path": "$.class_required_courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "JS1002",
+      "name": "",
+      "credits": 1,
+      "source_path": "$.class_required_courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "JS4001",
+      "name": "",
+      "credits": 1,
+      "source_path": "$.class_required_courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM1011",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.class_required_courses[5]",
+      "status": "candidate_only"
+    }
+  ],
+  "audit_status": "data_only_not_engine_verified",
+  "raw_rules": {
+    "schema_version": "1.2-bachelor-provisional",
+    "program_id": "interdisciplinary_science_113",
+    "university": "國立中央大學",
+    "college": "理學院",
+    "department": "理學院學士班",
+    "entry_year_roc": 113,
+    "degree_type": "primary_major",
+    "required_total_credits": 128,
+    "source": {
+      "file": "理學院學士班.pdf",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "common_required": {
+      "chinese_credits": 5,
+      "foreign_language_credits": 6,
+      "general_education_credits": 14,
+      "total_credits": 25,
+      "physical_education_and_service_learning": "零學分要求，仍需依校規完成"
+    },
+    "verification_status": "官方113年度PDF整理；尚未經畢業審核引擎實測，特殊課程認列需核對",
+    "class_required_courses": [
+      {
+        "course_code": "MA1001",
+        "credits": 4,
+        "name": "",
+        "alternative_codes": []
+      },
+      {
+        "course_code": "MA1002",
+        "credits": 4,
+        "name": "",
+        "alternative_codes": []
+      },
+      {
+        "course_code": "JS1001",
+        "credits": 1,
+        "name": "",
+        "alternative_codes": []
+      },
+      {
+        "course_code": "JS1002",
+        "credits": 1,
+        "name": "",
+        "alternative_codes": []
+      },
+      {
+        "course_code": "JS4001",
+        "credits": 1,
+        "name": "",
+        "alternative_codes": []
+      },
+      {
+        "course_code": "BM1011",
+        "credits": 3,
+        "name": "",
+        "alternative_codes": []
+      }
+    ],
+    "natural_science_choose_two_full_series": {
+      "required_series": 2,
+      "options": {
+        "physics": [
+          "PH1031",
+          "PH1032"
+        ],
+        "chemistry": [
+          "CM1009",
+          "CM1010"
+        ],
+        "biology": [
+          "LS1013",
+          "LS1014"
+        ]
+      },
+      "total_credits": 12
+    },
+    "experiment_choose_one": {
+      "min_courses": 1,
+      "credits": 1,
+      "options": [
+        "PH1003",
+        "CM1008",
+        "LS1003"
+      ]
+    },
+    "cross_college_electives": {
+      "min_credits": 6,
+      "choose_one_college": [
+        "管理學院",
+        "工學院",
+        "資訊電機學院",
+        "地球科學學院"
+      ],
+      "restriction": "從同一學院指定課程選6學分"
+    },
+    "specialization_rule": {
+      "first_and_second_required": true,
+      "first_general_min_credits": 33,
+      "second_general_min_credits": 20,
+      "domains": {
+        "physics": {
+          "name": "物理",
+          "first_required_credits": 14,
+          "first_total_min_credits": 33,
+          "second_required_credits": 14,
+          "second_total_min_credits": 20,
+          "english_first_min": 24,
+          "english_second_min": 14,
+          "required_codes": [
+            "PH1027",
+            "PH1028",
+            "PH3009",
+            "PH3011"
+          ]
+        },
+        "chemistry": {
+          "name": "化學",
+          "first_required_credits_range": [
+            27,
+            29
+          ],
+          "first_total_min_credits": 33,
+          "second_required_credits": 15,
+          "second_total_min_credits": 20,
+          "english_first_total_range": [
+            27,
+            29
+          ],
+          "english_second_min": 15,
+          "required_codes": [
+            "CM2021",
+            "CM2022",
+            "CM2031",
+            "CM2032",
+            "CM2081",
+            "CM2082"
+          ],
+          "first_choose_one_full_series": [
+            [
+              "CM3041",
+              "CM3042"
+            ],
+            [
+              "CM3051",
+              "CM3052"
+            ]
+          ]
+        },
+        "mathematics": {
+          "name": "數學",
+          "subtracks": {
+            "A": {
+              "name": "數學科學",
+              "first_required": 23,
+              "first_total_min": 32,
+              "second_required": 14,
+              "second_total_min": 20,
+              "english_first_min": 24,
+              "english_second_min": 14
+            },
+            "B": {
+              "name": "計算與資料科學",
+              "first_required": 24,
+              "first_total_min": 33,
+              "second_required": 12,
+              "second_total_min": 20,
+              "english_first_min": 24,
+              "english_second_min": 12
+            }
+          },
+          "required_A": [
+            "MA2007",
+            "MA2008",
+            "MA2045",
+            "MA2046",
+            "MA2021",
+            "MA2025",
+            "MA2041"
+          ],
+          "required_B": [
+            "MA2007",
+            "MA2008",
+            "MA2049",
+            "MA2050",
+            "MA2011",
+            "MA2021",
+            "MA2044",
+            "MA2063"
+          ]
+        },
+        "life_sciences": {
+          "name": "生命科學",
+          "first_required": 13,
+          "first_total_min": 33,
+          "second_required": 13,
+          "second_total_min": 20,
+          "english_first_min": 24,
+          "english_second_min": 13,
+          "required_codes": [
+            "LS2001",
+            "LS2002",
+            "LS3001",
+            "LS3018"
+          ]
+        },
+        "biomedical": {
+          "name": "生醫",
+          "subtracks": {
+            "A": {
+              "name": "生醫科學",
+              "first_required": 16,
+              "first_total_min": 33,
+              "second_required": 16,
+              "second_total_min": 20,
+              "english_first_min": 24,
+              "english_second_min": 16
+            },
+            "B": {
+              "name": "醫學工程與資訊科學",
+              "first_required": 16,
+              "first_total_min": 33,
+              "second_required": 16,
+              "second_total_min": 20,
+              "english_first_min": 24,
+              "english_second_min": 16
+            }
+          },
+          "required_A": [
+            "BM2014",
+            "BM2039",
+            "BM2045",
+            "HT3001",
+            "BM3006",
+            "BM3032"
+          ],
+          "required_B": [
+            "BM2012",
+            "BM2013",
+            "BM2014",
+            "BM2039",
+            "HT3001",
+            "BM3006"
+          ]
+        }
+      },
+      "english_track_requirements": [
+        "微積分上下學期為EMI",
+        "指定自然科學系列EMI條件",
+        "大二至大三四個學期合計至少四門EMI課程"
+      ],
+      "english_track_requires_manual_review": true,
+      "notes": "領域課程完整可選名單與開課學期應核對附件及當期課程系統"
+    }
+  }
+}

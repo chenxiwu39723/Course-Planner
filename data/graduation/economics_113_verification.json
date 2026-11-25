@@ -1,0 +1,32 @@
+{
+  "source_file": "管理學院.pdf",
+  "source_page": 4,
+  "status": "existing_rule_should_be_compared_not_overwritten",
+  "department": "經濟學系",
+  "year": 113,
+  "official_requirements": {
+    "total_credits": 128,
+    "required_including_common": 85,
+    "department_electives_min_credits": 23,
+    "core_choose_three_of": [
+      "EC3077",
+      "EC2054",
+      "EC3112",
+      "EC3079",
+      "EC3117",
+      "EC3018"
+    ],
+    "digital_literacy_min_credits": 6,
+    "general_education_four_domains_choose": 3,
+    "each_chosen_domain_min_course_count": 1,
+    "economics_related_ge_excluded": true,
+    "extra_ge_recognition_max_credits": 6,
+    "foreign_language": "大一英文管理課群6學分必修",
+    "double_major_professional_required_credits": 60,
+    "double_major_department_electives_min_credits": 14
+  },
+  "needs_external_catalog": [
+    "經濟學相關課程不採通識之排除清單",
+    "數位素養可採課程清單"
+  ]
+}

@@ -16,6 +16,7 @@ let FIXED = {};        // id -> course brief
 let AVOID = [];        // [[day, period], ...]（不含早八，早八以 checkbox 控制）
 let SCHEDULES = [];    // 最近一次產生的課表
 let ACTIVE = 0;
+let GRAD_STUDENT = null;
 
 // ---------------------------------------------------------- 狀態儲存
 function saveState() {
@@ -25,6 +26,8 @@ function saveState() {
     completed: $("#u-completed").value,
     prefText: $("#pref-text").value,
     fixed: FIXED,
+    graduation: $("#grad-program").value && GRAD_STUDENT
+      ? { program_id: $("#grad-program").value, student: GRAD_STUDENT } : null,
   };
   try { sessionStorage.setItem("ncu_planner", JSON.stringify(state)); } catch (e) {}
 }
@@ -36,6 +39,11 @@ function loadState() {
   if (s.completed) $("#u-completed").value = s.completed;
   if (s.prefText) $("#pref-text").value = s.prefText;
   if (s.fixed) { FIXED = s.fixed; renderFixedChips(); }
+  if (s.graduation && (META.graduation_programs || []).some(p => p.id === s.graduation.program_id)) {
+    $("#grad-program").value = s.graduation.program_id;
+    GRAD_STUDENT = s.graduation.student;
+  }
+  $("#grad-controls").classList.toggle("hidden", !$("#grad-program").value);
 }
 
 // ---------------------------------------------------------- 初始化
@@ -58,6 +66,11 @@ async function init() {
   // 類別 / 通識領域篩選
   fillSelect("#f-category", m.categories);
   fillSelect("#f-gedomain", m.ge_domains);
+  (m.graduation_programs || []).forEach(p => {
+    const option = document.createElement("option");
+    option.value = p.id; option.textContent = p.label;
+    $("#grad-program").appendChild(option);
+  });
   // 想空的星期 checkboxes
   const fd = $("#p-freedays");
   (m.default_days || [1,2,3,4,5]).forEach(d => {
@@ -67,6 +80,7 @@ async function init() {
   });
   loadState();
   bindEvents();
+  if (GRAD_STUDENT) await checkGraduation();
 }
 
 function fillSelect(sel, items) {
@@ -96,12 +110,115 @@ function renderMetaStatus(m) {
 }
 
 function bindEvents() {
+  $("#grad-program").onchange = () => {
+    GRAD_STUDENT = null;
+    $("#grad-controls").classList.toggle("hidden", !$("#grad-program").value);
+    $("#grad-report").replaceChildren();
+    $("#grad-status").textContent = $("#grad-program").value ? "請載入案例，或匯入自己的主系JSON。" : "";
+    $("#grad-file").value = "";
+    saveState();
+  };
+  $("#grad-demo").onclick = loadGraduationDemo;
+  $("#grad-check").onclick = checkGraduation;
+  $("#grad-file").onchange = importGraduationRecord;
   $("#fixed-search-btn").onclick = searchFixed;
   $("#fixed-search").addEventListener("keydown", e => { if (e.key === "Enter") searchFixed(); });
   $("#parse-btn").onclick = parsePrefs;
   $("#gen-btn").onclick = generate;
   ["#u-dept","#u-grade","#u-completed","#pref-text"].forEach(s =>
     $(s).addEventListener("change", saveState));
+}
+
+function graduationPayload() {
+  const program = $("#grad-program").value;
+  if (!program) return null;
+  if (!GRAD_STUDENT) throw new Error("請先載入77學分案例，或匯入自己的主系JSON。");
+  return { program_id: program, student: GRAD_STUDENT };
+}
+
+async function loadGraduationDemo() {
+  const program = $("#grad-program").value;
+  if (!program) return;
+  $("#grad-demo").disabled = true;
+  try {
+    const j = await api(`/api/graduation/demo/${encodeURIComponent(program)}`);
+    if ($("#grad-program").value !== program) return;
+    GRAD_STUDENT = j.student;
+    $("#u-dept").value = "數學系";
+    $("#u-grade").value = "3";
+    saveState();
+    await checkGraduation();
+  } catch (e) { $("#grad-status").textContent = e.message; }
+  finally { $("#grad-demo").disabled = false; }
+}
+
+async function importGraduationRecord() {
+  const file = $("#grad-file").files[0];
+  if (!file) return;
+  const program = $("#grad-program").value;
+  try {
+    if (file.size > 1024 * 1024) throw new Error("JSON請小於1MB。");
+    const student = JSON.parse(await file.text());
+    const j = await api("/api/graduation/check", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({program_id: program, student}),
+    });
+    if ($("#grad-program").value !== program) return;
+    GRAD_STUDENT = student;
+    $("#u-dept").value = "數學系";
+    saveState(); renderGraduationReport(j.report);
+  } catch (e) { $("#grad-status").textContent = `匯入失敗：${e.message}`; }
+}
+
+async function checkGraduation() {
+  const status = $("#grad-status");
+  try {
+    const payload = graduationPayload();
+    if (!payload) return;
+    status.textContent = "檢查中…";
+    const j = await api("/api/graduation/check", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    if ($("#grad-program").value === payload.program_id) renderGraduationReport(j.report);
+  } catch (e) { status.textContent = `無法檢查：${e.message}`; }
+}
+
+function renderGraduationReport(report) {
+  const total = report.total_credits;
+  $("#grad-status").textContent = `已完成 ${total.completed}／${total.required} 學分，尚差 ${total.remaining}；在修 ${report.in_progress_credits} 學分另列。`;
+  const box = $("#grad-report"); box.replaceChildren();
+  const summary = document.createElement("p");
+  summary.className = "graduation-summary";
+  summary.textContent = `${total.completed} / ${total.required} 學分`;
+  box.appendChild(summary);
+  const progress = document.createElement("progress");
+  progress.max = total.required; progress.value = total.completed;
+  progress.setAttribute("aria-label", "畢業總學分進度");
+  box.appendChild(progress);
+  const table = document.createElement("table"); table.className = "graduation-table";
+  const head = table.createTHead().insertRow();
+  ["條件", "完成／要求", "尚差"].forEach(label => { const th = document.createElement("th"); th.textContent = label; head.appendChild(th); });
+  const body = table.createTBody();
+  report.requirement_rows.forEach(item => {
+    const row = body.insertRow();
+    [item.label, `${item.completed}／${item.required}`, `${item.remaining} ${item.unit}`]
+      .forEach(value => { row.insertCell().textContent = value; });
+  });
+  box.appendChild(table);
+  const notes = ["各列不能直接相加；核心與系所選修的重疊採認仍待確認。", ...report.data_notes];
+  const nc = report.noncredit_requirements;
+  notes.push(`學習護照：${nc.learning_passport.hours ?? "未知"} 小時，門檻待查；英文能力：${nc.english_proficiency.status === "passed" ? "已完成" : "待確認"}。`);
+  if (report.unavailable_needed_course_codes.length) notes.push(`本資料學期未找到的缺額選項：${report.unavailable_needed_course_codes.join("、")}。請查後續開課。`);
+  const ul = document.createElement("ul"); ul.className = "graduation-notes";
+  notes.forEach(note => { const li = document.createElement("li"); li.textContent = note; ul.appendChild(li); });
+  box.appendChild(ul);
+  const details = document.createElement("details");
+  const label = document.createElement("summary"); label.textContent = "採認及規則待確認事項";
+  details.appendChild(label);
+  const list = document.createElement("ul");
+  report.to_verify.forEach(note => { const li = document.createElement("li"); li.textContent = note; list.appendChild(li); });
+  details.appendChild(list); box.appendChild(details);
 }
 
 // ---------------------------------------------------------- 步驟1：固定課
@@ -233,6 +350,9 @@ function readSpec() {
 
 // ---------------------------------------------------------- 步驟3：產生課表
 async function generate() {
+  let graduation;
+  try { graduation = graduationPayload(); }
+  catch (e) { $("#gen-status").textContent = e.message; return; }
   saveState();
   const btn = $("#gen-btn");
   const status = $("#gen-status");
@@ -254,6 +374,7 @@ async function generate() {
     },
     preferences: $("#pref-parsed").classList.contains("hidden") ? {} : readSpec(),
     max_schedules: 3,
+    graduation,
   };
   try {
     const j = await api("/api/schedules", {
@@ -261,6 +382,7 @@ async function generate() {
       body: JSON.stringify(body),
     });
     SCHEDULES = j.schedules;
+    if (j.graduation_report) renderGraduationReport(j.graduation_report);
     window._freeSlots = j.free_slots;
     window._avoidSet = buildAvoidSet(j.preferences_used);
     if (!SCHEDULES.length) {
@@ -272,7 +394,7 @@ async function generate() {
     $("#schedule-empty").classList.add("hidden");
     const s = j.stats;
     const capNote = s.added_cap
-      ? `；未設學分上限，預設最多加 ${s.added_cap} 門通識/語言課（可在偏好設定學分上限調整）`
+      ? `；未設學分上限，預設最多加 ${s.added_cap} 門候選課（可在偏好設定學分上限調整）`
       : "";
     status.textContent = `產生 ${SCHEDULES.length} 組（搜尋 ${s.nodes} 節點、${s.elapsed}s${s.hit_limit ? "，已達上限回傳最佳結果" : ""}）${capNote}`;
     ACTIVE = 0; renderTabs(); renderScheme();
@@ -398,6 +520,12 @@ function renderCourseList(sch) {
       ${c.role === "fixed" ? '<span class="badge" style="background:var(--fixed-bg);color:var(--fixed)">固定課</span>' : ''}</div>
       <div class="course-sub">${c.dept}・${(c.teacher||[]).join("、")}・${c.credits} 學分・${fmtTimes(c.times)}${c.classroom ? "・" + c.classroom : ""}</div>`;
     if (c.reason) html += `<div class="reason">💡 ${c.reason}</div>`;
+    if (c.graduation && c.graduation.requirements.length) {
+      const note = document.createElement("div");
+      note.textContent = `畢業缺額：${c.graduation.requirements.join("、")}；通過並經採認後計入。`;
+      note.className = "graduation-match";
+      html += note.outerHTML;
+    }
     // 資格原因
     if (c.role === "added" && e.reasons && e.reasons.length) {
       html += `<div class="course-sub">資格：${e.reasons.join("；")}</div>`;

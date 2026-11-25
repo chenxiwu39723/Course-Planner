@@ -1,0 +1,324 @@
+{
+  "unified_schema_version": "1.0",
+  "program_id": "english_113",
+  "academic_year_roc": 113,
+  "university": "國立中央大學",
+  "college": "文學院",
+  "department": "英美語文學系",
+  "track": null,
+  "required_total_credits": 128,
+  "raw_schema_version": "2.0-literature-extraction",
+  "source_file_in_original_zip": "ncu_literature_113/english_113.json",
+  "source_pdf_evidence": [
+    {
+      "file": "文學院.pdf",
+      "page": 3,
+      "document": "113學年度入學新生適用應修科目表"
+    }
+  ],
+  "verification_status": "依使用者提供的113學年度應修科目表逐條轉錄；尚未經實際學生審核驗證",
+  "review_flags": [
+    {
+      "field": "uncertainties",
+      "details": [
+        "全校應修科目表注意事項未附，零學分條件及全校共同規定尚待核對",
+        "共同必修外文6學分與本系78學分採認關係，以及本系完整語言訓練與專業學科課程清單，需學校正式規則確認"
+      ]
+    }
+  ],
+  "course_candidates_not_for_automatic_credit_counting": [
+    {
+      "code": "EL1060",
+      "name": "影像分析寫作",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EL1064",
+      "name": "英文口語訓練",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EL1204",
+      "name": "文獻蒐集與論證寫作",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EL2078",
+      "name": "文學分析寫作",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EL2076",
+      "name": "演說與溝通I",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EL4201",
+      "name": "研究、寫作與實踐",
+      "credits": 3,
+      "source_path": "$.department_required.choice_groups[0].options[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EL4202",
+      "name": "翻譯與媒介",
+      "credits": 3,
+      "source_path": "$.department_required.choice_groups[0].options[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EL1201",
+      "name": "比較觀念文化史",
+      "credits": 3,
+      "source_path": "$.department_required.choice_groups[1].options[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EL1202",
+      "name": "文學、歷史與哲思",
+      "credits": 3,
+      "source_path": "$.department_required.choice_groups[1].options[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EL1203",
+      "name": "殖民現代性",
+      "credits": 3,
+      "source_path": "$.department_required.choice_groups[1].options[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EL2005",
+      "name": "英語語言學概論",
+      "credits": 3,
+      "source_path": "$.department_required.choice_groups[2].options[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EL3201",
+      "name": "英國文學研究",
+      "credits": 3,
+      "source_path": "$.department_required.choice_groups[2].options[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EL3202",
+      "name": "英語系研究",
+      "credits": 3,
+      "source_path": "$.department_required.choice_groups[2].options[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EL3203",
+      "name": "美國研究I",
+      "credits": 3,
+      "source_path": "$.department_required.choice_groups[2].options[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EL3204",
+      "name": "美國研究II",
+      "credits": 3,
+      "source_path": "$.department_required.choice_groups[2].options[4]",
+      "status": "candidate_only"
+    }
+  ],
+  "audit_status": "data_only_not_engine_verified",
+  "raw_rules": {
+    "schema_version": "2.0-literature-extraction",
+    "rules_id": "english_113",
+    "applicability": {
+      "university": "國立中央大學",
+      "college": "文學院",
+      "department": "英美語文學系",
+      "program": null,
+      "admission_academic_year_roc": 113,
+      "scope": "major"
+    },
+    "sources": [
+      {
+        "file": "文學院.pdf",
+        "page": 3,
+        "document": "113學年度入學新生適用應修科目表"
+      }
+    ],
+    "verification_status": "依使用者提供的113學年度應修科目表逐條轉錄；尚未經實際學生審核驗證",
+    "required_total_credits": 128,
+    "common_required": {
+      "chinese_credits": 5,
+      "foreign_language_credits": 6,
+      "general_education_credits": 14,
+      "common_total_credits": 25,
+      "physical_education_zero_credit": true,
+      "service_learning_zero_credit": true,
+      "advanced_english_excluded": true,
+      "ge_core_min_domains": 1,
+      "ge_core_total_domains": 4,
+      "university_wide_other_requirements": "參照應修科目表注意事項；本PDF未附",
+      "foreign_language_options": [
+        "須選修英美語文學系開設任意課程6學分",
+        "語言中心大一英文不能採認為本系外文共同必修"
+      ]
+    },
+    "noncredit_requirements": {
+      "physical_education": {
+        "course_count_shown": 5,
+        "verification": "需對照全校應修科目表注意事項"
+      },
+      "service_learning": {
+        "course_count_shown": 2,
+        "verification": "需對照全校應修科目表注意事項"
+      },
+      "conduct_terms": null
+    },
+    "uncertainties": [
+      "全校應修科目表注意事項未附，零學分條件及全校共同規定尚待核對",
+      "共同必修外文6學分與本系78學分採認關係，以及本系完整語言訓練與專業學科課程清單，需學校正式規則確認"
+    ],
+    "review_status": "structured_needs_integration",
+    "department_required": {
+      "required_credits": 39,
+      "fixed_courses": [
+        {
+          "course_id": "EL1060",
+          "name": "影像分析寫作",
+          "credits": 3
+        },
+        {
+          "course_id": "EL1064",
+          "name": "英文口語訓練",
+          "credits": 3
+        },
+        {
+          "course_id": "EL1204",
+          "name": "文獻蒐集與論證寫作",
+          "credits": 3
+        },
+        {
+          "course_id": "EL2078",
+          "name": "文學分析寫作",
+          "credits": 3
+        },
+        {
+          "course_id": "EL2076",
+          "name": "演說與溝通I",
+          "credits": 3
+        }
+      ],
+      "choice_groups": [
+        {
+          "id": "language_training_one_of_two",
+          "required_course_count": 1,
+          "required_credits": 3,
+          "options": [
+            {
+              "course_id": "EL4201",
+              "name": "研究、寫作與實踐",
+              "credits": 3
+            },
+            {
+              "course_id": "EL4202",
+              "name": "翻譯與媒介",
+              "credits": 3
+            }
+          ],
+          "catalog_complete": true
+        },
+        {
+          "id": "disciplinary_three_of_three",
+          "required_course_count": 3,
+          "required_credits": 9,
+          "options": [
+            {
+              "course_id": "EL1201",
+              "name": "比較觀念文化史",
+              "credits": 3
+            },
+            {
+              "course_id": "EL1202",
+              "name": "文學、歷史與哲思",
+              "credits": 3
+            },
+            {
+              "course_id": "EL1203",
+              "name": "殖民現代性",
+              "credits": 3
+            }
+          ],
+          "catalog_complete": true
+        },
+        {
+          "id": "disciplinary_four_of_five",
+          "required_course_count": 4,
+          "required_credits": 12,
+          "options": [
+            {
+              "course_id": "EL2005",
+              "name": "英語語言學概論",
+              "credits": 3
+            },
+            {
+              "course_id": "EL3201",
+              "name": "英國文學研究",
+              "credits": 3
+            },
+            {
+              "course_id": "EL3202",
+              "name": "英語系研究",
+              "credits": 3
+            },
+            {
+              "course_id": "EL3203",
+              "name": "美國研究I",
+              "credits": 3
+            },
+            {
+              "course_id": "EL3204",
+              "name": "美國研究II",
+              "credits": 3
+            }
+          ],
+          "catalog_complete": true
+        }
+      ]
+    },
+    "department_course_requirements": {
+      "minimum_credits": 78,
+      "language_training_min_credits": 30,
+      "language_training_required_and_choice_credits": 18,
+      "language_training_additional_electives": 12,
+      "disciplinary_min_credits": 48,
+      "disciplinary_required_and_choice_credits": 21,
+      "disciplinary_additional_electives": 27,
+      "course_catalog_complete": false,
+      "category_mapping_required": true
+    },
+    "required_total_including_common": 103,
+    "free_elective_credits": 25,
+    "credit_counting_rules": {
+      "description": "本系課程至少78學分，當中語言訓練至少30、專業學科至少48；另外25學分可自由選修；共同必修外文6學分須選本系課程，可能與本系78學分發生採認交集，暫不自行判定",
+      "excluded_course_types": [
+        "本校語言中心進修英文"
+      ],
+      "outside_university_policy": "原則上須為本校未開設之課程"
+    },
+    "double_major_requirements": {
+      "description": "依本校學生修讀雙主修辦法，PDF無另列詳細學分"
+    },
+    "data_checks": {
+      "fixed_course_credit_sum": 15,
+      "declared_department_required_credits": 39,
+      "fixed_plus_choice_credits": 39
+    }
+  }
+}

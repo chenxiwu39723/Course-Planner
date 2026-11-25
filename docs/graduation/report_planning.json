@@ -1,0 +1,184 @@
+{
+  "rules_id": "NCU-MA-CDS-113-MAJOR",
+  "student_label": "匿名數學系113入學案例：統計學完成規劃版",
+  "input_mode": "planning_override",
+  "total_credits": {
+    "required": 128,
+    "completed": 77,
+    "remaining": 51
+  },
+  "passed_credits_pending_recognition": 0,
+  "department_required": {
+    "credits": {
+      "required": 47,
+      "completed": 47,
+      "remaining": 0
+    },
+    "missing_courses": []
+  },
+  "common_required": {
+    "foreign_language": {
+      "required": 6,
+      "completed": 6,
+      "remaining": 0
+    },
+    "chinese": {
+      "required": 5,
+      "completed": 5,
+      "remaining": 0
+    },
+    "general_education": {
+      "required": 14,
+      "completed": 10,
+      "remaining": 4
+    },
+    "area_distribution": "待查"
+  },
+  "core_electives": {
+    "core_intro": {
+      "courses": {
+        "required": 2,
+        "completed": 0,
+        "remaining": 2
+      },
+      "credits": {
+        "required": 6,
+        "completed": 0,
+        "remaining": 6
+      },
+      "passed_course_ids": [],
+      "in_progress_course_ids": [
+        "MA3111",
+        "MA3131"
+      ],
+      "known_options": [
+        "MA3111",
+        "MA3131"
+      ],
+      "option_catalog_complete": false
+    },
+    "core_project": {
+      "courses": {
+        "required": 1,
+        "completed": 0,
+        "remaining": 1
+      },
+      "credits": {
+        "required": 3,
+        "completed": 0,
+        "remaining": 3
+      },
+      "passed_course_ids": [],
+      "in_progress_course_ids": [],
+      "known_options": [
+        "MA3103",
+        "MA3113",
+        "MA3123",
+        "MA3133"
+      ],
+      "option_catalog_complete": true
+    }
+  },
+  "natural_science": {
+    "series": [
+      {
+        "id": "physics_b",
+        "credits": {
+          "required": 6,
+          "completed": 3,
+          "remaining": 3
+        },
+        "courses": {
+          "required": 2,
+          "completed": 1,
+          "remaining": 1
+        },
+        "missing_known_course_ids": [
+          "PH1034"
+        ]
+      },
+      {
+        "id": "chemistry",
+        "credits": {
+          "required": 6,
+          "completed": 0,
+          "remaining": 6
+        },
+        "courses": {
+          "required": 2,
+          "completed": 0,
+          "remaining": 2
+        },
+        "missing_known_course_ids": []
+      },
+      {
+        "id": "biology",
+        "credits": {
+          "required": 6,
+          "completed": 0,
+          "remaining": 6
+        },
+        "courses": {
+          "required": 2,
+          "completed": 0,
+          "remaining": 2
+        },
+        "missing_known_course_ids": []
+      }
+    ],
+    "completed": false
+  },
+  "department_electives": {
+    "required": 21,
+    "completed": 6,
+    "remaining": 15,
+    "overlap_policy": "核心與系所選修的重疊採認待查，不加總缺額"
+  },
+  "noncredit_requirements": {
+    "freshman_pe": {
+      "required": 2,
+      "completed": 2,
+      "remaining": 0
+    },
+    "other_pe": {
+      "required": 3,
+      "completed": 0,
+      "remaining": 3
+    },
+    "service_learning": {
+      "required": 2,
+      "completed": 2,
+      "remaining": 0
+    },
+    "conduct": {
+      "required": 8,
+      "completed": 4,
+      "remaining": 4
+    },
+    "learning_passport": {
+      "hours": 85.0,
+      "required_hours": null,
+      "status": "not_completed"
+    },
+    "english_proficiency": {
+      "status": "passed"
+    }
+  },
+  "in_progress_credits": 24,
+  "planning_overrides": [
+    {
+      "course_id": "MA2011",
+      "source_status": "withdrawn",
+      "planning_status": "passed",
+      "reason": "使用者提供案例指定統計學視為通過；不修改原始成績"
+    }
+  ],
+  "to_verify": [
+    "113完整官方核心課程及通識領域規定",
+    "核心9學分與系所選修21學分的重疊採認",
+    "日文、法文及跨系選修是否可採計總學分",
+    "學生學習護照實際時數門檻",
+    "開課學期、先修、衝堂與學分上限"
+  ],
+  "graduation_verdict": "尚未完成；此為初步缺口檢查，非正式畢業資格審核"
+}

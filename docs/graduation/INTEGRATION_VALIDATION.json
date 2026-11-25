@@ -1,0 +1,19 @@
+{
+  "program_rules_count": 32,
+  "economics_original_restored": true,
+  "status_parse_bug_fixed": true,
+  "generic_pdf_importer_available": true,
+  "supported_document": "NCU text-based graduation audit, primary-major section only",
+  "generic_audit_engine_implemented": false,
+  "flask_integration_done": false,
+  "tests": {
+    "new_importer": 7,
+    "economics_existing": 17
+  },
+  "limitations": [
+    "synthetic PDF tests only",
+    "program-specific credit recognition not yet implemented",
+    "scanner/image PDFs not supported",
+    "double majors excluded"
+  ]
+}

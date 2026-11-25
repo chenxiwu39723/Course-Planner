@@ -1,0 +1,381 @@
+{
+  "unified_schema_version": "1.0",
+  "program_id": "computer_science",
+  "academic_year_roc": 113,
+  "university": "國立中央大學",
+  "college": "資訊電機學院",
+  "department": "資訊工程學系",
+  "track": null,
+  "required_total_credits": 128,
+  "raw_schema_version": "1.1-provisional",
+  "source_file_in_original_zip": "ncu_electrical_cs_113/computer_science_rules.json",
+  "source_pdf_evidence": [
+    {
+      "file": "資訊電機學院.pdf",
+      "page": 7,
+      "source_type": "113學年度應修科目表"
+    }
+  ],
+  "verification_status": "官方應修科目表整理；圖示星號／三角類別與學校正式抵認尚需逐項複核",
+  "review_flags": [
+    {
+      "field": "unresolved",
+      "details": [
+        "電機通訊課程流程圖中的＊與△課程全名單須由人工逐項核對",
+        "等同課程重複修讀不可重複採計",
+        "正式採認與抵免須以校方審核為準"
+      ]
+    }
+  ],
+  "course_candidates_not_for_automatic_credit_counting": [
+    {
+      "code": "MA1003",
+      "name": "微積分",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1004",
+      "name": "微積分",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE1001",
+      "name": "計算機概論I",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE1002",
+      "name": "計算機概論II",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE1003",
+      "name": "計算機實習I",
+      "credits": 1,
+      "source_path": "$.required_courses.department_required[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE1004",
+      "name": "計算機實習II",
+      "credits": 1,
+      "source_path": "$.required_courses.department_required[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE1006",
+      "name": "工程數學",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE2008",
+      "name": "數位系統導論",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE2010",
+      "name": "數位系統實驗",
+      "credits": 1,
+      "source_path": "$.required_courses.department_required[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE2003",
+      "name": "離散數學",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE2005",
+      "name": "線性代數",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[10]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE2002",
+      "name": "資料結構",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[11]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE2012",
+      "name": "組合語言與系統程式",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[12]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE2006",
+      "name": "機率與統計",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[13]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE2004",
+      "name": "程式語言",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[14]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE3002",
+      "name": "作業系統",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[15]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE3001",
+      "name": "計算機組織",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[16]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE3005",
+      "name": "演算法",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[17]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE3007",
+      "name": "計算機網路",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[18]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE3008",
+      "name": "專題實驗",
+      "credits": 2,
+      "source_path": "$.required_courses.department_required[19]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE4001",
+      "name": "專題實驗",
+      "credits": 2,
+      "source_path": "$.required_courses.department_required[20]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE3006",
+      "name": "編譯器",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[21]",
+      "status": "candidate_only"
+    }
+  ],
+  "audit_status": "data_only_not_engine_verified",
+  "raw_rules": {
+    "schema_version": "1.1-provisional",
+    "rules_id": "NCU-IE-COMPUTER_SCIENCE-113",
+    "program_id": "computer_science",
+    "applicability": {
+      "university": "國立中央大學",
+      "college": "資訊電機學院",
+      "department": "資訊工程學系",
+      "admission_academic_year_roc": 113,
+      "degree_type": "primary_major"
+    },
+    "sources": [
+      {
+        "file": "資訊電機學院.pdf",
+        "page": 7,
+        "source_type": "113學年度應修科目表"
+      }
+    ],
+    "verification_status": "官方應修科目表整理；圖示星號／三角類別與學校正式抵認尚需逐項複核",
+    "required_total_credits": 128,
+    "required_credits_including_common": 83,
+    "common_required": {
+      "chinese_credits": 5,
+      "foreign_language_credits": 6,
+      "general_education_credits": 14,
+      "common_total_credits": 25,
+      "noncredit": {
+        "physical_education_courses": 5,
+        "service_learning_courses": 2
+      },
+      "general_education_core_min_domains": 1,
+      "foreign_language_options": "一律必修大一英文工程課群6學分",
+      "exclude_course_names_from_total": [],
+      "remedial_english_included_in_total": true
+    },
+    "required_courses": {
+      "department_required": [
+        {
+          "course_id": "MA1003",
+          "name": "微積分",
+          "credits": 3
+        },
+        {
+          "course_id": "MA1004",
+          "name": "微積分",
+          "credits": 3
+        },
+        {
+          "course_id": "CE1001",
+          "name": "計算機概論I",
+          "credits": 3
+        },
+        {
+          "course_id": "CE1002",
+          "name": "計算機概論II",
+          "credits": 3
+        },
+        {
+          "course_id": "CE1003",
+          "name": "計算機實習I",
+          "credits": 1
+        },
+        {
+          "course_id": "CE1004",
+          "name": "計算機實習II",
+          "credits": 1
+        },
+        {
+          "course_id": "CE1006",
+          "name": "工程數學",
+          "credits": 3
+        },
+        {
+          "course_id": "CE2008",
+          "name": "數位系統導論",
+          "credits": 3
+        },
+        {
+          "course_id": "CE2010",
+          "name": "數位系統實驗",
+          "credits": 1
+        },
+        {
+          "course_id": "CE2003",
+          "name": "離散數學",
+          "credits": 3
+        },
+        {
+          "course_id": "CE2005",
+          "name": "線性代數",
+          "credits": 3
+        },
+        {
+          "course_id": "CE2002",
+          "name": "資料結構",
+          "credits": 3
+        },
+        {
+          "course_id": "CE2012",
+          "name": "組合語言與系統程式",
+          "credits": 3
+        },
+        {
+          "course_id": "CE2006",
+          "name": "機率與統計",
+          "credits": 3
+        },
+        {
+          "course_id": "CE2004",
+          "name": "程式語言",
+          "credits": 3
+        },
+        {
+          "course_id": "CE3002",
+          "name": "作業系統",
+          "credits": 3
+        },
+        {
+          "course_id": "CE3001",
+          "name": "計算機組織",
+          "credits": 3
+        },
+        {
+          "course_id": "CE3005",
+          "name": "演算法",
+          "credits": 3
+        },
+        {
+          "course_id": "CE3007",
+          "name": "計算機網路",
+          "credits": 3
+        },
+        {
+          "course_id": "CE3008",
+          "name": "專題實驗",
+          "credits": 2
+        },
+        {
+          "course_id": "CE4001",
+          "name": "專題實驗",
+          "credits": 2
+        },
+        {
+          "course_id": "CE3006",
+          "name": "編譯器",
+          "credits": 3
+        }
+      ]
+    },
+    "required_course_credit_sum": 58,
+    "required_credit_reconciliation": {
+      "listed_professional_credits": 58,
+      "listed_plus_common_credits": 83,
+      "official_required_total": 83,
+      "matches": true
+    },
+    "selection_groups": [],
+    "elective_requirements": [
+      {
+        "id": "in_department_or_college_electives",
+        "required_credits": 21,
+        "eligible_units": "本系或資訊電機學院所屬各系所",
+        "double_major_ie_student_exception": "資電院學生雙主修資工，21學分需為資工系所開設"
+      }
+    ],
+    "noncredit_requirements": {
+      "physical_education_courses": 5,
+      "service_learning_courses": 2,
+      "other_common_rules": "依學校共同應修科目表注意事項，尚待完整核對",
+      "programming_ability_test": {
+        "name": "程式能力檢定",
+        "passing_standard": "CPE一次答對2題或累計答對3題",
+        "requirement_source": "列在系訂必修備註第4項"
+      }
+    },
+    "restrictions": [
+      "等同課程重複修讀不列入畢業學分"
+    ],
+    "unresolved": [
+      "電機通訊課程流程圖中的＊與△課程全名單須由人工逐項核對",
+      "等同課程重複修讀不可重複採計",
+      "正式採認與抵免須以校方審核為準"
+    ],
+    "double_major": {
+      "reference": "本校雙主修辦法",
+      "elective_rules_apply": true,
+      "ie_college_student_21_credits_must_be_from_ce": true
+    },
+    "early_graduation": {
+      "rank_top_percent": 20,
+      "minimum_average_score": 75,
+      "requires_approval": true
+    }
+  }
+}

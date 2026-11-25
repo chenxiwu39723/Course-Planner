@@ -1,0 +1,380 @@
+{
+  "unified_schema_version": "1.0",
+  "program_id": "space_science_engineering_113",
+  "academic_year_roc": 113,
+  "university": "國立中央大學",
+  "college": "地球科學學院",
+  "department": "太空科學與工程學系",
+  "track": null,
+  "required_total_credits": 128,
+  "raw_schema_version": "1.1",
+  "source_file_in_original_zip": "ncu_earth_science_113/space_science_engineering_113_rules.json",
+  "source_pdf_evidence": {
+    "file": "地球科學學院.pdf",
+    "source_type": "113學年度入學應修科目表",
+    "verified_from_uploaded_pdf": true,
+    "pages": [
+      4
+    ]
+  },
+  "verification_status": "已依上傳科目表轉錄；課程編碼疑點與部分採認規則仍需核對",
+  "review_flags": [
+    {
+      "field": "uncertainties",
+      "details": [
+        "地球系統科學概論2學分之正式課號及是否另計學分待查",
+        "四擇二未指定固定修課順序，需依當期課程資格確認"
+      ]
+    }
+  ],
+  "course_candidates_not_for_automatic_credit_counting": [
+    {
+      "code": "MA1003",
+      "name": "微積分上",
+      "credits": 3,
+      "source_path": "$.required_course_groups[0].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1004",
+      "name": "微積分下",
+      "credits": 3,
+      "source_path": "$.required_course_groups[0].courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1031",
+      "name": "普通物理A上",
+      "credits": 3,
+      "source_path": "$.required_course_groups[0].courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1032",
+      "name": "普通物理A下",
+      "credits": 3,
+      "source_path": "$.required_course_groups[0].courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "SS1001",
+      "name": "工程實習",
+      "credits": 1,
+      "source_path": "$.required_course_groups[1].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "SS1002",
+      "name": "太空科學與工程導論",
+      "credits": 2,
+      "source_path": "$.required_course_groups[1].courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1004",
+      "name": "普通物理實驗",
+      "credits": 1,
+      "source_path": "$.required_course_groups[1].courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "SS1003",
+      "name": "程式語言與繪圖",
+      "credits": 2,
+      "source_path": "$.required_course_groups[1].courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "SS2001",
+      "name": "力學",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "SS2003",
+      "name": "電磁學I",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "SS2004",
+      "name": "電磁學II",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "SS2005",
+      "name": "應用數學I",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "SS2006",
+      "name": "應用數學II",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "SS2007",
+      "name": "太空專題I",
+      "credits": 1,
+      "source_path": "$.required_course_groups[1].courses[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "SS2008",
+      "name": "太空專題II",
+      "credits": 1,
+      "source_path": "$.required_course_groups[1].courses[10]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "SS3001",
+      "name": "數據分析與處理",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[11]",
+      "status": "candidate_only"
+    }
+  ],
+  "audit_status": "data_only_not_engine_verified",
+  "raw_rules": {
+    "schema_version": "1.1",
+    "program_id": "space_science_engineering_113",
+    "university": "國立中央大學",
+    "college": "地球科學學院",
+    "department": "太空科學與工程學系",
+    "entry_year_roc": 113,
+    "degree": "bachelor",
+    "required_total_credits": 128,
+    "source": {
+      "file": "地球科學學院.pdf",
+      "source_type": "113學年度入學應修科目表",
+      "verified_from_uploaded_pdf": true,
+      "pages": [
+        4
+      ]
+    },
+    "verification_status": "已依上傳科目表轉錄；課程編碼疑點與部分採認規則仍需核對",
+    "scope": "主修規則；雙主修另列且不可與主修條件直接相加",
+    "common_required": {
+      "required_credits": 25,
+      "chinese_credits": 5,
+      "foreign_language_credits": 6,
+      "general_education_credits": 14,
+      "core_general_education_domain_min_count": 1,
+      "foreign_language_options": [
+        "大一英文科學課群6學分",
+        "英文系其他英文課程通過6學分",
+        "語言中心開設或認定之同一第二外語課程通過6學分"
+      ],
+      "advanced_english_excluded_from_graduation_total": true,
+      "physical_education": "0學分；依全校應修科目表注意事項",
+      "service_learning": "0學分；依全校應修科目表注意事項"
+    },
+    "required_course_groups": [
+      {
+        "id": "college_required",
+        "label": "院訂必修",
+        "courses": [
+          {
+            "course_id": "MA1003",
+            "name": "微積分上",
+            "credits": 3
+          },
+          {
+            "course_id": "MA1004",
+            "name": "微積分下",
+            "credits": 3
+          },
+          {
+            "course_id": "PH1031",
+            "name": "普通物理A上",
+            "credits": 3
+          },
+          {
+            "course_id": "PH1032",
+            "name": "普通物理A下",
+            "credits": 3
+          }
+        ],
+        "listed_credit_sum": 12,
+        "required_credits": 12
+      },
+      {
+        "id": "department_fixed",
+        "label": "系訂固定必修",
+        "courses": [
+          {
+            "course_id": "SS1001",
+            "name": "工程實習",
+            "credits": 1
+          },
+          {
+            "course_id": "SS1002",
+            "name": "太空科學與工程導論",
+            "credits": 2
+          },
+          {
+            "course_id": "PH1004",
+            "name": "普通物理實驗",
+            "credits": 1
+          },
+          {
+            "course_id": "SS1003",
+            "name": "程式語言與繪圖",
+            "credits": 2
+          },
+          {
+            "course_id": "SS2001",
+            "name": "力學",
+            "credits": 3
+          },
+          {
+            "course_id": "SS2003",
+            "name": "電磁學I",
+            "credits": 3
+          },
+          {
+            "course_id": "SS2004",
+            "name": "電磁學II",
+            "credits": 3
+          },
+          {
+            "course_id": "SS2005",
+            "name": "應用數學I",
+            "credits": 3
+          },
+          {
+            "course_id": "SS2006",
+            "name": "應用數學II",
+            "credits": 3
+          },
+          {
+            "course_id": "SS2007",
+            "name": "太空專題I",
+            "credits": 1
+          },
+          {
+            "course_id": "SS2008",
+            "name": "太空專題II",
+            "credits": 1
+          },
+          {
+            "course_id": "SS3001",
+            "name": "數據分析與處理",
+            "credits": 3
+          }
+        ],
+        "listed_credit_sum": 26
+      }
+    ],
+    "choice_groups": [
+      {
+        "id": "space_science",
+        "label": "太空科學類四擇二",
+        "type": "choose_courses",
+        "course_ids": [
+          "SS3002",
+          "SS3003",
+          "SS3004",
+          "SS3005"
+        ],
+        "required_course_count": 2,
+        "required_credits": 6,
+        "option_catalog_complete": true
+      },
+      {
+        "id": "space_engineering",
+        "label": "太空工程類四擇二",
+        "type": "choose_courses",
+        "course_ids": [
+          "SS3006",
+          "SS3008",
+          "SS3010",
+          "SS3011"
+        ],
+        "required_course_count": 2,
+        "required_credits": 6,
+        "option_catalog_complete": true
+      }
+    ],
+    "elective_requirements": [
+      {
+        "id": "department_elective",
+        "required_credits": 16,
+        "eligible_course_rule": "本系選修課程、按校方採認"
+      },
+      {
+        "id": "outside_relevant_area_cap",
+        "max_credits": 12,
+        "allowed_areas": [
+          "地科",
+          "理",
+          "工",
+          "資電",
+          "生醫理工",
+          "遙測學程"
+        ],
+        "rule": "指定相關領域以外課程最多12學分計入系最低畢業學分"
+      }
+    ],
+    "extra_requirements": [
+      {
+        "id": "earth_system_intro",
+        "name": "地球系統科學概論",
+        "credits": 2,
+        "course_id": null,
+        "notes": "科目表未提供正式課號"
+      }
+    ],
+    "prerequisite_rules": [
+      {
+        "target": [
+          "SS2001"
+        ],
+        "prerequisites": [
+          "MA1003",
+          "MA1004"
+        ],
+        "minimum_grade": 50,
+        "comparison": ">="
+      },
+      {
+        "target": [
+          "SS2003"
+        ],
+        "prerequisites": [
+          "MA1003",
+          "MA1004"
+        ],
+        "minimum_grade": 50,
+        "comparison": ">="
+      }
+    ],
+    "credit_counting_rules": {
+      "excluded_courses": [
+        "進修英文"
+      ],
+      "counting_overlap": "不同門檻可能重疊，不能直接相加；以學校認列為準"
+    },
+    "noncredit_requirements": [],
+    "dual_major": {
+      "rule": "依本校學生修讀雙主修辦法辦理"
+    },
+    "uncertainties": [
+      "地球系統科學概論2學分之正式課號及是否另計學分待查",
+      "四擇二未指定固定修課順序，需依當期課程資格確認"
+    ],
+    "required_credits_summary": {
+      "including_common_required": 75,
+      "common_required": 25,
+      "college_required": 12,
+      "department_required_including_choice_groups_inferred": 38
+    }
+  }
+}

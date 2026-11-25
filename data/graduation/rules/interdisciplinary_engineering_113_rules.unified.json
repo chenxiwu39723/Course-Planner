@@ -1,0 +1,1127 @@
+{
+  "unified_schema_version": "1.0",
+  "program_id": "interdisciplinary_engineering_113",
+  "academic_year_roc": 113,
+  "university": "國立中央大學",
+  "college": "工學院",
+  "department": "工學院學士班",
+  "track": null,
+  "required_total_credits": 128,
+  "raw_schema_version": "1.2-bachelor-provisional",
+  "source_file_in_original_zip": "ncu_bachelor_113/interdisciplinary_engineering_113_rules.json",
+  "source_pdf_evidence": {
+    "file": "工學院學士班.pdf",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "verification_status": "官方113年度PDF整理；尚未經畢業審核引擎實測，特殊課程認列需核對",
+  "review_flags": [
+    {
+      "field": "credit_reconciliation_warning",
+      "details": "官方標示院必修30學分，但逐項表列合計36學分，含3+3社會實踐專題，可能涉及免修或學分分類；禁止僅依清單加總直接判定畢業資格"
+    }
+  ],
+  "course_candidates_not_for_automatic_credit_counting": [
+    {
+      "code": "MA1003",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.college_required_courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1004",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.college_required_courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EG1003",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.college_required_courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EI1101",
+      "name": "",
+      "credits": 2,
+      "source_path": "$.college_required_courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EG1001",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.college_required_courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1036",
+      "name": "普通物理A／C",
+      "credits": 3,
+      "source_path": "$.college_required_courses[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1024",
+      "name": "",
+      "credits": 1,
+      "source_path": "$.college_required_courses[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EG4002",
+      "name": "倫理課程擇一",
+      "credits": 2,
+      "source_path": "$.college_required_courses[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EG2001",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.college_required_courses[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EI2101",
+      "name": "",
+      "credits": 1,
+      "source_path": "$.college_required_courses[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EI2202",
+      "name": "",
+      "credits": 1,
+      "source_path": "$.college_required_courses[10]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EI3101",
+      "name": "",
+      "credits": 1,
+      "source_path": "$.college_required_courses[11]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EI3202",
+      "name": "",
+      "credits": 1,
+      "source_path": "$.college_required_courses[12]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EI3103",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.college_required_courses[13]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EI3104",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.college_required_courses[14]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EI4301",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.college_required_courses[15]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CC0424",
+      "name": "社會參與之導航與探索",
+      "credits": null,
+      "source_path": "$.general_education_extra_required[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME1006",
+      "name": "",
+      "credits": 4,
+      "source_path": "$.specialization_rule.alternatives.smart_machinery.required_courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME1041",
+      "name": "",
+      "credits": 1,
+      "source_path": "$.specialization_rule.alternatives.smart_machinery.required_courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2037",
+      "name": "",
+      "credits": 1,
+      "source_path": "$.specialization_rule.alternatives.smart_machinery.required_courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME1018",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.smart_machinery.required_courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME3096",
+      "name": "",
+      "credits": 1,
+      "source_path": "$.specialization_rule.alternatives.smart_machinery.required_courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2001",
+      "name": "工程數學I",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.smart_machinery.required_courses[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME1042",
+      "name": "",
+      "credits": 1,
+      "source_path": "$.specialization_rule.alternatives.smart_machinery.required_courses[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2038",
+      "name": "",
+      "credits": 1,
+      "source_path": "$.specialization_rule.alternatives.smart_machinery.required_courses[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2065",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.smart_machinery.required_courses[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2066",
+      "name": "",
+      "credits": 1,
+      "source_path": "$.specialization_rule.alternatives.smart_machinery.required_courses[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2002",
+      "name": "工程數學II",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.smart_machinery.required_courses[10]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2056",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.smart_machinery.required_courses[11]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME5203",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.smart_machinery.required_courses[12]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME5202",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.smart_machinery.required_courses[13]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME5206",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.smart_machinery.required_courses[14]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EI1102",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.energy_materials.required_courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CH2005",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.energy_materials.required_courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CH2031",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.energy_materials.required_courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2001",
+      "name": "工程數學I",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.energy_materials.required_courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2002",
+      "name": "工程數學II",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.energy_materials.required_courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME1006",
+      "name": "",
+      "credits": 4,
+      "source_path": "$.specialization_rule.alternatives.energy_materials.required_courses[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME3095",
+      "name": "",
+      "credits": 1,
+      "source_path": "$.specialization_rule.alternatives.energy_materials.required_courses[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CH3059",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.energy_materials.required_courses[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CH3060",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.energy_materials.required_courses[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CH3012",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.energy_materials.required_courses[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME3048",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.energy_materials.required_courses[10]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CH3055",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.energy_materials.required_courses[11]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI1002",
+      "name": "",
+      "credits": 1,
+      "source_path": "$.specialization_rule.alternatives.sustainable_disaster.required_courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI1009",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.sustainable_disaster.required_courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI1010",
+      "name": "",
+      "credits": 1,
+      "source_path": "$.specialization_rule.alternatives.sustainable_disaster.required_courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI1005",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.sustainable_disaster.required_courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI2005",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.sustainable_disaster.required_courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI2004",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.sustainable_disaster.required_courses[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI2011",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.sustainable_disaster.required_courses[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI2017",
+      "name": "工程數學I",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.sustainable_disaster.required_courses[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI2027",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.sustainable_disaster.required_courses[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI3003",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.sustainable_disaster.required_courses[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI4050",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.sustainable_disaster.required_courses[10]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI2007",
+      "name": "",
+      "credits": 1,
+      "source_path": "$.specialization_rule.alternatives.sustainable_disaster.required_courses[11]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CH2001",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.green_technology.required_courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CH2002",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.green_technology.required_courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CH2005",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.green_technology.required_courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CH2006",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.green_technology.required_courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2001",
+      "name": "工程數學I",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.green_technology.required_courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2002",
+      "name": "工程數學II",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.green_technology.required_courses[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CH1012",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.green_technology.required_courses[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CH1022",
+      "name": "",
+      "credits": 1,
+      "source_path": "$.specialization_rule.alternatives.green_technology.required_courses[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CH2021",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.green_technology.required_courses[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CH3042",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.green_technology.required_courses[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CH3043",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.green_technology.required_courses[10]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CH3059",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.green_technology.required_courses[11]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CH3060",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.green_technology.required_courses[12]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CH3011",
+      "name": "",
+      "credits": 3,
+      "source_path": "$.specialization_rule.alternatives.green_technology.required_courses[13]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CH4059",
+      "name": "",
+      "credits": 1,
+      "source_path": "$.specialization_rule.alternatives.green_technology.required_courses[14]",
+      "status": "candidate_only"
+    }
+  ],
+  "audit_status": "data_only_not_engine_verified",
+  "raw_rules": {
+    "schema_version": "1.2-bachelor-provisional",
+    "program_id": "interdisciplinary_engineering_113",
+    "university": "國立中央大學",
+    "college": "工學院",
+    "department": "工學院學士班",
+    "entry_year_roc": 113,
+    "degree_type": "primary_major",
+    "required_total_credits": 128,
+    "source": {
+      "file": "工學院學士班.pdf",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "common_required": {
+      "chinese_credits": 5,
+      "foreign_language_credits": 6,
+      "general_education_credits": 14,
+      "total_credits": 25,
+      "physical_education_and_service_learning": "零學分要求，仍需依校規完成"
+    },
+    "verification_status": "官方113年度PDF整理；尚未經畢業審核引擎實測，特殊課程認列需核對",
+    "college_required_credits": 30,
+    "college_required_courses": [
+      {
+        "course_code": "MA1003",
+        "credits": 3,
+        "name": "",
+        "alternative_codes": []
+      },
+      {
+        "course_code": "MA1004",
+        "credits": 3,
+        "name": "",
+        "alternative_codes": []
+      },
+      {
+        "course_code": "EG1003",
+        "credits": 3,
+        "name": "",
+        "alternative_codes": []
+      },
+      {
+        "course_code": "EI1101",
+        "credits": 2,
+        "name": "",
+        "alternative_codes": []
+      },
+      {
+        "course_code": "EG1001",
+        "credits": 3,
+        "name": "",
+        "alternative_codes": []
+      },
+      {
+        "course_code": "PH1036",
+        "credits": 3,
+        "name": "普通物理A／C",
+        "alternative_codes": [
+          "PH1040"
+        ]
+      },
+      {
+        "course_code": "PH1024",
+        "credits": 1,
+        "name": "",
+        "alternative_codes": []
+      },
+      {
+        "course_code": "EG4002",
+        "credits": 2,
+        "name": "倫理課程擇一",
+        "alternative_codes": [
+          "CH3062",
+          "ME4110",
+          "GS2003",
+          "GS3355",
+          "GS4530"
+        ]
+      },
+      {
+        "course_code": "EG2001",
+        "credits": 3,
+        "name": "",
+        "alternative_codes": []
+      },
+      {
+        "course_code": "EI2101",
+        "credits": 1,
+        "name": "",
+        "alternative_codes": []
+      },
+      {
+        "course_code": "EI2202",
+        "credits": 1,
+        "name": "",
+        "alternative_codes": []
+      },
+      {
+        "course_code": "EI3101",
+        "credits": 1,
+        "name": "",
+        "alternative_codes": []
+      },
+      {
+        "course_code": "EI3202",
+        "credits": 1,
+        "name": "",
+        "alternative_codes": []
+      },
+      {
+        "course_code": "EI3103",
+        "credits": 3,
+        "name": "",
+        "alternative_codes": []
+      },
+      {
+        "course_code": "EI3104",
+        "credits": 3,
+        "name": "",
+        "alternative_codes": []
+      },
+      {
+        "course_code": "EI4301",
+        "credits": 3,
+        "name": "",
+        "alternative_codes": []
+      }
+    ],
+    "general_education_extra_required": [
+      {
+        "code": "CC0424",
+        "name": "社會參與之導航與探索"
+      }
+    ],
+    "specific_requirements": [
+      {
+        "name": "設計思考",
+        "min_credits": 2,
+        "course_codes": [
+          "ME5209",
+          "EG5011",
+          "GS3064",
+          "IP2004",
+          "GS4504"
+        ]
+      },
+      {
+        "name": "社會實踐專題II先修",
+        "course": "EI3104",
+        "prerequisite": "EI3103"
+      },
+      {
+        "name": "社會實踐專題抵修",
+        "condition": "跨領域社會參與學分學程或社會企業與社會創新學分學程證明或經審核之相似課程"
+      }
+    ],
+    "specialization_rule": {
+      "choose_exactly_one": [
+        "smart_machinery",
+        "energy_materials",
+        "sustainable_disaster",
+        "green_technology"
+      ],
+      "alternatives": {
+        "smart_machinery": {
+          "label": "智慧機械",
+          "required_credits": 34,
+          "elective_credits": 21,
+          "total_credits": 55,
+          "required_courses": [
+            {
+              "course_code": "ME1006",
+              "credits": 4,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "ME1041",
+              "credits": 1,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "ME2037",
+              "credits": 1,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "ME1018",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "ME3096",
+              "credits": 1,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "ME2001",
+              "credits": 3,
+              "name": "工程數學I",
+              "alternative_codes": [
+                "CI2017",
+                "CH2009"
+              ]
+            },
+            {
+              "course_code": "ME1042",
+              "credits": 1,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "ME2038",
+              "credits": 1,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "ME2065",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "ME2066",
+              "credits": 1,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "ME2002",
+              "credits": 3,
+              "name": "工程數學II",
+              "alternative_codes": [
+                "CI2018",
+                "CH2010"
+              ]
+            },
+            {
+              "course_code": "ME2056",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "ME5203",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "ME5202",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "ME5206",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            }
+          ],
+          "elective_tracks": [
+            "智慧機電控制",
+            "智慧能源管理",
+            "智慧系統軟體技術",
+            "智慧生產系統管理",
+            "自主跨域選修"
+          ],
+          "notes": [
+            "附表有紅字追溯修正、重複ME5202及部分無課號課程，需要人工審核最終清單",
+            "其中智慧機電控制及智慧能源管理有分層擇修要求"
+          ]
+        },
+        "energy_materials": {
+          "label": "能源材料",
+          "required_credits": 35,
+          "elective_credits": 18,
+          "total_credits": 53,
+          "required_courses": [
+            {
+              "course_code": "EI1102",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CH2005",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CH2031",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "ME2001",
+              "credits": 3,
+              "name": "工程數學I",
+              "alternative_codes": [
+                "CH2009"
+              ]
+            },
+            {
+              "course_code": "ME2002",
+              "credits": 3,
+              "name": "工程數學II",
+              "alternative_codes": [
+                "CH2010"
+              ]
+            },
+            {
+              "course_code": "ME1006",
+              "credits": 4,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "ME3095",
+              "credits": 1,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CH3059",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CH3060",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CH3012",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "ME3048",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CH3055",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            }
+          ],
+          "electives_requirements": {
+            "min_credits": 18,
+            "material_theory_min_credits": 3,
+            "tracks": [
+              "材料學理探究",
+              "材料製程",
+              "創能技術",
+              "儲能技術",
+              "自主跨域選修"
+            ]
+          }
+        },
+        "sustainable_disaster": {
+          "label": "永續防災",
+          "required_credits": 30,
+          "elective_credits": 29,
+          "total_credits": 59,
+          "required_courses": [
+            {
+              "course_code": "CI1002",
+              "credits": 1,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CI1009",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CI1010",
+              "credits": 1,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CI1005",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CI2005",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CI2004",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CI2011",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CI2017",
+              "credits": 3,
+              "name": "工程數學I",
+              "alternative_codes": [
+                "ME2001",
+                "CH2009"
+              ]
+            },
+            {
+              "course_code": "CI2027",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CI3003",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CI4050",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CI2007",
+              "credits": 1,
+              "name": "",
+              "alternative_codes": []
+            }
+          ],
+          "electives_requirements": {
+            "min_credits": 29,
+            "cross_domain_min_credits": 16,
+            "designated_elective_min_credits": 13
+          },
+          "note": "PDF紅字已追溯修改29學分，另有劃除重複課程，須排除劃除項目"
+        },
+        "green_technology": {
+          "label": "綠色科技",
+          "required_credits": 41,
+          "elective_credits": 15,
+          "total_credits": 56,
+          "required_courses": [
+            {
+              "course_code": "CH2001",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CH2002",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CH2005",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CH2006",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "ME2001",
+              "credits": 3,
+              "name": "工程數學I",
+              "alternative_codes": [
+                "CH2009"
+              ]
+            },
+            {
+              "course_code": "ME2002",
+              "credits": 3,
+              "name": "工程數學II",
+              "alternative_codes": [
+                "CH2010"
+              ]
+            },
+            {
+              "course_code": "CH1012",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CH1022",
+              "credits": 1,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CH2021",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CH3042",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CH3043",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CH3059",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CH3060",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CH3011",
+              "credits": 3,
+              "name": "",
+              "alternative_codes": []
+            },
+            {
+              "course_code": "CH4059",
+              "credits": 1,
+              "name": "",
+              "alternative_codes": []
+            }
+          ],
+          "elective_options": [
+            "指定綠色科技選修課程15學分",
+            "審核通過之自主跨域選修計畫15學分"
+          ]
+        }
+      },
+      "engineering_math_rule": "工程數學I與II需修習同一學系開設課程",
+      "additional_electives_by_track": {
+        "smart_machinery": 18,
+        "energy_materials": 20,
+        "sustainable_disaster": 14,
+        "green_technology": 17
+      },
+      "additional_electives_note": "依128減去25共同、30院必修及專長總學分估算；包含設計思考2學分，PDF正文標示其他選修8–14學分可能與算式不一致，採認前應人工釐清"
+    },
+    "secondary_specialization": {
+      "optional": true,
+      "additional_required_credits": 12,
+      "additional_elective_credits": 9
+    },
+    "credit_reconciliation_warning": "官方標示院必修30學分，但逐項表列合計36學分，含3+3社會實踐專題，可能涉及免修或學分分類；禁止僅依清單加總直接判定畢業資格"
+  }
+}

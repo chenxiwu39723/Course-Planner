@@ -21,3 +21,6 @@ numpy>=1.24
 openai>=1.0            # LLM_PROVIDER=azure_openai
 anthropic>=0.40        # LLM_PROVIDER=anthropic（Claude）；只跑 azure/mock 可不裝
 python-dotenv>=1.0
+
+# 畢業審核 PDF 匯入
+PyMuPDF>=1.24,<2

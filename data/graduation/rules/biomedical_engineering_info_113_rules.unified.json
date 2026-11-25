@@ -1,0 +1,504 @@
+{
+  "unified_schema_version": "1.0",
+  "program_id": "biomedical_engineering_info_113",
+  "academic_year_roc": 113,
+  "university": "國立中央大學",
+  "college": "生醫理工學院",
+  "department": "生醫科學與工程學系",
+  "track": "醫學工程與資訊科學組",
+  "required_total_credits": 128,
+  "raw_schema_version": "1.1",
+  "source_file_in_original_zip": "ncu_biomedical_113/biomedical_engineering_info_113_rules.json",
+  "source_pdf_evidence": {
+    "file": "生醫理工學院.pdf",
+    "source_type": "113學年度入學應修科目表",
+    "verified_from_uploaded_pdf": true,
+    "pages": [
+      1,
+      2
+    ]
+  },
+  "verification_status": "已逐項轉錄上傳的113學年度官方表；未由本表提供的採認細則需另核對",
+  "review_flags": [
+    {
+      "field": "unresolved",
+      "details": [
+        "外系與本系選修6學分是否可以重疊認列",
+        "研究所專題課程範圍與實際認列方式",
+        "通識核心領域名稱及個人學生採認需依校方規定"
+      ]
+    }
+  ],
+  "course_candidates_not_for_automatic_credit_counting": [
+    {
+      "code": "HT3001",
+      "name": "生物統計學-R語言應用",
+      "credits": 3,
+      "source_path": "$.fixed_courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1001",
+      "name": "微積分（上）",
+      "credits": 4,
+      "source_path": "$.fixed_courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1002",
+      "name": "微積分（下）",
+      "credits": 4,
+      "source_path": "$.fixed_courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1031",
+      "name": "普通物理",
+      "credits": 3,
+      "source_path": "$.fixed_courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1023",
+      "name": "普通物理實驗",
+      "credits": 1,
+      "source_path": "$.fixed_courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CM1009",
+      "name": "普通化學",
+      "credits": 3,
+      "source_path": "$.fixed_courses[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CM1008",
+      "name": "普通化學實驗",
+      "credits": 1,
+      "source_path": "$.fixed_courses[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM1004",
+      "name": "計算機概論",
+      "credits": 3,
+      "source_path": "$.fixed_courses[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM2031",
+      "name": "人體生理與解剖學",
+      "credits": 3,
+      "source_path": "$.fixed_courses[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM2012",
+      "name": "電子電路學",
+      "credits": 3,
+      "source_path": "$.fixed_courses[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM2013",
+      "name": "電子電路學實驗",
+      "credits": 1,
+      "source_path": "$.fixed_courses[10]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM2010",
+      "name": "工程數學（上）",
+      "credits": 3,
+      "source_path": "$.fixed_courses[11]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM2011",
+      "name": "工程數學（下）",
+      "credits": 3,
+      "source_path": "$.fixed_courses[12]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM2014",
+      "name": "醫療器材設計原理及其應用",
+      "credits": 3,
+      "source_path": "$.fixed_courses[13]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM2037",
+      "name": "專題研究（上）",
+      "credits": 1,
+      "source_path": "$.fixed_courses[14]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM2038",
+      "name": "專題研究（下）",
+      "credits": 1,
+      "source_path": "$.fixed_courses[15]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM2039",
+      "name": "儀器分析",
+      "credits": 3,
+      "source_path": "$.fixed_courses[16]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM2028",
+      "name": "物理化學",
+      "credits": 3,
+      "source_path": "$.fixed_courses[17]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM3006",
+      "name": "材料科學導論",
+      "credits": 3,
+      "source_path": "$.fixed_courses[18]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM3029",
+      "name": "統計機器學習基礎",
+      "credits": 3,
+      "source_path": "$.fixed_courses[19]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM4003",
+      "name": "學士論文 I",
+      "credits": 0,
+      "source_path": "$.fixed_courses[20]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM4004",
+      "name": "學士論文 II",
+      "credits": 0,
+      "source_path": "$.fixed_courses[21]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM1011",
+      "name": "人工智慧程式入門",
+      "credits": 3,
+      "source_path": "$.program_required_courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM3023",
+      "name": "線性代數",
+      "credits": 3,
+      "source_path": "$.program_required_courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM2040",
+      "name": "資料結構",
+      "credits": 3,
+      "source_path": "$.program_required_courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM2041",
+      "name": "作業系統概論",
+      "credits": 3,
+      "source_path": "$.program_required_courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM2042",
+      "name": "醫用物理",
+      "credits": 3,
+      "source_path": "$.program_required_courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM2043",
+      "name": "微電子學",
+      "credits": 3,
+      "source_path": "$.program_required_courses[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM3027",
+      "name": "訊號與系統",
+      "credits": 3,
+      "source_path": "$.program_required_courses[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM3028",
+      "name": "微處理器與嵌入式系統",
+      "credits": 3,
+      "source_path": "$.program_required_courses[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BM3022",
+      "name": "演算法",
+      "credits": 3,
+      "source_path": "$.program_required_courses[8]",
+      "status": "candidate_only"
+    }
+  ],
+  "audit_status": "data_only_not_engine_verified",
+  "raw_rules": {
+    "schema_version": "1.1",
+    "university": "國立中央大學",
+    "college": "生醫理工學院",
+    "entry_year_roc": 113,
+    "required_total_credits": 128,
+    "source": {
+      "file": "生醫理工學院.pdf",
+      "source_type": "113學年度入學應修科目表",
+      "verified_from_uploaded_pdf": true,
+      "pages": [
+        1,
+        2
+      ]
+    },
+    "common_required": {
+      "chinese_credits": 5,
+      "foreign_language_credits": 6,
+      "general_education_credits": 14,
+      "general_education_core_domain_min_count": 1,
+      "advanced_english_excluded_from_graduation_total": true,
+      "physical_education": "0學分課程；完整共同畢業條件依全校應修科目表注意事項",
+      "service_learning": "0學分課程；完整共同畢業條件依全校應修科目表注意事項",
+      "foreign_language_rule": "大一英文工程課群6學分或英文系其他課程；第二外語不得抵免大一英文"
+    },
+    "verification_status": "已逐項轉錄上傳的113學年度官方表；未由本表提供的採認細則需另核對",
+    "scope": "主修規則；雙主修要求另存，不直接相加",
+    "rules_id": "NCU-BM-ENG-113",
+    "program_id": "biomedical_engineering_info_113",
+    "department": "生醫科學與工程學系",
+    "program": "醫學工程與資訊科學組",
+    "required_credits": {
+      "college_department_required": 52,
+      "program_required": 27,
+      "college_department_program_total": 79,
+      "common_required": 25
+    },
+    "fixed_courses": [
+      {
+        "course_id": "HT3001",
+        "name": "生物統計學-R語言應用",
+        "credits": 3
+      },
+      {
+        "course_id": "MA1001",
+        "name": "微積分（上）",
+        "credits": 4
+      },
+      {
+        "course_id": "MA1002",
+        "name": "微積分（下）",
+        "credits": 4
+      },
+      {
+        "course_id": "PH1031",
+        "name": "普通物理",
+        "credits": 3
+      },
+      {
+        "course_id": "PH1023",
+        "name": "普通物理實驗",
+        "credits": 1
+      },
+      {
+        "course_id": "CM1009",
+        "name": "普通化學",
+        "credits": 3
+      },
+      {
+        "course_id": "CM1008",
+        "name": "普通化學實驗",
+        "credits": 1
+      },
+      {
+        "course_id": "BM1004",
+        "name": "計算機概論",
+        "credits": 3
+      },
+      {
+        "course_id": "BM2031",
+        "name": "人體生理與解剖學",
+        "credits": 3
+      },
+      {
+        "course_id": "BM2012",
+        "name": "電子電路學",
+        "credits": 3
+      },
+      {
+        "course_id": "BM2013",
+        "name": "電子電路學實驗",
+        "credits": 1
+      },
+      {
+        "course_id": "BM2010",
+        "name": "工程數學（上）",
+        "credits": 3
+      },
+      {
+        "course_id": "BM2011",
+        "name": "工程數學（下）",
+        "credits": 3
+      },
+      {
+        "course_id": "BM2014",
+        "name": "醫療器材設計原理及其應用",
+        "credits": 3
+      },
+      {
+        "course_id": "BM2037",
+        "name": "專題研究（上）",
+        "credits": 1
+      },
+      {
+        "course_id": "BM2038",
+        "name": "專題研究（下）",
+        "credits": 1
+      },
+      {
+        "course_id": "BM2039",
+        "name": "儀器分析",
+        "credits": 3
+      },
+      {
+        "course_id": "BM2028",
+        "name": "物理化學",
+        "credits": 3
+      },
+      {
+        "course_id": "BM3006",
+        "name": "材料科學導論",
+        "credits": 3
+      },
+      {
+        "course_id": "BM3029",
+        "name": "統計機器學習基礎",
+        "credits": 3
+      },
+      {
+        "course_id": "BM4003",
+        "name": "學士論文 I",
+        "credits": 0
+      },
+      {
+        "course_id": "BM4004",
+        "name": "學士論文 II",
+        "credits": 0
+      }
+    ],
+    "program_required_courses": [
+      {
+        "course_id": "BM1011",
+        "name": "人工智慧程式入門",
+        "credits": 3
+      },
+      {
+        "course_id": "BM3023",
+        "name": "線性代數",
+        "credits": 3
+      },
+      {
+        "course_id": "BM2040",
+        "name": "資料結構",
+        "credits": 3
+      },
+      {
+        "course_id": "BM2041",
+        "name": "作業系統概論",
+        "credits": 3
+      },
+      {
+        "course_id": "BM2042",
+        "name": "醫用物理",
+        "credits": 3
+      },
+      {
+        "course_id": "BM2043",
+        "name": "微電子學",
+        "credits": 3
+      },
+      {
+        "course_id": "BM3027",
+        "name": "訊號與系統",
+        "credits": 3
+      },
+      {
+        "course_id": "BM3028",
+        "name": "微處理器與嵌入式系統",
+        "credits": 3
+      },
+      {
+        "course_id": "BM3022",
+        "name": "演算法",
+        "credits": 3
+      }
+    ],
+    "elective_rules": [
+      {
+        "id": "bm_related_electives",
+        "min_credits": 6,
+        "allowed_course_prefixes": [
+          "BM",
+          "SB",
+          "BE",
+          "TM",
+          "NS"
+        ],
+        "description": "本系及認知所開設之必選修科目至少6學分",
+        "max_graduate_project_courses_recognized": 2
+      },
+      {
+        "id": "other_college_electives",
+        "min_credits": 6,
+        "allowed_units": [
+          "生醫理工學院",
+          "理學院",
+          "工學院",
+          "資訊電機學院",
+          "地球科學學院",
+          "遙測學程"
+        ],
+        "description": "另有至少6學分來自指定學院／學程；與前項是否可重疊須核對"
+      }
+    ],
+    "noncredit_requirements": [
+      {
+        "course_ids": [
+          "BM4003",
+          "BM4004"
+        ],
+        "name": "學士論文 I / II",
+        "note": "表列0學分系訂必修"
+      }
+    ],
+    "dual_major": {
+      "policy": "依學校學生修讀雙主修辦法辦理"
+    },
+    "early_graduation": {
+      "requires_approval": true,
+      "conditions": [
+        "符合學則第四十八條第一項各款畢業條件",
+        "學業總平均排名年級前20%且總平均至少75分",
+        "每學期操行成績至少80分"
+      ],
+      "note": "另須系主管及教務長核准"
+    },
+    "unresolved": [
+      "外系與本系選修6學分是否可以重疊認列",
+      "研究所專題課程範圍與實際認列方式",
+      "通識核心領域名稱及個人學生採認需依校方規定"
+    ]
+  }
+}

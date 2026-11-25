@@ -168,3 +168,15 @@ input:focus-visible, textarea:focus-visible,
 @media (max-width: 600px) {
   .grid2 { grid-template-columns: 1fr; }
 }
+
+/* 畢業缺額：延用原型卡片，窄螢幕仍可閱讀。 */
+.graduation-panel { margin: 1.2rem 0; padding: 1rem; background: #f4f7fb; border: 1px solid #dbe4ef; border-radius: 10px; }
+.graduation-panel select { width: 100%; }
+.graduation-summary { font-size: 1.3rem; font-weight: 700; margin-bottom: .35rem; }
+.graduation-panel progress { width: 100%; height: 12px; accent-color: var(--fixed, #2563eb); }
+.graduation-table { width: 100%; border-collapse: collapse; margin: .8rem 0; font-size: .82rem; }
+.graduation-table th, .graduation-table td { padding: .45rem .2rem; border-bottom: 1px solid #dbe4ef; text-align: left; }
+.graduation-table th:nth-child(2), .graduation-table td:nth-child(2) { white-space: nowrap; }
+.graduation-notes { padding-left: 1.1rem; font-size: .8rem; line-height: 1.6; color: #475569; }
+.graduation-panel details { font-size: .8rem; }
+.graduation-match { margin-top: .5rem; color: #1e40af; font-size: .82rem; }

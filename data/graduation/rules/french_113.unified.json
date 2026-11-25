@@ -1,0 +1,412 @@
+{
+  "unified_schema_version": "1.0",
+  "program_id": "french_113",
+  "academic_year_roc": 113,
+  "university": "國立中央大學",
+  "college": "文學院",
+  "department": "法國語文學系",
+  "track": null,
+  "required_total_credits": 128,
+  "raw_schema_version": "2.0-literature-extraction",
+  "source_file_in_original_zip": "ncu_literature_113/french_113.json",
+  "source_pdf_evidence": [
+    {
+      "file": "文學院.pdf",
+      "page": 2,
+      "document": "113學年度入學新生適用應修科目表"
+    }
+  ],
+  "verification_status": "依使用者提供的113學年度應修科目表逐條轉錄；尚未經實際學生審核驗證",
+  "review_flags": [
+    {
+      "field": "uncertainties",
+      "details": [
+        "全校應修科目表注意事項未附，零學分條件及全校共同規定尚待核對"
+      ]
+    }
+  ],
+  "course_candidates_not_for_automatic_credit_counting": [
+    {
+      "code": "FR1019",
+      "name": "口語表達（一）",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR1020",
+      "name": "口語表達（一）",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR1033",
+      "name": "文法與寫作",
+      "credits": 4,
+      "source_path": "$.department_required.fixed_courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR1034",
+      "name": "文法與寫作",
+      "credits": 4,
+      "source_path": "$.department_required.fixed_courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR1023",
+      "name": "讀本",
+      "credits": 4,
+      "source_path": "$.department_required.fixed_courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR1024",
+      "name": "讀本",
+      "credits": 4,
+      "source_path": "$.department_required.fixed_courses[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR1039",
+      "name": "法文文選（一）",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR1040",
+      "name": "法文文選（一）",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR2029",
+      "name": "口語表達（二）",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR2030",
+      "name": "口語表達（二）",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR2031",
+      "name": "寫作（二）",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[10]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR2032",
+      "name": "寫作（二）",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[11]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR2043",
+      "name": "文法（二）",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[12]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR2044",
+      "name": "文法（二）",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[13]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR2035",
+      "name": "中譯法（一）",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[14]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR3047",
+      "name": "中譯法（二）",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[15]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR2039",
+      "name": "法文文選（二）",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[16]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR2040",
+      "name": "法文文選（二）",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[17]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR2036",
+      "name": "法譯中（一）",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[18]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR3048",
+      "name": "法譯中（二）",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[19]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR3041",
+      "name": "口語表達（三）",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[20]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR3042",
+      "name": "口語表達（三）",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[21]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR3043",
+      "name": "寫作（三）",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[22]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FR3044",
+      "name": "寫作（三）",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[23]",
+      "status": "candidate_only"
+    }
+  ],
+  "audit_status": "data_only_not_engine_verified",
+  "raw_rules": {
+    "schema_version": "2.0-literature-extraction",
+    "rules_id": "french_113",
+    "applicability": {
+      "university": "國立中央大學",
+      "college": "文學院",
+      "department": "法國語文學系",
+      "program": null,
+      "admission_academic_year_roc": 113,
+      "scope": "major"
+    },
+    "sources": [
+      {
+        "file": "文學院.pdf",
+        "page": 2,
+        "document": "113學年度入學新生適用應修科目表"
+      }
+    ],
+    "verification_status": "依使用者提供的113學年度應修科目表逐條轉錄；尚未經實際學生審核驗證",
+    "required_total_credits": 128,
+    "common_required": {
+      "chinese_credits": 5,
+      "foreign_language_credits": 6,
+      "general_education_credits": 14,
+      "common_total_credits": 25,
+      "physical_education_zero_credit": true,
+      "service_learning_zero_credit": true,
+      "advanced_english_excluded": true,
+      "ge_core_min_domains": 1,
+      "ge_core_total_domains": 4,
+      "university_wide_other_requirements": "參照應修科目表注意事項；本PDF未附",
+      "foreign_language_options": [
+        "大一英文人文社會課群6學分／英文系其他英文課程6學分／語言中心認定之同一初級第二外語連續6學分"
+      ]
+    },
+    "noncredit_requirements": {
+      "physical_education": {
+        "course_count_shown": 5,
+        "verification": "需對照全校應修科目表注意事項"
+      },
+      "service_learning": {
+        "course_count_shown": 2,
+        "verification": "需對照全校應修科目表注意事項"
+      },
+      "conduct_terms": null
+    },
+    "uncertainties": [
+      "全校應修科目表注意事項未附，零學分條件及全校共同規定尚待核對"
+    ],
+    "review_status": "structured_needs_integration",
+    "department_required": {
+      "required_credits": 56,
+      "fixed_courses": [
+        {
+          "course_id": "FR1019",
+          "name": "口語表達（一）",
+          "credits": 2
+        },
+        {
+          "course_id": "FR1020",
+          "name": "口語表達（一）",
+          "credits": 2
+        },
+        {
+          "course_id": "FR1033",
+          "name": "文法與寫作",
+          "credits": 4
+        },
+        {
+          "course_id": "FR1034",
+          "name": "文法與寫作",
+          "credits": 4
+        },
+        {
+          "course_id": "FR1023",
+          "name": "讀本",
+          "credits": 4
+        },
+        {
+          "course_id": "FR1024",
+          "name": "讀本",
+          "credits": 4
+        },
+        {
+          "course_id": "FR1039",
+          "name": "法文文選（一）",
+          "credits": 2
+        },
+        {
+          "course_id": "FR1040",
+          "name": "法文文選（一）",
+          "credits": 2
+        },
+        {
+          "course_id": "FR2029",
+          "name": "口語表達（二）",
+          "credits": 2
+        },
+        {
+          "course_id": "FR2030",
+          "name": "口語表達（二）",
+          "credits": 2
+        },
+        {
+          "course_id": "FR2031",
+          "name": "寫作（二）",
+          "credits": 2
+        },
+        {
+          "course_id": "FR2032",
+          "name": "寫作（二）",
+          "credits": 2
+        },
+        {
+          "course_id": "FR2043",
+          "name": "文法（二）",
+          "credits": 2
+        },
+        {
+          "course_id": "FR2044",
+          "name": "文法（二）",
+          "credits": 2
+        },
+        {
+          "course_id": "FR2035",
+          "name": "中譯法（一）",
+          "credits": 2
+        },
+        {
+          "course_id": "FR3047",
+          "name": "中譯法（二）",
+          "credits": 2
+        },
+        {
+          "course_id": "FR2039",
+          "name": "法文文選（二）",
+          "credits": 2
+        },
+        {
+          "course_id": "FR2040",
+          "name": "法文文選（二）",
+          "credits": 2
+        },
+        {
+          "course_id": "FR2036",
+          "name": "法譯中（一）",
+          "credits": 2
+        },
+        {
+          "course_id": "FR3048",
+          "name": "法譯中（二）",
+          "credits": 2
+        },
+        {
+          "course_id": "FR3041",
+          "name": "口語表達（三）",
+          "credits": 2
+        },
+        {
+          "course_id": "FR3042",
+          "name": "口語表達（三）",
+          "credits": 2
+        },
+        {
+          "course_id": "FR3043",
+          "name": "寫作（三）",
+          "credits": 2
+        },
+        {
+          "course_id": "FR3044",
+          "name": "寫作（三）",
+          "credits": 2
+        }
+      ]
+    },
+    "department_electives": {
+      "required_credits": 47,
+      "minimum_department_credits": 35,
+      "other_elective_credits": 12,
+      "eligible_course_rule": "至少35學分本系選修；剩餘12學分可依規定選修校內外課程",
+      "excluded_course_types": [
+        "本校語言中心法文課程",
+        "進修英文"
+      ],
+      "outside_university_policy": "原則上須為本校未開設之課程；國際交換生抵修不受此限制",
+      "catalog_complete": false
+    },
+    "special_requirements": [
+      {
+        "id": "delf_b1",
+        "description": "取得法語鑑定文憑DELF B1方可畢業",
+        "certification": "DELF",
+        "min_level": "B1",
+        "verification": "人工核對證書"
+      },
+      {
+        "id": "prior_delf_exemption",
+        "description": "入學前有DELF A2以上證書，可申請免修部分基礎必修；須經系課程委員會與授課教師審核，免修缺少之學分須修本系選修補足",
+        "minimum_prior_level": "A2",
+        "automatic_waiver": false
+      }
+    ],
+    "double_major_requirements": {
+      "required_department_elective_credits": 8,
+      "required_certification": "DELF B1",
+      "description": "除本系必修外另修本系選修8學分，並通過DELF B1；其餘依雙主修辦法"
+    },
+    "data_checks": {
+      "fixed_course_credit_sum": 56,
+      "declared_department_required_credits": 56,
+      "fixed_plus_choice_credits": 56
+    }
+  }
+}

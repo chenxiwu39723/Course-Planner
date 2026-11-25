@@ -1,0 +1,725 @@
+{
+  "unified_schema_version": "1.0",
+  "program_id": "communication_engineering",
+  "academic_year_roc": 113,
+  "university": "國立中央大學",
+  "college": "資訊電機學院",
+  "department": "通訊工程學系",
+  "track": null,
+  "required_total_credits": 132,
+  "raw_schema_version": "1.1-provisional",
+  "source_file_in_original_zip": "ncu_electrical_cs_113/communication_engineering_rules.json",
+  "source_pdf_evidence": [
+    {
+      "file": "資訊電機學院.pdf",
+      "page": 1,
+      "source_type": "113學年度應修科目表"
+    }
+  ],
+  "verification_status": "官方應修科目表整理；圖示星號／三角類別與學校正式抵認尚需逐項複核",
+  "review_flags": [
+    {
+      "field": "unresolved",
+      "details": [
+        "電機通訊課程流程圖中的＊與△課程全名單須由人工逐項核對",
+        "等同課程重複修讀不可重複採計",
+        "正式採認與抵免須以校方審核為準",
+        "A/B組實驗類別以及*／△完整清單須用流程圖逐項建立結構化候選",
+        "通訊系必修總學分PDF未直接列出，不推定"
+      ]
+    }
+  ],
+  "course_candidates_not_for_automatic_credit_counting": [
+    {
+      "code": "MA1003",
+      "name": "微積分",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1004",
+      "name": "微積分",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1031",
+      "name": "普通物理A",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1032",
+      "name": "普通物理A",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1003",
+      "name": "普物實驗",
+      "credits": 1,
+      "source_path": "$.required_courses.department_required[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1004",
+      "name": "普物實驗",
+      "credits": 1,
+      "source_path": "$.required_courses.department_required[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO1001",
+      "name": "計算機概論I",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO1005",
+      "name": "計概實習",
+      "credits": 1,
+      "source_path": "$.required_courses.department_required[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO1002",
+      "name": "數位系統導論",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO1006",
+      "name": "數位邏輯實驗",
+      "credits": 1,
+      "source_path": "$.required_courses.department_required[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO1007",
+      "name": "工程數學-線性代數",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[10]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO2001",
+      "name": "電路學I",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[11]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO2005",
+      "name": "電子學I",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[12]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO2011",
+      "name": "工程數學-微分方程",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[13]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO2013",
+      "name": "工程數學-複變函數",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[14]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO2010",
+      "name": "電子電路實驗",
+      "credits": 1,
+      "source_path": "$.required_courses.department_required[15]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO3003",
+      "name": "機率",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[16]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO3004",
+      "name": "訊號與系統",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[17]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO3001",
+      "name": "通訊實驗I",
+      "credits": 1,
+      "source_path": "$.required_courses.department_required[18]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO3002",
+      "name": "通訊實驗II",
+      "credits": 1,
+      "source_path": "$.required_courses.department_required[19]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO3007",
+      "name": "通訊原理I",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[20]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO3008",
+      "name": "通訊原理II",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[21]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO3025",
+      "name": "專題實作I",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[22]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO3026",
+      "name": "專題實作II",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[23]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO2006",
+      "name": "電子學II",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].tracks[0].required_course_groups[0].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO2003",
+      "name": "電磁學I",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].tracks[0].required_course_groups[0].courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO2004",
+      "name": "電磁學II",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].tracks[0].required_course_groups[1].options[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EE2015",
+      "name": "電磁學II",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].tracks[0].required_course_groups[1].options[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EE3001",
+      "name": "電子學III",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].tracks[0].required_course_groups[2].options[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EE4034",
+      "name": "微波系統導論",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].tracks[0].required_course_groups[2].options[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EE4038",
+      "name": "天線工程導論",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].tracks[0].required_course_groups[2].options[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EE4032",
+      "name": "類比積體電路導論",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].tracks[0].required_course_groups[2].options[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EE3032",
+      "name": "超大型積體電路導論",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].tracks[0].required_course_groups[2].options[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EE4012",
+      "name": "超大型積體電路系統設計",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].tracks[0].required_course_groups[2].options[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO3005",
+      "name": "網路概論",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].tracks[1].required_course_groups[0].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO2012",
+      "name": "資料結構",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].tracks[1].required_course_groups[1].options[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE2002",
+      "name": "資料結構",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].tracks[1].required_course_groups[1].options[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EE2007",
+      "name": "資料結構",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].tracks[1].required_course_groups[1].options[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO2014",
+      "name": "演算法",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].tracks[1].required_course_groups[2].options[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE3005",
+      "name": "演算法",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].tracks[1].required_course_groups[2].options[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CE3002",
+      "name": "作業系統",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].tracks[1].required_course_groups[3].options[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CO3006",
+      "name": "微算機原理",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].tracks[1].required_course_groups[3].options[3]",
+      "status": "candidate_only"
+    }
+  ],
+  "audit_status": "data_only_not_engine_verified",
+  "raw_rules": {
+    "schema_version": "1.1-provisional",
+    "rules_id": "NCU-IE-COMMUNICATION_ENGINEERING-113",
+    "program_id": "communication_engineering",
+    "applicability": {
+      "university": "國立中央大學",
+      "college": "資訊電機學院",
+      "department": "通訊工程學系",
+      "admission_academic_year_roc": 113,
+      "degree_type": "primary_major"
+    },
+    "sources": [
+      {
+        "file": "資訊電機學院.pdf",
+        "page": 1,
+        "source_type": "113學年度應修科目表"
+      }
+    ],
+    "verification_status": "官方應修科目表整理；圖示星號／三角類別與學校正式抵認尚需逐項複核",
+    "required_total_credits": 132,
+    "required_credits_including_common": null,
+    "common_required": {
+      "chinese_credits": 5,
+      "foreign_language_credits": 6,
+      "general_education_credits": 14,
+      "common_total_credits": 25,
+      "noncredit": {
+        "physical_education_courses": 5,
+        "service_learning_courses": 2
+      },
+      "general_education_core_min_domains": 1,
+      "foreign_language_options": "大一英文工程課群6學分，或英文系其他英文課程6學分",
+      "exclude_course_names_from_total": [
+        "進修英文"
+      ]
+    },
+    "required_courses": {
+      "department_required": [
+        {
+          "course_id": "MA1003",
+          "name": "微積分",
+          "credits": 3
+        },
+        {
+          "course_id": "MA1004",
+          "name": "微積分",
+          "credits": 3
+        },
+        {
+          "course_id": "PH1031",
+          "name": "普通物理A",
+          "credits": 3
+        },
+        {
+          "course_id": "PH1032",
+          "name": "普通物理A",
+          "credits": 3
+        },
+        {
+          "course_id": "PH1003",
+          "name": "普物實驗",
+          "credits": 1
+        },
+        {
+          "course_id": "PH1004",
+          "name": "普物實驗",
+          "credits": 1
+        },
+        {
+          "course_id": "CO1001",
+          "name": "計算機概論I",
+          "credits": 3
+        },
+        {
+          "course_id": "CO1005",
+          "name": "計概實習",
+          "credits": 1
+        },
+        {
+          "course_id": "CO1002",
+          "name": "數位系統導論",
+          "credits": 3
+        },
+        {
+          "course_id": "CO1006",
+          "name": "數位邏輯實驗",
+          "credits": 1
+        },
+        {
+          "course_id": "CO1007",
+          "name": "工程數學-線性代數",
+          "credits": 3
+        },
+        {
+          "course_id": "CO2001",
+          "name": "電路學I",
+          "credits": 3
+        },
+        {
+          "course_id": "CO2005",
+          "name": "電子學I",
+          "credits": 3
+        },
+        {
+          "course_id": "CO2011",
+          "name": "工程數學-微分方程",
+          "credits": 3
+        },
+        {
+          "course_id": "CO2013",
+          "name": "工程數學-複變函數",
+          "credits": 3
+        },
+        {
+          "course_id": "CO2010",
+          "name": "電子電路實驗",
+          "credits": 1
+        },
+        {
+          "course_id": "CO3003",
+          "name": "機率",
+          "credits": 3
+        },
+        {
+          "course_id": "CO3004",
+          "name": "訊號與系統",
+          "credits": 3
+        },
+        {
+          "course_id": "CO3001",
+          "name": "通訊實驗I",
+          "credits": 1
+        },
+        {
+          "course_id": "CO3002",
+          "name": "通訊實驗II",
+          "credits": 1
+        },
+        {
+          "course_id": "CO3007",
+          "name": "通訊原理I",
+          "credits": 3
+        },
+        {
+          "course_id": "CO3008",
+          "name": "通訊原理II",
+          "credits": 3
+        },
+        {
+          "course_id": "CO3025",
+          "name": "專題實作I",
+          "credits": 3
+        },
+        {
+          "course_id": "CO3026",
+          "name": "專題實作II",
+          "credits": 3
+        }
+      ]
+    },
+    "required_course_credit_sum": 58,
+    "required_credit_reconciliation": {
+      "listed_professional_credits": 58,
+      "listed_plus_common_credits": 83,
+      "official_required_total": null,
+      "matches": null
+    },
+    "selection_groups": [
+      {
+        "id": "specialty_track",
+        "type": "choose_one_complete_track",
+        "required_credits": 15,
+        "tracks": [
+          {
+            "id": "A_electrical_communication",
+            "required_course_groups": [
+              {
+                "type": "all_of",
+                "courses": [
+                  {
+                    "course_id": "CO2006",
+                    "name": "電子學II",
+                    "credits": 3
+                  },
+                  {
+                    "course_id": "CO2003",
+                    "name": "電磁學I",
+                    "credits": 3
+                  }
+                ]
+              },
+              {
+                "type": "choose_one",
+                "options": [
+                  {
+                    "course_id": "CO2004",
+                    "name": "電磁學II",
+                    "credits": 3
+                  },
+                  {
+                    "course_id": "EE2015",
+                    "name": "電磁學II",
+                    "credits": 3
+                  }
+                ]
+              },
+              {
+                "type": "choose_n",
+                "required_count": 2,
+                "options": [
+                  {
+                    "course_id": "EE3001",
+                    "name": "電子學III",
+                    "credits": 3
+                  },
+                  {
+                    "course_id": "EE4034",
+                    "name": "微波系統導論",
+                    "credits": 3
+                  },
+                  {
+                    "course_id": "EE4038",
+                    "name": "天線工程導論",
+                    "credits": 3
+                  },
+                  {
+                    "course_id": "EE4032",
+                    "name": "類比積體電路導論",
+                    "credits": 3
+                  },
+                  {
+                    "course_id": "EE3032",
+                    "name": "超大型積體電路導論",
+                    "credits": 3
+                  },
+                  {
+                    "course_id": "EE4012",
+                    "name": "超大型積體電路系統設計",
+                    "credits": 3
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "B_information_communication",
+            "required_course_groups": [
+              {
+                "type": "all_of",
+                "courses": [
+                  {
+                    "course_id": "CO3005",
+                    "name": "網路概論",
+                    "credits": 3
+                  }
+                ]
+              },
+              {
+                "type": "choose_one",
+                "options": [
+                  {
+                    "course_id": "CO2012",
+                    "name": "資料結構",
+                    "credits": 3
+                  },
+                  {
+                    "course_id": "CE2002",
+                    "name": "資料結構",
+                    "credits": 3
+                  },
+                  {
+                    "course_id": "EE2007",
+                    "name": "資料結構",
+                    "credits": 3
+                  }
+                ]
+              },
+              {
+                "type": "choose_one",
+                "options": [
+                  {
+                    "course_id": "CO2014",
+                    "name": "演算法",
+                    "credits": 3
+                  },
+                  {
+                    "course_id": "CE3005",
+                    "name": "演算法",
+                    "credits": 3
+                  }
+                ]
+              },
+              {
+                "type": "choose_n",
+                "required_count": 2,
+                "options": [
+                  {
+                    "equivalent_options": [
+                      "CO3019",
+                      "CE2003"
+                    ],
+                    "name": "離散數學",
+                    "credits": 3
+                  },
+                  {
+                    "equivalent_options": [
+                      "CO3020",
+                      "CE3001",
+                      "EE3035"
+                    ],
+                    "name": "計算機組織",
+                    "credits": 3
+                  },
+                  {
+                    "course_id": "CE3002",
+                    "name": "作業系統",
+                    "credits": 3
+                  },
+                  {
+                    "course_id": "CO3006",
+                    "name": "微算機原理",
+                    "credits": 3
+                  },
+                  {
+                    "equivalent_options": [
+                      "CO3027",
+                      "EE3054"
+                    ],
+                    "name": "深度學習程式設計",
+                    "credits": 3
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "note": "任選A或B專長；表列三門必修＋多選二，共15學分，超修學分可作為選修。原稿CO3020排版有C03020字形，依等同課程表校對。"
+      },
+      {
+        "id": "starred_electives",
+        "type": "category_diversity_and_credits",
+        "required_credits": 12,
+        "min_distinct_categories": 2,
+        "source_pages": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "catalog_complete": false
+      },
+      {
+        "id": "triangle_labs",
+        "type": "category_diversity_and_credits",
+        "required_credits": 9,
+        "required_categories": [
+          "電通訊",
+          "資通訊"
+        ],
+        "source_pages": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "catalog_complete": false
+      }
+    ],
+    "elective_requirements": [],
+    "noncredit_requirements": {
+      "physical_education_courses": 5,
+      "service_learning_courses": 2,
+      "other_common_rules": "依學校共同應修科目表注意事項，尚待完整核對"
+    },
+    "restrictions": [
+      "依資電院等同課程對照表，等同課程重複修讀不列入畢業學分"
+    ],
+    "unresolved": [
+      "電機通訊課程流程圖中的＊與△課程全名單須由人工逐項核對",
+      "等同課程重複修讀不可重複採計",
+      "正式採認與抵免須以校方審核為準",
+      "A/B組實驗類別以及*／△完整清單須用流程圖逐項建立結構化候選",
+      "通訊系必修總學分PDF未直接列出，不推定"
+    ],
+    "double_major": {
+      "reference": "本校雙主修辦法",
+      "specialty_track_required": true,
+      "starred_electives_min_credits": 6,
+      "labs_min_credits_from_selected_track": 3,
+      "course_recognition": "非本系開課雙主修學分需系課程委員會審查"
+    },
+    "early_graduation": {
+      "either": "該年級前20%或學業總平均85分以上",
+      "additional": "依校學則及系課程委員會審核"
+    }
+  }
+}

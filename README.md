@@ -146,16 +146,28 @@ ANTHROPIC_MODEL=claude-opus-5-5   # 批次解讀限修條件（2000+ 次）建�
 介面細節：頁首顯示學年期與資料更新日；`mock` 模式或語意索引未建時會明確標示；桌面為左輸入／右課表雙欄、手機單欄；
 主要互動（頁籤、展開、刪除）支援鍵盤操作與 `aria-label`。
 
+### 畢業學分缺額（實驗功能，目前僅數學系計算與資料科學組 113 入學）
+
+在「我的資料」選擇畢業規則並載入案例後，網頁會顯示畢業缺額，排課時自動避開已修／在修課號，
+並優先排入能補足缺額的課程（`planner/graduation.py`，確定性規則，不經語言模型）。
+
+- 全校 32 份系所／組別規則（`data/graduation/rules/*.unified.json`）目前為**資料建檔**，尚無通用審核引擎。
+- `pdf_import/` 可把文字型畢業審核 PDF 匯入為匿名主系修課紀錄（需 `PyMuPDF`），**不判定畢業資格**：
+  `python -m pdf_import.importer <審核表.pdf> --program-id math_datascience_113 -o out.json`
+- 詳見 [`docs/graduation/`](docs/graduation/)。
+
 ---
 
 ## 測試
 
 ```bash
-python -m pytest -q      # 目前 90 passed
+python -m pytest -q      # 目前 142 passed, 1 skipped（實際審核 PDF 測試需設 AUDIT_PDF）
 ```
 
 涵蓋：節次解析、衝堂判斷、空堂計算、solver 不產生衝堂課表、限修條件解析與三狀態比對、
-白話偏好解析、語意搜尋與推薦理由把關，以及評估模組的比對邏輯。
+白話偏好解析、語意搜尋與推薦理由把關、評估模組的比對邏輯，以及畢業缺額與 PDF 匯入。
+
+數學系的獨立畢業檢核腳本另有 unittest：`cd scripts/graduation && python -m unittest`。
 
 ---
 
@@ -173,7 +185,9 @@ planner/
   preferences.py           白話偏好解析
   syllabus.py              課程大綱解析（ge_domain/摘要）
   search.py                語意搜尋 + 推薦理由
-  llm_client.py            LLM 統一封裝（azure_openai / mock）
+  graduation.py            畢業缺額計算（數學系 113）與排課加權
+  llm_client.py            LLM 統一封裝（azure_openai / anthropic / mock）
+pdf_import/                畢業審核 PDF → 匿名主系修課紀錄
 scripts/
   check_data_source.py     階段 0：資料可行性檢查
   fetch_courses.py         階段 1：抓取並正規化課程
@@ -181,8 +195,14 @@ scripts/
   parse_eligibility_batch.py 階段 3：離線批次解讀限修（備註）
   fetch_distribution.py    階段 3：抓結構化分發條件（比備註可靠）
   build_index.py           階段 4：建立語意索引
+  graduation/              數學系獨立畢業檢核 CLI、全校規則讀取器與其 unittest
 data/
   sample_courses.json      52 門虛構範例課程（is_sample=true）
+  graduation/
+    PROGRAM_REGISTRY.json  32 系所／組別索引
+    rules/                 各系 113 學年度規則（*.unified.json）
+    sources/               各學院應修科目表 PDF（規則來源）
+    math_datascience_113_rules.json / _demo.json  網頁使用的數學系規則與案例
 eval/
   preference_cases.json       20 句白話偏好與正確條件
   eval_preferences.py         白話偏好解析正確率
@@ -193,6 +213,7 @@ outputs/eval/              評估報表（README 數字來源）
 templates/ static/         前端
 tests/                     pytest
 docs/data_feasibility.md   階段 0 結果
+docs/graduation/           畢業規則與 PDF 匯入的說明、待確認清單（REVIEW_FLAGS.csv）、驗證報告
 ```
 
 目前資料規模：真實課程 **2330 門**（**115 學年度第 1 學期**，semester 代碼 `1151`）、
