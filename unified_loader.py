@@ -1,7 +1,7 @@
 """統一資料讀取器：不執行畢業資格判定。"""
 import json
 from pathlib import Path
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent / "data" / "programs"
 def list_programs():
     return json.loads((ROOT / "PROGRAM_REGISTRY.json").read_text(encoding="utf-8"))["programs"]
 def load_program(program_id):

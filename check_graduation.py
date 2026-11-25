@@ -2,7 +2,7 @@
 import argparse
 import json
 from pathlib import Path
-BASE=Path(__file__).resolve().parent
+BASE = Path(__file__).resolve().parent / "data" / "graduation" / "standalone"
 VALID={'passed','in_progress','failed','withdrawn'}
 def read_json(path):
     return json.loads(Path(path).read_text(encoding='utf-8'))

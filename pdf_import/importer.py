@@ -13,7 +13,7 @@ from pathlib import Path
 
 import fitz
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent / "data" / "programs"
 HEADER = re.compile(r"^\s*(\d{3})-\d+-\d+-\d+-(.+?)\s*$", re.M)
 MAIN = re.compile(r"^\s*10000\s*-\s*主系", re.M)
 OTHER = re.compile(r"^\s*[2-9]0000\s*-", re.M)

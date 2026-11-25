@@ -1,12 +1,9 @@
 import json
 from pathlib import Path
-import sys
 import tempfile
 import unittest
 import fitz
 
-ROOT=Path(__file__).resolve().parent
-sys.path.insert(0,str(ROOT))
 from pdf_import.importer import parse_pdf,parse_text,detect_status,resolve_program
 
 class TestImporter(unittest.TestCase):
