@@ -14,7 +14,7 @@ from __future__ import annotations
 import json
 import pickle
 from pathlib import Path
-from typing import Callable
+from typing import Any, Callable
 
 import numpy as np
 
@@ -150,10 +150,14 @@ class SemanticSearch:
 
 # ------------------------------------------------------------- 推薦理由
 _REASON_SYSTEM = (
-    "你是選課推薦助手。只能根據提供的課程欄位，用一句繁體中文（30 字內）說明"
-    "為什麼這門課適合這位學生，連結到他的偏好。嚴禁編造課程內容或欄位沒有的資訊。"
-    "只輸出那一句話，不要加引號或多餘文字。"
+    "你是選課推薦助手。針對清單中的每門課，只能根據該課提供的欄位，用一句繁體中文（30 字內）"
+    "說明為什麼這門課適合這位學生。只有該課的「相關主題」非空時才可提到主題。"
+    "嚴禁編造課程內容或欄位沒有的資訊。"
+    '請輸出 JSON 物件，格式為 {"reasons": {"<課程 id>": "一句理由", ...}}，'
+    "不要加任何說明或 Markdown。"
 )
+_REASON_MAX_LEN = 60        # 超過即視為不合格式，改用確定性理由
+_REASON_BATCH = 20          # 單次呼叫最多幾門課（控制 token 與逾時）
 
 
 def _fallback_reason(course: Course, topics: list[str], relevant: bool) -> str:
@@ -169,42 +173,62 @@ def _fallback_reason(course: Course, topics: list[str], relevant: bool) -> str:
     return f"「{course.name}」{tail}。"
 
 
-def generate_reason(course: Course, topics: list[str], client: LLMClient,
-                    *, relevant: bool = False) -> str:
-    """為單門推薦課程產生一句理由。失敗/mock → 退回確定性句子。
-
-    relevant：此課是否確實與使用者主題語意相關（避免對填補學分的無關課硬扯主題）。
-    """
-    fb = _fallback_reason(course, topics, relevant)
-    if client.provider == "mock":
-        return fb
-    fields = {
+def _reason_item(course: Course, topics: list[str], relevant: bool) -> dict:
+    return {
+        "id": course.id, "相關主題": topics if relevant else [],
         "課名": course.name, "英文名": course.name_en, "系所": course.dept,
         "教師": "、".join(course.teacher), "學分": course.credits,
         "通識領域": course.ge_domain, "授課語言": course.language,
         "備註": course.notes[:120],
     }
-    topic_hint = topics if relevant else []
-    messages = [
-        {"role": "system", "content": _REASON_SYSTEM},
-        {"role": "user", "content":
-            f"學生想學的主題：{topic_hint}\n課程欄位：{json.dumps(fields, ensure_ascii=False)}"},
-    ]
-    try:
-        text = client._call(messages, max_tokens=80).strip()  # noqa: SLF001
-        text = text.strip().strip('「」"\' ')
-        return text or fb
-    except Exception:  # noqa: BLE001
-        return fb
+
+
+def _valid_reason(text: Any, topics: list[str], relevant: bool) -> str | None:
+    """schema 驗證單句理由；不合格回 None。無關課提到主題也視為不合格（不得硬扯）。"""
+    if not isinstance(text, str):
+        return None
+    text = text.strip().strip('「」"\' ')
+    if not text or len(text) > _REASON_MAX_LEN or "\n" in text:
+        return None
+    if not relevant and any(t and t in text for t in topics):
+        return None
+    return text
 
 
 def generate_reasons(courses: list[Course], topics: list[str], client: LLMClient,
                      *, score_map: dict[str, float] | None = None,
-                     threshold: float = 0.05) -> dict[str, str]:
-    """為多門課產生理由。score_map 給定時，依相似度是否過門檻決定是否提主題。"""
+                     threshold: float = 0.05,
+                     relevant: dict[str, bool] | None = None) -> dict[str, str]:
+    """為多門課產生理由，每 _REASON_BATCH 門合併成一次 LLM 呼叫（JSON 模式）。
+
+    relevant：此課是否確實與使用者主題語意相關（避免對填補學分的無關課硬扯主題）；
+    未指定時依 score_map 相似度是否過門檻決定。
+    任一課的回應缺漏或不合格 → 該課退回確定性句子；mock 不呼叫 API。
+    """
     smap = score_map or {}
-    return {
-        c.id: generate_reason(c, topics, client,
-                              relevant=smap.get(c.id, 0.0) >= threshold)
-        for c in courses
-    }
+    uniq = list({c.id: c for c in courses}.values())
+    rel = {c.id: (relevant or {}).get(c.id, smap.get(c.id, 0.0) >= threshold) for c in uniq}
+    out = {c.id: _fallback_reason(c, topics, rel[c.id]) for c in uniq}
+    if client.provider == "mock" or not uniq:
+        return out
+    for i in range(0, len(uniq), _REASON_BATCH):
+        batch = uniq[i:i + _REASON_BATCH]
+        items = [_reason_item(c, topics, rel[c.id]) for c in batch]
+        messages = [
+            {"role": "system", "content": _REASON_SYSTEM},
+            {"role": "user", "content":
+                f"課程清單：{json.dumps(items, ensure_ascii=False)}\n\n請輸出 JSON。"},
+        ]
+        raw = client.complete_json(messages, fallback={}, max_tokens=80 + 60 * len(batch))
+        reasons = raw.get("reasons") if isinstance(raw.get("reasons"), dict) else {}
+        for c in batch:
+            text = _valid_reason(reasons.get(c.id), topics, rel[c.id])
+            if text:
+                out[c.id] = text
+    return out
+
+
+def generate_reason(course: Course, topics: list[str], client: LLMClient,
+                    *, relevant: bool = False) -> str:
+    """為單門推薦課程產生一句理由（generate_reasons 的單門版本）。"""
+    return generate_reasons([course], topics, client, relevant={course.id: relevant})[course.id]

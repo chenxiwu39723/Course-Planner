@@ -341,9 +341,11 @@ def api_schedules():
                              "graduation": context.contribution(d) if context else None})
         return out_alts
 
+    # 各方案的推薦課去重後一次產生理由（同一門課只問一次 LLM）
+    reasons = generate_reasons([c for s in schedules for c in s.added],
+                               spec.topics, CLIENT, score_map=smap)
     out = []
     for s in schedules:
-        reasons = generate_reasons(s.added, spec.topics, CLIENT, score_map=smap)
         sched_ids = {c.id for c in s.courses}
         occ_added = set().union(*[set(a.times) for a in s.added]) if s.added else set()
         courses_out = []

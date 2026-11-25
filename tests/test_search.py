@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """語意搜尋與推薦理由測試（以記憶體內建的小索引，不依賴已產生的檔案）。"""
 import numpy as np
+import pytest
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 from planner.models import Course
@@ -92,6 +93,56 @@ def test_reason_mock_irrelevant_omits_topic():
     r = generate_reason(c, ["資料分析"], client, relevant=False)
     assert "資料分析" not in r          # 不得對無關課硬扯主題
     assert "哲學思辨" in r
+
+
+class _FakeLLM(LLMClient):
+    """模擬真實供應商：記錄每次送出的訊息，回傳指定文字。"""
+
+    def __init__(self, reply):
+        super().__init__(provider="azure_openai")
+        self.reply, self.calls = reply, []
+
+    def _call(self, messages, max_tokens):
+        self.calls.append(messages)
+        if isinstance(self.reply, Exception):
+            raise self.reply
+        return self.reply
+
+
+def test_reasons_batched_in_one_json_call():
+    import json
+    cs = [_course("A", "資料科學", ge="自然"), _course("B", "哲學", ge="人文"),
+          _course("A", "資料科學", ge="自然")]                 # 重複課只問一次
+    llm = _FakeLLM(json.dumps({"reasons": {"A": "可接觸資料分析方法", "B": "拓展人文視野"}}))
+    reasons = generate_reasons(cs, ["資料分析"], llm, score_map={"A": 0.5})
+    assert reasons == {"A": "可接觸資料分析方法", "B": "拓展人文視野"}
+    assert len(llm.calls) == 1
+    # Azure JSON 模式要求訊息中出現 "json" 字樣，否則整個請求被拒
+    assert "json" in " ".join(m["content"] for m in llm.calls[0]).lower()
+    assert '"id": "A"' in llm.calls[0][1]["content"]
+
+
+def test_reasons_invalid_entries_fall_back_per_course():
+    import json
+    cs = [_course("A", "資料科學", ge="自然"), _course("B", "哲學", ge="人文"),
+          _course("C", "體育", ge=None)]
+    llm = _FakeLLM(json.dumps({"reasons": {
+        "A": "很好" * 40,                       # 過長
+        "B": "能培養資料分析能力",                 # 無關課硬扯主題
+        "C": "活動身體、調劑課業",
+    }}))
+    reasons = generate_reasons(cs, ["資料分析"], llm, score_map={})
+    assert reasons["A"].startswith("「資料科學」")      # 退回確定性句子
+    assert "資料分析" not in reasons["B"]
+    assert reasons["C"] == "活動身體、調劑課業"
+
+
+@pytest.mark.parametrize("reply", ["不是 JSON", '{"reasons": "x"}', TimeoutError("逾時")])
+def test_reasons_llm_failure_falls_back(reply):
+    llm = _FakeLLM(reply)
+    reasons = generate_reasons([_course("A", "資料科學", ge="自然")], ["資料分析"], llm,
+                               score_map={"A": 0.5})
+    assert reasons["A"] == "「資料科學」屬「自然」；與你想學的「資料分析」方向相關。"
 
 
 def test_generate_reasons_gated_by_score_map():
