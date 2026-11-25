@@ -6,6 +6,7 @@
     "00001": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -34,6 +35,7 @@
     "00002": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -62,6 +64,7 @@
     "00003": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -90,6 +93,7 @@
     "00004": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -118,6 +122,7 @@
     "00005": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -146,6 +151,7 @@
     "00006": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -174,6 +180,7 @@
     "00007": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -202,6 +209,7 @@
     "00008": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -230,6 +238,7 @@
     "00009": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -258,6 +267,7 @@
     "00011": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -298,6 +308,7 @@
     "00012": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -326,6 +337,7 @@
     "00013": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -354,6 +366,7 @@
     "00014": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -382,6 +395,7 @@
     "00015": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -410,6 +424,7 @@
     "00016": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -450,6 +465,7 @@
     "00017": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -490,6 +506,7 @@
     "00018": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -530,6 +547,7 @@
     "00019": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -558,6 +576,7 @@
     "00020": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [],
@@ -570,6 +589,7 @@
     "00021": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -624,6 +644,7 @@
     "00022": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -645,6 +666,7 @@
     "00023": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -666,6 +688,7 @@
     "00024": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -687,6 +710,7 @@
     "00025": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -708,6 +732,7 @@
     "00026": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -736,6 +761,7 @@
     "00027": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -757,6 +783,7 @@
     "00028": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -778,6 +805,7 @@
     "00029": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -799,6 +827,7 @@
     "00030": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -827,6 +856,7 @@
     "00031": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -855,6 +885,7 @@
     "00032": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -876,6 +907,7 @@
     "00033": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -897,6 +929,7 @@
     "00034": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -918,6 +951,7 @@
     "00035": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -939,6 +973,7 @@
     "00036": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -967,6 +1002,7 @@
     "00037": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -994,6 +1030,7 @@
     "00038": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -1022,6 +1059,7 @@
     "00039": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -1050,6 +1088,7 @@
     "00040": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -1078,6 +1117,7 @@
     "00041": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -1106,6 +1146,7 @@
     "00042": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -1134,6 +1175,7 @@
     "00043": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -1162,6 +1204,7 @@
     "00044": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -1190,6 +1233,7 @@
     "00045": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -1218,6 +1262,7 @@
     "00046": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -1246,6 +1291,7 @@
     "00047": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "土木工程學系",
           "化學工程與材料工程學系"
@@ -1268,6 +1314,7 @@
     "00048": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "機械工程學系"
         ],
@@ -1289,6 +1336,7 @@
     "00049": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "電機工程學系",
           "通訊工程學系"
@@ -1311,6 +1359,7 @@
     "00050": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "土木工程學系",
           "化學工程與材料工程學系"
@@ -1333,6 +1382,7 @@
     "00051": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "土木工程學系",
           "化學工程與材料工程學系"
@@ -1355,6 +1405,7 @@
     "00052": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "機械工程學系"
         ],
@@ -1376,6 +1427,7 @@
     "00053": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "機械工程學系"
         ],
@@ -1397,6 +1449,7 @@
     "00054": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "電機工程學系",
           "通訊工程學系"
@@ -1419,6 +1472,7 @@
     "00055": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "電機工程學系",
           "通訊工程學系"
@@ -1441,6 +1495,7 @@
     "00056": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "資訊工程學系"
         ],
@@ -1462,6 +1517,7 @@
     "00057": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "土木工程學系",
           "化學工程與材料工程學系"
@@ -1484,6 +1540,7 @@
     "00058": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "機械工程學系"
         ],
@@ -1505,6 +1562,7 @@
     "00059": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "電機工程學系",
           "通訊工程學系"
@@ -1527,6 +1585,7 @@
     "00060": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "電機工程學系",
           "通訊工程學系"
@@ -1549,6 +1608,7 @@
     "00061": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "資訊工程學系"
         ],
@@ -1570,6 +1630,7 @@
     "00062": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [
           "資訊工程學系"
         ],
@@ -1593,6 +1654,7 @@
     "00063": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "大氣科學學系",
           "地球科學學系"
@@ -1615,6 +1677,7 @@
     "00064": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "數學系",
           "物理學系",
@@ -1639,6 +1702,7 @@
     "00065": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "數學系",
           "物理學系",
@@ -1663,6 +1727,7 @@
     "00066": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "大氣科學學系",
           "地球科學學系"
@@ -1685,6 +1750,7 @@
     "00067": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "數學系",
           "物理學系",
@@ -1709,6 +1775,7 @@
     "00068": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "數學系",
           "物理學系",
@@ -1733,6 +1800,7 @@
     "00069": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "大氣科學學系",
           "地球科學學系"
@@ -1755,6 +1823,7 @@
     "00070": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "數學系",
           "物理學系",
@@ -1779,6 +1848,7 @@
     "00071": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "數學系",
           "物理學系",
@@ -1803,6 +1873,7 @@
     "00072": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "資訊管理學系",
           "財務金融學系"
@@ -1825,6 +1896,7 @@
     "00073": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "企業管理學系",
           "經濟學系"
@@ -1847,6 +1919,7 @@
     "00074": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "資訊管理學系",
           "財務金融學系"
@@ -1869,6 +1942,7 @@
     "00075": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "企業管理學系",
           "經濟學系"
@@ -1891,6 +1965,7 @@
     "00076": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "企業管理學系",
           "經濟學系"
@@ -1913,6 +1988,7 @@
     "00077": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "資訊管理學系",
           "財務金融學系"
@@ -1935,6 +2011,7 @@
     "00078": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "資訊管理學系",
           "財務金融學系"
@@ -1957,6 +2034,7 @@
     "00079": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "企業管理學系",
           "經濟學系"
@@ -1979,6 +2057,7 @@
     "00080": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "中國文學系",
           "法國語文學系"
@@ -2001,6 +2080,7 @@
     "00081": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "中國文學系",
           "法國語文學系"
@@ -2023,6 +2103,7 @@
     "00082": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "中國文學系",
           "法國語文學系"
@@ -2045,6 +2126,7 @@
     "00083": {
       "condition": {
         "min_grade": 1,
+        "max_grade": 1,
         "allowed_depts": [
           "中國文學系",
           "法國語文學系"
@@ -2069,6 +2151,7 @@
     "00084": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2090,6 +2173,7 @@
     "00085": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [],
@@ -2102,6 +2186,7 @@
     "00086": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2123,6 +2208,7 @@
     "00087": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2144,6 +2230,7 @@
     "00088": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2165,6 +2252,7 @@
     "00089": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2186,6 +2274,7 @@
     "00091": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2219,6 +2308,7 @@
     "00092": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2246,6 +2336,7 @@
     "00095": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2267,6 +2358,7 @@
     "00096": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2288,6 +2380,7 @@
     "00098": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2309,6 +2402,7 @@
     "00100": {
       "condition": {
         "min_grade": 4,
+        "max_grade": 4,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2348,6 +2442,7 @@
     "00101": {
       "condition": {
         "min_grade": 4,
+        "max_grade": 4,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2387,6 +2482,7 @@
     "00102": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2408,6 +2504,7 @@
     "00103": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2429,6 +2526,7 @@
     "00104": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2450,6 +2548,7 @@
     "00106": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2471,6 +2570,7 @@
     "00107": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2492,6 +2592,7 @@
     "00108": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2520,6 +2621,7 @@
     "00109": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [],
@@ -2532,6 +2634,7 @@
     "00110": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [],
@@ -2544,6 +2647,7 @@
     "07001": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2565,6 +2669,7 @@
     "07003": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2592,6 +2697,7 @@
     "07004": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2619,6 +2725,7 @@
     "07005": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2646,6 +2753,7 @@
     "07006": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2673,6 +2781,7 @@
     "07007": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2694,6 +2803,7 @@
     "07008": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2721,6 +2831,7 @@
     "07009": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2749,6 +2860,7 @@
     "07010": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2770,6 +2882,7 @@
     "07011": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2791,6 +2904,7 @@
     "07012": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2818,6 +2932,7 @@
     "07013": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2845,6 +2960,7 @@
     "07014": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2872,6 +2988,7 @@
     "07015": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2899,6 +3016,7 @@
     "07016": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2920,6 +3038,7 @@
     "07017": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2948,6 +3067,7 @@
     "07018": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -2982,6 +3102,7 @@
     "07019": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3009,6 +3130,7 @@
     "07020": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3043,6 +3165,7 @@
     "07021": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3064,6 +3187,7 @@
     "07022": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3085,6 +3209,7 @@
     "07023": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3106,6 +3231,7 @@
     "09001": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3127,6 +3253,7 @@
     "09002": {
       "condition": {
         "min_grade": 2,
+        "max_grade": 5,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3148,6 +3275,7 @@
     "09003": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3169,6 +3297,7 @@
     "09004": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3190,6 +3319,7 @@
     "09005": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3211,6 +3341,7 @@
     "09006": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3245,6 +3376,7 @@
     "09007": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3266,6 +3398,7 @@
     "09008": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3293,6 +3426,7 @@
     "09009": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3314,6 +3448,7 @@
     "09010": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3335,6 +3470,7 @@
     "09011": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3363,6 +3499,7 @@
     "09012": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3384,6 +3521,7 @@
     "09013": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3412,6 +3550,7 @@
     "09014": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3447,6 +3586,7 @@
     "09015": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3468,6 +3608,7 @@
     "09016": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3496,6 +3637,7 @@
     "09017": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3517,6 +3659,7 @@
     "09018": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3538,6 +3681,7 @@
     "09019": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3559,6 +3703,7 @@
     "09020": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3580,6 +3725,7 @@
     "09022": {
       "condition": {
         "min_grade": 2,
+        "max_grade": 2,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3601,6 +3747,7 @@
     "09023": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3622,6 +3769,7 @@
     "09024": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3643,6 +3791,7 @@
     "09025": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3664,6 +3813,7 @@
     "09026": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3685,6 +3835,7 @@
     "09027": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3706,6 +3857,7 @@
     "09028": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3727,6 +3879,7 @@
     "09029": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3748,6 +3901,7 @@
     "09030": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3769,6 +3923,7 @@
     "09031": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3796,6 +3951,7 @@
     "09032": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3823,6 +3979,7 @@
     "09033": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3850,6 +4007,7 @@
     "09034": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3871,6 +4029,7 @@
     "09035": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3892,6 +4051,7 @@
     "09036": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3919,6 +4079,7 @@
     "09037": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3947,6 +4108,7 @@
     "09038": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -3974,6 +4136,7 @@
     "09039": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -4001,6 +4164,7 @@
     "09040": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -4042,6 +4206,7 @@
     "09041": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -4083,6 +4248,7 @@
     "09042": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -4110,6 +4276,7 @@
     "09043": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -4131,6 +4298,7 @@
     "09044": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -4152,6 +4320,7 @@
     "09045": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -4173,6 +4342,7 @@
     "09046": {
       "condition": {
         "min_grade": 3,
+        "max_grade": 4,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -4200,6 +4370,7 @@
     "09047": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -4221,6 +4392,7 @@
     "09048": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [
           "企業管理學系",
           "財務金融學系",
@@ -4265,6 +4437,7 @@
     "09049": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [
           "企業管理學系",
           "財務金融學系",
@@ -4309,6 +4482,7 @@
     "09050": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -4343,6 +4517,7 @@
     "09051": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -4377,6 +4552,7 @@
     "09052": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -4404,6 +4580,7 @@
     "09053": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -4438,6 +4615,7 @@
     "09054": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [
           "非資訊管理學系"
         ],
@@ -4475,6 +4653,7 @@
     "09055": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -4503,6 +4682,7 @@
     "09056": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [],
@@ -4515,6 +4695,7 @@
     "09057": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -4542,6 +4723,7 @@
     "09058": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -4576,6 +4758,7 @@
     "09059": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [
           "非資訊管理學系",
           "非資訊工程學系"
@@ -4614,6 +4797,7 @@
     "09060": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -4655,6 +4839,7 @@
     "09061": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [
@@ -4689,6 +4874,7 @@
     "09062": {
       "condition": {
         "min_grade": null,
+        "max_grade": null,
         "allowed_depts": [],
         "prerequisites": [],
         "other_conditions": [

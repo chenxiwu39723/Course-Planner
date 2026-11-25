@@ -32,13 +32,24 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 CACHE_PATH = PROJECT_ROOT / "data" / "eligibility_cache.json"
 DISTRIBUTION_CACHE_PATH = PROJECT_ROOT / "data" / "distribution_cache.json"
 
-_CN_NUM = {"一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6, "七": 7, "大一": 1}
+_CN_NUM = {"一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6, "七": 7}
+
+# 常見系所簡稱 → 正式名稱核心（去掉「學系／系」）；備註常寫「限資工系」
+_DEPT_ALIASES = {
+    "資工": "資訊工程", "資管": "資訊管理", "電機": "電機工程", "通訊": "通訊工程",
+    "化材": "化學工程與材料工程", "機械": "機械工程", "土木": "土木工程",
+    "企管": "企業管理", "財金": "財務金融", "光電": "光電科學與工程",
+    "生醫": "生醫科學與工程", "太空": "太空科學與工程", "大氣": "大氣科學",
+    "地科": "地球科學", "英文": "英美語文", "法文": "法國語文", "中文": "中國文學",
+    "客家": "客家語文暨社會科學", "法政": "法律與政府", "生科": "生命科學",
+}
 
 
 # ------------------------------------------------------------- 結構化條件
 @dataclass
 class EligibilityCondition:
     min_grade: int | None = None                       # 年級下限（1–7）
+    max_grade: int | None = None                       # 年級上限（如「限二年級」= 2～2）
     allowed_depts: list[str] = field(default_factory=list)   # 限定系所
     prerequisites: list[str] = field(default_factory=list)   # 先修課程
     other_conditions: list[str] = field(default_factory=list)  # 其他條件（需人工確認）
@@ -49,8 +60,8 @@ class EligibilityCondition:
         return asdict(self)
 
     def is_empty(self) -> bool:
-        return not (self.min_grade or self.allowed_depts or self.prerequisites
-                    or self.other_conditions or self.unparsed.strip())
+        return not (self.min_grade or self.max_grade or self.allowed_depts
+                    or self.prerequisites or self.other_conditions or self.unparsed.strip())
 
 
 def _coerce_condition(raw: dict[str, Any]) -> EligibilityCondition | None:
@@ -58,10 +69,14 @@ def _coerce_condition(raw: dict[str, Any]) -> EligibilityCondition | None:
     if not isinstance(raw, dict):
         return None
     try:
-        mg = raw.get("min_grade")
-        mg = int(mg) if mg not in (None, "", "null") else None
-        if mg is not None and not (1 <= mg <= 7):
-            mg = None
+        def grade(key):
+            g = raw.get(key)
+            g = int(g) if g not in (None, "", "null") else None
+            return g if g is not None and 1 <= g <= 7 else None
+
+        mg, xg = grade("min_grade"), grade("max_grade")
+        if mg is not None and xg is not None and mg > xg:
+            mg = xg = None
 
         def as_str_list(v) -> list[str]:
             if v is None:
@@ -75,6 +90,7 @@ def _coerce_condition(raw: dict[str, Any]) -> EligibilityCondition | None:
             conf = "low"
         return EligibilityCondition(
             min_grade=mg,
+            max_grade=xg,
             allowed_depts=as_str_list(raw.get("allowed_depts")),
             prerequisites=as_str_list(raw.get("prerequisites")),
             other_conditions=as_str_list(raw.get("other_conditions")),
@@ -86,6 +102,102 @@ def _coerce_condition(raw: dict[str, Any]) -> EligibilityCondition | None:
 
 
 # ------------------------------------------------------------- 非 AI 關鍵字解析（fallback）
+_SEP = r"\s*[、,，及和與]?\s*"
+# 「限三、四年級」「二三四年級」「二年級、三年級」
+_GRADE_NJ = rf"(?:[一二三四五六七](?:年級)?{_SEP})*[一二三四五六七]年級"
+# 「大二、大三、大四」「大三大四」
+_GRADE_DA = rf"大[一二三四](?:{_SEP}大[一二三四])*"
+_GRADE_RE = re.compile(
+    rf"(?P<pre>限|僅供|僅限)?(?P<seq>{_GRADE_DA}|{_GRADE_NJ})"
+    r"(?P<incl>\s*[\(（]含[\)）])?(?P<up>\s*以上)?"
+)
+_GRADE_CONTEXT_BEFORE = re.compile(r"(?:系|部|院|班)$")
+_GRADE_CONTEXT_AFTER = re.compile(r"^(?:可修|可選修|且|之學生|學生|同學|選修|，|,|。|$)")
+
+
+def _parse_grades(text: str) -> tuple[int | None, int | None]:
+    """取第一個「明確是修課資格」的年級描述，回傳 (下限, 上限)。
+
+    - 「限二年級」→ (2, 2)；「限三、四年級」→ (3, 4)；「大二(含)以上」→ (2, None)
+    - 後面接碩博／研究生（如「限四年級和碩博」）→ 不設上限
+    - 研究生年級（「博士生一年級」）、「準大一」、「大一體育」等描述性文字略過
+    """
+    for m in _GRADE_RE.finditer(text):
+        before, after = text[max(0, m.start() - 3):m.start()], text[m.end():m.end() + 12]
+        if re.search(r"(?:士生|研究生|碩|博|準)$", before):
+            continue
+        explicit = m.group("pre") or m.group("up")
+        if m.group("seq").startswith("大"):
+            if not (explicit or re.match(r"^(?:可修|可選修)", after)
+                    or (_GRADE_CONTEXT_BEFORE.search(before) and re.match(r"^(?:學生|生|同學)", after))):
+                continue
+        elif not (explicit or _GRADE_CONTEXT_BEFORE.search(before)
+                  or _GRADE_CONTEXT_AFTER.match(after)):
+            continue
+        grades = [_CN_NUM[ch] for ch in re.sub(r"年級|大", "", m.group("seq")) if ch in _CN_NUM]
+        if not grades:
+            continue
+        lo, hi = min(grades), max(grades)
+        if m.group("up") or re.search(r"碩|博|研究生", after):
+            hi = None
+        elif len(grades) == 1 and not m.group("pre") and re.match(r"^(?:可修|可選修)", after):
+            hi = None                     # 「大三可選修」：未寫「限」，視為下限
+        elif hi == 4 and re.search(r"碩博同修|研究生", text):
+            hi = None                     # 大學部年級限制不排除同修的研究生
+        return lo, hi
+    return None, None
+
+
+_PRE_RE = re.compile(r"(建議)?(?:須|需|請|限)?(?:先修習?|修畢)(?:課程)?[:：]?\s*([^，。,；;\s\[\]]{1,40})")
+_PRE_CUT = re.compile(r"(?:之|的同學|的學生|同學|學生|者|且|選修|[一二三四]年級)")
+_PRE_STOP = {"課程", "課", "科目", "者", "完畢", "畢業", "及格"}
+_COURSE_CODE = re.compile(r"[\(（]?[A-Z]{2}\d{4}[\)）]?")
+
+
+def _parse_prerequisites(text: str, cond: EligibilityCondition) -> None:
+    """先修：如「須先修普化」「先修EG1001工程程式設計」「限修畢A或B」。
+
+    - 「建議先修」不是硬性條件 → other_conditions
+    - 計數或擇一類（「兩門…」「二擇一」）無法用已修課名比對 → other_conditions
+    - 課號只在沒有課名時保留；「、」分隔視為多門都要修
+    """
+    def trim(s: str) -> str:
+        """去掉前後標點與「不成對」的括號（保留「微積分(一)」這種成對括號）。"""
+        s = s.strip("。，、 ").lstrip(")）")
+        opens, closes = lambda x: x.count("(") + x.count("（"), lambda x: x.count(")") + x.count("）")
+        while s and s[0] in "(（" and opens(s) > closes(s):
+            s = s[1:]
+        while s and s[-1] in ")）" and closes(s) > opens(s):
+            s = s[:-1]
+        return s.strip("。，、 ")
+
+    for pm in _PRE_RE.finditer(text):
+        if text[max(0, pm.start() - 4):pm.start()].endswith(("同修(含", "同修（含")):
+            note = f"同修或先修：{trim(_COURSE_CODE.sub('', pm.group(2)))}"
+            if note not in cond.other_conditions:
+                cond.other_conditions.append(note)
+            continue
+        recommend = bool(pm.group(1))
+        body = _PRE_CUT.split(pm.group(2), 1)[0]
+        for part in body.split("、"):
+            name = trim(_COURSE_CODE.sub("", part))
+            if len(re.sub(r"[^一-龥]", "", name)) < 2:
+                name = trim(part)                        # 只有課號（如 CM1009）
+            if len(name) < 2 or name in _PRE_STOP:
+                continue
+            if (re.search(r"[兩二三四五六七八九十\d]門|擇一", name)
+                    or name.count("(") != name.count(")")):
+                note = f"先修：{body}"
+            elif recommend:
+                note = f"建議先修：{name}"
+            else:
+                if name not in cond.prerequisites:
+                    cond.prerequisites.append(name)
+                continue
+            if note not in cond.other_conditions:
+                cond.other_conditions.append(note)
+
+
 def keyword_parse(notes: str) -> EligibilityCondition:
     """用關鍵字規則把備註解析成條件（不呼叫 AI）。作為 fallback 與 mock 結果。"""
     cond = EligibilityCondition(confidence="low")
@@ -93,27 +205,26 @@ def keyword_parse(notes: str) -> EligibilityCondition:
         return cond
     text = notes
 
-    # 年級下限：如「限大三以上」「三年級(含)以上」「大二(含)以上」
-    m = re.search(r"(?:限)?大?([一二三四五六七])年級(?:\(含\))?(?:以上)?", text)
-    if not m:
-        m = re.search(r"大([一二三四五六七])(?:\(含\))?以上", text)
-    if m and m.group(1) in _CN_NUM:
-        cond.min_grade = _CN_NUM[m.group(1)]
+    # 年級：如「限大三以上」「三年級(含)以上」「限二年級」「限三、四年級」
+    cond.min_grade, cond.max_grade = _parse_grades(text)
 
     # 限定系所：如「限資工系」「限通訊工程學系」；並處理「、」並列多系所
     _DEPT = r"[一-龥]{2,12}?(?:系|學系|系所|所)"
     for dm in re.finditer(rf"限({_DEPT}(?:、{_DEPT})*)", text):
         for name in dm.group(1).split("、"):
             name = name.strip()
-            if name and name not in cond.allowed_depts:
-                cond.allowed_depts.append(name)
+            if not name or name in cond.allowed_depts:
+                continue
+            if name.startswith(("本", "該")):      # 「限該授課教授所」：無法得知是哪個系所
+                if f"限{name}" not in cond.other_conditions:
+                    cond.other_conditions.append(f"限{name}")
+                continue
+            cond.allowed_depts.append(name)
+    for um in re.finditer(r"限(本|該)(系|所)", text):  # 「限本所博士生」
+        if um.group(0) not in cond.other_conditions:
+            cond.other_conditions.append(um.group(0))
 
-    # 先修：如「須先修微積分」「先修資料結構」「須修畢XXX」
-    _PRE_STOP = {"課程", "課", "科目", "者", "完畢", "畢業", "及格"}
-    for pm in re.finditer(r"(?:須)?(?:先修|修畢)([一-龥\(\)A-Za-z0-9]{2,20})", text):
-        name = pm.group(1).strip("。，、 ")
-        if name and name not in _PRE_STOP and name not in cond.prerequisites:
-            cond.prerequisites.append(name)
+    _parse_prerequisites(text, cond)
 
     # 其他條件（需人工確認）：方括號標記、教師同意、學制限制等
     for token in re.findall(r"\[([^\]]+)\]", text):
@@ -123,7 +234,7 @@ def keyword_parse(notes: str) -> EligibilityCondition:
         if kw in text and kw not in cond.other_conditions:
             cond.other_conditions.append(kw)
 
-    if cond.min_grade or cond.allowed_depts or cond.prerequisites:
+    if cond.min_grade or cond.max_grade or cond.allowed_depts or cond.prerequisites:
         cond.confidence = "medium"
     return cond
 
@@ -132,7 +243,9 @@ def keyword_parse(notes: str) -> EligibilityCondition:
 _SYSTEM = (
     "你是協助解讀大學課程『限修條件』的助手。使用者會給你一段課程備註文字，"
     "請只萃取文字中明確提到的限修條件，輸出 JSON 物件，不要加任何說明或 Markdown。"
-    "欄位：min_grade(整數年級下限或 null)、allowed_depts(限定系所字串陣列)、"
+    "欄位：min_grade(整數年級下限或 null)、"
+    "max_grade(整數年級上限或 null；例如『限二年級』為 min_grade=2、max_grade=2，"
+    "『三年級以上』為 min_grade=3、max_grade=null)、allowed_depts(限定系所字串陣列)、"
     "prerequisites(先修課程字串陣列)、other_conditions(其他條件字串陣列)、"
     "unparsed(無法歸類的原文片段字串)、confidence(high/medium/low)。"
     "嚴格要求：文字沒有明確提到的條件一律不要推論或填入；不確定就放進 other_conditions "
@@ -186,12 +299,32 @@ class EligibilityResult:
         return d
 
 
+def _dept_core(name: str) -> str:
+    """系所名稱核心：去掉「系／所」字尾、簡稱換成正式名稱，再去掉結尾「學」。
+
+    「化學學系」「化學系」→ 化學；「生科所」「生命科學系」→ 生命科；「數學系」→ 數學
+    """
+    core = re.sub(r"(?:系所|研究所|系|所)$", "", name.strip())
+    core = _DEPT_ALIASES.get(core, core)
+    while core.endswith("學") and len(core) > 2:       # 「大氣科學學」→「大氣科」
+        core = core[:-1]
+    return core
+
+
 def _dept_match(user_dept: str, allowed: str) -> bool:
-    """系所模糊比對：允許互為子字串（如『通訊系』⊆『通訊工程學系』）。"""
-    a = user_dept.replace("學系", "系").replace("系所", "系")
-    b = allowed.replace("學系", "系").replace("系所", "系").replace("所", "")
-    core = b.rstrip("系")
-    return bool(core) and (core in a or a.rstrip("系") in b)
+    """系所比對：簡稱與正式名稱視為相同（『資工系』＝『資訊工程學系』）。
+
+    - 「非資訊管理學系」表示排除該系
+    - 組別、班別視為該系（使用者『數學系』符合『數學系計算與資料科學組』）
+    - 不做任意子字串比對，避免『化學系』誤配『化學工程與材料工程學系』
+    """
+    allowed = allowed.strip()
+    if allowed.startswith("非"):
+        return not _dept_match(user_dept, allowed[1:])
+    u, a = _dept_core(user_dept), _dept_core(allowed)
+    if not u or not a:
+        return False
+    return u == a or a.startswith(u + "系") or u.startswith(a + "系")
 
 
 def match(condition: EligibilityCondition, user: UserProfile,
@@ -207,15 +340,22 @@ def match(condition: EligibilityCondition, user: UserProfile,
                                  condition, raw_notes)
 
     # 年級
-    if condition.min_grade is not None:
+    lo, hi = condition.min_grade, condition.max_grade
+    if lo is not None or hi is not None:
+        if lo is not None and hi is not None:
+            need = f"{lo}年級" if lo == hi else f"{lo}～{hi}年級"
+        elif lo is not None:
+            need = f"{lo}年級以上"
+        else:
+            need = f"{hi}年級以下"
         if user.grade is None:
             has_unknown = True
-            reasons.append(f"限{condition.min_grade}年級以上，但未提供你的年級")
-        elif user.grade >= condition.min_grade:
-            reasons.append(f"年級符合（需 ≥{condition.min_grade}，你是 {user.grade}）")
+            reasons.append(f"限{need}，但未提供你的年級")
+        elif (lo is None or user.grade >= lo) and (hi is None or user.grade <= hi):
+            reasons.append(f"年級符合（限{need}，你是 {user.grade}）")
         else:
             hard_fail = True
-            reasons.append(f"年級不足（需 ≥{condition.min_grade}，你是 {user.grade}）")
+            reasons.append(f"年級不符（限{need}，你是 {user.grade}）")
 
     # 系所
     if condition.allowed_depts:
@@ -259,10 +399,18 @@ def match(condition: EligibilityCondition, user: UserProfile,
 
 
 def _course_taken(prereq: str, done: str) -> bool:
-    """粗略判斷已修課是否涵蓋某先修課（去空白後互為子字串）。"""
-    a = re.sub(r"\s", "", prereq)
+    """粗略判斷已修課是否涵蓋某先修課（去空白後互為子字串）。
+
+    「A或B」只要修過其中一門即可。
+    """
     b = re.sub(r"\s", "", done)
-    return bool(a) and bool(b) and (a in b or b in a)
+    if not b:
+        return False
+    for alt in prereq.split("或"):
+        a = re.sub(r"\s", "", alt)
+        if a and (a in b or b in a):
+            return True
+    return False
 
 
 # ------------------------------------------------------------- 快取 I/O
@@ -295,8 +443,11 @@ def merge_conditions(notes_cond: EligibilityCondition,
     """合併備註條件與分發條件（結構化）。分發條件較可靠，年級以其為優先。"""
     if dist_cond.is_empty():
         return notes_cond
+    dist_has_grade = dist_cond.min_grade is not None or dist_cond.max_grade is not None
+    grade_src = dist_cond if dist_has_grade else notes_cond
     return EligibilityCondition(
-        min_grade=dist_cond.min_grade if dist_cond.min_grade is not None else notes_cond.min_grade,
+        min_grade=grade_src.min_grade,
+        max_grade=grade_src.max_grade,
         allowed_depts=_dedup(dist_cond.allowed_depts, notes_cond.allowed_depts),
         prerequisites=_dedup(dist_cond.prerequisites, notes_cond.prerequisites),
         other_conditions=_dedup(dist_cond.other_conditions, notes_cond.other_conditions),

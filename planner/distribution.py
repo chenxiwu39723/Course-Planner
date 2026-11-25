@@ -73,7 +73,7 @@ def to_condition(rows: list[dict]) -> EligibilityCondition:
             any(d in txt or txt in d for d in cond.allowed_depts)
             or any(p in txt for p in cond.prerequisites)
             or any(o in txt or txt in o for o in cond.other_conditions)
-            or (cond.min_grade is not None and "年級" in txt)
+            or ((cond.min_grade is not None or cond.max_grade is not None) and "年級" in txt)
         )
         if not covered:
             cond.other_conditions.append(txt)

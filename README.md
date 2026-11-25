@@ -97,9 +97,11 @@ python scripts/enrich_courses.py --outline    # 連網，約數分鐘
 # 3) 批次解讀限修條件 → data/eligibility_cache.json
 #    無金鑰：用 mock（關鍵字規則）；有 Azure 金鑰品質更高
 LLM_PROVIDER=mock python scripts/parse_eligibility_batch.py --source live --max-calls 5000
+#    解析規則更新後要重做全部：加 --force
 
 # 4) 抓結構化「分發條件」→ data/distribution_cache.json（比備註可靠，網頁會自動合併）
 python scripts/fetch_distribution.py --source live --targets ge-lang
+#    解析規則更新後不必重抓：python scripts/fetch_distribution.py --reparse
 
 # 5) 建立語意索引
 python scripts/build_index.py --source live
@@ -167,7 +169,7 @@ ANTHROPIC_MODEL=claude-opus-5-5   # 批次解讀限修條件（2000+ 次）建�
 ## 測試
 
 ```bash
-python -m pytest -q      # 目前 169 passed, 1 skipped（實際審核 PDF 測試需設 AUDIT_PDF）
+python -m pytest -q      # 目前 203 passed, 1 skipped（實際審核 PDF 測試需設 AUDIT_PDF）
 ```
 
 涵蓋：節次解析、衝堂判斷、空堂計算、solver 不產生衝堂課表、限修條件解析與三狀態比對、

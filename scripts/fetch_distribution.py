@@ -13,6 +13,7 @@
     python scripts/fetch_distribution.py --targets ge-lang           # 通識/語言（預設）
     python scripts/fetch_distribution.py --targets notes --max-requests 500
     python scripts/fetch_distribution.py --targets all               # 全校（慢）
+    python scripts/fetch_distribution.py --reparse                   # 不連網，以快取的表格列重新解析
 
 沿用參考實作 NCU-Course-Finder-DataFetcher-v2（作者 Raku Zeta, MIT）的 API 請求方式。
 """
@@ -100,8 +101,18 @@ def main() -> None:
                     help="本次最多連網次數（讀快取不計入；預設 250）")
     ap.add_argument("--refresh", action="store_true", help="忽略既有解析結果，全部重做")
     ap.add_argument("--refetch", action="store_true", help="忽略 HTML 快取，重新下載")
+    ap.add_argument("--reparse", action="store_true",
+                    help="不連網：用快取中已存的表格列重新解析條件（解析規則更新後使用）")
     args = ap.parse_args()
     _force_utf8_stdout()
+
+    if args.reparse:
+        raw = json.loads(CACHE_PATH.read_text(encoding="utf-8"))
+        for entry in raw.get("conditions", {}).values():
+            entry["condition"] = to_condition(entry.get("rows") or []).to_dict()
+        CACHE_PATH.write_text(json.dumps(raw, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(f"已重新解析 {len(raw.get('conditions', {}))} 門 → {CACHE_PATH.relative_to(PROJECT_ROOT)}")
+        return
 
     courses, src = load_courses(args.source)
     pool = _select_targets(courses, args.targets)

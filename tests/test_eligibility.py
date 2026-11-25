@@ -146,3 +146,79 @@ def test_evaluate_uses_cache():
 def test_evaluate_missing_cache_falls_back_to_keyword():
     r = evaluate("NOPE", "限大三以上", UserProfile(grade=1), {})
     assert r.status == MAYBE_NOT
+
+
+# ---------------------------------------------------------- 真實備註寫法（#6–#8）
+import pytest  # noqa: E402
+
+from planner.eligibility import _dept_match  # noqa: E402
+
+
+@pytest.mark.parametrize("notes, expected", [
+    ("限二年級，初選者需經教練同意", (2, 2)),                     # 限定單一年級，不是「以上」
+    ("限三、四年級，初選者需經教練同意", (3, 4)),
+    ("限二三四年級未修過籃球入門者", (2, 4)),
+    ("分發條件:(1)限大二、大三、大四(2)第一次上課", (2, 4)),
+    ("年級:限二年級、三年級、四年級、五年級", (2, 5)),
+    ("電機系三四年級可修。選修此門課", (3, 4)),
+    ("僅供電機系大一學生選課，電機系大二(含)以上及外系學生若欲選課需密碼卡", (1, 1)),
+    ("限大三以上選修", (3, None)),
+    ("三年級(含)以上", (3, None)),
+    ("先修流體力學,大三可選修", (3, None)),                     # 沒寫「限」→ 只當下限
+    ("限二三四年級未修過桌球入門者。研究生選修請至體育室加簽", (2, None)),
+    ("大學部限四年級可選修 [碩博同修]", (4, None)),               # 不排除同修研究生
+    ("1.限生科系生物醫學組博士生二年級", (None, None)),            # 研究生年級，非大學部
+    ("115年準大一生暑期先修課程，限準大一生。", (None, None)),
+    ("樓204室,一年級外籍生必修", (None, None)),
+])
+def test_keyword_parse_grade_range(notes, expected):
+    c = keyword_parse(notes)
+    assert (c.min_grade, c.max_grade) == expected
+
+
+def test_match_grade_range():
+    cond = EligibilityCondition(min_grade=2, max_grade=2, confidence="high")
+    assert match(cond, UserProfile(grade=2)).status == MATCH
+    r = match(cond, UserProfile(grade=4))
+    assert r.status == MAYBE_NOT and "限2年級" in r.reasons[0]
+
+
+@pytest.mark.parametrize("notes, prereqs, other", [
+    ("不列入畢業學分，限修畢兩門大一體育及三門體育必修興趣選課四年級且未修過籃球入門之學生",
+     [], ["先修：兩門大一體育及三門體育必修興趣選課"]),
+    ("中級課程，限修畢西班牙文一A及一B的同學選修", ["西班牙文一A及一B"], []),
+    ("先修EG1001工程程式設計", ["工程程式設計"], []),
+    ("議修習CM1010前，須先修習CM1009", ["CM1009"], []),
+    ("建議先修(ME2071)熱力學", [], ["建議先修：熱力學"]),
+    ("同修(含先修)GP3083台灣地質,本課程", [], ["同修或先修：台灣地質"]),
+    ("請先修自動控制Ⅱ(ME4062)或線性系統(ME7056)", ["自動控制Ⅱ或線性系統"], []),
+])
+def test_keyword_parse_prerequisite_boundaries(notes, prereqs, other):
+    c = keyword_parse(notes)
+    assert c.prerequisites == prereqs
+    assert [o for o in c.other_conditions if "修" in o] == other
+
+
+def test_prerequisite_alternatives_any_one():
+    cond = EligibilityCondition(prerequisites=["漢語語法學或華語文教材教法"], confidence="high")
+    assert match(cond, UserProfile(completed_courses=["華語文教材教法"])).status == MATCH
+
+
+def test_keyword_parse_unnamed_dept_goes_to_other():
+    c = keyword_parse("限本所博士生修習")
+    assert c.allowed_depts == [] and "限本所" in c.other_conditions
+
+
+@pytest.mark.parametrize("user, allowed, ok", [
+    ("資訊工程學系", "資工系", True),
+    ("資訊管理學系", "資管系", True),
+    ("大氣科學學系", "大氣系", True),
+    ("生命科學系", "生科所", True),
+    ("化學學系", "化學系", True),
+    ("數學系", "數學系計算與資料科學組", True),
+    ("化學學系", "化學工程與材料工程學系", False),      # 不可子字串誤配
+    ("資訊工程學系", "非資訊工程學系", False),          # 「非X系」= 排除
+    ("企業管理學系", "非資訊管理學系", True),
+])
+def test_dept_match_aliases(user, allowed, ok):
+    assert _dept_match(user, allowed) is ok
