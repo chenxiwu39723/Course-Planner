@@ -60,3 +60,28 @@ def test_parse_preferences_rejects_non_object(api):
         r = api.post("/api/parse_preferences", json=body)
         assert r.status_code == 400
     assert api.post("/api/parse_preferences", json={"text": "不要早八"}).status_code == 200
+
+
+@pytest.mark.parametrize("limit", ["-5", "0", "201", "abc", "1.5"])
+def test_courses_rejects_bad_limit(api, limit):
+    r = api.get(f"/api/courses?limit={limit}")
+    assert r.status_code == 400 and "limit" in r.json["error"]
+
+
+def test_courses_limit_ok(api):
+    r = api.get("/api/courses?limit=3")
+    assert r.status_code == 200 and r.json["count"] == 3
+
+
+def test_frontend_escapes_external_text():
+    """課名、備註、AI 理由放進 innerHTML 前必須經過 esc()。"""
+    import re
+    from pathlib import Path
+    js = (Path(__file__).resolve().parent.parent / "static" / "main.js").read_text(encoding="utf-8")
+    assert "const esc =" in js
+    # textContent / setAttribute 本身不解析 HTML，不需跳脫
+    html_lines = [ln for ln in js.splitlines()
+                  if "textContent" not in ln and "setAttribute" not in ln]
+    for field in ("c.name", "c.reason", "c.eligibility.raw_notes", "a.name", "c.dept", "c.classroom"):
+        raw = [ln for ln in html_lines if "${" + field + "}" in ln]
+        assert not raw, f"{field} 未經 esc() 直接插入 HTML：{raw}"

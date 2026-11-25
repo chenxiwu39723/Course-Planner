@@ -169,7 +169,7 @@ ANTHROPIC_MODEL=claude-opus-5-5   # 批次解讀限修條件（2000+ 次）建�
 ## 測試
 
 ```bash
-python -m pytest -q      # 目前 203 passed, 1 skipped（實際審核 PDF 測試需設 AUDIT_PDF）
+python -m pytest -q      # 目前 210 passed, 1 skipped（實際審核 PDF 測試需設 AUDIT_PDF）
 ```
 
 涵蓋：節次解析、衝堂判斷、空堂計算、solver 不產生衝堂課表、限修條件解析與三狀態比對、

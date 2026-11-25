@@ -9,6 +9,9 @@ const api = async (url, opts) => {
   if (!j.success) throw new Error(j.error || "請求失敗");
   return j;
 };
+// HTML 跳脫：課名、備註、AI 推薦理由等外部文字放進 innerHTML 前一律經過此函式
+const esc = (v) => String(v ?? "").replace(/[&<>"']/g, ch =>
+  ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
 const splitList = (s) => (s || "").split(/[,，\n]/).map(x => x.trim()).filter(Boolean);
 
 let META = null;
@@ -53,7 +56,7 @@ async function init() {
     m = await api("/api/meta");
   } catch (e) {
     $("#meta-status").innerHTML =
-      `<span class="pill pill-warn">無法載入課程資料：${e.message}</span>`;
+      `<span class="pill pill-warn">無法載入課程資料：${esc(e.message)}</span>`;
     return;
   }
   META = m;
@@ -80,7 +83,7 @@ async function init() {
   const fd = $("#p-freedays");
   (m.default_days || [1,2,3,4,5]).forEach(d => {
     const lab = document.createElement("label");
-    lab.innerHTML = `<input type="checkbox" value="${d}"> 週${m.weekdays[d]}`;
+    lab.innerHTML = `<input type="checkbox" value="${esc(d)}"> 週${esc(m.weekdays[d])}`;
     fd.appendChild(lab);
   });
   loadState();
@@ -101,10 +104,10 @@ function renderMetaStatus(m) {
   const box = $("#meta-status");
   const pills = [];
   if (m.semester_label) {
-    const upd = m.data_updated ? `・更新 ${m.data_updated}` : "";
-    pills.push(`<span class="pill pill-info">${m.semester_label}${upd}</span>`);
+    const upd = m.data_updated ? `・更新 ${esc(m.data_updated)}` : "";
+    pills.push(`<span class="pill pill-info">${esc(m.semester_label)}${upd}</span>`);
   }
-  pills.push(`<span class="pill">課程 ${m.course_count} 門</span>`);
+  pills.push(`<span class="pill">課程 ${esc(m.course_count)} 門</span>`);
   if (!m.semantic_available) {
     pills.push(`<span class="pill pill-warn">語意索引未建立，推薦改用關鍵字比對</span>`);
   }
@@ -271,7 +274,7 @@ async function searchFixed() {
     : `共 ${j.count} 筆`;
   j.courses.forEach(c => {
     const li = document.createElement("li");
-    li.innerHTML = `<span><b>${c.name}</b> <span class="meta">${c.code}・${c.dept}・${c.credits}學分・${fmtTimes(c.times)}</span></span>`;
+    li.innerHTML = `<span><b>${esc(c.name)}</b> <span class="meta">${esc(c.code)}・${esc(c.dept)}・${esc(c.credits)}學分・${esc(fmtTimes(c.times))}</span></span>`;
     const b = document.createElement("button");
     b.className = "btn"; b.textContent = FIXED[c.id] ? "已加入" : "加入";
     b.disabled = !!FIXED[c.id];
@@ -284,7 +287,7 @@ function renderFixedChips() {
   Object.values(FIXED).forEach(c => {
     const chip = document.createElement("span");
     chip.className = "chip";
-    chip.innerHTML = `${c.name} <span class="meta">${fmtTimes(c.times)}</span>`;
+    chip.innerHTML = `${esc(c.name)} <span class="meta">${esc(fmtTimes(c.times))}</span>`;
     const x = document.createElement("button"); x.textContent = "×";
     x.setAttribute("aria-label", `移除固定課 ${c.name}`);
     x.onclick = () => { delete FIXED[c.id]; renderFixedChips(); saveState(); };
@@ -480,13 +483,13 @@ function renderGrid(sch) {
     + '<span><i class="swatch sw-free"></i>空堂</span>'
     + '<span><i class="swatch sw-avoid"></i>避開</span></div>';
   html += "<table class='grid'><thead><tr><th>節次</th>";
-  days.forEach(d => html += `<th>週${META.weekdays[d]}</th>`);
+  days.forEach(d => html += `<th>週${esc(META.weekdays[d])}</th>`);
   html += "</tr></thead><tbody>";
 
   const skip = new Set();   // 已被上方 rowspan 涵蓋、需跳過的 day-period
   show.forEach((p, pi) => {
     const [t0, t1] = META.period_times[p] || ["", ""];
-    html += `<tr><th>${p}<br><span class="ptime">${t0}–${t1}</span></th>`;
+    html += `<tr><th>${esc(p)}<br><span class="ptime">${esc(t0)}–${esc(t1)}</span></th>`;
     days.forEach(d => {
       const key = d + "-" + p;
       if (skip.has(key)) return;   // 由上一格 rowspan 涵蓋
@@ -499,9 +502,9 @@ function renderGrid(sch) {
           span++;
         }
         const cls = c.role === "fixed" ? "fixed" : "added";
-        const room = c.classroom ? `<span class="c-room">${c.classroom}</span>` : "";
-        html += `<td class="${cls}" rowspan="${span}" title="${c.name}（${c.code}）">`
-          + `<span class="c-name">${c.name}</span>${room}</td>`;
+        const room = c.classroom ? `<span class="c-room">${esc(c.classroom)}</span>` : "";
+        html += `<td class="${cls}" rowspan="${span}" title="${esc(c.name)}（${esc(c.code)}）">`
+          + `<span class="c-name">${esc(c.name)}</span>${room}</td>`;
       } else if (avoidSet.has(key)) {
         html += `<td class="avoid"></td>`;
       } else if (freeSet.has(key)) {
@@ -526,11 +529,11 @@ function renderCourseList(sch) {
     el.className = "course-item " + c.role;
     const e = c.eligibility || {};
     const badge = c.role === "added"
-      ? `<span class="badge ${e.status}">${e.status}</span>` : "";
-    let html = `<div class="course-title">${c.name} <span class="course-sub">${c.code}</span>${badge}
+      ? `<span class="badge ${esc(e.status)}">${esc(e.status)}</span>` : "";
+    let html = `<div class="course-title">${esc(c.name)} <span class="course-sub">${esc(c.code)}</span>${badge}
       ${c.role === "fixed" ? '<span class="badge" style="background:var(--fixed-bg);color:var(--fixed)">固定課</span>' : ''}</div>
-      <div class="course-sub">${c.dept}・${(c.teacher||[]).join("、")}・${c.credits} 學分・${fmtTimes(c.times)}${c.classroom ? "・" + c.classroom : ""}</div>`;
-    if (c.reason) html += `<div class="reason">💡 ${c.reason}</div>`;
+      <div class="course-sub">${esc(c.dept)}・${esc((c.teacher||[]).join("、"))}・${esc(c.credits)} 學分・${esc(fmtTimes(c.times))}${c.classroom ? "・" + esc(c.classroom) : ""}</div>`;
+    if (c.reason) html += `<div class="reason">💡 ${esc(c.reason)}</div>`;
     if (c.graduation && c.graduation.requirements.length) {
       const note = document.createElement("div");
       note.textContent = `畢業缺額：${c.graduation.requirements.join("、")}；通過並經採認後計入。`;
@@ -539,11 +542,11 @@ function renderCourseList(sch) {
     }
     // 資格原因
     if (c.role === "added" && e.reasons && e.reasons.length) {
-      html += `<div class="course-sub">資格：${e.reasons.join("；")}</div>`;
+      html += `<div class="course-sub">資格：${esc(e.reasons.join("；"))}</div>`;
     }
     // 同時段其他可選（讓使用者在同一時段比較幾門課再決定）
     if (c.role === "added" && c.alternatives && c.alternatives.length) {
-      const aid = "alt_" + c.id;
+      const aid = esc("alt_" + c.id);
       const n = c.alternatives.length;
       html += `<span class="notes-toggle js-toggle" data-t="${aid}" role="button" tabindex="0"
         aria-expanded="false" aria-controls="${aid}"
@@ -554,20 +557,20 @@ function renderCourseList(sch) {
         const tags = [a.ge_domain, a.is_language ? (a.language || "語言") : null]
           .filter(Boolean).join("・");
         const eb = a.eligibility_status
-          ? `<span class="badge ${a.eligibility_status}">${a.eligibility_status}</span>` : "";
-        html += `<li><span><b>${a.name}</b>${eb}
-          <span class="meta">${a.code}・${a.credits}學分・${fmtTimes(a.times)}${tags ? "・" + tags : ""}</span></span>
-          <button class="btn btn-sm alt-pick" data-alt="${a.id}">選這門</button></li>`;
+          ? `<span class="badge ${esc(a.eligibility_status)}">${esc(a.eligibility_status)}</span>` : "";
+        html += `<li><span><b>${esc(a.name)}</b>${eb}
+          <span class="meta">${esc(a.code)}・${esc(a.credits)}學分・${esc(fmtTimes(a.times))}${tags ? "・" + esc(tags) : ""}</span></span>
+          <button class="btn btn-sm alt-pick" data-alt="${esc(a.id)}">選這門</button></li>`;
       });
       html += `</ul>`;
     }
     // 原始備註（必附，供使用者自行確認）
     if (c.eligibility && c.eligibility.raw_notes) {
-      const id = "n_" + c.id;
+      const id = esc("n_" + c.id);
       html += `<span class="notes-toggle js-toggle" data-t="${id}" role="button" tabindex="0"
         aria-expanded="false" aria-controls="${id}"
         data-show="顯示原始備註" data-hide="隱藏原始備註">顯示原始備註</span>
-        <div class="notes-box hidden" id="${id}">${c.eligibility.raw_notes}</div>`;
+        <div class="notes-box hidden" id="${id}">${esc(c.eligibility.raw_notes)}</div>`;
     }
     el.innerHTML = html;
     box.appendChild(el);

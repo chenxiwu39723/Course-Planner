@@ -183,9 +183,11 @@ def api_courses():
     category = (request.args.get("category") or "").strip()
     ge_domain = (request.args.get("ge_domain") or "").strip()
     try:
-        limit = min(int(request.args.get("limit", 50)), 200)
+        limit = int(request.args.get("limit", 50))
     except ValueError:
         return bad("limit 必須是整數")
+    if not 1 <= limit <= 200:
+        return bad("limit 必須介於 1～200")
 
     results = []
     for c in COURSES:
