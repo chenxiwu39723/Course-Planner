@@ -1,0 +1,708 @@
+{
+  "schema_version": "1.0.0",
+  "source": {
+    "name": "管理學院 經濟學系應修科目表 113學年度入學新生適用",
+    "filename": "725632210(1).pdf",
+    "page": 1,
+    "authority": "國立中央大學 經濟學系",
+    "notes": "本檔依使用者提供的一頁應修科目表整理，未補入外部資料。",
+    "additional_filenames": [
+      "111_62.pdf",
+      "115_49.pdf",
+      "111_14.pdf",
+      "257585275.pdf"
+    ]
+  },
+  "applicability": {
+    "school": "國立中央大學",
+    "department": "經濟學系",
+    "department_code": "EC",
+    "admission_academic_year_roc": 113,
+    "program": "一般主修",
+    "double_major_supported": false
+  },
+  "credit_requirements": {
+    "graduation_total_min": 128,
+    "required_total_reported": 85,
+    "required_breakdown": {
+      "common_required": 25,
+      "college_required": 24,
+      "department_required": 36
+    },
+    "department_electives_min": 23,
+    "general_education_min": 14,
+    "digital_literacy_min": 6,
+    "extra_general_education_max_counted_toward_graduation_total": 6,
+    "digital_literacy_extra_credits_assumed": false
+  },
+  "common_required": {
+    "chinese": {
+      "required_credits": 5,
+      "course_ids": null,
+      "verification": "manual_or_official_catalog"
+    },
+    "foreign_language": {
+      "required_credits": 6,
+      "required_course_group": "大一英文（管理課群）",
+      "semester_credits": [
+        3,
+        3
+      ],
+      "course_ids": null,
+      "verification": "manual_or_official_catalog"
+    },
+    "general_education": {
+      "required_credits": 14,
+      "four_core_areas_choose_at_least": 3,
+      "min_courses_each_chosen_area": 1,
+      "excluded_course_list": "經濟學相關課程（清單須向經濟系辦查詢）",
+      "excluded_course_ids": null,
+      "verification": "requires_official_course_classification",
+      "core_areas": [
+        "人文與思想",
+        "自然科學",
+        "應用科學",
+        "社會思潮與現象"
+      ],
+      "course_area_data_available": false,
+      "required_course_catalog": null,
+      "rule_source": "113 入學經濟系應修科目表，並參考國立中央大學共同必修科目選修辦法",
+      "verified_student_record_fields": [
+        "course_id",
+        "status",
+        "credits",
+        "ge_eligible_verified",
+        "ge_core_area"
+      ],
+      "note": "僅學生修課資料帶有已核對之通識認列及領域分類時才計算；未附校方核對資料不可自動推斷課號所屬領域。"
+    },
+    "physical_education": {
+      "required_passed_course_count": 5,
+      "credits_each": 0,
+      "course_ids": null,
+      "verification": "manual_or_official_catalog",
+      "notes": "大一體育兩學期、興趣體育三學期；興趣選課同名課原則上不得重複（例外請查辦法）。"
+    },
+    "service_learning": {
+      "required_passed_course_count": 2,
+      "credits_each": 0,
+      "course_ids": null,
+      "verification": "manual_or_official_catalog",
+      "notes": "須通過兩學期且課號不同。"
+    }
+  },
+  "college_required": {
+    "required_credits": 24,
+    "courses": [
+      {
+        "course_id": "MT1011",
+        "name": "經濟學（一）",
+        "credits": 3
+      },
+      {
+        "course_id": "MT1012",
+        "name": "經濟學（二）",
+        "credits": 3
+      },
+      {
+        "course_id": "MT1021",
+        "name": "企業概論",
+        "credits": 3
+      },
+      {
+        "course_id": "MT1031",
+        "name": "會計學（一）",
+        "credits": 3
+      },
+      {
+        "course_id": "MT1032",
+        "name": "會計學（二）",
+        "credits": 3
+      },
+      {
+        "course_id": "MT2041",
+        "name": "統計學（一）",
+        "credits": 3
+      },
+      {
+        "course_id": "MT2042",
+        "name": "統計學（二）",
+        "credits": 3
+      },
+      {
+        "course_id": "MT1051",
+        "name": "程式設計：Python",
+        "credits": 3
+      }
+    ]
+  },
+  "department_required": {
+    "required_credits": 36,
+    "fixed_courses": [
+      {
+        "course_id": "MA1005",
+        "name": "微積分（一）",
+        "credits": 3
+      },
+      {
+        "course_id": "MA1006",
+        "name": "微積分（二）",
+        "credits": 3
+      },
+      {
+        "course_id": "EC2003",
+        "name": "個體經濟學（一）",
+        "credits": 3
+      },
+      {
+        "course_id": "EC2004",
+        "name": "個體經濟學（二）",
+        "credits": 3
+      },
+      {
+        "course_id": "EC2005",
+        "name": "總體經濟學（一）",
+        "credits": 3
+      },
+      {
+        "course_id": "EC2006",
+        "name": "總體經濟學（二）",
+        "credits": 3
+      },
+      {
+        "course_id": "EC3072",
+        "name": "國際金融",
+        "credits": 3
+      },
+      {
+        "course_id": "EC3071",
+        "name": "國際貿易",
+        "credits": 3
+      },
+      {
+        "course_id": "EC4018",
+        "name": "當前經濟議題",
+        "credits": 3
+      }
+    ],
+    "choice_groups": [
+      {
+        "id": "ec_six_choose_three",
+        "label": "六科擇三",
+        "required_course_count": 3,
+        "course_credits_each": 3,
+        "courses": [
+          {
+            "course_id": "EC3077",
+            "name": "貨幣銀行學",
+            "credits": 3
+          },
+          {
+            "course_id": "EC2054",
+            "name": "中央銀行與金融機構",
+            "credits": 3
+          },
+          {
+            "course_id": "EC3112",
+            "name": "公共經濟學",
+            "credits": 3
+          },
+          {
+            "course_id": "EC3079",
+            "name": "財政學",
+            "credits": 3
+          },
+          {
+            "course_id": "EC3117",
+            "name": "資料分析",
+            "credits": 3
+          },
+          {
+            "course_id": "EC3018",
+            "name": "計量經濟學",
+            "credits": 3
+          }
+        ],
+        "policy": "至少通過三門不同課程"
+      }
+    ]
+  },
+  "department_electives": {
+    "required_credits": 23,
+    "eligibility": "修業期限內修習且通過的本系選修科目",
+    "eligible_course_ids": null,
+    "verification": "requires_official_course_classification",
+    "note": "六科擇三超額修習、跨類別重複認列等規則未在此單頁明定，不作自動假設"
+  },
+  "digital_literacy": {
+    "required_credits": 6,
+    "approved_sources": [
+      {
+        "source": "企業資源規劃學分學程修課表",
+        "condition": "修課表中所列課程"
+      },
+      {
+        "source": "商業智慧與分析學分學程修課表",
+        "condition": "排除 EC 課號課程"
+      },
+      {
+        "source": "金融科技學分學程修課表",
+        "condition": "IM 開頭課號，排除 EC 課號課程"
+      },
+      {
+        "source": "經濟學系課程委員會",
+        "condition": "承認之數位商品課程"
+      }
+    ],
+    "eligible_course_ids": [
+      "AC6001",
+      "AC6004",
+      "AC6013",
+      "AC6015",
+      "AC6019",
+      "BA4100",
+      "BA5002",
+      "BA5029",
+      "BA5033",
+      "BA5037",
+      "BA5040",
+      "BA5041",
+      "BA5042",
+      "BA5061",
+      "BA5062",
+      "BA5069",
+      "BA6039",
+      "BA6093",
+      "BA7009",
+      "BA7024",
+      "BA7040",
+      "BA7041",
+      "BA7042",
+      "BA7043",
+      "BA7058",
+      "BA7080",
+      "BA7082",
+      "BA7113",
+      "BA7117",
+      "BA7121",
+      "BA7122",
+      "BA7126",
+      "BA7127",
+      "BA7131",
+      "BA7137",
+      "BA8063",
+      "BA8066",
+      "FM3007",
+      "FM3035",
+      "FM5005",
+      "FM6005",
+      "FM6072",
+      "FM6101",
+      "FM6111",
+      "HR6090",
+      "IA5016",
+      "IA5021",
+      "IA5041",
+      "IA5044",
+      "IA5051",
+      "IA5054",
+      "IA7028",
+      "IA7038",
+      "IAA009",
+      "IAA091",
+      "IE8011",
+      "IM1013",
+      "IM1023",
+      "IM2002",
+      "IM2029",
+      "IM2038",
+      "IM3031",
+      "IM3058",
+      "IM3059",
+      "IM3061",
+      "IM3069",
+      "IM3078",
+      "IM4021",
+      "IM4022",
+      "IM5002",
+      "IM5006",
+      "IM5008",
+      "IM5012",
+      "IM5030",
+      "IM5031",
+      "IM5032",
+      "IM5033",
+      "IM6100",
+      "IM7000",
+      "IM7061",
+      "IM7074",
+      "IM8031",
+      "ME2025",
+      "MT4011",
+      "MT4012",
+      "MT4013",
+      "MT4014",
+      "MT4015",
+      "MT4016",
+      "MT4017",
+      "MT4018",
+      "MT4019",
+      "MT6011",
+      "MT6012",
+      "MT6013",
+      "MT6014",
+      "MT6015",
+      "MT6016",
+      "MT6017",
+      "MT6018",
+      "MT6019"
+    ],
+    "verification": "listed_course_auto_match; additional committee-approved courses require confirmation",
+    "cross_counting_with_other_categories": "unknown",
+    "eligibility_lists": {
+      "erp": {
+        "source_file": "111_14.pdf",
+        "filter_policy": "all_listed",
+        "listed_course_ids": [
+          "BA5040",
+          "IAA091",
+          "BA5061",
+          "BA5062",
+          "BA7043",
+          "IAA009",
+          "BA6093",
+          "BA5033",
+          "IA5016",
+          "IA5044",
+          "IA5051",
+          "IA5054",
+          "HR6090",
+          "BA5041",
+          "IM5006",
+          "BA7041",
+          "AC6019",
+          "BA4100",
+          "BA7121",
+          "FM3035",
+          "IA5041",
+          "BA5002",
+          "BA7009",
+          "IA5021",
+          "BA5042",
+          "BA8066",
+          "BA7042",
+          "BA6039",
+          "IM3031",
+          "IM5002",
+          "IM8031",
+          "IM6100",
+          "BA7024",
+          "BA7040",
+          "IM7061",
+          "AC6001",
+          "IM7074",
+          "AC6004",
+          "IA7038",
+          "BA7113",
+          "AC6013",
+          "AC6015",
+          "BA7122"
+        ],
+        "qualifying_course_ids": [
+          "BA5040",
+          "IAA091",
+          "BA5061",
+          "BA5062",
+          "BA7043",
+          "IAA009",
+          "BA6093",
+          "BA5033",
+          "IA5016",
+          "IA5044",
+          "IA5051",
+          "IA5054",
+          "HR6090",
+          "BA5041",
+          "IM5006",
+          "BA7041",
+          "AC6019",
+          "BA4100",
+          "BA7121",
+          "FM3035",
+          "IA5041",
+          "BA5002",
+          "BA7009",
+          "IA5021",
+          "BA5042",
+          "BA8066",
+          "BA7042",
+          "BA6039",
+          "IM3031",
+          "IM5002",
+          "IM8031",
+          "IM6100",
+          "BA7024",
+          "BA7040",
+          "IM7061",
+          "AC6001",
+          "IM7074",
+          "AC6004",
+          "IA7038",
+          "BA7113",
+          "AC6013",
+          "AC6015",
+          "BA7122"
+        ]
+      },
+      "business_intelligence": {
+        "source_file": "115_49.pdf",
+        "filter_policy": "exclude_EC_codes",
+        "listed_course_ids": [
+          "BA5037",
+          "IM3078",
+          "ME2025",
+          "IM5006",
+          "BA7080",
+          "BA7131",
+          "BA7137",
+          "BA7127",
+          "IM2002",
+          "IA7038",
+          "BA7113",
+          "BA5029",
+          "BA7117",
+          "HR6090",
+          "EC3018",
+          "IA7028",
+          "FM3007",
+          "FM3035",
+          "EC4018",
+          "EC5020",
+          "EC5008",
+          "BA5069",
+          "FM6101",
+          "BA7041",
+          "IM5008",
+          "BA7040",
+          "IM7061",
+          "BA7058",
+          "BA8063",
+          "BA7082",
+          "IM5032",
+          "IM3058",
+          "FM6005",
+          "EC5005",
+          "FM6072",
+          "EC3113",
+          "EC5027",
+          "EC5028",
+          "EC7053",
+          "FM6111",
+          "IM3061",
+          "EC3118",
+          "EC3119",
+          "EC3121",
+          "EC3122",
+          "BA7126",
+          "EC5033",
+          "FM5005",
+          "IE8011",
+          "MT4011",
+          "MT6011",
+          "MT4014",
+          "MT6014",
+          "MT4017",
+          "MT6017",
+          "MT4012",
+          "MT6012",
+          "MT4015",
+          "MT6015",
+          "MT4018",
+          "MT6018",
+          "MT4013",
+          "MT6013",
+          "MT4016",
+          "MT6016",
+          "MT4019",
+          "MT6019"
+        ],
+        "qualifying_course_ids": [
+          "BA5037",
+          "IM3078",
+          "ME2025",
+          "IM5006",
+          "BA7080",
+          "BA7131",
+          "BA7137",
+          "BA7127",
+          "IM2002",
+          "IA7038",
+          "BA7113",
+          "BA5029",
+          "BA7117",
+          "HR6090",
+          "IA7028",
+          "FM3007",
+          "FM3035",
+          "BA5069",
+          "FM6101",
+          "BA7041",
+          "IM5008",
+          "BA7040",
+          "IM7061",
+          "BA7058",
+          "BA8063",
+          "BA7082",
+          "IM5032",
+          "IM3058",
+          "FM6005",
+          "FM6072",
+          "FM6111",
+          "IM3061",
+          "BA7126",
+          "FM5005",
+          "IE8011",
+          "MT4011",
+          "MT6011",
+          "MT4014",
+          "MT6014",
+          "MT4017",
+          "MT6017",
+          "MT4012",
+          "MT6012",
+          "MT4015",
+          "MT6015",
+          "MT4018",
+          "MT6018",
+          "MT4013",
+          "MT6013",
+          "MT4016",
+          "MT6016",
+          "MT4019",
+          "MT6019"
+        ]
+      },
+      "fintech": {
+        "source_file": "111_62.pdf",
+        "filter_policy": "IM_prefix_only",
+        "listed_course_ids": [
+          "FM2030",
+          "FM3017",
+          "IM3069",
+          "IM1023",
+          "MT1051",
+          "IM1013",
+          "IM2038",
+          "FM3007",
+          "FM4001",
+          "FM6012",
+          "FM3002",
+          "FM3036",
+          "FM3005",
+          "IM2029",
+          "IM7000",
+          "FM3031",
+          "FM3042",
+          "FM3026",
+          "FM3035",
+          "FM4037",
+          "FM2011",
+          "FM4033",
+          "FM4026",
+          "FM3008",
+          "FM4040",
+          "FM3029",
+          "FM3011",
+          "IM3059",
+          "FM4043",
+          "FM4024",
+          "IM3058",
+          "IM5002",
+          "IM4021",
+          "IM4022",
+          "IM3078",
+          "IM5006",
+          "IM5008",
+          "IM5012",
+          "IM5030",
+          "IM5031",
+          "IM5032",
+          "IM5033",
+          "FM6111"
+        ],
+        "qualifying_course_ids": [
+          "IM3069",
+          "IM1023",
+          "IM1013",
+          "IM2038",
+          "IM2029",
+          "IM7000",
+          "IM3059",
+          "IM3058",
+          "IM5002",
+          "IM4021",
+          "IM4022",
+          "IM3078",
+          "IM5006",
+          "IM5008",
+          "IM5012",
+          "IM5030",
+          "IM5031",
+          "IM5032",
+          "IM5033"
+        ]
+      }
+    },
+    "notes": [
+      "數位素養為經濟系畢業要求 6 學分，不等於取得 ERP（15學分）、商業智慧（15學分）或金融科技（24學分）學程證明。",
+      "金融科技學程僅 IM 字首課號可納入此經濟系數位素養途徑；MT1051 雖列於學程，不能據此認列為數位素養。",
+      "商業智慧學程排除 EC 字首課號，但並非要求完成該學程的程式撰寫和基礎觀念必修群才能累計經濟系數位素養。",
+      "同一課號跨學程只算一次；課號組合、抵免及等同課，需依正式成績與相關審核確認。",
+      "課號屬清單不保證現學期開課或學生符合修課資格。",
+      "經濟系課程委員會承認之其他數位商品課程仍須人工核實。"
+    ]
+  },
+  "credit_exclusions": {
+    "course_name_excluded_from_graduation_total": [
+      "進修英文"
+    ]
+  },
+  "uncertainties_and_external_requirements": [
+    {
+      "id": "general_university_rules",
+      "message": "共同科目修習及其他畢業條件，需另參照「應修科目表注意事項」"
+    },
+    {
+      "id": "specific_course_ids",
+      "message": "國文、大一英文、通識、體育、服務學習之官方課號未提供"
+    },
+    {
+      "id": "ge_exclusion",
+      "message": "經濟相關通識排除課程清單尚未取得"
+    },
+    {
+      "id": "ec_electives",
+      "message": "本系選修認列課號清單尚未取得"
+    },
+    {
+      "id": "cross_credit",
+      "message": "不同類別之間是否得重複認列，單頁無法完整判定"
+    },
+    {
+      "id": "ge_core_course_catalog",
+      "message": "仍缺逐門通識課號、核心領域及經濟相關通識排除清單；必要時需學生提供官方已認列分類。"
+    },
+    {
+      "id": "digital_approved_special_courses",
+      "message": "經濟系課程委員會另行認定的數位商品課程未有清單。"
+    },
+    {
+      "id": "program_versions",
+      "message": "學分學程辦法版本與經濟系113學年度應修規定之認列時點可能不同，正式認列請以系辦當期規範核對。"
+    }
+  ],
+  "implementation_notes": {
+    "course_completion": "以實際及格且可採認的課號判定，不能只以選過課作為完成",
+    "status": "部分規則尚待官方課號及採認資料補足，適合初版 Demo，不可直接宣稱為正式畢業資格審核"
+  }
+}

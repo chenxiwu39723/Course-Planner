@@ -1,0 +1,498 @@
+{
+  "unified_schema_version": "1.0",
+  "program_id": "math_datascience_113_official",
+  "academic_year_roc": 113,
+  "university": "國立中央大學",
+  "college": "理學院",
+  "department": "數學系",
+  "track": "計算與資料科學組",
+  "required_total_credits": 128,
+  "raw_schema_version": "2.0-science-extraction",
+  "source_file_in_original_zip": "ncu_science_113/math_datascience_113_official.json",
+  "source_pdf_evidence": [
+    {
+      "file": "理學院.pdf",
+      "page": 5,
+      "document": "113學年度入學新生適用應修科目表"
+    }
+  ],
+  "verification_status": "依上傳應修科目表逐條轉錄；尚未與校方系統進行實際學生審核比對",
+  "review_flags": [
+    {
+      "field": "unresolved",
+      "details": [
+        "數學系所12學分採認口徑及與核心的重疊規則需核對",
+        "原組員JSON以系所選修21學分作審核分類，與官方「另修數學系所12學分」需釐清對照"
+      ]
+    }
+  ],
+  "course_candidates_not_for_automatic_credit_counting": [
+    {
+      "code": "MA1001",
+      "name": "微積分",
+      "credits": 4,
+      "source_path": "$.department_required.fixed_courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1002",
+      "name": "微積分",
+      "credits": 4,
+      "source_path": "$.department_required.fixed_courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA2007",
+      "name": "線性代數",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA2008",
+      "name": "線性代數",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1015",
+      "name": "基礎數學",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1013",
+      "name": "計算機概論I",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1018",
+      "name": "科學計算導論",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA2049",
+      "name": "分析導論",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA2050",
+      "name": "分析導論",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA2021",
+      "name": "機率論",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA2030",
+      "name": "數值線性代數",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[10]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA3067",
+      "name": "數學建模",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[11]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA2011",
+      "name": "統計學",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[12]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA2044",
+      "name": "數值微分方程",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[13]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA2063",
+      "name": "最佳化方法與應用",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[14]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1033",
+      "name": "普通物理B上",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[0].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1034",
+      "name": "普通物理B下",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[0].courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CM1009",
+      "name": "普通化學I",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[1].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CM1010",
+      "name": "普通化學II",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[1].courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "LS1013",
+      "name": "普通生物學I",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[2].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "LS1014",
+      "name": "普通生物學II",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[2].courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA3111",
+      "name": "數學影像處理",
+      "credits": 3,
+      "source_path": "$.core_electives.choice_groups[0].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA3121",
+      "name": "金融數學導論",
+      "credits": 3,
+      "source_path": "$.core_electives.choice_groups[0].courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA3131",
+      "name": "資料科學導論",
+      "credits": 3,
+      "source_path": "$.core_electives.choice_groups[0].courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA3103",
+      "name": "科學計算專題I",
+      "credits": 3,
+      "source_path": "$.core_electives.choice_groups[1].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA3113",
+      "name": "影像處理專題I",
+      "credits": 3,
+      "source_path": "$.core_electives.choice_groups[1].courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA3123",
+      "name": "金融數學專題I",
+      "credits": 3,
+      "source_path": "$.core_electives.choice_groups[1].courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA3133",
+      "name": "資料科學專題I",
+      "credits": 3,
+      "source_path": "$.core_electives.choice_groups[1].courses[3]",
+      "status": "candidate_only"
+    }
+  ],
+  "audit_status": "data_only_not_engine_verified",
+  "raw_rules": {
+    "schema_version": "2.0-science-extraction",
+    "rules_id": "math_datascience_113_official",
+    "applicability": {
+      "university": "國立中央大學",
+      "college": "理學院",
+      "department": "數學系",
+      "program": "計算與資料科學組",
+      "admission_academic_year_roc": 113,
+      "scope": "major"
+    },
+    "sources": [
+      {
+        "file": "理學院.pdf",
+        "page": 5,
+        "document": "113學年度入學新生適用應修科目表"
+      }
+    ],
+    "verification_status": "依上傳應修科目表逐條轉錄；尚未與校方系統進行實際學生審核比對",
+    "required_total_credits": 128,
+    "common_required": {
+      "chinese_credits": 5,
+      "foreign_language_credits": 6,
+      "general_education_credits": 14,
+      "physical_education_zero_credit": true,
+      "service_learning_zero_credit": true,
+      "foreign_language_options": [
+        "大一英文科學課群6學分",
+        "英文系其他英文課程6學分",
+        "語言中心開設或認定同一第二外語6學分"
+      ],
+      "advanced_english_excluded": true,
+      "ge_core_min_domains": 1,
+      "ge_core_total_domains": 4,
+      "university_wide_other_requirements": "參照應修科目表注意事項；本PDF未附",
+      "general_education_max_recognized_credits": 24
+    },
+    "department_required": {
+      "required_credits": 53,
+      "fixed_courses": [
+        {
+          "course_id": "MA1001",
+          "name": "微積分",
+          "credits": 4
+        },
+        {
+          "course_id": "MA1002",
+          "name": "微積分",
+          "credits": 4
+        },
+        {
+          "course_id": "MA2007",
+          "name": "線性代數",
+          "credits": 3
+        },
+        {
+          "course_id": "MA2008",
+          "name": "線性代數",
+          "credits": 3
+        },
+        {
+          "course_id": "MA1015",
+          "name": "基礎數學",
+          "credits": 3
+        },
+        {
+          "course_id": "MA1013",
+          "name": "計算機概論I",
+          "credits": 3
+        },
+        {
+          "course_id": "MA1018",
+          "name": "科學計算導論",
+          "credits": 3
+        },
+        {
+          "course_id": "MA2049",
+          "name": "分析導論",
+          "credits": 3
+        },
+        {
+          "course_id": "MA2050",
+          "name": "分析導論",
+          "credits": 3
+        },
+        {
+          "course_id": "MA2021",
+          "name": "機率論",
+          "credits": 3
+        },
+        {
+          "course_id": "MA2030",
+          "name": "數值線性代數",
+          "credits": 3
+        },
+        {
+          "course_id": "MA3067",
+          "name": "數學建模",
+          "credits": 3
+        },
+        {
+          "course_id": "MA2011",
+          "name": "統計學",
+          "credits": 3
+        },
+        {
+          "course_id": "MA2044",
+          "name": "數值微分方程",
+          "credits": 3
+        },
+        {
+          "course_id": "MA2063",
+          "name": "最佳化方法與應用",
+          "credits": 3
+        }
+      ]
+    },
+    "choice_groups": [
+      {
+        "id": "science_series",
+        "type": "choose_complete_series",
+        "required_group_count": 1,
+        "required_credits": 6,
+        "allow_mixing": false,
+        "choices": [
+          {
+            "id": "physics",
+            "courses": [
+              {
+                "course_id": "PH1033",
+                "name": "普通物理B上",
+                "credits": 3
+              },
+              {
+                "course_id": "PH1034",
+                "name": "普通物理B下",
+                "credits": 3
+              }
+            ]
+          },
+          {
+            "id": "chemistry",
+            "courses": [
+              {
+                "course_id": "CM1009",
+                "name": "普通化學I",
+                "credits": 3
+              },
+              {
+                "course_id": "CM1010",
+                "name": "普通化學II",
+                "credits": 3
+              }
+            ]
+          },
+          {
+            "id": "biology",
+            "courses": [
+              {
+                "course_id": "LS1013",
+                "name": "普通生物學I",
+                "credits": 3
+              },
+              {
+                "course_id": "LS1014",
+                "name": "普通生物學II",
+                "credits": 3
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "elective_requirements": [
+      {
+        "id": "math_department_courses",
+        "required_credits": 12,
+        "scope": "數學系所課程",
+        "note": "另修12學分；與核心課程採認關係需由系方確認"
+      }
+    ],
+    "prerequisite_rules": [],
+    "additional_rules": [
+      "MA1013計算機概論I須於數學系修習，不得以外系相關課程抵修"
+    ],
+    "noncredit_requirements": {
+      "physical_education": "表列5門零學分體育，細則應以應修科目表注意事項為準",
+      "service_learning": "表列2門零學分服務學習，細則應以應修科目表注意事項為準"
+    },
+    "excluded_programs": [
+      "雙主修規則需獨立建模"
+    ],
+    "unresolved": [
+      "數學系所12學分採認口徑及與核心的重疊規則需核對",
+      "原組員JSON以系所選修21學分作審核分類，與官方「另修數學系所12學分」需釐清對照"
+    ],
+    "core_electives": {
+      "required_credits": 9,
+      "choice_groups": [
+        {
+          "id": "core_intro",
+          "required_course_count": 2,
+          "required_credits": 6,
+          "known_course_ids": [
+            "MA3111",
+            "MA3121",
+            "MA3131"
+          ],
+          "courses": [
+            {
+              "course_id": "MA3111",
+              "name": "數學影像處理",
+              "credits": 3
+            },
+            {
+              "course_id": "MA3121",
+              "name": "金融數學導論",
+              "credits": 3
+            },
+            {
+              "course_id": "MA3131",
+              "name": "資料科學導論",
+              "credits": 3
+            }
+          ],
+          "option_catalog_complete": true
+        },
+        {
+          "id": "core_project",
+          "required_course_count": 1,
+          "required_credits": 3,
+          "known_course_ids": [
+            "MA3103",
+            "MA3113",
+            "MA3123",
+            "MA3133"
+          ],
+          "courses": [
+            {
+              "course_id": "MA3103",
+              "name": "科學計算專題I",
+              "credits": 3
+            },
+            {
+              "course_id": "MA3113",
+              "name": "影像處理專題I",
+              "credits": 3
+            },
+            {
+              "course_id": "MA3123",
+              "name": "金融數學專題I",
+              "credits": 3
+            },
+            {
+              "course_id": "MA3133",
+              "name": "資料科學專題I",
+              "credits": 3
+            }
+          ],
+          "option_catalog_complete": true
+        }
+      ]
+    },
+    "required_credit_summary": {
+      "common_required": 25,
+      "department_fixed_including_science": 53,
+      "core_electives": 9,
+      "minimum_total": 128
+    }
+  }
+}

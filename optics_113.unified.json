@@ -1,0 +1,438 @@
+{
+  "unified_schema_version": "1.0",
+  "program_id": "optics_113",
+  "academic_year_roc": 113,
+  "university": "國立中央大學",
+  "college": "理學院",
+  "department": "光電科學與工程學系",
+  "track": null,
+  "required_total_credits": 128,
+  "raw_schema_version": "2.0-science-extraction",
+  "source_file_in_original_zip": "ncu_science_113/optics_113.json",
+  "source_pdf_evidence": [
+    {
+      "file": "理學院.pdf",
+      "page": 3,
+      "document": "113學年度入學新生適用應修科目表"
+    }
+  ],
+  "verification_status": "依上傳應修科目表逐條轉錄；尚未與校方系統進行實際學生審核比對",
+  "review_flags": [
+    {
+      "field": "unresolved",
+      "details": [
+        "完整OS選修清單、專題類課程的判別表未附"
+      ]
+    }
+  ],
+  "course_candidates_not_for_automatic_credit_counting": [
+    {
+      "code": "MA1001",
+      "name": "微積分",
+      "credits": 4,
+      "source_path": "$.department_required.fixed_courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1002",
+      "name": "微積分",
+      "credits": 4,
+      "source_path": "$.department_required.fixed_courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1031",
+      "name": "普通物理A",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1032",
+      "name": "普通物理A",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1003",
+      "name": "普物實驗",
+      "credits": 1,
+      "source_path": "$.department_required.fixed_courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1004",
+      "name": "普物實驗",
+      "credits": 1,
+      "source_path": "$.department_required.fixed_courses[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CM1009",
+      "name": "普通化學I",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CM1008",
+      "name": "普化實驗",
+      "credits": 1,
+      "source_path": "$.department_required.fixed_courses[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "OS1006",
+      "name": "光電科技概論",
+      "credits": 1,
+      "source_path": "$.department_required.fixed_courses[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "OS1007",
+      "name": "光電科技概論",
+      "credits": 1,
+      "source_path": "$.department_required.fixed_courses[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "OS1008",
+      "name": "計算機概論",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[10]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "OS2007",
+      "name": "工程數學",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[11]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "OS2008",
+      "name": "工程數學",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[12]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "OS2003",
+      "name": "電磁學",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[13]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "OS2004",
+      "name": "電磁學",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[14]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "OS2013",
+      "name": "基礎電學",
+      "credits": 4,
+      "source_path": "$.department_required.fixed_courses[15]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "OS2014",
+      "name": "基礎電學",
+      "credits": 4,
+      "source_path": "$.department_required.fixed_courses[16]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "OS2015",
+      "name": "電子實驗",
+      "credits": 1,
+      "source_path": "$.department_required.fixed_courses[17]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "OS2016",
+      "name": "電子實驗",
+      "credits": 1,
+      "source_path": "$.department_required.fixed_courses[18]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "OS2017",
+      "name": "基礎光學與幾何光學",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[19]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "OS2018",
+      "name": "波動光學",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[20]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "OS3016",
+      "name": "電磁光學",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[21]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "OS3011",
+      "name": "光學實驗",
+      "credits": 1,
+      "source_path": "$.department_required.fixed_courses[22]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "OS2001",
+      "name": "近代物理",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[23]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "OS3001",
+      "name": "光學系統",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[24]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "OS2011",
+      "name": "光電半導體物理",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[25]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "OS3002",
+      "name": "光電工程概論",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[26]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "OS3010",
+      "name": "光電實驗",
+      "credits": 1,
+      "source_path": "$.department_required.fixed_courses[27]",
+      "status": "candidate_only"
+    }
+  ],
+  "audit_status": "data_only_not_engine_verified",
+  "raw_rules": {
+    "schema_version": "2.0-science-extraction",
+    "rules_id": "optics_113",
+    "applicability": {
+      "university": "國立中央大學",
+      "college": "理學院",
+      "department": "光電科學與工程學系",
+      "program": null,
+      "admission_academic_year_roc": 113,
+      "scope": "major"
+    },
+    "sources": [
+      {
+        "file": "理學院.pdf",
+        "page": 3,
+        "document": "113學年度入學新生適用應修科目表"
+      }
+    ],
+    "verification_status": "依上傳應修科目表逐條轉錄；尚未與校方系統進行實際學生審核比對",
+    "required_total_credits": 128,
+    "common_required": {
+      "chinese_credits": 5,
+      "foreign_language_credits": 6,
+      "general_education_credits": 14,
+      "physical_education_zero_credit": true,
+      "service_learning_zero_credit": true,
+      "foreign_language_options": [
+        "大一英文科學課群6學分",
+        "英文系其他英文課程6學分",
+        "語言中心開設或認定同一第二外語6學分"
+      ],
+      "advanced_english_excluded": true,
+      "ge_core_min_domains": 1,
+      "ge_core_total_domains": 4,
+      "university_wide_other_requirements": "參照應修科目表注意事項；本PDF未附"
+    },
+    "department_required": {
+      "required_credits": 70,
+      "fixed_courses": [
+        {
+          "course_id": "MA1001",
+          "name": "微積分",
+          "credits": 4
+        },
+        {
+          "course_id": "MA1002",
+          "name": "微積分",
+          "credits": 4
+        },
+        {
+          "course_id": "PH1031",
+          "name": "普通物理A",
+          "credits": 3
+        },
+        {
+          "course_id": "PH1032",
+          "name": "普通物理A",
+          "credits": 3
+        },
+        {
+          "course_id": "PH1003",
+          "name": "普物實驗",
+          "credits": 1
+        },
+        {
+          "course_id": "PH1004",
+          "name": "普物實驗",
+          "credits": 1
+        },
+        {
+          "course_id": "CM1009",
+          "name": "普通化學I",
+          "credits": 3
+        },
+        {
+          "course_id": "CM1008",
+          "name": "普化實驗",
+          "credits": 1
+        },
+        {
+          "course_id": "OS1006",
+          "name": "光電科技概論",
+          "credits": 1
+        },
+        {
+          "course_id": "OS1007",
+          "name": "光電科技概論",
+          "credits": 1
+        },
+        {
+          "course_id": "OS1008",
+          "name": "計算機概論",
+          "credits": 3
+        },
+        {
+          "course_id": "OS2007",
+          "name": "工程數學",
+          "credits": 3
+        },
+        {
+          "course_id": "OS2008",
+          "name": "工程數學",
+          "credits": 3
+        },
+        {
+          "course_id": "OS2003",
+          "name": "電磁學",
+          "credits": 3
+        },
+        {
+          "course_id": "OS2004",
+          "name": "電磁學",
+          "credits": 3
+        },
+        {
+          "course_id": "OS2013",
+          "name": "基礎電學",
+          "credits": 4
+        },
+        {
+          "course_id": "OS2014",
+          "name": "基礎電學",
+          "credits": 4
+        },
+        {
+          "course_id": "OS2015",
+          "name": "電子實驗",
+          "credits": 1
+        },
+        {
+          "course_id": "OS2016",
+          "name": "電子實驗",
+          "credits": 1
+        },
+        {
+          "course_id": "OS2017",
+          "name": "基礎光學與幾何光學",
+          "credits": 3
+        },
+        {
+          "course_id": "OS2018",
+          "name": "波動光學",
+          "credits": 3
+        },
+        {
+          "course_id": "OS3016",
+          "name": "電磁光學",
+          "credits": 3
+        },
+        {
+          "course_id": "OS3011",
+          "name": "光學實驗",
+          "credits": 1
+        },
+        {
+          "course_id": "OS2001",
+          "name": "近代物理",
+          "credits": 3
+        },
+        {
+          "course_id": "OS3001",
+          "name": "光學系統",
+          "credits": 3
+        },
+        {
+          "course_id": "OS2011",
+          "name": "光電半導體物理",
+          "credits": 3
+        },
+        {
+          "course_id": "OS3002",
+          "name": "光電工程概論",
+          "credits": 3
+        },
+        {
+          "course_id": "OS3010",
+          "name": "光電實驗",
+          "credits": 1
+        }
+      ]
+    },
+    "choice_groups": [],
+    "elective_requirements": [
+      {
+        "id": "os_electives",
+        "required_credits": 12,
+        "course_code_prefix": "OS",
+        "excludes": "專題類課程",
+        "note": "依OS課號及課程類型雙重判定；PDF未列課號清單"
+      }
+    ],
+    "prerequisite_rules": [],
+    "additional_rules": [
+      "雙主修學生可就與原主系課程名稱相近者持大綱申請抵修，由光電系審查"
+    ],
+    "noncredit_requirements": {
+      "physical_education": "表列5門零學分體育，細則應以應修科目表注意事項為準",
+      "service_learning": "表列2門零學分服務學習，細則應以應修科目表注意事項為準"
+    },
+    "excluded_programs": [
+      "雙主修規則需獨立建模"
+    ],
+    "unresolved": [
+      "完整OS選修清單、專題類課程的判別表未附"
+    ],
+    "required_credit_summary": {
+      "common_required": 25,
+      "department_fixed": 70,
+      "total_required": 95
+    }
+  }
+}

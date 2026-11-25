@@ -1,0 +1,568 @@
+{
+  "unified_schema_version": "1.0",
+  "program_id": "physics_113",
+  "academic_year_roc": 113,
+  "university": "國立中央大學",
+  "college": "理學院",
+  "department": "物理學系",
+  "track": null,
+  "required_total_credits": 128,
+  "raw_schema_version": "2.0-science-extraction",
+  "source_file_in_original_zip": "ncu_science_113/physics_113.json",
+  "source_pdf_evidence": [
+    {
+      "file": "理學院.pdf",
+      "page": 4,
+      "document": "113學年度入學新生適用應修科目表"
+    }
+  ],
+  "verification_status": "依上傳應修科目表逐條轉錄；尚未以學生個別審核結果驗證",
+  "review_flags": [
+    {
+      "field": "unresolved",
+      "details": [
+        "甲類列舉課程學分及實習可認列數量需以開課及系方審查確認",
+        "甲類「二科」與電子學上下學期／專題課程之認列需依系辦確認",
+        "論文與口試等人工條件無法由課程學分自動判斷",
+        "其他共同畢業條件依應修科目表注意事項，附件未列"
+      ]
+    }
+  ],
+  "course_candidates_not_for_automatic_credit_counting": [
+    {
+      "code": "MA1001",
+      "name": "微積分",
+      "credits": 4,
+      "source_path": "$.department_required.fixed_courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1002",
+      "name": "微積分",
+      "credits": 4,
+      "source_path": "$.department_required.fixed_courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1029",
+      "name": "實驗物理與方法I",
+      "credits": 6,
+      "source_path": "$.department_required.fixed_courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1030",
+      "name": "實驗物理與方法I",
+      "credits": 6,
+      "source_path": "$.department_required.fixed_courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1027",
+      "name": "力學",
+      "credits": 4,
+      "source_path": "$.department_required.fixed_courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1028",
+      "name": "電磁學",
+      "credits": 4,
+      "source_path": "$.department_required.fixed_courses[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH2003",
+      "name": "應用數學",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH2004",
+      "name": "應用數學",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH3011",
+      "name": "熱物理",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH3009",
+      "name": "量子物理",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH2029",
+      "name": "實驗物理與方法II",
+      "credits": 6,
+      "source_path": "$.department_required.fixed_courses[10]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH2030",
+      "name": "實驗物理與方法II",
+      "credits": 6,
+      "source_path": "$.department_required.fixed_courses[11]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH3057",
+      "name": "計算物理導論",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[0].course_options[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH3036",
+      "name": "近代物理實驗",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[0].course_options[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH3063",
+      "name": "電子學(含實驗)I",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[0].course_options[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH3064",
+      "name": "電子學(含實驗)II",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[0].course_options[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH3015",
+      "name": "物理專題I",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[0].course_options[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH3016",
+      "name": "物理專題II",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[0].course_options[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH4015",
+      "name": "物理專題III",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[0].course_options[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH4016",
+      "name": "物理專題IV",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[0].course_options[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH3021",
+      "name": "業界實習I",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[0].course_options[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH3022",
+      "name": "業界實習II",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[0].course_options[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH4021",
+      "name": "業界實習III",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[0].course_options[10]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH4022",
+      "name": "業界實習IV",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[0].course_options[11]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH3015",
+      "name": "物理專題I",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[1].paired_groups[0].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH3017",
+      "name": "論文研習與撰寫I",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[1].paired_groups[0].courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH3016",
+      "name": "物理專題II",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[1].paired_groups[1].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH3018",
+      "name": "論文研習與撰寫II",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[1].paired_groups[1].courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH4015",
+      "name": "物理專題III",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[1].paired_groups[2].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH4017",
+      "name": "論文研習與撰寫III",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[1].paired_groups[2].courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH4016",
+      "name": "物理專題IV",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[1].paired_groups[3].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH4018",
+      "name": "論文研習與撰寫IV",
+      "credits": 3,
+      "source_path": "$.choice_groups[0].choices[1].paired_groups[3].courses[1]",
+      "status": "candidate_only"
+    }
+  ],
+  "audit_status": "data_only_not_engine_verified",
+  "raw_rules": {
+    "schema_version": "2.0-science-extraction",
+    "rules_id": "physics_113",
+    "applicability": {
+      "university": "國立中央大學",
+      "college": "理學院",
+      "department": "物理學系",
+      "program": null,
+      "admission_academic_year_roc": 113,
+      "scope": "major"
+    },
+    "sources": [
+      {
+        "file": "理學院.pdf",
+        "page": 4,
+        "document": "113學年度入學新生適用應修科目表"
+      }
+    ],
+    "verification_status": "依上傳應修科目表逐條轉錄；尚未以學生個別審核結果驗證",
+    "required_total_credits": 128,
+    "common_required": {
+      "chinese_credits": 5,
+      "foreign_language_credits": 6,
+      "general_education_credits": 14,
+      "physical_education_zero_credit": true,
+      "service_learning_zero_credit": true,
+      "foreign_language_options": [
+        "大一英文科學課群6學分",
+        "英文系其他英文課程6學分",
+        "語言中心開設或認定同一第二外語6學分"
+      ],
+      "advanced_english_excluded": true,
+      "ge_core_min_domains": 1,
+      "ge_core_total_domains": 3,
+      "university_wide_other_requirements": "參照應修科目表注意事項；本PDF未附",
+      "ge_core_domains": [
+        "人文與思想",
+        "應用科學",
+        "社會思潮與現象"
+      ]
+    },
+    "department_required": {
+      "required_credits": 58,
+      "fixed_courses": [
+        {
+          "course_id": "MA1001",
+          "name": "微積分",
+          "credits": 4
+        },
+        {
+          "course_id": "MA1002",
+          "name": "微積分",
+          "credits": 4
+        },
+        {
+          "course_id": "PH1029",
+          "name": "實驗物理與方法I",
+          "credits": 6
+        },
+        {
+          "course_id": "PH1030",
+          "name": "實驗物理與方法I",
+          "credits": 6
+        },
+        {
+          "course_id": "PH1027",
+          "name": "力學",
+          "credits": 4
+        },
+        {
+          "course_id": "PH1028",
+          "name": "電磁學",
+          "credits": 4
+        },
+        {
+          "course_id": "PH2003",
+          "name": "應用數學",
+          "credits": 3
+        },
+        {
+          "course_id": "PH2004",
+          "name": "應用數學",
+          "credits": 3
+        },
+        {
+          "course_id": "PH3011",
+          "name": "熱物理",
+          "credits": 3
+        },
+        {
+          "course_id": "PH3009",
+          "name": "量子物理",
+          "credits": 3
+        },
+        {
+          "course_id": "PH2029",
+          "name": "實驗物理與方法II",
+          "credits": 6
+        },
+        {
+          "course_id": "PH2030",
+          "name": "實驗物理與方法II",
+          "credits": 6
+        }
+      ],
+      "other_required_credits": 6,
+      "other_required_type": "跨領域外系課程",
+      "note": "58學分含跨領域外系課程6學分，固定課程合計52學分"
+    },
+    "required_credit_summary": {
+      "common_required": 25,
+      "department_required_including_cross_field": 58,
+      "minimum_total": 128
+    },
+    "choice_groups": [
+      {
+        "id": "physics_pathway",
+        "type": "choose_one_pathway",
+        "required_group_count": 1,
+        "choices": [
+          {
+            "id": "A",
+            "name": "甲類",
+            "required_credits": 6,
+            "required_course_count": 2,
+            "course_options": [
+              {
+                "course_id": "PH3057",
+                "name": "計算物理導論",
+                "credits": 3
+              },
+              {
+                "course_id": "PH3036",
+                "name": "近代物理實驗",
+                "credits": 3
+              },
+              {
+                "course_id": "PH3063",
+                "name": "電子學(含實驗)I",
+                "credits": 3
+              },
+              {
+                "course_id": "PH3064",
+                "name": "電子學(含實驗)II",
+                "credits": 3
+              },
+              {
+                "course_id": "PH3015",
+                "name": "物理專題I",
+                "credits": 3
+              },
+              {
+                "course_id": "PH3016",
+                "name": "物理專題II",
+                "credits": 3
+              },
+              {
+                "course_id": "PH4015",
+                "name": "物理專題III",
+                "credits": 3
+              },
+              {
+                "course_id": "PH4016",
+                "name": "物理專題IV",
+                "credits": 3
+              },
+              {
+                "course_id": "PH3021",
+                "name": "業界實習I",
+                "credits": 3
+              },
+              {
+                "course_id": "PH3022",
+                "name": "業界實習II",
+                "credits": 3
+              },
+              {
+                "course_id": "PH4021",
+                "name": "業界實習III",
+                "credits": 3
+              },
+              {
+                "course_id": "PH4022",
+                "name": "業界實習IV",
+                "credits": 3
+              }
+            ],
+            "department_elective_required_credits": 15,
+            "department_elective_code_prefix": "PH",
+            "department_elective_excluded_type": "專題類課程",
+            "note": "官方表示擇二科共6學分；各選項學分需要以開課資料及校方採認核對"
+          },
+          {
+            "id": "B",
+            "name": "乙類",
+            "required_credits": 12,
+            "required_pair_count": 2,
+            "paired_groups": [
+              {
+                "courses": [
+                  {
+                    "course_id": "PH3015",
+                    "name": "物理專題I",
+                    "credits": 3
+                  },
+                  {
+                    "course_id": "PH3017",
+                    "name": "論文研習與撰寫I",
+                    "credits": 3
+                  }
+                ]
+              },
+              {
+                "courses": [
+                  {
+                    "course_id": "PH3016",
+                    "name": "物理專題II",
+                    "credits": 3
+                  },
+                  {
+                    "course_id": "PH3018",
+                    "name": "論文研習與撰寫II",
+                    "credits": 3
+                  }
+                ]
+              },
+              {
+                "courses": [
+                  {
+                    "course_id": "PH4015",
+                    "name": "物理專題III",
+                    "credits": 3
+                  },
+                  {
+                    "course_id": "PH4017",
+                    "name": "論文研習與撰寫III",
+                    "credits": 3
+                  }
+                ]
+              },
+              {
+                "courses": [
+                  {
+                    "course_id": "PH4016",
+                    "name": "物理專題IV",
+                    "credits": 3
+                  },
+                  {
+                    "course_id": "PH4018",
+                    "name": "論文研習與撰寫IV",
+                    "credits": 3
+                  }
+                ]
+              }
+            ],
+            "department_elective_required_credits": 9,
+            "department_elective_code_prefix": "PH",
+            "department_elective_excluded_type": "專題類課程",
+            "noncourse_conditions": [
+              "參加物理小年會壁報展並報告",
+              "完成畢業論文，畢業離校前繳交論文PDF至系辦公室",
+              "舉行並通過論文口試（至少兩位委員評分）"
+            ],
+            "note": "論文研習與撰寫課程須完成符合碩士論文格式之學士論文及繳交PDF，才可列入畢業學分"
+          }
+        ]
+      }
+    ],
+    "elective_requirements": [
+      {
+        "id": "cross_department",
+        "required_credits": 6,
+        "scope": "外系課程",
+        "excluded_units": [
+          "通識中心",
+          "語言中心",
+          "體育室"
+        ],
+        "recognition_condition": "課名或課程內容與物理系課程相近者不採認"
+      },
+      {
+        "id": "department_electives",
+        "pathway_dependent": true,
+        "requirements_by_pathway": {
+          "A": 15,
+          "B": 9
+        },
+        "code_prefix": "PH",
+        "excluded_type": "專題類課程"
+      }
+    ],
+    "additional_rules": [
+      "「進修英文」不計入畢業總學分",
+      "甲乙兩類須擇一並完成全部要求",
+      "任何論文研習與撰寫課程須完成學士論文及繳交PDF才採計學分"
+    ],
+    "noncredit_requirements": {
+      "physical_education": "表列5門零學分體育；細則依學校注意事項",
+      "service_learning": "表列2門零學分服務學習；細則依學校注意事項"
+    },
+    "excluded_programs": [
+      "雙主修另依本校辦法"
+    ],
+    "unresolved": [
+      "甲類列舉課程學分及實習可認列數量需以開課及系方審查確認",
+      "甲類「二科」與電子學上下學期／專題課程之認列需依系辦確認",
+      "論文與口試等人工條件無法由課程學分自動判斷",
+      "其他共同畢業條件依應修科目表注意事項，附件未列"
+    ]
+  }
+}

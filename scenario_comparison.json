@@ -1,0 +1,38 @@
+{
+  "base": "統計學完成規劃版77學分",
+  "note": "以下僅為條件推算，假設列入的在修課通過且全部可採計畢業；不是正式或已確認的進度。",
+  "scenarios": [
+    {
+      "id": "all_current_pass",
+      "assumptions": [
+        "115-1所有24學分通過且可採計"
+      ],
+      "conditional_total_credits": 101,
+      "conditional_remaining_credits": 27,
+      "conditional_ge_remaining": 0,
+      "conditional_core_intro_remaining": 0,
+      "core_project_remaining": 3,
+      "physics_remaining": 3,
+      "other_pe_remaining_if_PE2251_passed": 2
+    },
+    {
+      "id": "MA3131_not_passed",
+      "assumptions": [
+        "MA3131未通過，其餘21學分通過且可採計"
+      ],
+      "conditional_total_credits": 98,
+      "conditional_remaining_credits": 30,
+      "conditional_ge_remaining": 0,
+      "conditional_core_intro_remaining": 3,
+      "core_project_remaining": 3,
+      "physics_remaining": 3,
+      "other_pe_remaining_if_PE2251_passed": 2
+    }
+  ],
+  "still_unresolved": [
+    "系所選修21學分認列與核心重疊",
+    "學習護照門檻",
+    "操行後續4學期",
+    "總學分達標亦須滿足各分類"
+  ]
+}

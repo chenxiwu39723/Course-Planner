@@ -1,0 +1,415 @@
+{
+  "unified_schema_version": "1.0",
+  "program_id": "business_administration",
+  "academic_year_roc": 113,
+  "university": "國立中央大學",
+  "college": "管理學院",
+  "department": "企業管理學系",
+  "track": null,
+  "required_total_credits": 128,
+  "raw_schema_version": "1.1-provisional",
+  "source_file_in_original_zip": "ncu_management_113/business_administration_rules.json",
+  "source_pdf_evidence": [
+    {
+      "file": "管理學院.pdf",
+      "page": 2,
+      "source_type": "113學年度應修科目表"
+    }
+  ],
+  "verification_status": "官方PDF逐項整理；課程採認、跨課群重疊及完整選修目錄仍需人工核對",
+  "review_flags": [
+    {
+      "field": "unresolved",
+      "details": [
+        "通識領域實際採認與全校共同規則",
+        "選修課完整可採認課號名單",
+        "課程採認應以學校正式審核為準"
+      ]
+    }
+  ],
+  "course_candidates_not_for_automatic_credit_counting": [
+    {
+      "code": "MT1011",
+      "name": "經濟學",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MT1012",
+      "name": "經濟學",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MT1021",
+      "name": "企業概論",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MT1031",
+      "name": "會計學",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MT1032",
+      "name": "會計學",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MT2041",
+      "name": "統計學",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MT2042",
+      "name": "統計學",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MT1051",
+      "name": "程式設計：Python",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1005",
+      "name": "微積分",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1006",
+      "name": "微積分",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BA1003",
+      "name": "管理學",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BA2000",
+      "name": "財務管理",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BA2030",
+      "name": "行銷管理",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BA2004",
+      "name": "管理數學",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BA2015",
+      "name": "組織行為",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BA2014",
+      "name": "作業研究",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BA3005",
+      "name": "人力資源管理",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BA3004",
+      "name": "資訊管理",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BA3001",
+      "name": "生產與作業管理",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[10]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BA3000",
+      "name": "民法概要",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[11]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BA2016",
+      "name": "成本會計",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[12]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BA3003",
+      "name": "商事法",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[13]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BA4002",
+      "name": "策略管理",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[14]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "BA4086",
+      "name": "企管專題",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[15]",
+      "status": "candidate_only"
+    }
+  ],
+  "audit_status": "data_only_not_engine_verified",
+  "raw_rules": {
+    "schema_version": "1.1-provisional",
+    "rules_id": "NCU-MGMT-BUSINESS_ADMINISTRATION-113",
+    "program_id": "business_administration",
+    "applicability": {
+      "university": "國立中央大學",
+      "college": "管理學院",
+      "department": "企業管理學系",
+      "admission_academic_year_roc": 113,
+      "degree_type": "primary_major"
+    },
+    "sources": [
+      {
+        "file": "管理學院.pdf",
+        "page": 2,
+        "source_type": "113學年度應修科目表"
+      }
+    ],
+    "verification_status": "官方PDF逐項整理；課程採認、跨課群重疊及完整選修目錄仍需人工核對",
+    "required_total_credits": 128,
+    "required_credits_including_common": 97,
+    "common_required": {
+      "chinese_credits": 5,
+      "foreign_language_credits": 6,
+      "general_education_credits": 14,
+      "common_total_credits": 25,
+      "noncredit": {
+        "physical_education_courses": 5,
+        "service_learning_courses": 2
+      },
+      "general_education_core_min_domains": 1,
+      "exclude_course_names_from_total": [
+        "進修英文"
+      ],
+      "foreign_language_options": "文件載明大一英文管理課群6學分，另稱三種方式但未完整列出其餘選項，待查"
+    },
+    "required_courses": {
+      "college_required": [
+        {
+          "course_id": "MT1011",
+          "name": "經濟學",
+          "credits": 3
+        },
+        {
+          "course_id": "MT1012",
+          "name": "經濟學",
+          "credits": 3
+        },
+        {
+          "course_id": "MT1021",
+          "name": "企業概論",
+          "credits": 3
+        },
+        {
+          "course_id": "MT1031",
+          "name": "會計學",
+          "credits": 3
+        },
+        {
+          "course_id": "MT1032",
+          "name": "會計學",
+          "credits": 3
+        },
+        {
+          "course_id": "MT2041",
+          "name": "統計學",
+          "credits": 3
+        },
+        {
+          "course_id": "MT2042",
+          "name": "統計學",
+          "credits": 3
+        },
+        {
+          "course_id": "MT1051",
+          "name": "程式設計：Python",
+          "credits": 3
+        }
+      ],
+      "department_required": [
+        {
+          "course_id": "MA1005",
+          "name": "微積分",
+          "credits": 3
+        },
+        {
+          "course_id": "MA1006",
+          "name": "微積分",
+          "credits": 3
+        },
+        {
+          "course_id": "BA1003",
+          "name": "管理學",
+          "credits": 3
+        },
+        {
+          "course_id": "BA2000",
+          "name": "財務管理",
+          "credits": 3
+        },
+        {
+          "course_id": "BA2030",
+          "name": "行銷管理",
+          "credits": 3
+        },
+        {
+          "course_id": "BA2004",
+          "name": "管理數學",
+          "credits": 3
+        },
+        {
+          "course_id": "BA2015",
+          "name": "組織行為",
+          "credits": 3
+        },
+        {
+          "course_id": "BA2014",
+          "name": "作業研究",
+          "credits": 3
+        },
+        {
+          "course_id": "BA3005",
+          "name": "人力資源管理",
+          "credits": 3
+        },
+        {
+          "course_id": "BA3004",
+          "name": "資訊管理",
+          "credits": 3
+        },
+        {
+          "course_id": "BA3001",
+          "name": "生產與作業管理",
+          "credits": 3
+        },
+        {
+          "course_id": "BA3000",
+          "name": "民法概要",
+          "credits": 3
+        },
+        {
+          "course_id": "BA2016",
+          "name": "成本會計",
+          "credits": 3
+        },
+        {
+          "course_id": "BA3003",
+          "name": "商事法",
+          "credits": 3
+        },
+        {
+          "course_id": "BA4002",
+          "name": "策略管理",
+          "credits": 3
+        },
+        {
+          "course_id": "BA4086",
+          "name": "企管專題",
+          "credits": 3
+        }
+      ]
+    },
+    "required_course_credit_sum": 72,
+    "required_credit_reconciliation": {
+      "listed_professional_credits": 72,
+      "listed_plus_common_credits": 97,
+      "official_required_total": 97,
+      "matches": true
+    },
+    "elective_requirements": [
+      {
+        "id": "specified_electives",
+        "minimum_credits": 14,
+        "minimum_course_count": 5,
+        "components": [
+          {
+            "course_prefix": "BA",
+            "minimum_course_count": 3,
+            "minimum_credits": 8
+          },
+          {
+            "type": "program_specific",
+            "minimum_course_count": 2,
+            "eligible": "企業資源規劃學分學程必修（含多選二），或商業智慧與分析學分學程必修（含必選）"
+          }
+        ]
+      }
+    ],
+    "selection_groups": [],
+    "restrictions": [
+      "系訂必修原則在本系修讀",
+      "外系同名同學分必修需事前申請核准抵修；上限三門；遵守本系修課順序",
+      "頁2備註排版錯行，條件按上下文整理並保留疑義",
+      "學分學程選課清單待補"
+    ],
+    "noncredit_requirements": {
+      "physical_education_courses": 5,
+      "service_learning_courses": 2,
+      "conduct_and_other_common_rules": "依校級應修科目表注意事項，尚需核對"
+    },
+    "unresolved": [
+      "通識領域實際採認與全校共同規則",
+      "選修課完整可採認課號名單",
+      "課程採認應以學校正式審核為準"
+    ],
+    "double_major": {
+      "reference": "本校雙主修辦法",
+      "special_conditions": [
+        "選課、抵修依本系規定",
+        "入學後核准雙主修前每學期排名前20%（文件文字）"
+      ],
+      "verification": "排名條件適用期間與核准流程需向系辦確認"
+    }
+  }
+}

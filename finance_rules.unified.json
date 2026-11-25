@@ -1,0 +1,454 @@
+{
+  "unified_schema_version": "1.0",
+  "program_id": "finance",
+  "academic_year_roc": 113,
+  "university": "國立中央大學",
+  "college": "管理學院",
+  "department": "財務金融學系",
+  "track": null,
+  "required_total_credits": 128,
+  "raw_schema_version": "1.1-provisional",
+  "source_file_in_original_zip": "ncu_management_113/finance_rules.json",
+  "source_pdf_evidence": [
+    {
+      "file": "管理學院.pdf",
+      "page": 1,
+      "source_type": "113學年度應修科目表"
+    }
+  ],
+  "verification_status": "官方PDF逐項整理；課程採認、跨課群重疊及完整選修目錄仍需人工核對",
+  "review_flags": [
+    {
+      "field": "unresolved",
+      "details": [
+        "通識領域實際採認與全校共同規則",
+        "選修課完整可採認課號名單",
+        "課程採認應以學校正式審核為準"
+      ]
+    }
+  ],
+  "course_candidates_not_for_automatic_credit_counting": [
+    {
+      "code": "MT1011",
+      "name": "經濟學",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MT1012",
+      "name": "經濟學",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MT1021",
+      "name": "企業概論",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MT1031",
+      "name": "會計學",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MT1032",
+      "name": "會計學",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MT2041",
+      "name": "統計學",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MT2042",
+      "name": "統計學",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MT1051",
+      "name": "程式設計：Python",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1005",
+      "name": "微積分",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1006",
+      "name": "微積分",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FM1011",
+      "name": "財務金融概論",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FM2031",
+      "name": "財務管理",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FM2032",
+      "name": "財務管理",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FM2003",
+      "name": "個體、總體經濟學",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FM2004",
+      "name": "個體、總體經濟學",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FM3017",
+      "name": "投資學",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FM3002",
+      "name": "期貨與選擇權",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FM4001",
+      "name": "國際財務管理",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FM3036",
+      "name": "金融機構與市場",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[10]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FM3001",
+      "name": "財務報表分析",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[11]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FM2009",
+      "name": "民法概要",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FM3004",
+      "name": "商事法",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FM4013",
+      "name": "證券金融法規",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FM2036",
+      "name": "組織行為",
+      "credits": 3,
+      "source_path": "$.selection_groups[1].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "FM3011",
+      "name": "行銷管理",
+      "credits": 3,
+      "source_path": "$.selection_groups[1].courses[1]",
+      "status": "candidate_only"
+    }
+  ],
+  "audit_status": "data_only_not_engine_verified",
+  "raw_rules": {
+    "schema_version": "1.1-provisional",
+    "rules_id": "NCU-MGMT-FINANCE-113",
+    "program_id": "finance",
+    "applicability": {
+      "university": "國立中央大學",
+      "college": "管理學院",
+      "department": "財務金融學系",
+      "admission_academic_year_roc": 113,
+      "degree_type": "primary_major"
+    },
+    "sources": [
+      {
+        "file": "管理學院.pdf",
+        "page": 1,
+        "source_type": "113學年度應修科目表"
+      }
+    ],
+    "verification_status": "官方PDF逐項整理；課程採認、跨課群重疊及完整選修目錄仍需人工核對",
+    "required_total_credits": 128,
+    "required_credits_including_common": 85,
+    "common_required": {
+      "chinese_credits": 5,
+      "foreign_language_credits": 6,
+      "general_education_credits": 14,
+      "common_total_credits": 25,
+      "noncredit": {
+        "physical_education_courses": 5,
+        "service_learning_courses": 2
+      },
+      "general_education_core_min_domains": 1,
+      "exclude_course_names_from_total": [
+        "進修英文"
+      ],
+      "foreign_language_options": "大一英文管理課群6學分；或英文系其他英文課程6學分；或同一第二外語課程6學分"
+    },
+    "required_courses": {
+      "college_required": [
+        {
+          "course_id": "MT1011",
+          "name": "經濟學",
+          "credits": 3
+        },
+        {
+          "course_id": "MT1012",
+          "name": "經濟學",
+          "credits": 3
+        },
+        {
+          "course_id": "MT1021",
+          "name": "企業概論",
+          "credits": 3
+        },
+        {
+          "course_id": "MT1031",
+          "name": "會計學",
+          "credits": 3
+        },
+        {
+          "course_id": "MT1032",
+          "name": "會計學",
+          "credits": 3
+        },
+        {
+          "course_id": "MT2041",
+          "name": "統計學",
+          "credits": 3
+        },
+        {
+          "course_id": "MT2042",
+          "name": "統計學",
+          "credits": 3
+        },
+        {
+          "course_id": "MT1051",
+          "name": "程式設計：Python",
+          "credits": 3
+        }
+      ],
+      "department_required": [
+        {
+          "course_id": "MA1005",
+          "name": "微積分",
+          "credits": 3
+        },
+        {
+          "course_id": "MA1006",
+          "name": "微積分",
+          "credits": 3
+        },
+        {
+          "course_id": "FM1011",
+          "name": "財務金融概論",
+          "credits": 3
+        },
+        {
+          "course_id": "FM2031",
+          "name": "財務管理",
+          "credits": 3
+        },
+        {
+          "course_id": "FM2032",
+          "name": "財務管理",
+          "credits": 3
+        },
+        {
+          "course_id": "FM2003",
+          "name": "個體、總體經濟學",
+          "credits": 3
+        },
+        {
+          "course_id": "FM2004",
+          "name": "個體、總體經濟學",
+          "credits": 3
+        },
+        {
+          "course_id": "FM3017",
+          "name": "投資學",
+          "credits": 3
+        },
+        {
+          "course_id": "FM3002",
+          "name": "期貨與選擇權",
+          "credits": 3
+        },
+        {
+          "course_id": "FM4001",
+          "name": "國際財務管理",
+          "credits": 3
+        },
+        {
+          "course_id": "FM3036",
+          "name": "金融機構與市場",
+          "credits": 3
+        },
+        {
+          "course_id": "FM3001",
+          "name": "財務報表分析",
+          "credits": 3
+        }
+      ]
+    },
+    "required_course_credit_sum": 60,
+    "required_credit_reconciliation": {
+      "listed_professional_credits": 60,
+      "listed_plus_common_credits": 85,
+      "official_required_total": 85,
+      "matches": true
+    },
+    "elective_requirements": [
+      {
+        "id": "all_electives",
+        "minimum_credits": 43,
+        "exclude": [
+          "通識課程",
+          "教育學程課程"
+        ],
+        "contains": [
+          "department_electives"
+        ]
+      },
+      {
+        "id": "department_electives",
+        "minimum_credits": 18,
+        "course_prefix": "FM",
+        "nested_in": "all_electives"
+      },
+      {
+        "id": "digital_literacy",
+        "minimum_credits": 6,
+        "recognition": "企業資源規劃學程表非FM課；商業智慧與分析學程表非FM課；金融科技學程表IM課；或系課委會認定"
+      }
+    ],
+    "selection_groups": [
+      {
+        "id": "finance_law",
+        "type": "choose_n",
+        "choose": 2,
+        "courses": [
+          {
+            "course_id": "FM2009",
+            "name": "民法概要",
+            "credits": 3
+          },
+          {
+            "course_id": "FM3004",
+            "name": "商事法",
+            "credits": 3
+          },
+          {
+            "course_id": "FM4013",
+            "name": "證券金融法規",
+            "credits": 3
+          }
+        ],
+        "applies_to": [
+          "primary_major",
+          "double_major"
+        ]
+      },
+      {
+        "id": "management",
+        "type": "choose_n",
+        "choose": 1,
+        "courses": [
+          {
+            "course_id": "FM2036",
+            "name": "組織行為",
+            "credits": 3
+          },
+          {
+            "course_id": "FM3011",
+            "name": "行銷管理",
+            "credits": 3
+          }
+        ],
+        "applies_to": [
+          "primary_major",
+          "double_major"
+        ]
+      }
+    ],
+    "restrictions": [
+      "法律及管理選課是選修內部限制，不另外加總學分",
+      "數位素養課表須另外取得學分學程清單核對",
+      "學分重複採認須依學校規定"
+    ],
+    "noncredit_requirements": {
+      "physical_education_courses": 5,
+      "service_learning_courses": 2,
+      "conduct_and_other_common_rules": "依校級應修科目表注意事項，尚需核對"
+    },
+    "unresolved": [
+      "通識領域實際採認與全校共同規則",
+      "選修課完整可採認課號名單",
+      "課程採認應以學校正式審核為準"
+    ],
+    "double_major": {
+      "reference": "本校雙主修辦法",
+      "additional_selection_groups": [
+        "finance_law",
+        "management"
+      ],
+      "full_major_credits": "待確認"
+    }
+  }
+}

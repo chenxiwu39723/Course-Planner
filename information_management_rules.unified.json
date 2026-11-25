@@ -1,0 +1,461 @@
+{
+  "unified_schema_version": "1.0",
+  "program_id": "information_management",
+  "academic_year_roc": 113,
+  "university": "國立中央大學",
+  "college": "管理學院",
+  "department": "資訊管理學系",
+  "track": null,
+  "required_total_credits": 128,
+  "raw_schema_version": "1.1-provisional",
+  "source_file_in_original_zip": "ncu_management_113/information_management_rules.json",
+  "source_pdf_evidence": [
+    {
+      "file": "管理學院.pdf",
+      "page": 3,
+      "source_type": "113學年度應修科目表"
+    }
+  ],
+  "verification_status": "官方PDF逐項整理；課程採認、跨課群重疊及完整選修目錄仍需人工核對",
+  "review_flags": [
+    {
+      "field": "unresolved",
+      "details": [
+        "通識領域實際採認與全校共同規則",
+        "選修課完整可採認課號名單",
+        "課程採認應以學校正式審核為準"
+      ]
+    }
+  ],
+  "course_candidates_not_for_automatic_credit_counting": [
+    {
+      "code": "MT1011",
+      "name": "經濟學",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MT1012",
+      "name": "經濟學",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MT1021",
+      "name": "企業概論",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MT1031",
+      "name": "會計學",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MT1032",
+      "name": "會計學",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MT2041",
+      "name": "統計學",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MT2042",
+      "name": "統計學",
+      "credits": 3,
+      "source_path": "$.required_courses.college_required[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1005",
+      "name": "微積分",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "IM1001",
+      "name": "計算機概論I",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "IM1023",
+      "name": "程式設計",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "IM1018",
+      "name": "資訊管理導論",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "IM2046",
+      "name": "作業系統",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "IM2011",
+      "name": "資料與檔案結構",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "IM2002",
+      "name": "資料庫管理",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "IM3061",
+      "name": "企業資料通訊",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "IM3059",
+      "name": "行銷學",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "IM3069",
+      "name": "系統分析與設計",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "IM3003",
+      "name": "作業研究I",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[10]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "IM3070",
+      "name": "組織行為",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[11]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "IM3078",
+      "name": "人工智慧與機器學習",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[12]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "IM2037",
+      "name": "演算法",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[13]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "IM3031",
+      "name": "電子商務",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[14]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "IM3028",
+      "name": "資訊系統發展專題 I/II",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[15]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "IM4001",
+      "name": "資訊系統發展專題 I/II",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[16]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "IM4048",
+      "name": "管理資訊系統",
+      "credits": 3,
+      "source_path": "$.required_courses.department_required[17]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "IM1013",
+      "name": "初階程式設計",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "IM3029",
+      "name": "網頁程式設計",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1006",
+      "name": "微積分",
+      "credits": 3,
+      "source_path": "$.selection_groups[0].courses[2]",
+      "status": "candidate_only"
+    }
+  ],
+  "audit_status": "data_only_not_engine_verified",
+  "raw_rules": {
+    "schema_version": "1.1-provisional",
+    "rules_id": "NCU-MGMT-INFORMATION_MANAGEMENT-113",
+    "program_id": "information_management",
+    "applicability": {
+      "university": "國立中央大學",
+      "college": "管理學院",
+      "department": "資訊管理學系",
+      "admission_academic_year_roc": 113,
+      "degree_type": "primary_major"
+    },
+    "sources": [
+      {
+        "file": "管理學院.pdf",
+        "page": 3,
+        "source_type": "113學年度應修科目表"
+      }
+    ],
+    "verification_status": "官方PDF逐項整理；課程採認、跨課群重疊及完整選修目錄仍需人工核對",
+    "required_total_credits": 128,
+    "required_credits_including_common": 100,
+    "common_required": {
+      "chinese_credits": 5,
+      "foreign_language_credits": 6,
+      "general_education_credits": 14,
+      "common_total_credits": 25,
+      "noncredit": {
+        "physical_education_courses": 5,
+        "service_learning_courses": 2
+      },
+      "general_education_core_min_domains": 1,
+      "exclude_course_names_from_total": [
+        "進修英文"
+      ],
+      "foreign_language_options": "大一英文管理課群6學分或英文系其他英文課程6學分；不得以第二外語抵免"
+    },
+    "required_courses": {
+      "college_required": [
+        {
+          "course_id": "MT1011",
+          "name": "經濟學",
+          "credits": 3
+        },
+        {
+          "course_id": "MT1012",
+          "name": "經濟學",
+          "credits": 3
+        },
+        {
+          "course_id": "MT1021",
+          "name": "企業概論",
+          "credits": 3
+        },
+        {
+          "course_id": "MT1031",
+          "name": "會計學",
+          "credits": 3
+        },
+        {
+          "course_id": "MT1032",
+          "name": "會計學",
+          "credits": 3
+        },
+        {
+          "course_id": "MT2041",
+          "name": "統計學",
+          "credits": 3
+        },
+        {
+          "course_id": "MT2042",
+          "name": "統計學",
+          "credits": 3
+        }
+      ],
+      "department_required": [
+        {
+          "course_id": "MA1005",
+          "name": "微積分",
+          "credits": 3
+        },
+        {
+          "course_id": "IM1001",
+          "name": "計算機概論I",
+          "credits": 3
+        },
+        {
+          "course_id": "IM1023",
+          "name": "程式設計",
+          "credits": 3
+        },
+        {
+          "course_id": "IM1018",
+          "name": "資訊管理導論",
+          "credits": 3
+        },
+        {
+          "course_id": "IM2046",
+          "name": "作業系統",
+          "credits": 3
+        },
+        {
+          "course_id": "IM2011",
+          "name": "資料與檔案結構",
+          "credits": 3
+        },
+        {
+          "course_id": "IM2002",
+          "name": "資料庫管理",
+          "credits": 3
+        },
+        {
+          "course_id": "IM3061",
+          "name": "企業資料通訊",
+          "credits": 3
+        },
+        {
+          "course_id": "IM3059",
+          "name": "行銷學",
+          "credits": 3
+        },
+        {
+          "course_id": "IM3069",
+          "name": "系統分析與設計",
+          "credits": 3
+        },
+        {
+          "course_id": "IM3003",
+          "name": "作業研究I",
+          "credits": 3
+        },
+        {
+          "course_id": "IM3070",
+          "name": "組織行為",
+          "credits": 3
+        },
+        {
+          "course_id": "IM3078",
+          "name": "人工智慧與機器學習",
+          "credits": 3
+        },
+        {
+          "course_id": "IM2037",
+          "name": "演算法",
+          "credits": 3
+        },
+        {
+          "course_id": "IM3031",
+          "name": "電子商務",
+          "credits": 3
+        },
+        {
+          "course_id": "IM3028",
+          "name": "資訊系統發展專題 I/II",
+          "credits": 3
+        },
+        {
+          "course_id": "IM4001",
+          "name": "資訊系統發展專題 I/II",
+          "credits": 3
+        },
+        {
+          "course_id": "IM4048",
+          "name": "管理資訊系統",
+          "credits": 3
+        }
+      ]
+    },
+    "required_course_credit_sum": 75,
+    "required_credit_reconciliation": {
+      "listed_professional_credits": 75,
+      "listed_plus_common_credits": 100,
+      "official_required_total": 100,
+      "matches": true
+    },
+    "elective_requirements": [
+      {
+        "id": "other_department_electives",
+        "maximum_credits_recognized": 12,
+        "note": "通識課至多認列4學分（歸屬與校定通識關係待核對）；MT企業實習至多認列3學分，其餘選修須本系所開"
+      }
+    ],
+    "selection_groups": [
+      {
+        "id": "required_selected",
+        "type": "all_of",
+        "courses": [
+          {
+            "course_id": "IM1013",
+            "name": "初階程式設計",
+            "credits": 3
+          },
+          {
+            "course_id": "IM3029",
+            "name": "網頁程式設計",
+            "credits": 3
+          },
+          {
+            "course_id": "MA1006",
+            "name": "微積分",
+            "credits": 3
+          }
+        ],
+        "count_toward_100_required_credits": false,
+        "note": "列於備註的必選課，不列在100學分指定必修表內；需另行檢查，不可假設已包含"
+      }
+    ],
+    "restrictions": [
+      "外系選修最多認列12學分",
+      "MT企業實習最多認列3學分",
+      "表列總必修100學分與另列必選課須分開記錄"
+    ],
+    "noncredit_requirements": {
+      "physical_education_courses": 5,
+      "service_learning_courses": 2,
+      "conduct_and_other_common_rules": "依校級應修科目表注意事項，尚需核對"
+    },
+    "unresolved": [
+      "通識領域實際採認與全校共同規則",
+      "選修課完整可採認課號名單",
+      "課程採認應以學校正式審核為準"
+    ],
+    "double_major": {
+      "reference": "本校雙主修辦法",
+      "required_selected_courses": [
+        "IM1013",
+        "IM3029",
+        "MA1006"
+      ],
+      "minimum_after_credit_transfer": 40,
+      "if_short": "由系課程委員會審議"
+    }
+  }
+}

@@ -1,0 +1,567 @@
+{
+  "unified_schema_version": "1.0",
+  "program_id": "mechanical_design_analysis_113",
+  "academic_year_roc": 113,
+  "university": "國立中央大學",
+  "college": "工學院",
+  "department": "機械工程學系",
+  "track": "設計與分析組",
+  "required_total_credits": 134,
+  "raw_schema_version": "1.1",
+  "source_file_in_original_zip": "ncu_engineering_113/mechanical_design_analysis_113_rules.json",
+  "source_pdf_evidence": {
+    "file": "工學院.pdf",
+    "pages": [
+      1,
+      2
+    ],
+    "source_type": "113學年度入學應修科目表",
+    "verified_from_uploaded_pdf": true
+  },
+  "verification_status": "依上傳PDF轉錄；特別採認與缺少的附表仍待人工核對",
+  "review_flags": [
+    {
+      "field": "uncertainties",
+      "details": [
+        "機械系課程地圖僅此PDF第8頁列出部分領域課程名稱，完整課號與正式採認清單尚缺",
+        "自主學習主題式課群名單每學期公告，尚缺對應完整課號",
+        "原始PDF對部分組別的領域課程重複認列條件可能有細節，需人工審核"
+      ]
+    }
+  ],
+  "course_candidates_not_for_automatic_credit_counting": [
+    {
+      "code": "MA1003",
+      "name": "微積分上",
+      "credits": 3,
+      "source_path": "$.required_course_groups[0].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1004",
+      "name": "微積分下",
+      "credits": 3,
+      "source_path": "$.required_course_groups[0].courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EG1001",
+      "name": "工程程式設計",
+      "credits": 3,
+      "source_path": "$.required_course_groups[0].courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1036",
+      "name": "普通物理A",
+      "credits": 3,
+      "source_path": "$.required_course_groups[0].courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1024",
+      "name": "普通物理實驗",
+      "credits": 1,
+      "source_path": "$.required_course_groups[1].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME1041",
+      "name": "製造工程實習I",
+      "credits": 1,
+      "source_path": "$.required_course_groups[1].courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2037",
+      "name": "機械製圖上",
+      "credits": 1,
+      "source_path": "$.required_course_groups[1].courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2038",
+      "name": "機械製圖下",
+      "credits": 1,
+      "source_path": "$.required_course_groups[1].courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME1006",
+      "name": "靜力與材料力學",
+      "credits": 4,
+      "source_path": "$.required_course_groups[1].courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2001",
+      "name": "工程數學I",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2002",
+      "name": "工程數學II",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2035",
+      "name": "機構學",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2065",
+      "name": "電路及電子學",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2066",
+      "name": "電路及電子實驗",
+      "credits": 1,
+      "source_path": "$.required_course_groups[1].courses[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2013",
+      "name": "動力學",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[10]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2051",
+      "name": "材料科學",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[11]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2056",
+      "name": "精密機械製造I",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[12]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME3043",
+      "name": "精密機械設計I",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[13]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME3096",
+      "name": "量測實驗",
+      "credits": 1,
+      "source_path": "$.required_course_groups[1].courses[14]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME4061",
+      "name": "自動控制I",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[15]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2073",
+      "name": "熱力學I",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[16]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME3081",
+      "name": "流體力學",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[17]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME4075",
+      "name": "畢業專題",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[18]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME2072",
+      "name": "熱力學II",
+      "credits": 2,
+      "source_path": "$.required_course_groups[2].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME3095",
+      "name": "材料實驗",
+      "credits": 1,
+      "source_path": "$.required_course_groups[2].courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME3102",
+      "name": "熱流實驗",
+      "credits": 1,
+      "source_path": "$.required_course_groups[2].courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME3044",
+      "name": "精密機械設計II",
+      "credits": 3,
+      "source_path": "$.required_course_groups[2].courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME3061",
+      "name": "電腦輔助工程",
+      "credits": 3,
+      "source_path": "$.required_course_groups[2].courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "ME3072",
+      "name": "熱傳學",
+      "credits": 3,
+      "source_path": "$.required_course_groups[2].courses[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EG1003",
+      "name": "普通化學",
+      "credits": 3,
+      "source_path": "$.extra_requirements[0]",
+      "status": "candidate_only"
+    }
+  ],
+  "audit_status": "data_only_not_engine_verified",
+  "raw_rules": {
+    "schema_version": "1.1",
+    "program_id": "mechanical_design_analysis_113",
+    "college": "工學院",
+    "university": "國立中央大學",
+    "department": "機械工程學系",
+    "entry_year_roc": 113,
+    "degree": "bachelor",
+    "required_total_credits": 134,
+    "source": {
+      "file": "工學院.pdf",
+      "pages": [
+        1,
+        2
+      ],
+      "source_type": "113學年度入學應修科目表",
+      "verified_from_uploaded_pdf": true
+    },
+    "verification_status": "依上傳PDF轉錄；特別採認與缺少的附表仍待人工核對",
+    "scope": "主修規則；雙主修另依學校辦法",
+    "common_required": {
+      "required_credits": 25,
+      "chinese_credits": 5,
+      "foreign_language_credits": 6,
+      "general_education_credits": 14,
+      "core_ge_domain_min_count": 1,
+      "foreign_language_options": [
+        "大一英文工程課群6學分",
+        "英文系開設之其他英文課程6學分",
+        "語言中心開設或認定同一第二外語課程6學分"
+      ],
+      "advanced_english_excluded_from_graduation_total": true,
+      "physical_education": "依全校共同必修應修科目表注意事項",
+      "service_learning": "依全校共同必修應修科目表注意事項"
+    },
+    "required_credits_summary": {
+      "including_common_required": 99,
+      "common_required": 25,
+      "college_required": 12,
+      "department_fixed_and_group_required_including_choice": 62
+    },
+    "required_course_groups": [
+      {
+        "id": "college_required",
+        "label": "院訂必修",
+        "courses": [
+          {
+            "course_id": "MA1003",
+            "credits": 3,
+            "name": "微積分上"
+          },
+          {
+            "course_id": "MA1004",
+            "credits": 3,
+            "name": "微積分下"
+          },
+          {
+            "course_id": "EG1001",
+            "credits": 3,
+            "name": "工程程式設計"
+          },
+          {
+            "course_id": "PH1036",
+            "credits": 3,
+            "name": "普通物理A"
+          }
+        ],
+        "listed_credit_sum": 12
+      },
+      {
+        "id": "department_fixed",
+        "label": "系訂固定必修",
+        "courses": [
+          {
+            "course_id": "PH1024",
+            "credits": 1,
+            "name": "普通物理實驗"
+          },
+          {
+            "course_id": "ME1041",
+            "credits": 1,
+            "name": "製造工程實習I"
+          },
+          {
+            "course_id": "ME2037",
+            "credits": 1,
+            "name": "機械製圖上"
+          },
+          {
+            "course_id": "ME2038",
+            "credits": 1,
+            "name": "機械製圖下"
+          },
+          {
+            "course_id": "ME1006",
+            "credits": 4,
+            "name": "靜力與材料力學"
+          },
+          {
+            "course_id": "ME2001",
+            "credits": 3,
+            "name": "工程數學I"
+          },
+          {
+            "course_id": "ME2002",
+            "credits": 3,
+            "name": "工程數學II"
+          },
+          {
+            "course_id": "ME2035",
+            "credits": 3,
+            "name": "機構學"
+          },
+          {
+            "course_id": "ME2065",
+            "credits": 3,
+            "name": "電路及電子學"
+          },
+          {
+            "course_id": "ME2066",
+            "credits": 1,
+            "name": "電路及電子實驗"
+          },
+          {
+            "course_id": "ME2013",
+            "credits": 3,
+            "name": "動力學"
+          },
+          {
+            "course_id": "ME2051",
+            "credits": 3,
+            "name": "材料科學"
+          },
+          {
+            "course_id": "ME2056",
+            "credits": 3,
+            "name": "精密機械製造I"
+          },
+          {
+            "course_id": "ME3043",
+            "credits": 3,
+            "name": "精密機械設計I"
+          },
+          {
+            "course_id": "ME3096",
+            "credits": 1,
+            "name": "量測實驗"
+          },
+          {
+            "course_id": "ME4061",
+            "credits": 3,
+            "name": "自動控制I"
+          },
+          {
+            "course_id": "ME2073",
+            "credits": 3,
+            "name": "熱力學I"
+          },
+          {
+            "course_id": "ME3081",
+            "credits": 3,
+            "name": "流體力學"
+          },
+          {
+            "course_id": "ME4075",
+            "credits": 3,
+            "name": "畢業專題"
+          }
+        ],
+        "listed_credit_sum": 46
+      },
+      {
+        "id": "group_required",
+        "label": "組訂必修",
+        "courses": [
+          {
+            "course_id": "ME2072",
+            "credits": 2,
+            "name": "熱力學II"
+          },
+          {
+            "course_id": "ME3095",
+            "credits": 1,
+            "name": "材料實驗"
+          },
+          {
+            "course_id": "ME3102",
+            "credits": 1,
+            "name": "熱流實驗"
+          },
+          {
+            "course_id": "ME3044",
+            "credits": 3,
+            "name": "精密機械設計II"
+          },
+          {
+            "course_id": "ME3061",
+            "credits": 3,
+            "name": "電腦輔助工程"
+          },
+          {
+            "course_id": "ME3072",
+            "credits": 3,
+            "name": "熱傳學"
+          }
+        ],
+        "listed_credit_sum": 13
+      }
+    ],
+    "choice_groups": [
+      {
+        "id": "advanced_physics_choice",
+        "label": "電磁學／近代物理導論二選一",
+        "type": "choose_courses",
+        "course_ids": [
+          "ME3055",
+          "ME3053"
+        ],
+        "required_course_count": 1,
+        "required_credits": 3,
+        "option_catalog_complete": true
+      },
+      {
+        "id": "specialization_path",
+        "label": "八大領域擇一",
+        "type": "one_of_paths",
+        "options": [
+          "光機設計",
+          "機電控制",
+          "先進材料",
+          "精密製造",
+          "熱流與能源工程",
+          "應用力學與設計",
+          "跨域專長",
+          "自主學習"
+        ],
+        "standard_area_min_credits": 15,
+        "cross_domain_min_credits": 15,
+        "self_learning_min_credits": 13,
+        "self_learning_project_credits": 4,
+        "self_learning_elective_credits": 9,
+        "option_catalog_complete": false,
+        "source_note": "需搭配機械系課程地圖/每學期公告，不能將組訂必修重複算入領域"
+      }
+    ],
+    "elective_requirements": [
+      {
+        "id": "department_electives",
+        "required_credits": 9,
+        "eligible_course_rule": "機械系、光機電所、能源所及材料所選修課程"
+      },
+      {
+        "id": "other_electives_standard",
+        "required_credits": 11,
+        "applies_to": "除自主學習外的領域，包括跨域專長",
+        "exclusions": [
+          "通識",
+          "進修英文"
+        ]
+      },
+      {
+        "id": "other_electives_self_learning",
+        "required_credits": 13,
+        "applies_to": "自主學習領域",
+        "exclusions": [
+          "通識",
+          "進修英文"
+        ]
+      }
+    ],
+    "extra_requirements": [
+      {
+        "id": "first_year_chemistry",
+        "type": "mandatory_elective",
+        "course_id": "EG1003",
+        "name": "普通化學",
+        "credits": 3,
+        "counting": "計入本系選修，不列入必修"
+      },
+      {
+        "id": "cross_domain_non_overlap",
+        "type": "exclusive_credit_allocation",
+        "rule": "跨域專長學分不可重複列入雙主修、輔系、本系選修或其他選修"
+      },
+      {
+        "id": "cross_domain_filing",
+        "type": "administrative",
+        "rule": "跨域專長需於大三第一學期提出申請並附成績單，供課程委員會備查"
+      }
+    ],
+    "prerequisite_rules": [
+      {
+        "target_rule": "所有課名含II之必修科目",
+        "prerequisite_rule": "相對應I需達40分以上",
+        "minimum_grade": 40
+      },
+      {
+        "target": [
+          "ME2038"
+        ],
+        "prerequisites": [
+          "ME2037"
+        ],
+        "minimum_grade": 40
+      }
+    ],
+    "credit_counting_rules": {
+      "excluded_courses": [
+        "進修英文"
+      ],
+      "overlap_note": "畢業總學分、必修和選修的門檻有包含關係，不應直接加總"
+    },
+    "dual_major": {
+      "rule": "依本校學生修讀雙主修辦法辦理"
+    },
+    "uncertainties": [
+      "機械系課程地圖僅此PDF第8頁列出部分領域課程名稱，完整課號與正式採認清單尚缺",
+      "自主學習主題式課群名單每學期公告，尚缺對應完整課號",
+      "原始PDF對部分組別的領域課程重複認列條件可能有細節，需人工審核"
+    ],
+    "program": "設計與分析組"
+  }
+}

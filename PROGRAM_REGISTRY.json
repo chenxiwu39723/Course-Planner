@@ -1,0 +1,296 @@
+{
+  "schema_version": "1.0",
+  "year_roc": 113,
+  "description": "統一資料外層格式，保留各學院原始規則；非畢業審核引擎",
+  "total_rules": 32,
+  "programs": [
+    {
+      "program_id": "optics_113",
+      "college": "理學院",
+      "department": "光電科學與工程學系",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "physics_113",
+      "college": "理學院",
+      "department": "物理學系",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "chemistry_113",
+      "college": "理學院",
+      "department": "化學學系",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "math_datascience_113_official",
+      "college": "理學院",
+      "department": "數學系",
+      "track": "計算與資料科學組",
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "math_science_113",
+      "college": "理學院",
+      "department": "數學系",
+      "track": "數學科學組",
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "french_113",
+      "college": "文學院",
+      "department": "法國語文學系",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "english_113",
+      "college": "文學院",
+      "department": "英美語文學系",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "chinese_literature_113",
+      "college": "文學院",
+      "department": "中國文學系",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "life_science_113",
+      "college": "生醫理工學院",
+      "department": "生命科學系",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "biomedical_science_113",
+      "college": "生醫理工學院",
+      "department": "生醫科學與工程學系",
+      "track": "生醫科學組",
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "biomedical_engineering_info_113",
+      "college": "生醫理工學院",
+      "department": "生醫科學與工程學系",
+      "track": "醫學工程與資訊科學組",
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "hakka_language_communication_113",
+      "college": "客家學院",
+      "department": "客家語文暨社會科學學系",
+      "track": "客家語文及傳播組",
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "hakka_society_policy_113",
+      "college": "客家學院",
+      "department": "客家語文暨社會科學學系",
+      "track": "客家社會及政策組",
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "atmospheric_science_113",
+      "college": "地球科學學院",
+      "department": "大氣科學學系",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "space_science_engineering_113",
+      "college": "地球科學學院",
+      "department": "太空科學與工程學系",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "earth_science_113",
+      "college": "地球科學學院",
+      "department": "地球科學學系",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "earth_science_interdisciplinary_bachelor_113",
+      "college": "地球科學學院",
+      "department": "地球科學學院院學士班",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "mechanical_advanced_materials_manufacturing_113",
+      "college": "工學院",
+      "department": "機械工程學系",
+      "track": "先進材料與精密製造組",
+      "academic_year_roc": 113,
+      "required_total_credits": 134,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "chemical_materials_engineering_113",
+      "college": "工學院",
+      "department": "化學工程與材料工程學系",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "civil_engineering_113",
+      "college": "工學院",
+      "department": "土木工程學系",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "mechanical_design_analysis_113",
+      "college": "工學院",
+      "department": "機械工程學系",
+      "track": "設計與分析組",
+      "academic_year_roc": 113,
+      "required_total_credits": 134,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "mechanical_optomechatronics_113",
+      "college": "工學院",
+      "department": "機械工程學系",
+      "track": "光機電工程組",
+      "academic_year_roc": 113,
+      "required_total_credits": 134,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "information_management",
+      "college": "管理學院",
+      "department": "資訊管理學系",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "business_administration",
+      "college": "管理學院",
+      "department": "企業管理學系",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "finance",
+      "college": "管理學院",
+      "department": "財務金融學系",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "electrical_engineering",
+      "college": "資訊電機學院",
+      "department": "電機工程學系",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 132,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "computer_science",
+      "college": "資訊電機學院",
+      "department": "資訊工程學系",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "communication_engineering",
+      "college": "資訊電機學院",
+      "department": "通訊工程學系",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 132,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "interdisciplinary_engineering_113",
+      "college": "工學院",
+      "department": "工學院學士班",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "interdisciplinary_science_113",
+      "college": "理學院",
+      "department": "理學院學士班",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "interdisciplinary_electrical_cs_113",
+      "college": "資訊電機學院",
+      "department": "資訊電機學院學士班",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    },
+    {
+      "program_id": "economics_113",
+      "college": "管理學院",
+      "department": "經濟學系",
+      "track": null,
+      "academic_year_roc": 113,
+      "required_total_credits": 128,
+      "audit_status": "data_only_not_engine_verified"
+    }
+  ]
+}

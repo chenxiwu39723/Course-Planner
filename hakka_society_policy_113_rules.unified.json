@@ -1,0 +1,598 @@
+{
+  "unified_schema_version": "1.0",
+  "program_id": "hakka_society_policy_113",
+  "academic_year_roc": 113,
+  "university": "國立中央大學",
+  "college": "客家學院",
+  "department": "客家語文暨社會科學學系",
+  "track": "客家社會及政策組",
+  "required_total_credits": 128,
+  "raw_schema_version": "1.1",
+  "source_file_in_original_zip": "ncu_hakka_113/hakka_society_policy_113_rules.json",
+  "source_pdf_evidence": {
+    "file": "客家學院.pdf",
+    "source_type": "113學年度入學應修科目表",
+    "verified_from_uploaded_pdf": true,
+    "pages": [
+      2
+    ]
+  },
+  "verification_status": "已依113學年度上傳表逐項轉錄；全校共同規定與個別課程採認仍需另行核對",
+  "review_flags": [
+    {
+      "field": "unresolved",
+      "details": [
+        "跨組課程6學分的具體採認與跨年度替代規則需核對",
+        "跨院與校際選修17學分的詳細採認範圍需核對",
+        "全校體育、服務學習及其他零學分要求參照共通注意事項",
+        "客語免修通過與補足學分須由系所審核，不可自動認定"
+      ]
+    }
+  ],
+  "course_candidates_not_for_automatic_credit_counting": [
+    {
+      "code": "HK1001",
+      "name": "基礎客語Ⅰ",
+      "credits": 2,
+      "source_path": "$.fixed_courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK1002",
+      "name": "基礎客語Ⅱ",
+      "credits": 2,
+      "source_path": "$.fixed_courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK1005",
+      "name": "社會學（上）",
+      "credits": 2,
+      "source_path": "$.fixed_courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK1006",
+      "name": "社會學（下）",
+      "credits": 2,
+      "source_path": "$.fixed_courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK1009",
+      "name": "客家文化概論（上）",
+      "credits": 2,
+      "source_path": "$.fixed_courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK1010",
+      "name": "客家文化概論（下）",
+      "credits": 2,
+      "source_path": "$.fixed_courses[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK1015",
+      "name": "臺灣客家移墾史",
+      "credits": 3,
+      "source_path": "$.fixed_courses[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK2001",
+      "name": "進階客語Ⅰ",
+      "credits": 2,
+      "source_path": "$.fixed_courses[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK2002",
+      "name": "進階客語Ⅱ",
+      "credits": 2,
+      "source_path": "$.fixed_courses[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK4021",
+      "name": "專題製作與實習",
+      "credits": 2,
+      "source_path": "$.fixed_courses[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK2035",
+      "name": "文化人類學",
+      "credits": 3,
+      "source_path": "$.fixed_courses[10]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK2039",
+      "name": "政治學",
+      "credits": 3,
+      "source_path": "$.fixed_courses[11]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK2033",
+      "name": "族群理論與關係",
+      "credits": 3,
+      "source_path": "$.fixed_courses[12]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK2037",
+      "name": "性別研究",
+      "credits": 3,
+      "source_path": "$.fixed_courses[13]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK3037",
+      "name": "社會調查與統計",
+      "credits": 3,
+      "source_path": "$.fixed_courses[14]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK3029",
+      "name": "社會科學研究法",
+      "credits": 3,
+      "source_path": "$.fixed_courses[15]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK1001",
+      "name": "基礎客語Ⅰ",
+      "credits": 2,
+      "source_path": "$.department_required_courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK1002",
+      "name": "基礎客語Ⅱ",
+      "credits": 2,
+      "source_path": "$.department_required_courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK1005",
+      "name": "社會學（上）",
+      "credits": 2,
+      "source_path": "$.department_required_courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK1006",
+      "name": "社會學（下）",
+      "credits": 2,
+      "source_path": "$.department_required_courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK1009",
+      "name": "客家文化概論（上）",
+      "credits": 2,
+      "source_path": "$.department_required_courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK1010",
+      "name": "客家文化概論（下）",
+      "credits": 2,
+      "source_path": "$.department_required_courses[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK1015",
+      "name": "臺灣客家移墾史",
+      "credits": 3,
+      "source_path": "$.department_required_courses[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK2001",
+      "name": "進階客語Ⅰ",
+      "credits": 2,
+      "source_path": "$.department_required_courses[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK2002",
+      "name": "進階客語Ⅱ",
+      "credits": 2,
+      "source_path": "$.department_required_courses[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK4021",
+      "name": "專題製作與實習",
+      "credits": 2,
+      "source_path": "$.department_required_courses[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK2035",
+      "name": "文化人類學",
+      "credits": 3,
+      "source_path": "$.group_required_courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK2039",
+      "name": "政治學",
+      "credits": 3,
+      "source_path": "$.group_required_courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK2033",
+      "name": "族群理論與關係",
+      "credits": 3,
+      "source_path": "$.group_required_courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK2037",
+      "name": "性別研究",
+      "credits": 3,
+      "source_path": "$.group_required_courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK3037",
+      "name": "社會調查與統計",
+      "credits": 3,
+      "source_path": "$.group_required_courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK3029",
+      "name": "社會科學研究法",
+      "credits": 3,
+      "source_path": "$.group_required_courses[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK2025",
+      "name": "語言學概論",
+      "credits": 3,
+      "source_path": "$.cross_group_choice.options[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK2027",
+      "name": "客語概論",
+      "credits": 3,
+      "source_path": "$.cross_group_choice.options[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK2031",
+      "name": "傳播理論與數位行銷",
+      "credits": 3,
+      "source_path": "$.cross_group_choice.options[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK2029",
+      "name": "文學概論與客家文學",
+      "credits": 3,
+      "source_path": "$.cross_group_choice.options[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK2022",
+      "name": "客語數位學習與實作",
+      "credits": 3,
+      "source_path": "$.cross_group_choice.options[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HK2024",
+      "name": "客語閱讀與書寫",
+      "credits": 3,
+      "source_path": "$.cross_group_choice.options[5]",
+      "status": "candidate_only"
+    }
+  ],
+  "audit_status": "data_only_not_engine_verified",
+  "raw_rules": {
+    "schema_version": "1.1",
+    "university": "國立中央大學",
+    "college": "客家學院",
+    "department": "客家語文暨社會科學學系",
+    "entry_year_roc": 113,
+    "required_total_credits": 128,
+    "source": {
+      "file": "客家學院.pdf",
+      "source_type": "113學年度入學應修科目表",
+      "verified_from_uploaded_pdf": true,
+      "pages": [
+        2
+      ]
+    },
+    "verification_status": "已依113學年度上傳表逐項轉錄；全校共同規定與個別課程採認仍需另行核對",
+    "scope": "主修規則；雙主修另列，不可與主修學分加總",
+    "common_required": {
+      "required_credits": 25,
+      "chinese_credits": 5,
+      "foreign_language_credits": 6,
+      "general_education_credits": 14,
+      "general_education_core_domain_min_count": 1,
+      "foreign_language_rule": "必須修讀大一英文人文社會課群6學分",
+      "advanced_english_excluded_from_graduation_total": true,
+      "physical_education": "0學分課程；門數及其他規範依全校應修科目表注意事項",
+      "service_learning": "0學分課程；門數及其他規範依全校應修科目表注意事項"
+    },
+    "required_credits": {
+      "common_required": 25,
+      "department_required": 21,
+      "group_required": 18,
+      "cross_group_required": 6,
+      "total_required": 70,
+      "elective_total": 58,
+      "group_elective_minimum": 24,
+      "cross_college_and_interuniversity_elective_maximum": 17
+    },
+    "elective_rules": {
+      "total_elective_credits": 58,
+      "group_elective_minimum_credits": 24,
+      "cross_college_and_interuniversity_maximum_credits": 17,
+      "notes": "跨院及校際選修17學分為上限；其餘選修課採認規則須依校系規定確認"
+    },
+    "noncredit_requirements": [
+      {
+        "id": "hakka_language_certificate",
+        "type": "certificate",
+        "name": "客家委員會客語能力認證初級",
+        "required_level": "初級",
+        "must_pass": true,
+        "verification": "應有可驗證的證書或校方採認紀錄"
+      }
+    ],
+    "exemption_rules": [
+      {
+        "courses": [
+          "HK1001",
+          "HK1002"
+        ],
+        "condition": "入學前取得客家委員會客語能力認證中高級證書，且於開學後一週內申請並經教師與系所主管審核通過",
+        "makeup_requirement": "免修缺少的學分須加修本系選修課程補足",
+        "automatic_exemption": false
+      }
+    ],
+    "double_major": {
+      "professional_required_credits": 45,
+      "elective_credits": 14,
+      "total_departmental_credits": 59,
+      "note": "依本校學生修讀雙主修辦法；45為專業必修（系訂21+組訂18+跨組6），雙主修另需任選14學分"
+    },
+    "unresolved": [
+      "跨組課程6學分的具體採認與跨年度替代規則需核對",
+      "跨院與校際選修17學分的詳細採認範圍需核對",
+      "全校體育、服務學習及其他零學分要求參照共通注意事項",
+      "客語免修通過與補足學分須由系所審核，不可自動認定"
+    ],
+    "program_id": "hakka_society_policy_113",
+    "rules_id": "NCU-HK-SOC-POL-113",
+    "program": "客家社會及政策組",
+    "fixed_courses": [
+      {
+        "course_id": "HK1001",
+        "name": "基礎客語Ⅰ",
+        "credits": 2
+      },
+      {
+        "course_id": "HK1002",
+        "name": "基礎客語Ⅱ",
+        "credits": 2
+      },
+      {
+        "course_id": "HK1005",
+        "name": "社會學（上）",
+        "credits": 2
+      },
+      {
+        "course_id": "HK1006",
+        "name": "社會學（下）",
+        "credits": 2
+      },
+      {
+        "course_id": "HK1009",
+        "name": "客家文化概論（上）",
+        "credits": 2
+      },
+      {
+        "course_id": "HK1010",
+        "name": "客家文化概論（下）",
+        "credits": 2
+      },
+      {
+        "course_id": "HK1015",
+        "name": "臺灣客家移墾史",
+        "credits": 3
+      },
+      {
+        "course_id": "HK2001",
+        "name": "進階客語Ⅰ",
+        "credits": 2
+      },
+      {
+        "course_id": "HK2002",
+        "name": "進階客語Ⅱ",
+        "credits": 2
+      },
+      {
+        "course_id": "HK4021",
+        "name": "專題製作與實習",
+        "credits": 2
+      },
+      {
+        "course_id": "HK2035",
+        "name": "文化人類學",
+        "credits": 3
+      },
+      {
+        "course_id": "HK2039",
+        "name": "政治學",
+        "credits": 3
+      },
+      {
+        "course_id": "HK2033",
+        "name": "族群理論與關係",
+        "credits": 3
+      },
+      {
+        "course_id": "HK2037",
+        "name": "性別研究",
+        "credits": 3
+      },
+      {
+        "course_id": "HK3037",
+        "name": "社會調查與統計",
+        "credits": 3
+      },
+      {
+        "course_id": "HK3029",
+        "name": "社會科學研究法",
+        "credits": 3
+      }
+    ],
+    "department_required_courses": [
+      {
+        "course_id": "HK1001",
+        "name": "基礎客語Ⅰ",
+        "credits": 2
+      },
+      {
+        "course_id": "HK1002",
+        "name": "基礎客語Ⅱ",
+        "credits": 2
+      },
+      {
+        "course_id": "HK1005",
+        "name": "社會學（上）",
+        "credits": 2
+      },
+      {
+        "course_id": "HK1006",
+        "name": "社會學（下）",
+        "credits": 2
+      },
+      {
+        "course_id": "HK1009",
+        "name": "客家文化概論（上）",
+        "credits": 2
+      },
+      {
+        "course_id": "HK1010",
+        "name": "客家文化概論（下）",
+        "credits": 2
+      },
+      {
+        "course_id": "HK1015",
+        "name": "臺灣客家移墾史",
+        "credits": 3
+      },
+      {
+        "course_id": "HK2001",
+        "name": "進階客語Ⅰ",
+        "credits": 2
+      },
+      {
+        "course_id": "HK2002",
+        "name": "進階客語Ⅱ",
+        "credits": 2
+      },
+      {
+        "course_id": "HK4021",
+        "name": "專題製作與實習",
+        "credits": 2
+      }
+    ],
+    "group_required_courses": [
+      {
+        "course_id": "HK2035",
+        "name": "文化人類學",
+        "credits": 3
+      },
+      {
+        "course_id": "HK2039",
+        "name": "政治學",
+        "credits": 3
+      },
+      {
+        "course_id": "HK2033",
+        "name": "族群理論與關係",
+        "credits": 3
+      },
+      {
+        "course_id": "HK2037",
+        "name": "性別研究",
+        "credits": 3
+      },
+      {
+        "course_id": "HK3037",
+        "name": "社會調查與統計",
+        "credits": 3
+      },
+      {
+        "course_id": "HK3029",
+        "name": "社會科學研究法",
+        "credits": 3
+      }
+    ],
+    "cross_group_choice": {
+      "id": "cross_group_required",
+      "source_group": "客家語文及傳播組",
+      "required_credits": 6,
+      "course_count_required": 2,
+      "choice_course_ids": [
+        "HK2025",
+        "HK2027",
+        "HK2031",
+        "HK2029",
+        "HK2022",
+        "HK2024"
+      ],
+      "options": [
+        {
+          "course_id": "HK2025",
+          "name": "語言學概論",
+          "credits": 3
+        },
+        {
+          "course_id": "HK2027",
+          "name": "客語概論",
+          "credits": 3
+        },
+        {
+          "course_id": "HK2031",
+          "name": "傳播理論與數位行銷",
+          "credits": 3
+        },
+        {
+          "course_id": "HK2029",
+          "name": "文學概論與客家文學",
+          "credits": 3
+        },
+        {
+          "course_id": "HK2022",
+          "name": "客語數位學習與實作",
+          "credits": 3
+        },
+        {
+          "course_id": "HK2024",
+          "name": "客語閱讀與書寫",
+          "credits": 3
+        }
+      ],
+      "note": "對方組別的六門指定課程擇二，每門3學分；非六門全部必修"
+    },
+    "special_notes": [
+      "組必修18學分為客家社會及政策組六門課；跨組必修6學分從客家語文及傳播組課程擇二"
+    ]
+  }
+}

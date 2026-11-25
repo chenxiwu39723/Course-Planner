@@ -1,0 +1,350 @@
+{
+  "unified_schema_version": "1.0",
+  "program_id": "chinese_literature_113",
+  "academic_year_roc": 113,
+  "university": "國立中央大學",
+  "college": "文學院",
+  "department": "中國文學系",
+  "track": null,
+  "required_total_credits": 128,
+  "raw_schema_version": "2.0-literature-extraction",
+  "source_file_in_original_zip": "ncu_literature_113/chinese_literature_113.json",
+  "source_pdf_evidence": [
+    {
+      "file": "文學院.pdf",
+      "page": 1,
+      "document": "113學年度入學新生適用應修科目表"
+    }
+  ],
+  "verification_status": "依使用者提供的113學年度應修科目表逐條轉錄；尚未經實際學生審核驗證",
+  "review_flags": [
+    {
+      "field": "uncertainties",
+      "details": [
+        "全校應修科目表注意事項未附，零學分條件及全校共同規定尚待核對"
+      ]
+    }
+  ],
+  "course_candidates_not_for_automatic_credit_counting": [
+    {
+      "code": "CL1003",
+      "name": "國學導讀",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CL1004",
+      "name": "國學導讀",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CL1005",
+      "name": "文學概論",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CL1006",
+      "name": "文學概論",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CL1025",
+      "name": "古籍閱讀",
+      "credits": 1,
+      "source_path": "$.department_required.fixed_courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CL1026",
+      "name": "古籍閱讀",
+      "credits": 1,
+      "source_path": "$.department_required.fixed_courses[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CL2001",
+      "name": "歷代文選及習作",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CL2002",
+      "name": "歷代文選及習作",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CL2005",
+      "name": "中國文學史",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CL2006",
+      "name": "中國文學史",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CL2003",
+      "name": "文字學",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[10]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CL2004",
+      "name": "文字學",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[11]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CL2007",
+      "name": "詩選及習作",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[12]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CL2008",
+      "name": "詩選及習作",
+      "credits": 2,
+      "source_path": "$.department_required.fixed_courses[13]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CL4003",
+      "name": "中國思想史",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[14]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CL4004",
+      "name": "中國思想史",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[15]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CL2090",
+      "name": "詞選及習作",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[16]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CL3161",
+      "name": "聲韻學",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[17]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CL4104",
+      "name": "訓詁學",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[18]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CL3160",
+      "name": "曲選及習作",
+      "credits": 3,
+      "source_path": "$.department_required.fixed_courses[19]",
+      "status": "candidate_only"
+    }
+  ],
+  "audit_status": "data_only_not_engine_verified",
+  "raw_rules": {
+    "schema_version": "2.0-literature-extraction",
+    "rules_id": "chinese_literature_113",
+    "applicability": {
+      "university": "國立中央大學",
+      "college": "文學院",
+      "department": "中國文學系",
+      "program": null,
+      "admission_academic_year_roc": 113,
+      "scope": "major"
+    },
+    "sources": [
+      {
+        "file": "文學院.pdf",
+        "page": 1,
+        "document": "113學年度入學新生適用應修科目表"
+      }
+    ],
+    "verification_status": "依使用者提供的113學年度應修科目表逐條轉錄；尚未經實際學生審核驗證",
+    "required_total_credits": 128,
+    "common_required": {
+      "chinese_credits": 5,
+      "foreign_language_credits": 6,
+      "general_education_credits": 14,
+      "common_total_credits": 25,
+      "physical_education_zero_credit": true,
+      "service_learning_zero_credit": true,
+      "advanced_english_excluded": true,
+      "ge_core_min_domains": 1,
+      "ge_core_total_domains": 4,
+      "university_wide_other_requirements": "參照應修科目表注意事項；本PDF未附",
+      "foreign_language_options": [
+        "大一英文人文社會課群6學分／英文系其他英文課程6學分／語言中心認定之同一初級第二外語連續6學分"
+      ]
+    },
+    "noncredit_requirements": {
+      "physical_education": {
+        "course_count_shown": 5,
+        "verification": "需對照全校應修科目表注意事項"
+      },
+      "service_learning": {
+        "course_count_shown": 2,
+        "verification": "需對照全校應修科目表注意事項"
+      },
+      "conduct_terms": null
+    },
+    "uncertainties": [
+      "全校應修科目表注意事項未附，零學分條件及全校共同規定尚待核對"
+    ],
+    "review_status": "structured_needs_integration",
+    "department_required": {
+      "required_credits": 48,
+      "fixed_courses": [
+        {
+          "course_id": "CL1003",
+          "name": "國學導讀",
+          "credits": 2
+        },
+        {
+          "course_id": "CL1004",
+          "name": "國學導讀",
+          "credits": 2
+        },
+        {
+          "course_id": "CL1005",
+          "name": "文學概論",
+          "credits": 2
+        },
+        {
+          "course_id": "CL1006",
+          "name": "文學概論",
+          "credits": 2
+        },
+        {
+          "course_id": "CL1025",
+          "name": "古籍閱讀",
+          "credits": 1
+        },
+        {
+          "course_id": "CL1026",
+          "name": "古籍閱讀",
+          "credits": 1
+        },
+        {
+          "course_id": "CL2001",
+          "name": "歷代文選及習作",
+          "credits": 3
+        },
+        {
+          "course_id": "CL2002",
+          "name": "歷代文選及習作",
+          "credits": 3
+        },
+        {
+          "course_id": "CL2005",
+          "name": "中國文學史",
+          "credits": 3
+        },
+        {
+          "course_id": "CL2006",
+          "name": "中國文學史",
+          "credits": 3
+        },
+        {
+          "course_id": "CL2003",
+          "name": "文字學",
+          "credits": 2
+        },
+        {
+          "course_id": "CL2004",
+          "name": "文字學",
+          "credits": 2
+        },
+        {
+          "course_id": "CL2007",
+          "name": "詩選及習作",
+          "credits": 2
+        },
+        {
+          "course_id": "CL2008",
+          "name": "詩選及習作",
+          "credits": 2
+        },
+        {
+          "course_id": "CL4003",
+          "name": "中國思想史",
+          "credits": 3
+        },
+        {
+          "course_id": "CL4004",
+          "name": "中國思想史",
+          "credits": 3
+        },
+        {
+          "course_id": "CL2090",
+          "name": "詞選及習作",
+          "credits": 3
+        },
+        {
+          "course_id": "CL3161",
+          "name": "聲韻學",
+          "credits": 3
+        },
+        {
+          "course_id": "CL4104",
+          "name": "訓詁學",
+          "credits": 3
+        },
+        {
+          "course_id": "CL3160",
+          "name": "曲選及習作",
+          "credits": 3
+        }
+      ]
+    },
+    "required_total_including_common": 73,
+    "department_electives": {
+      "required_credits": 32,
+      "eligible_course_rule": "本系開設選修科目且成績通過",
+      "catalog_complete": false
+    },
+    "special_requirements": [
+      {
+        "id": "classical_book_punctuation",
+        "description": "畢業前須點畢二部古籍",
+        "required_books": 2,
+        "verification": "需依中國文學系大學生點書辦法人工確認"
+      }
+    ],
+    "double_major_requirements": {
+      "classical_book_punctuation_required_books": 1,
+      "description": "雙主修生須點畢一部古籍；其他依學生修讀雙主修辦法"
+    },
+    "data_checks": {
+      "fixed_course_credit_sum": 48,
+      "declared_department_required_credits": 48,
+      "fixed_plus_choice_credits": 48
+    }
+  }
+}

@@ -1,0 +1,463 @@
+{
+  "unified_schema_version": "1.0",
+  "program_id": "earth_science_interdisciplinary_bachelor_113",
+  "academic_year_roc": 113,
+  "university": "國立中央大學",
+  "college": "地球科學學院",
+  "department": "地球科學學院院學士班",
+  "track": null,
+  "required_total_credits": 128,
+  "raw_schema_version": "1.1",
+  "source_file_in_original_zip": "ncu_earth_science_113/earth_science_interdisciplinary_bachelor_113_rules.json",
+  "source_pdf_evidence": {
+    "file": "地球科學學院.pdf",
+    "source_type": "113學年度入學應修科目表",
+    "verified_from_uploaded_pdf": true,
+    "pages": [
+      3
+    ]
+  },
+  "verification_status": "已依上傳科目表轉錄；課程編碼疑點與部分採認規則仍需核對",
+  "review_flags": [
+    {
+      "field": "uncertainties",
+      "details": [
+        "PDF提到科學能力課群附表一，但本次上傳PDF未包含該附表",
+        "跨域知識技能課群必修10學分的完整課目對應待查",
+        "地球系統科學概論2學分是否屬既有課群採認，以及與總128學分關係待學校核對",
+        "跨領域導航與邏輯思考／論文寫作可採認課號待確認"
+      ]
+    }
+  ],
+  "course_candidates_not_for_automatic_credit_counting": [
+    {
+      "code": "MA1003",
+      "name": "微積分上",
+      "credits": 3,
+      "source_path": "$.required_course_groups[0].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1004",
+      "name": "微積分下",
+      "credits": 3,
+      "source_path": "$.required_course_groups[0].courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1031",
+      "name": "普通物理A上",
+      "credits": 3,
+      "source_path": "$.required_course_groups[0].courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1032",
+      "name": "普通物理A下",
+      "credits": 3,
+      "source_path": "$.required_course_groups[0].courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "GP2031",
+      "name": "普通地質學上",
+      "credits": 2,
+      "source_path": "$.required_course_groups[1].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "GP2032",
+      "name": "普通地質學下",
+      "credits": 2,
+      "source_path": "$.required_course_groups[1].courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "AP1002",
+      "name": "大氣科學通論",
+      "credits": 1,
+      "source_path": "$.required_course_groups[1].courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "AP1001",
+      "name": "大氣科學概論",
+      "credits": 1,
+      "source_path": "$.required_course_groups[1].courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "AP2011",
+      "name": "大氣熱力學",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "SS3002",
+      "name": "電漿物理導論",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "SS3008",
+      "name": "衛星系統工程I",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "GP4010",
+      "name": "水文地質學",
+      "credits": 2,
+      "source_path": "$.required_course_groups[1].courses[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "GP3086",
+      "name": "地球水循環",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "GP3085",
+      "name": "基礎大地工程學",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "HS6063",
+      "name": "海洋學概論",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[10]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "GA1001",
+      "name": "地球系統科學研究專題導論",
+      "credits": 1,
+      "source_path": "$.required_course_groups[2].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "GA2002",
+      "name": "研究計畫寫作",
+      "credits": 1,
+      "source_path": "$.required_course_groups[2].courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "GA3001",
+      "name": "專題研究I",
+      "credits": 2,
+      "source_path": "$.required_course_groups[2].courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "GA3002",
+      "name": "專題研究II",
+      "credits": 2,
+      "source_path": "$.required_course_groups[2].courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "GA4001",
+      "name": "專題研究III",
+      "credits": 2,
+      "source_path": "$.required_course_groups[2].courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "GA4002",
+      "name": "專題研究IV",
+      "credits": 2,
+      "source_path": "$.required_course_groups[2].courses[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "GA2002",
+      "name": null,
+      "credits": null,
+      "source_path": "$.extra_requirements[3]",
+      "status": "candidate_only"
+    }
+  ],
+  "audit_status": "data_only_not_engine_verified",
+  "raw_rules": {
+    "schema_version": "1.1",
+    "program_id": "earth_science_interdisciplinary_bachelor_113",
+    "university": "國立中央大學",
+    "college": "地球科學學院",
+    "department": "地球科學學院院學士班",
+    "entry_year_roc": 113,
+    "degree": "bachelor",
+    "required_total_credits": 128,
+    "source": {
+      "file": "地球科學學院.pdf",
+      "source_type": "113學年度入學應修科目表",
+      "verified_from_uploaded_pdf": true,
+      "pages": [
+        3
+      ]
+    },
+    "verification_status": "已依上傳科目表轉錄；課程編碼疑點與部分採認規則仍需核對",
+    "scope": "主修規則；雙主修另列且不可與主修條件直接相加",
+    "common_required": {
+      "required_credits": 25,
+      "chinese_credits": 5,
+      "foreign_language_credits": 6,
+      "general_education_credits": 14,
+      "core_general_education_domain_min_count": 1,
+      "foreign_language_options": [
+        "大一英文科學課群6學分",
+        "英文系其他英文課程通過6學分",
+        "語言中心開設或認定之同一第二外語課程通過6學分"
+      ],
+      "advanced_english_excluded_from_graduation_total": true,
+      "physical_education": "0學分；依全校應修科目表注意事項",
+      "service_learning": "0學分；依全校應修科目表注意事項"
+    },
+    "required_course_groups": [
+      {
+        "id": "college_required",
+        "label": "院訂必修",
+        "courses": [
+          {
+            "course_id": "MA1003",
+            "name": "微積分上",
+            "credits": 3
+          },
+          {
+            "course_id": "MA1004",
+            "name": "微積分下",
+            "credits": 3
+          },
+          {
+            "course_id": "PH1031",
+            "name": "普通物理A上",
+            "credits": 3
+          },
+          {
+            "course_id": "PH1032",
+            "name": "普通物理A下",
+            "credits": 3
+          }
+        ],
+        "listed_credit_sum": 12,
+        "required_credits": 12
+      },
+      {
+        "id": "earth_system_catalog",
+        "label": "地球系統必修課群（候選目錄，擇修16學分）",
+        "courses": [
+          {
+            "course_id": "GP2031",
+            "name": "普通地質學上",
+            "credits": 2
+          },
+          {
+            "course_id": "GP2032",
+            "name": "普通地質學下",
+            "credits": 2
+          },
+          {
+            "course_id": "AP1002",
+            "name": "大氣科學通論",
+            "credits": 1
+          },
+          {
+            "course_id": "AP1001",
+            "name": "大氣科學概論",
+            "credits": 1
+          },
+          {
+            "course_id": "AP2011",
+            "name": "大氣熱力學",
+            "credits": 3
+          },
+          {
+            "course_id": "SS3002",
+            "name": "電漿物理導論",
+            "credits": 3
+          },
+          {
+            "course_id": "SS3008",
+            "name": "衛星系統工程I",
+            "credits": 3
+          },
+          {
+            "course_id": "GP4010",
+            "name": "水文地質學",
+            "credits": 2
+          },
+          {
+            "course_id": "GP3086",
+            "name": "地球水循環",
+            "credits": 3
+          },
+          {
+            "course_id": "GP3085",
+            "name": "基礎大地工程學",
+            "credits": 3
+          },
+          {
+            "course_id": "HS6063",
+            "name": "海洋學概論",
+            "credits": 3
+          }
+        ],
+        "listed_credit_sum": 26,
+        "required_credits": 16,
+        "notes": "候選課程非全部必修，依課群選修16學分"
+      },
+      {
+        "id": "interdisciplinary_named_courses",
+        "label": "跨域知識技能課群表列課程",
+        "courses": [
+          {
+            "course_id": "GA1001",
+            "name": "地球系統科學研究專題導論",
+            "credits": 1
+          },
+          {
+            "course_id": "GA2002",
+            "name": "研究計畫寫作",
+            "credits": 1
+          },
+          {
+            "course_id": "GA3001",
+            "name": "專題研究I",
+            "credits": 2
+          },
+          {
+            "course_id": "GA3002",
+            "name": "專題研究II",
+            "credits": 2
+          },
+          {
+            "course_id": "GA4001",
+            "name": "專題研究III",
+            "credits": 2
+          },
+          {
+            "course_id": "GA4002",
+            "name": "專題研究IV",
+            "credits": 2
+          }
+        ],
+        "listed_credit_sum": 10,
+        "notes": "另有地球科學研究群專題課程2學分（無固定課號）及跨域其他選修；不能把所有表列課程都當固定必修"
+      }
+    ],
+    "choice_groups": [
+      {
+        "id": "research_project_three_of_four",
+        "label": "專題研究I/II/III/IV四選三",
+        "type": "choose_courses",
+        "course_ids": [
+          "GA3001",
+          "GA3002",
+          "GA4001",
+          "GA4002"
+        ],
+        "required_course_count": 3,
+        "required_credits": 6,
+        "option_catalog_complete": true
+      }
+    ],
+    "elective_requirements": [
+      {
+        "id": "science_competency",
+        "required_credits": 25,
+        "categories": [
+          "數學",
+          "電腦與程式語言",
+          "物理與化學"
+        ],
+        "minimum_one_course_each": true,
+        "course_catalog_complete": false,
+        "rule": "科學能力課群25學分，各類至少一門；未列附表一課程經導師與班主任同意可認列"
+      },
+      {
+        "id": "earth_system",
+        "required_credits": 16,
+        "eligible_course_rule": "表列地球系統必修課群（選修至少16學分）"
+      },
+      {
+        "id": "interdisciplinary",
+        "required_credits": 50,
+        "mandatory_credits_within_group": 10,
+        "elective_credits_within_group": 40,
+        "eligible_course_rule": "跨域知識技能課群，依班務規定與導師指導；其課群內必修10學分需另核對完整構成"
+      }
+    ],
+    "extra_requirements": [
+      {
+        "id": "earth_system_intro",
+        "name": "地球系統科學概論",
+        "credits": 2,
+        "course_id": null,
+        "note": "表上未指定課號，需校方核對"
+      },
+      {
+        "id": "navigation_course",
+        "type": "one_of_courses",
+        "course_ids": [
+          "GS3050",
+          "CC0424"
+        ],
+        "note": "跨領域社會參與學分學程－導航課程須通過"
+      },
+      {
+        "id": "logic_or_academic_writing",
+        "type": "one_of_topics",
+        "topics": [
+          "邏輯思考",
+          "論文寫作"
+        ],
+        "notes": "至少選修一門相關課程；完整可認列課程清單待查"
+      },
+      {
+        "id": "project_proposal",
+        "type": "course_work",
+        "course_id": "GA2002",
+        "requirement": "在研究計畫寫作課程中提出專題計畫書"
+      },
+      {
+        "id": "project_presentation",
+        "type": "completion_event",
+        "requirement": "畢業前參與專題成果發表會，由學士班班務委員會檢視學習成效"
+      }
+    ],
+    "prerequisite_rules": [],
+    "credit_counting_rules": {
+      "excluded_courses": [
+        "進修英文"
+      ],
+      "counting_overlap": "不同門檻可能重疊，不能直接相加；以學校認列為準"
+    },
+    "noncredit_requirements": [],
+    "dual_major": {
+      "rule": "依本校學生修讀雙主修辦法辦理"
+    },
+    "uncertainties": [
+      "PDF提到科學能力課群附表一，但本次上傳PDF未包含該附表",
+      "跨域知識技能課群必修10學分的完整課目對應待查",
+      "地球系統科學概論2學分是否屬既有課群採認，以及與總128學分關係待學校核對",
+      "跨領域導航與邏輯思考／論文寫作可採認課號待確認"
+    ],
+    "required_credits_summary": {
+      "common_required": 25,
+      "college_required": 12,
+      "science_competency_group": 25,
+      "earth_system_group": 16,
+      "interdisciplinary_group": 50,
+      "interdisciplinary_mandatory_within_group": 10,
+      "interdisciplinary_elective_within_group": 40,
+      "total_minimum": 128
+    }
+  }
+}

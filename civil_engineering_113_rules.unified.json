@@ -1,0 +1,470 @@
+{
+  "unified_schema_version": "1.0",
+  "program_id": "civil_engineering_113",
+  "academic_year_roc": 113,
+  "university": "國立中央大學",
+  "college": "工學院",
+  "department": "土木工程學系",
+  "track": null,
+  "required_total_credits": 128,
+  "raw_schema_version": "1.1",
+  "source_file_in_original_zip": "ncu_engineering_113/civil_engineering_113_rules.json",
+  "source_pdf_evidence": {
+    "file": "工學院.pdf",
+    "pages": [
+      3
+    ],
+    "source_type": "113學年度入學應修科目表",
+    "verified_from_uploaded_pdf": true
+  },
+  "verification_status": "依上傳PDF轉錄；特別採認與缺少的附表仍待人工核對",
+  "review_flags": [
+    {
+      "field": "uncertainties",
+      "details": [
+        "原PDF備註先修應用力學CI1008與表列CI1005不一致，需人工確認",
+        "設計課程清單中的高年級課程是否有額外先修與可採認規則待查",
+        "星號五選二是否在校務審核歸為必修或選修，不可重複加算"
+      ]
+    }
+  ],
+  "course_candidates_not_for_automatic_credit_counting": [
+    {
+      "code": "MA1003",
+      "name": "微積分上",
+      "credits": 3,
+      "source_path": "$.required_course_groups[0].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1004",
+      "name": "微積分下",
+      "credits": 3,
+      "source_path": "$.required_course_groups[0].courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EG1001",
+      "name": "工程程式設計",
+      "credits": 3,
+      "source_path": "$.required_course_groups[0].courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1035",
+      "name": "普通物理A",
+      "credits": 3,
+      "source_path": "$.required_course_groups[0].courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI1002",
+      "name": "土木工程概論",
+      "credits": 1,
+      "source_path": "$.required_course_groups[1].courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI1009",
+      "name": "測量學",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI1010",
+      "name": "測量實習",
+      "credits": 1,
+      "source_path": "$.required_course_groups[1].courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "PH1023",
+      "name": "普通物理實驗",
+      "credits": 1,
+      "source_path": "$.required_course_groups[1].courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI1005",
+      "name": "應用力學",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI2005",
+      "name": "工程材料學",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI2017",
+      "name": "工程數學I",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI2018",
+      "name": "工程數學II",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI2004",
+      "name": "材料力學",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI2011",
+      "name": "流體力學",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[9]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI2019",
+      "name": "結構學I",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[10]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI3036",
+      "name": "土木工程實驗I",
+      "credits": 2,
+      "source_path": "$.required_course_groups[1].courses[11]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI3037",
+      "name": "土木工程實驗II",
+      "credits": 2,
+      "source_path": "$.required_course_groups[1].courses[12]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI3003",
+      "name": "土壤力學I",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[13]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EG2001",
+      "name": "工程統計學",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[14]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI3005",
+      "name": "鋼筋混凝土學",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[15]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI3010",
+      "name": "基礎工程",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[16]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI2007",
+      "name": "工程圖學",
+      "credits": 1,
+      "source_path": "$.required_course_groups[1].courses[17]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "CI4103",
+      "name": "土木實務專題",
+      "credits": 3,
+      "source_path": "$.required_course_groups[1].courses[18]",
+      "status": "candidate_only"
+    }
+  ],
+  "audit_status": "data_only_not_engine_verified",
+  "raw_rules": {
+    "schema_version": "1.1",
+    "program_id": "civil_engineering_113",
+    "college": "工學院",
+    "university": "國立中央大學",
+    "department": "土木工程學系",
+    "entry_year_roc": 113,
+    "degree": "bachelor",
+    "required_total_credits": 128,
+    "source": {
+      "file": "工學院.pdf",
+      "pages": [
+        3
+      ],
+      "source_type": "113學年度入學應修科目表",
+      "verified_from_uploaded_pdf": true
+    },
+    "verification_status": "依上傳PDF轉錄；特別採認與缺少的附表仍待人工核對",
+    "scope": "主修規則；雙主修另依學校辦法",
+    "common_required": {
+      "required_credits": 25,
+      "chinese_credits": 5,
+      "foreign_language_credits": 6,
+      "general_education_credits": 14,
+      "core_ge_domain_min_count": 1,
+      "foreign_language_options": [
+        "大一英文工程課群6學分",
+        "英文系開設之其他英文課程6學分",
+        "語言中心開設或認定同一第二外語課程6學分"
+      ],
+      "advanced_english_excluded_from_graduation_total": true,
+      "physical_education": "依全校共同必修應修科目表注意事項",
+      "service_learning": "依全校共同必修應修科目表注意事項"
+    },
+    "required_credits_summary": {
+      "including_common_required": 90,
+      "common_required": 25,
+      "college_required": 12,
+      "note": "原表90學分含固定必修及星號五選二約束，避免重加"
+    },
+    "required_course_groups": [
+      {
+        "id": "college_required",
+        "label": "院訂必修",
+        "courses": [
+          {
+            "course_id": "MA1003",
+            "credits": 3,
+            "name": "微積分上"
+          },
+          {
+            "course_id": "MA1004",
+            "credits": 3,
+            "name": "微積分下"
+          },
+          {
+            "course_id": "EG1001",
+            "credits": 3,
+            "name": "工程程式設計"
+          },
+          {
+            "course_id": "PH1035",
+            "credits": 3,
+            "name": "普通物理A"
+          }
+        ],
+        "listed_credit_sum": 12
+      },
+      {
+        "id": "department_fixed",
+        "label": "系訂固定必修",
+        "courses": [
+          {
+            "course_id": "CI1002",
+            "credits": 1,
+            "name": "土木工程概論"
+          },
+          {
+            "course_id": "CI1009",
+            "credits": 3,
+            "name": "測量學"
+          },
+          {
+            "course_id": "CI1010",
+            "credits": 1,
+            "name": "測量實習"
+          },
+          {
+            "course_id": "PH1023",
+            "credits": 1,
+            "name": "普通物理實驗"
+          },
+          {
+            "course_id": "CI1005",
+            "credits": 3,
+            "name": "應用力學"
+          },
+          {
+            "course_id": "CI2005",
+            "credits": 3,
+            "name": "工程材料學"
+          },
+          {
+            "course_id": "CI2017",
+            "credits": 3,
+            "name": "工程數學I"
+          },
+          {
+            "course_id": "CI2018",
+            "credits": 3,
+            "name": "工程數學II"
+          },
+          {
+            "course_id": "CI2004",
+            "credits": 3,
+            "name": "材料力學"
+          },
+          {
+            "course_id": "CI2011",
+            "credits": 3,
+            "name": "流體力學"
+          },
+          {
+            "course_id": "CI2019",
+            "credits": 3,
+            "name": "結構學I"
+          },
+          {
+            "course_id": "CI3036",
+            "credits": 2,
+            "name": "土木工程實驗I"
+          },
+          {
+            "course_id": "CI3037",
+            "credits": 2,
+            "name": "土木工程實驗II"
+          },
+          {
+            "course_id": "CI3003",
+            "credits": 3,
+            "name": "土壤力學I"
+          },
+          {
+            "course_id": "EG2001",
+            "credits": 3,
+            "name": "工程統計學"
+          },
+          {
+            "course_id": "CI3005",
+            "credits": 3,
+            "name": "鋼筋混凝土學"
+          },
+          {
+            "course_id": "CI3010",
+            "credits": 3,
+            "name": "基礎工程"
+          },
+          {
+            "course_id": "CI2007",
+            "credits": 1,
+            "name": "工程圖學"
+          },
+          {
+            "course_id": "CI4103",
+            "credits": 3,
+            "name": "土木實務專題"
+          }
+        ],
+        "listed_credit_sum": 47
+      }
+    ],
+    "choice_groups": [
+      {
+        "id": "starred_two_of_five",
+        "label": "星號五門至少選兩門",
+        "type": "choose_courses",
+        "course_ids": [
+          "CI3011",
+          "CI3030",
+          "CI3040",
+          "CI4010",
+          "CI2020"
+        ],
+        "required_course_count": 2,
+        "required_credits": 6,
+        "option_catalog_complete": true,
+        "notes": "每門3學分；選滿兩門並通過"
+      },
+      {
+        "id": "design_courses",
+        "label": "設計課程至少兩科",
+        "type": "choose_courses",
+        "course_ids": [
+          "CI3012",
+          "CI3056",
+          "CI4024",
+          "CI4040",
+          "CI4060",
+          "CI4106",
+          "CI4109",
+          "CI5019",
+          "CI5039",
+          "CI5040",
+          "CI6065",
+          "CI6069",
+          "CI6097"
+        ],
+        "required_course_count": 2,
+        "required_credits": null,
+        "option_catalog_complete": true
+      }
+    ],
+    "elective_requirements": [
+      {
+        "id": "department_electives",
+        "required_credits": 21,
+        "eligible_course_rule": "土木系及工學院EG開授選修課"
+      }
+    ],
+    "extra_requirements": [
+      {
+        "id": "capstone_substitution",
+        "type": "substitution",
+        "original": "CI4103",
+        "replacement": "EG3004",
+        "credits": 3,
+        "note": "EG3004修畢可抵修CI4103"
+      }
+    ],
+    "prerequisite_rules": [
+      {
+        "target": [
+          "CI2004"
+        ],
+        "prerequisites": [
+          "CI1008"
+        ],
+        "minimum_grade": 50,
+        "note": "備註寫CI1008，但表列應用力學為CI1005；必須核對，不自行更改"
+      },
+      {
+        "target": [
+          "CI2019"
+        ],
+        "prerequisites": [
+          "CI2004"
+        ],
+        "minimum_grade": 50
+      },
+      {
+        "target": [
+          "CI2017",
+          "CI2018"
+        ],
+        "prerequisites": [
+          "MA1004"
+        ],
+        "minimum_grade": 50
+      }
+    ],
+    "credit_counting_rules": {
+      "excluded_courses": [
+        "進修英文"
+      ],
+      "overlap_note": "畢業總學分、必修和選修的門檻有包含關係，不應直接加總"
+    },
+    "dual_major": {
+      "rule": "依本校學生修讀雙主修辦法辦理"
+    },
+    "uncertainties": [
+      "原PDF備註先修應用力學CI1008與表列CI1005不一致，需人工確認",
+      "設計課程清單中的高年級課程是否有額外先修與可採認規則待查",
+      "星號五選二是否在校務審核歸為必修或選修，不可重複加算"
+    ]
+  }
+}

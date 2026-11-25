@@ -1,0 +1,610 @@
+{
+  "unified_schema_version": "1.0",
+  "program_id": "interdisciplinary_electrical_cs_113",
+  "academic_year_roc": 113,
+  "university": "國立中央大學",
+  "college": "資訊電機學院",
+  "department": "資訊電機學院學士班",
+  "track": null,
+  "required_total_credits": 128,
+  "raw_schema_version": "1.2-bachelor-provisional",
+  "source_file_in_original_zip": "ncu_bachelor_113/interdisciplinary_electrical_cs_113_rules.json",
+  "source_pdf_evidence": {
+    "file": "資訊電機學院學士班.pdf",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "verification_status": "官方113年度PDF整理；尚未經畢業審核引擎實測，特殊課程認列需核對",
+  "review_flags": [],
+  "course_candidates_not_for_automatic_credit_counting": [
+    {
+      "code": "MA1003",
+      "name": "微積分上",
+      "credits": 3,
+      "source_path": "$.college_required_courses[0]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "MA1004",
+      "name": "微積分下",
+      "credits": 3,
+      "source_path": "$.college_required_courses[1]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "IP1001",
+      "name": "資電工程概論",
+      "credits": 2,
+      "source_path": "$.college_required_courses[2]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EE1009",
+      "name": "線性代數",
+      "credits": 3,
+      "source_path": "$.college_required_courses[3]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EE2016",
+      "name": "數位系統導論",
+      "credits": 3,
+      "source_path": "$.college_required_courses[4]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EE1006",
+      "name": "數位邏輯／數位系統實驗",
+      "credits": 1,
+      "source_path": "$.college_required_courses[5]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EE1003",
+      "name": "計算機概論I",
+      "credits": 3,
+      "source_path": "$.college_required_courses[6]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "EE1007",
+      "name": "計算機概論實習I",
+      "credits": 1,
+      "source_path": "$.college_required_courses[7]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "IP2001",
+      "name": "資電專題實作I",
+      "credits": 3,
+      "source_path": "$.college_required_courses[8]",
+      "status": "candidate_only"
+    },
+    {
+      "code": "IP2002",
+      "name": "資電專題實作II",
+      "credits": 3,
+      "source_path": "$.college_required_courses[9]",
+      "status": "candidate_only"
+    }
+  ],
+  "audit_status": "data_only_not_engine_verified",
+  "raw_rules": {
+    "schema_version": "1.2-bachelor-provisional",
+    "program_id": "interdisciplinary_electrical_cs_113",
+    "university": "國立中央大學",
+    "college": "資訊電機學院",
+    "department": "資訊電機學院學士班",
+    "entry_year_roc": 113,
+    "degree_type": "primary_major",
+    "required_total_credits": 128,
+    "source": {
+      "file": "資訊電機學院學士班.pdf",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "common_required": {
+      "chinese_credits": 5,
+      "foreign_language_credits": 6,
+      "general_education_credits": 14,
+      "total_credits": 25,
+      "physical_education_and_service_learning": "零學分要求，仍需依校規完成"
+    },
+    "verification_status": "官方113年度PDF整理；尚未經畢業審核引擎實測，特殊課程認列需核對",
+    "college_required_credits": 25,
+    "college_required_courses": [
+      {
+        "course_code": "MA1003",
+        "credits": 3,
+        "name": "微積分上",
+        "alternative_codes": []
+      },
+      {
+        "course_code": "MA1004",
+        "credits": 3,
+        "name": "微積分下",
+        "alternative_codes": []
+      },
+      {
+        "course_code": "IP1001",
+        "credits": 2,
+        "name": "資電工程概論",
+        "alternative_codes": []
+      },
+      {
+        "course_code": "EE1009",
+        "credits": 3,
+        "name": "線性代數",
+        "alternative_codes": [
+          "CO1007",
+          "CE2005"
+        ]
+      },
+      {
+        "course_code": "EE2016",
+        "credits": 3,
+        "name": "數位系統導論",
+        "alternative_codes": [
+          "CO1002",
+          "CE2008"
+        ]
+      },
+      {
+        "course_code": "EE1006",
+        "credits": 1,
+        "name": "數位邏輯／數位系統實驗",
+        "alternative_codes": [
+          "CO1006",
+          "CE2010"
+        ]
+      },
+      {
+        "course_code": "EE1003",
+        "credits": 3,
+        "name": "計算機概論I",
+        "alternative_codes": [
+          "CO1001",
+          "CE1001"
+        ]
+      },
+      {
+        "course_code": "EE1007",
+        "credits": 1,
+        "name": "計算機概論實習I",
+        "alternative_codes": [
+          "CO1005",
+          "CE1003"
+        ]
+      },
+      {
+        "course_code": "IP2001",
+        "credits": 3,
+        "name": "資電專題實作I",
+        "alternative_codes": []
+      },
+      {
+        "course_code": "IP2002",
+        "credits": 3,
+        "name": "資電專題實作II",
+        "alternative_codes": []
+      }
+    ],
+    "college_mandatory_elective": {
+      "min_credits": 6,
+      "min_courses": 2,
+      "course_groups": [
+        [
+          [
+            "EE2002",
+            "CO2001"
+          ],
+          3
+        ],
+        [
+          [
+            "EE1010",
+            "CO2011",
+            "CE1006"
+          ],
+          3
+        ],
+        [
+          [
+            "CE2003"
+          ],
+          3
+        ],
+        [
+          [
+            "CE1002",
+            "CE1004"
+          ],
+          4
+        ]
+      ],
+      "note": "最後一組為計算機概論II與實習II搭配共4學分；領域專長的已修同一課程不可重複增加總學分"
+    },
+    "noncredit_requirements": [
+      {
+        "type": "certificate_program",
+        "name": "創意與創業學分學程",
+        "required": true,
+        "status": "must_verify_program_list"
+      }
+    ],
+    "english_remedial_credits_eligible": true,
+    "specialization_rule": {
+      "choose_exactly_one": [
+        "electrical",
+        "computer_science",
+        "communication",
+        "network"
+      ],
+      "alternatives": {
+        "electrical": {
+          "label": "電機工程",
+          "required_credits": 30,
+          "required_course_groups": [
+            [
+              [
+                "EE1010",
+                "CO2011",
+                "CE1006"
+              ],
+              3
+            ],
+            [
+              [
+                "EE2002",
+                "CO2001"
+              ],
+              3
+            ],
+            [
+              [
+                "EE2011"
+              ],
+              3
+            ],
+            [
+              [
+                "EE2001"
+              ],
+              3
+            ],
+            [
+              [
+                "EE2009"
+              ],
+              3
+            ],
+            [
+              [
+                "EE2004"
+              ],
+              3
+            ],
+            [
+              [
+                "EE2015"
+              ],
+              3
+            ],
+            [
+              [
+                "EE2030",
+                "CO2013"
+              ],
+              3
+            ],
+            [
+              [
+                "EE3009",
+                "CO3004"
+              ],
+              3
+            ],
+            [
+              [
+                "EE2027"
+              ],
+              1
+            ],
+            [
+              [
+                "EE2028"
+              ],
+              1
+            ],
+            [
+              [
+                "EE3047"
+              ],
+              1
+            ]
+          ],
+          "experimental_group": {
+            "min_credits": 6,
+            "min_categories": 2
+          },
+          "star_courses": {
+            "min_credits": 15,
+            "min_categories": 2
+          }
+        },
+        "computer_science": {
+          "label": "資訊工程",
+          "required_credits": 28,
+          "required_course_groups": [
+            [
+              [
+                "CE2003"
+              ],
+              3
+            ],
+            [
+              [
+                "CE2002",
+                "CO2012",
+                "EE2007"
+              ],
+              3
+            ],
+            [
+              [
+                "CE2004"
+              ],
+              3
+            ],
+            [
+              [
+                "CE2012",
+                "CO3006",
+                "EE3046"
+              ],
+              3
+            ],
+            [
+              [
+                "CO3003",
+                "EE4020",
+                "CE2006"
+              ],
+              3
+            ],
+            [
+              [
+                "CE3005",
+                "CO2014"
+              ],
+              3
+            ],
+            [
+              [
+                "CE3001",
+                "CO3020",
+                "EE3035"
+              ],
+              3
+            ],
+            [
+              [
+                "CE3002"
+              ],
+              3
+            ],
+            [
+              [
+                "CE1002"
+              ],
+              3
+            ],
+            [
+              [
+                "CE1004"
+              ],
+              1
+            ]
+          ],
+          "college_electives_min_credits": 24
+        },
+        "communication": {
+          "label": "通訊工程",
+          "required_credits": 26,
+          "required_course_groups": [
+            [
+              [
+                "CO3003",
+                "EE4020",
+                "CE2006"
+              ],
+              3
+            ],
+            [
+              [
+                "CO3004",
+                "EE3009"
+              ],
+              3
+            ],
+            [
+              [
+                "EE2002",
+                "CO2001"
+              ],
+              3
+            ],
+            [
+              [
+                "CO2013",
+                "EE2030"
+              ],
+              3
+            ],
+            [
+              [
+                "CO3007",
+                "EE3004"
+              ],
+              3
+            ],
+            [
+              [
+                "CO3008",
+                "EE4013"
+              ],
+              3
+            ],
+            [
+              [
+                "CO3001"
+              ],
+              1
+            ],
+            [
+              [
+                "CO3002"
+              ],
+              1
+            ],
+            [
+              [
+                "EE1010",
+                "CO2011",
+                "CE1006"
+              ],
+              3
+            ],
+            [
+              [
+                "CO2005",
+                "EE2001"
+              ],
+              3
+            ]
+          ],
+          "experimental_group": {
+            "min_credits": 6,
+            "categories": [
+              "資通訊",
+              "電通訊"
+            ]
+          },
+          "star_courses": {
+            "min_credits": 12
+          },
+          "additional_college_electives_min_credits": 15,
+          "distinct_from": [
+            "experimental_group",
+            "star_courses"
+          ]
+        },
+        "network": {
+          "label": "網路工程",
+          "required_credits": 31,
+          "required_course_groups": [
+            [
+              [
+                "CE1002"
+              ],
+              3
+            ],
+            [
+              [
+                "CE1004"
+              ],
+              1
+            ],
+            [
+              [
+                "CE2003"
+              ],
+              3
+            ],
+            [
+              [
+                "CO3003",
+                "EE4020",
+                "CE2006"
+              ],
+              3
+            ],
+            [
+              [
+                "CO2012",
+                "CE2002",
+                "EE2007"
+              ],
+              3
+            ],
+            [
+              [
+                "CO3006",
+                "EE3046",
+                "CE2012"
+              ],
+              3
+            ],
+            [
+              [
+                "CO3005",
+                "CE3007"
+              ],
+              3
+            ],
+            [
+              [
+                "CE3002"
+              ],
+              3
+            ],
+            [
+              [
+                "CO3020",
+                "CE3001",
+                "EE3035"
+              ],
+              3
+            ],
+            [
+              [
+                "EE3009",
+                "CO3004"
+              ],
+              3
+            ],
+            [
+              [
+                "CE3005",
+                "CO2014"
+              ],
+              3
+            ]
+          ],
+          "experimental_group": {
+            "min_credits": 6,
+            "categories": [
+              "資通訊",
+              "電通訊"
+            ]
+          },
+          "college_electives_min_credits": 21
+        }
+      }
+    },
+    "restrictions": [
+      "院系等同課程重複修習不得重複計入畢業學分",
+      "指定實驗群組、星號課程須另比對原資電院系所課程流程圖"
+    ]
+  }
+}

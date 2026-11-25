@@ -1,0 +1,12 @@
+{
+  "source_count": 32,
+  "registered_count": 32,
+  "unique_program_ids": 32,
+  "all_have_128_plus_total": true,
+  "all_year_113": true,
+  "flagged_rules": 30,
+  "review_flag_rows": 30,
+  "extracted_course_occurrences": 870,
+  "test_limit": "structure only; no semantic graduation evaluation",
+  "economics_source": "rebuilt from management PDF p4; not recovered original"
+}
